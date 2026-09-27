@@ -1,0 +1,82 @@
+// Development integration test: isolated test profile, no real user workspace or servers.
+const { _electron: electron } = require('@playwright/test');
+const fs = require('node:fs');
+const path = require('node:path');
+const assert = require('node:assert/strict');
+const root = path.resolve(__dirname, '..');
+const profile = path.join(root, 'test-results', `profile-${Date.now()}`);
+const executablePath = process.argv[2] || require('electron');
+const args = process.argv[2] ? [] : [root];
+const environment = { ...process.env, BANCYCRAFT_TEST_DATA: profile };
+delete environment.ELECTRON_RUN_AS_NODE;
+async function launch() {
+  const application = await electron.launch({ executablePath, args, env: environment });
+  const page = await application.firstWindow();
+  await page.waitForFunction(() => document.body.textContent.includes('Your next build'));
+  return { application, page };
+}
+(async () => {
+  fs.mkdirSync(path.join(root, 'test-results'), { recursive: true });
+  let run = await launch();
+  try {
+    const errors = [];
+    run.page.on('pageerror', error => errors.push(error.message));
+    const details = await run.page.evaluate(async () => ({ app: await window.bancy.info(), data: await window.bancy.load(), nodeVisible: typeof window.require !== 'undefined' }));
+    assert.equal(details.app.version, require('../package.json').version);
+    assert.equal(details.nodeVisible, false);
+    assert.equal(details.data.plans.length, 0);
+    const security = await run.application.evaluate(({ BrowserWindow }) => { const preferences = BrowserWindow.getAllWindows()[0].webContents.getLastWebPreferences(); return { sandbox: preferences.sandbox, contextIsolation: preferences.contextIsolation, nodeIntegration: preferences.nodeIntegration }; });
+    assert.deepEqual(security, { sandbox: true, contextIsolation: true, nodeIntegration: false });
+    assert.equal(await run.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+    await run.page.screenshot({ path: path.join(root, 'test-results', 'home-desktop.png') });
+    // Exercise real renderer forms and Electron IPC, not the browser-preview fallback.
+    await run.page.getByRole('button', { name: 'New crafting plan', exact: true }).click();
+    await run.page.getByLabel('Plan name', { exact: true }).fill('Smoke test workshop');
+    await run.page.getByLabel('Target quantity').fill('3');
+    await run.page.getByLabel('Notes & material reminders').fill('Gather wood and iron.');
+    await run.page.getByRole('button', { name: 'Save plan', exact: true }).click();
+    await run.page.getByRole('dialog').waitFor({ state: 'hidden' });
+    let stored = await run.page.evaluate(() => window.bancy.load());
+    assert.equal(stored.plans[0].name, 'Smoke test workshop');
+    assert.equal(stored.plans[0].quantity, 3);
+    await run.page.getByRole('button', { name: 'My Supplies', exact: true }).click();
+    await run.page.getByRole('button', { name: 'Add supply', exact: true }).click();
+    await run.page.getByLabel('Material name').fill('Wood');
+    await run.page.getByLabel('Quantity owned').fill('50');
+    await run.page.getByRole('button', { name: 'Save supply', exact: true }).click();
+    await run.page.getByRole('dialog').waitFor({ state: 'hidden' });
+    await run.page.getByRole('button', { name: 'Settings & updates', exact: true }).click();
+    await run.page.getByRole('heading', { name: 'BancyCraft updates' }).waitFor();
+    await run.page.screenshot({ path: path.join(root, 'test-results', 'settings-desktop.png') });
+    await run.page.getByRole('button', { name: 'Connect to Bancy.gg', exact: true }).click();
+    assert.match(await run.page.getByRole('dialog').innerText(), /will not connect this build/);
+    await run.page.getByRole('button', { name: 'Keep planning' }).click();
+    await run.application.close();
+    run = await launch();
+    stored = await run.page.evaluate(() => window.bancy.load());
+    assert.equal(stored.plans[0].name, 'Smoke test workshop');
+    assert.equal(stored.supplies[0].quantity, 50);
+    await run.page.getByRole('button', { name: 'Crafting Planner', exact: true }).click();
+    await run.page.getByRole('button', { name: 'Edit Smoke test workshop' }).click();
+    await run.page.getByRole('dialog').locator('select').nth(1).selectOption('completed');
+    await run.page.getByRole('button', { name: 'Save plan', exact: true }).click();
+    await run.page.getByRole('dialog').waitFor({ state: 'hidden' });
+    assert.equal((await run.page.evaluate(() => window.bancy.load())).plans[0].status, 'completed');
+    await run.page.getByRole('button', { name: 'Delete Smoke test workshop' }).click();
+    await run.page.getByRole('button', { name: 'Delete', exact: true }).click();
+    await run.page.getByRole('dialog').waitFor({ state: 'hidden' });
+    assert.equal((await run.page.evaluate(() => window.bancy.load())).plans.length, 0);
+    await run.application.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows()[0].setSize(1050, 740));
+    await run.page.getByRole('button', { name: 'Home', exact: true }).click();
+    assert.equal(await run.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+    const helpBounds = await run.page.getByRole('button', { name: 'Help', exact: true }).boundingBox();
+    assert.ok(helpBounds && helpBounds.y + helpBounds.height <= (await run.page.evaluate(() => window.innerHeight)), 'Help remains visible at the minimum window size');
+    await run.page.screenshot({ path: path.join(root, 'test-results', 'home-compact.png') });
+    assert.deepEqual(errors, []);
+    console.log(JSON.stringify({ result: 'PASS', version: details.app.version, packaged: details.app.packaged, profile, checks: ['native startup', 'renderer isolation', 'plan create/edit/delete', 'supply save', 'persistence after restart', 'manual update guidance', 'connection placeholder', 'desktop and compact layouts'] }, null, 2));
+  } catch (error) {
+    await run.page.screenshot({ path: path.join(root, 'test-results', 'failure.png') }).catch(() => {});
+    console.error(await run.page.locator('body').innerText().catch(() => 'No renderer text'));
+    throw error;
+  } finally { await run.application.close().catch(() => {}); }
+})().catch(error => { console.error(error); process.exitCode = 1; });
