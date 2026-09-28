@@ -3,6 +3,7 @@ const path = require('node:path');
 const fs = require('node:fs');
 const { pathToFileURL } = require('node:url');
 const { createStore } = require('./store.cjs');
+const { sourceUrl } = require('./source-links.cjs');
 const release = require('./release-config.json');
 app.setName('BancyCraft');
 app.setAppUserModelId('gg.bancy.bancycraft');
@@ -58,6 +59,7 @@ else {
     handle('app:info', () => ({ version: app.getVersion(), dataPath: app.getPath('userData'), packaged: app.isPackaged, update }));
     handle('workspace:read', () => store.read());
     handle('workspace:write', data => store.write(data));
+    handle('source:open', url => shell.openExternal(sourceUrl(url)));
     handle('website:open', () => shell.openExternal('https://bancy.gg/'));
     handle('data:open', () => shell.openPath(app.getPath('userData')));
     handle('workspace:export', async () => {

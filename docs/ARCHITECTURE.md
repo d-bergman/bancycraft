@@ -2,7 +2,7 @@
 
 ## Current boundaries
 
-React/TypeScript renders bundled local content. Electron runs with sandbox, context isolation and no renderer Node integration. A restricted preload bridge exposes individual methods. Main-process handlers validate the sender and workspace payload. New windows, navigation away from the local UI, webviews and permission requests are blocked. The only external URL is the fixed Bancy.gg browser link.
+React/TypeScript renders bundled local content. Electron runs with sandbox, context isolation and no renderer Node integration. A restricted preload bridge exposes individual methods. Main-process handlers validate the sender and workspace payload. New windows, navigation away from the local UI, webviews and permission requests are blocked. External browser links are limited to the fixed Bancy.gg URL and validated HTTPS source/license domains and paths.
 
 The local JSON store owns manual plans and supplies. It has a schema version, write validation, previous-save backup and safe failure on unknown data. No game or website credentials are requested. There is no telemetry.
 
@@ -18,13 +18,13 @@ Blackbox owns its local SQLite file behind an authenticated API. Clients do not 
 
 ## Updates
 
-0.1.0 uses versioned NSIS installers. Data is outside the install directory. Installer identity and userData path are invariant. No network request is made for updates while `feedUrl` is null.
+0.2.0 uses versioned NSIS installers. Data is outside the install directory. Installer identity and userData path are invariant. No network request is made for updates while `feedUrl` is null.
 
 The optional electron-updater integration is main-process-only, HTTPS-only, disallows downgrades and waits for user actions to download and restart. Hosting is deliberately unconfigured. Before enabling, choose the distribution location, configure release metadata, decide update-artifact authenticity controls for unsigned Windows builds, and test actual N-to-N+1 installation, interrupted downloads and migration rollback. Do not add arbitrary update URL input to the renderer or ship publisher credentials in the app.
 
 ## Known foundation limits
 
-- Recipes and automatic gathering lists are not implemented.
+- Partial recipe catalogs are bundled; quantity calculators and automatic gathering lists are not implemented.
 - Website authentication and Blackbox indexing are not implemented.
 - JSON export is implemented; UI restore is not.
 - Only Windows x64 installer is built.

@@ -6,6 +6,7 @@ export const api: Bridge = window.bancy ?? {
   load: async () => JSON.parse(localStorage.getItem('bancycraft-preview') || 'null') ?? initial(),
   save: async data => { localStorage.setItem('bancycraft-preview', JSON.stringify(data)); return data; },
   openWebsite: async () => { window.open('https://bancy.gg/', '_blank', 'noopener,noreferrer'); },
+  openSource: async url => { window.open(url, '_blank', 'noopener,noreferrer'); },
   openData: async () => {}, exportWorkspace: async () => false,
   checkUpdate: async () => ({ state: 'manual', message: 'Use the Windows installer to update your desktop application.' }),
   downloadUpdate: async () => ({ state: 'manual', message: 'Hosted updates are not configured yet.' }),

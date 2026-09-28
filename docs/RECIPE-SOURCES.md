@@ -2,7 +2,7 @@
 
 Researched September 27, 2026. Planned games: Valheim, RuneScape: Dragonwilds, Enshrouded.
 
-Status: recommendations only. The user requested a check-in before connecting sources or building recipe features. No importer, catalog, network connection, recipe engine or Enshrouded application screen was added.
+Historical research shortlist. The subsequent user request authorized connecting all three sources. Version 0.2.0 now ships imported catalogs; see [current coverage and attribution](CATALOGS.md). The observations below describe the earlier research, not the current implementation.
 
 ## Valheim — Jötunn / JotunnDoc
 

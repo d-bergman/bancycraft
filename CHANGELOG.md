@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.0 — 2026-09-27
+
+- Add offline, game-scoped item browsing for Dragonwilds (1,347 items), Enshrouded (2,607) and Valheim (958 localized inventory entries).
+- Connect reproducible importers to the Dragonwilds Wiki API, Enshrouded Wiki API/Cargo recipes, and Jötunn generated item/recipe tables.
+- Show imported recipe inputs/outputs, alternatives, station filters, material links, recorded uses and available acquisition prose. Missing data stays explicitly unknown; no kill/harvest estimates.
+- Add Enshrouded to home, plans, supplies and persistent game selection. Keep existing workspace data and installer identity.
+- Add source attribution, licenses, provenance hashes and narrowly allowlisted source links.
+- Manual installer updates remain available; online update delivery and Blackbox integration are still separate milestones.
+
+
 ## 0.1.1 — 2026-09-27
 
 - Replace the sidebar lettermark and text with the user's supplied BancyCraft artwork, preserving its aspect ratio.

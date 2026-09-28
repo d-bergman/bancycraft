@@ -29,6 +29,44 @@ async function launch() {
     assert.deepEqual(security, { sandbox: true, contextIsolation: true, nodeIntegration: false });
     assert.equal(await run.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
     await run.page.screenshot({ path: path.join(root, 'test-results', 'home-desktop.png') });
+    // Catalogs must work offline and remain isolated by the active game.
+    await run.page.context().setOffline(true);
+    await run.page.getByRole('button', { name: 'Item Browser', exact: true }).click();
+    await run.page.getByRole('heading', { name: 'Item browser', exact: true }).waitFor();
+    await run.page.getByLabel('Search items', { exact: true }).fill('Coarse Thread');
+    await run.page.getByRole('button', { name: 'View Coarse Thread', exact: true }).click();
+    assert.match(await run.page.getByLabel('Item details', { exact: true }).innerText(), /Spinning Wheel/);
+    assert.match(await run.page.getByLabel('Item details', { exact: true }).innerText(), /Coarse Animal Fur/);
+    await run.page.getByLabel('Search items', { exact: true }).fill('');
+    await run.page.getByLabel('Crafting station', { exact: true }).selectOption('Loom');
+    assert.ok(await run.page.locator('.catalog-row').count() > 0);
+    await run.page.getByLabel('Crafting station', { exact: true }).selectOption('Tannery');
+    assert.ok(await run.page.locator('.catalog-row').count() > 0);
+    await run.page.getByRole('button', { name: 'Clear filters', exact: true }).click();
+    await run.page.getByLabel('Search items', { exact: true }).fill('Coarse Thread');
+    await run.page.getByLabel('Active game', { exact: true }).selectOption('valheim');
+    await run.page.getByRole('heading', { name: 'No matching items' }).waitFor();
+    await run.page.getByLabel('Search items', { exact: true }).fill('Bloodgold');
+    await run.page.getByRole('button', { name: 'View Bloodgold', exact: true }).click();
+    assert.match(await run.page.getByLabel('Item details', { exact: true }).innerText(), /No crafting recipe imported/);
+    await run.page.getByLabel('Active game', { exact: true }).selectOption('enshrouded');
+    await run.page.getByRole('heading', { name: 'No matching items' }).waitFor();
+    await run.page.getByLabel('Search items', { exact: true }).fill('Linen');
+    await run.page.getByRole('button', { name: 'View Linen', exact: true }).click();
+    assert.match(await run.page.getByLabel('Item details', { exact: true }).innerText(), /Spinning Machine/);
+    assert.equal((await run.page.evaluate(() => window.bancy.load())).game, 'enshrouded');
+    await run.page.screenshot({ path: path.join(root, 'test-results', 'catalog-desktop.png') });
+    await run.application.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows()[0].setSize(1050, 740));
+    assert.equal(await run.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+    await run.page.screenshot({ path: path.join(root, 'test-results', 'catalog-compact.png') });
+    const rejected = await run.page.evaluate(async () => { try { await window.bancy.openSource('file:///C:/Windows'); return false; } catch { return true; } });
+    assert.equal(rejected, true);
+    await run.page.reload();
+    await run.page.getByRole('heading', { name: 'Your next build starts here.' }).waitFor();
+    assert.equal(await run.page.getByLabel('Active game', { exact: true }).inputValue(), 'enshrouded');
+    await run.page.getByLabel('Active game', { exact: true }).selectOption('dragonwilds');
+    await run.page.waitForFunction(() => !document.querySelector('[aria-label="Active game"]').disabled);
+    await run.application.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows()[0].setSize(1480, 980));
     // Exercise real renderer forms and Electron IPC, not the browser-preview fallback.
     await run.page.getByRole('button', { name: 'New crafting plan', exact: true }).click();
     await run.page.getByLabel('Plan name', { exact: true }).fill('Smoke test workshop');
@@ -74,7 +112,7 @@ async function launch() {
     assert.ok(helpBounds && helpBounds.y + helpBounds.height <= (await run.page.evaluate(() => window.innerHeight)), 'Help remains visible at the minimum window size');
     await run.page.screenshot({ path: path.join(root, 'test-results', 'home-compact.png') });
     assert.deepEqual(errors, []);
-    console.log(JSON.stringify({ result: 'PASS', version: details.app.version, packaged: details.app.packaged, profile, checks: ['native startup', 'renderer isolation', 'plan create/edit/delete', 'supply save', 'persistence after restart', 'manual update guidance', 'connection placeholder', 'desktop and compact layouts'] }, null, 2));
+    console.log(JSON.stringify({ result: 'PASS', version: details.app.version, packaged: details.app.packaged, profile, checks: ['three offline catalogs and game-scoped search', 'recipe alternatives and station filters', 'source link rejection', 'native startup', 'renderer isolation', 'plan create/edit/delete', 'supply save', 'persistence after restart', 'manual update guidance', 'connection placeholder', 'desktop and compact layouts'] }, null, 2));
   } catch (error) {
     await run.page.screenshot({ path: path.join(root, 'test-results', 'failure.png') }).catch(() => {});
     console.error(await run.page.locator('body').innerText().catch(() => 'No renderer text'));

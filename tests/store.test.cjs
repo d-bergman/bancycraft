@@ -36,5 +36,7 @@ test('plans and supplies survive changing the active game', t => {
   const { store } = fixture(t); const data = store.read();
   data.supplies.push({ id: 'wood', name: 'Wood', game: 'dragonwilds', quantity: 100 });
   store.write(data); store.write({ ...store.read(), game: 'valheim' });
+  store.write({ ...store.read(), game: 'enshrouded' });
+  assert.equal(store.read().game, 'enshrouded');
   assert.equal(store.read().supplies[0].quantity, 100);
 });

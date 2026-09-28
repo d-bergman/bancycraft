@@ -1,4 +1,19 @@
-# Verification — 0.1.0
+# Verification
+
+## 0.2.0 catalogs
+
+Checked on Windows x64, September 27, 2026. TypeScript/production build, eight unit tests and packaged Electron integration test passed. The NSIS x64 installer was built successfully.
+
+- Offline item search verified across all three games with the network disabled. Searching Coarse Thread in Valheim and Bloodgold in Enshrouded returned no cross-game results.
+- Verified Dragonwilds Coarse Thread alternatives, Loom/Tannery filters and Enshrouded Linen processing alternatives. Bloodgold correctly labels its missing processing recipe.
+- Audited source enumeration; fixed underscore template names so all 2,607 Enshrouded item/armor transclusions are imported. Valheim excludes unresolved localization placeholders and preserves prefab variants.
+- Verified catalog IDs, positive exact recipe quantities, provenance links, unsafe source-link rejection, renderer sandboxing, Enshrouded selection persistence, and existing plan/supply CRUD and restart persistence.
+- Desktop/compact catalog and home screenshots visually checked. Final preview: app-catalog-0.2.0.png.
+- Source notices confirmed inside packaged app.asar. No source requests are made while browsing. Public API calls occur only in the developer importer.
+- Vite reports the expected large bundled-data chunk warning; the app opens and searches correctly offline. Catalog splitting can be considered if future data significantly increases startup cost.
+
+The installer was built and the packaged app tested with an isolated profile. Actual installer-over-installer migration and hosted automatic updates remain untested; the user's existing installed copy was not changed. Stable app ID, separate userData location and tested data preservation remain in place.
+
 
 ## 0.1.1 logo update
 
