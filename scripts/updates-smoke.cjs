@@ -1,6 +1,6 @@
 // Live public-release verification. Uses a separate workspace and updater cache;
 // simulates an older updater version without installing over a user's app.
-const { _electron: electron } = require('@playwright/test');
+const { _electron: electron, expect } = require('@playwright/test');
 const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
@@ -14,6 +14,8 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
   const page = await app.firstWindow();
   try {
     await page.getByRole('heading', { name: 'Your next build starts here.' }).waitFor();
+    // Let the scheduled startup check finish before exercising a manual check.
+    await expect.poll(async()=> (await page.evaluate(()=>window.bancy.info())).update.state,{timeout:60000}).toBe('current');
     await page.getByRole('button', { name: 'Settings & updates', exact: true }).click();
     await app.evaluate(({ app }) => {
       const load = process.mainModule.require.bind(process.mainModule);
@@ -32,7 +34,7 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
     console.log('Checking installed version against the public release…');
     await page.getByRole('button', { name: 'Check for updates', exact: true }).click();
     await page.getByLabel('Update status', { exact: true }).filter({ hasText: 'You have the latest BancyCraft release.' }).waitFor({ timeout: 60000 });
-    await page.waitForFunction(async()=> (await window.bancy.info()).update.state==='current');
+    await expect.poll(async()=> (await page.evaluate(()=>window.bancy.info())).update.state,{timeout:60000}).toBe('current');
     assert.equal((await page.evaluate(() => window.bancy.info())).update.state, 'current');
     console.log('Current-version check passed; simulating version 0.4.1…');
     await app.evaluate(() => { const load = process.mainModule.require.bind(process.mainModule); load('electron-updater').autoUpdater.currentVersion = new (load('semver').SemVer)('0.4.1'); });
