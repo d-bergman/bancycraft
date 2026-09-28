@@ -22,3 +22,5 @@ The release tool obtains GitHub credentials from the configured git credential m
 Version 0.2.0 and earlier have no connected feed and cannot discover this update themselves. Install 0.3.0 once over the existing installation. From that version onward, use Settings. The updater launches the NSIS installer silently and restarts the app after the user clicks Restart & install.
 
 Development/browser previews do not install updates. Real online check/download testing uses an isolated profile and an older updater version to exercise a newly published release. That test does not silently overwrite the user's existing installed application.
+
+Run `node scripts/updates-smoke.cjs release/win-unpacked/BancyCraft.exe` after publishing 0.3.0 to exercise the public check, download, signature and ready state. Adapt its simulated/current versions for subsequent releases. An unpublished draft can be discarded with `node scripts/releases.cjs discard-draft <version>` if a rebuilt installer is necessary; this command refuses to modify published releases.

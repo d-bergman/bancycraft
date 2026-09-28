@@ -11,7 +11,9 @@ Checked on Windows x64, September 28, 2026. Production build, 17 unit tests, and
 - 4,804 item icons are bundled locally. Packaged attribution notices and the pinned public GitHub update feed were checked. The updater config includes the publisher field required to invoke the custom Ed25519 verifier; the private key is outside the repository.
 - Unit tests reject altered installers and unrelated keys, and require explicit download and ready state before invoking installation. Workspace data stays outside the installation folder, with an additional backup before update installation.
 
-Actual installer-over-installer replacement has not been performed against the user's installed copy. Online release discovery and download are verified after publication and recorded below. Earlier coverage limitations in the imported catalogs still apply; missing recipes remain explicit.
+After publication, `scripts/updates-smoke.cjs` passed against the real packaged app and public release. It confirms an anonymous current-version check, discovery with the updater's version simulated as 0.2.0, an actual installer download, invocation of the embedded-key signature verifier, and the Restart & install control. The test uses an isolated workspace and separate updater cache. Its initial harness mistakenly treated an async polling predicate as completed; it now waits for the actual rendered current-version message before simulating the older version. No application change was required.
+
+Actual installer-over-installer replacement has not been performed against the user's installed copy. Installation invocation is unit-tested; live download and verification are integration-tested. Earlier coverage limitations in the imported catalogs still apply; missing recipes remain explicit.
 
 ## 0.2.0 catalogs
 
