@@ -69,7 +69,7 @@ async function launch() {
     await run.page.getByRole('heading', { name: 'No matching items' }).waitFor();
     await run.page.getByLabel('Search items', { exact: true }).fill('Bloodgold');
     await run.page.getByRole('button', { name: 'View Bloodgold', exact: true }).click();
-    assert.match(await run.page.getByLabel('Item details', { exact: true }).innerText(), /No crafting recipe imported/);
+    assert.match(await run.page.getByLabel('Item details', { exact: true }).innerText(), /Petrified Tissue/);
     await run.page.getByRole('button', { name: 'Close Bloodgold', exact: true }).click();
     await run.page.getByLabel('Active game', { exact: true }).selectOption('enshrouded');
     await run.page.getByRole('heading', { name: 'No matching items' }).waitFor();

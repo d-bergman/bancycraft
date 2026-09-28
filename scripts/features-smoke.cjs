@@ -27,10 +27,10 @@ const root = path.resolve(__dirname, '..'), profile = path.join(root, 'test-resu
     await page.keyboard.press('Escape');
     await page.getByRole('button', { name: 'Settings & updates', exact: true }).click();
     await page.getByRole('region', { name: 'Changelog', exact: true }).waitFor();
-    await page.getByRole('heading', { name: 'Version 0.6.0', exact: true }).waitFor();
-    await page.getByRole('button', { name: 'Changelog page 3', exact: true }).click();
+    await page.getByRole('heading', { name: 'Version 0.7.0', exact: true }).waitFor();
+    await page.getByRole('button', { name: 'Changelog page '+Math.ceil((fs.readFileSync(path.join(root,'CHANGELOG.md'),'utf8').match(/^## /gm)||[]).length/3), exact: true }).click();
     await page.getByRole('heading', { name: 'Version 0.1.0', exact: true }).waitFor();
-    assert.equal(await page.getByRole('heading', { name: 'Version 0.6.0', exact: true }).count(), 0);
+    assert.equal(await page.getByRole('heading', { name: 'Version 0.7.0', exact: true }).count(), 0);
     await page.getByRole('button', { name: 'Changelog page 1', exact: true }).click();
     await page.getByRole('region', { name: 'Changelog', exact: true }).screenshot({ path: path.join(root, 'test-results/changelog-settings.png') });
     await page.getByLabel('Active game', { exact: true }).selectOption('vrising');

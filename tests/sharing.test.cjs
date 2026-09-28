@@ -66,7 +66,7 @@ test("shared list encoding round-trips recipe keys and safely applies stream upd
   const model = list(),
     packed = pack(model);
   assert(!Object.keys(packed.recipes)[0].includes("/"));
-  assert.deepEqual(unpack(packed), model);
+  assert.deepEqual(unpack(packed), {...model,owned:{},assignments:{}});
   let tree = applyStream(null, {
     type: "put",
     path: "/",

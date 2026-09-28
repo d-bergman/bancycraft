@@ -1,0 +1,4 @@
+import {useEffect,useRef,useState} from 'react';
+import {api} from '../bridge';
+import type {ToolsWorkspace} from '../types';
+export function useTools(){const [data,setData]=useState<ToolsWorkspace>({schemaVersion:1,builds:[],favorites:{},recent:{}}),[error,setError]=useState(''),[ready,setReady]=useState(false),[busy,setBusy]=useState(false);const ref=useRef(data),lock=useRef(false);useEffect(()=>{api.toolsLoad().then(v=>{ref.current=v;setData(v);setReady(true);}).catch(e=>setError(e.message));},[]);async function save(change:(v:ToolsWorkspace)=>ToolsWorkspace){if(!ready||lock.current)return false;lock.current=true;setBusy(true);try{const v=await api.toolsSave(change(ref.current));ref.current=v;setData(v);setError('');return true;}catch(e){setError(e instanceof Error?e.message:'Unable to save tools.');return false;}finally{lock.current=false;setBusy(false);}}return {data,error,busy:busy||!ready,save};}

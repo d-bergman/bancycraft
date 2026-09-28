@@ -11,5 +11,5 @@ export function Ledger({unlocked}:{unlocked:boolean}) {
     };
     window.addEventListener('message',listener);notify();return()=>window.removeEventListener('message',listener);
   },[unlocked]);
-  return <><p className="small muted">Profit workshop, production planner, merchant orders and guide · available offline.</p>{error&&<p className="notice" role="alert">{error}</p>}<iframe ref={ref} title="Dragonwilds production tools" src="./ledger/index.html" sandbox="allow-scripts" className="ledger-frame"/></>;
+  return <>{error&&<p className="notice" role="alert">{error}</p>}<iframe ref={ref} title="Dragonwilds production tools" src="./ledger/index.html" sandbox="allow-scripts" className="ledger-frame"/></>;
 }

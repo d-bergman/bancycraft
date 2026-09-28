@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.7.0 — 2026-09-28
+
+- Keep Shopping Lists as a compact library; open each list in its own workspace.
+- Redesign the complete Dragonwilds Production Ledger for the desktop theme while preserving the website and offline calculations.
+- Hide verified internal Valheim duplicates and preserve saved references, quantities and completion.
+- Add private and community Builds for all five games: equipment slots, names, tags, descriptions, play notes, website avatars and creator attribution. Save independent private copies, create variants and full shopping lists. Check source updates and choose whether to save a new copy.
+- Add owned-material deductions, station views, recipe comparisons, task assignments and conflict-safe undo. Owners can undo shared deletion for ten minutes during the current session, restoring a new shared copy.
+- Add sourced Valheim upgrade planning for 265 verified item chains, distinguishing new gear from upgrading owned gear.
+- Add favorites, recently viewed items, compact always-on-top gaming checklist, list/build import/export and full backup restoration. Backups include private builds and favorites, excluding credentials.
+- Replace the unconfigured email-service form with the published BancyCraft Google Form inside Settings. Responses are stored in Google Forms with owner notifications enabled.
+
 ## 0.6.1 — 2026-09-28
 
 - Fixed missing Valheim recipes caused by differing prefab IDs and duplicate equipment names. All 20 catalog gearsets now have initial recipes, including Frost Foundry casts for Deep North equipment.

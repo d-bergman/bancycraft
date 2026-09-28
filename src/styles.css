@@ -29,3 +29,5 @@ button.illustrated:hover .game-tile-image{transform:scale(1.04)}
 .changelog-entries{max-height:52vh;overflow:auto;padding-right:12px}.changelog-panel{scroll-margin-top:90px}
 
 .feedback-form{display:grid;gap:16px;padding:20px;max-width:640px}.feedback-form label{display:grid;gap:7px}.feedback-form textarea{resize:vertical;min-height:120px}
+
+.search-result{grid-template-columns:18px 40px minmax(160px,1fr) 32px 100px 34px 34px}.saved-item-filters{margin:20px 0}

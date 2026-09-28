@@ -159,7 +159,8 @@ async function launch(person, name) {
   );
   return { app, page, local, profile };
 }
-(async () => {
+module.exports={user,launch};
+if(require.main===module)(async () => {
   let a, b;
   const friendName = "Friend " + Date.now();
   try {

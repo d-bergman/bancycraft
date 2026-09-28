@@ -1,6 +1,8 @@
 import type { Catalog, Item, Recipe, Ingredient } from '../catalog/types';
 import type { ShoppingList, Supply } from '../types';
 export type ShoppingRow = { key: string; item?: Item; name: string; choices: { recipe: Recipe; output: Ingredient }[]; recipe?: Recipe; output: number; children: { key: string; quantity: number }[]; required: number; inherited: number; completed: number; owned: number; marked: number; remaining: number; isTarget: boolean; tier: number; section: string };
+export function canonicalList(list:ShoppingList,catalog:Catalog):ShoppingList;
+export function canonicalItems(catalog:Catalog):Item[];
 export function normalize(value: string): string;
 export function itemKey(item: Item): string;
 export function broadType(item: Item, crafted?: boolean): string;

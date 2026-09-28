@@ -106,3 +106,15 @@ Live delivery verified after publication: the website landing page, clean-URL co
 ## 0.6.1
 
 35 unit tests pass, including all Valheim gearset recipes and the Protector → cast → Bloodgold → Petrified Tissue chain, five-game set coverage with documented loot/unknown sources, and feedback validation/configuration/service acceptance/failure. Packaged Settings modal verifies both report types, draft retention, disabled sending before configuration and Escape/focus behavior. Feedback tests never send email. Direct delivery awaits an owner-supplied Formspree endpoint and inbox confirmation.
+
+## 0.7.0 — September 28, 2026
+
+- 39 unit tests pass: catalog and gearset chains, duplicate reference migration, owned DAG deductions, sourced upgrade levels, independent private builds, protected stores and per-row shared conflicts.
+- TypeScript, production renderer and Windows NSIS packaging pass. Final packaged tests cover dedicated lists, favorites/recent, station views, native always-on-top, independent variants, Google embed isolation and restart persistence.
+- Native backup tests verify full export/restore, before-restore copies, new imported build IDs and malformed/future backup rejection without data loss. No real user profile is modified.
+- Two-user native UI tests verify website identity handoff, publication/discovery, private copies, opt-in source updates and retained variants. Existing live list completion/reset, authorship, target changes and cipher bank gates pass.
+- Firebase emulator and production QA verify build owner rules, anonymous/outsider denial, avatar data, source attribution, stale-write rejection, assignments/owned amounts, member removal and shared-deletion undo. Temporary production QA builds/lists/profiles/accounts were cleaned up.
+- Ledger regression remains 3,384 hides, 4 purchases and 50,760 Chit profit. Production timing, merchant orders and website bank sandbox pass. Website ledger is unchanged; only BancyCraft Firebase branches were updated.
+- Valheim native upgrade UI verifies two owned level-1 tunics upgraded to level 4, 36 Bronze, exclusion of initial Protection Idol cost and matching tree. The repeatable importer retains 265 unambiguous verified chains.
+- Changelog pagination through 0.1.0, crafting-tree read-only behavior and V Rising browser/sets pass. Update popup tests verify explicit download/install flow and backups without installing over the user's app.
+- One labelled Google Form QA response reached the confirmation page; owner email notifications are enabled. Gmail inbox receipt is not claimed. Google controls inner form styling; the surrounding app modal matches BancyCraft.

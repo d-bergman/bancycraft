@@ -23,7 +23,7 @@ function cleanList(list) {
 }
 function pack(list) {
   const copy = cleanList(list);
-  for (const field of ["recipes", "progress", "collapsed"])
+  for (const field of ["recipes", "progress", "collapsed", "owned", "assignments"])
     copy[field] = Object.fromEntries(
       Object.entries(copy[field]).map(([key, value]) => [encode(key), value]),
     );
@@ -31,7 +31,7 @@ function pack(list) {
 }
 function unpack(list) {
   const copy = structuredClone(list);
-  for (const field of ["recipes", "progress", "collapsed"])
+  for (const field of ["recipes", "progress", "collapsed", "owned", "assignments"])
     copy[field] = Object.fromEntries(
       Object.entries(copy[field] || {}).map(([key, value]) => [
         decode(key),
@@ -105,6 +105,9 @@ function mergeChange(record, base, next, author, now = Date.now()) {
         amount: result.progress[key],
       };
     }
+  for(const field of ['owned','assignments'])for(const key of new Set([...Object.keys(previous[field]||{}),...Object.keys(proposed[field]||{})])){
+    const a=previous[field]?.[key],b=proposed[field]?.[key];if(a===b)continue;if(current[field]?.[key]!==a)throw Error('A friend changed this row. Refresh before trying again.');if(field==='assignments'&&b&&!record.members?.[b])throw Error('Assign tasks to list members only.');result[field]||={};if(b===undefined||b==='')delete result[field][key];else result[field][key]=b;
+  }
   result.updatedAt = new Date(now).toISOString();
   result.collapsed = {};
   result.hideCompleted = false;
@@ -125,6 +128,7 @@ function createShared(account, onStatus, options = {}) {
     activeRetry,
     indexRetry,
     generation = 0;
+  const removed=new Map();
   const notify = () => {
     if(state.active) state.lists=state.lists.map(list=>list.id===state.active.id?{...list,name:state.active.name,members:state.active.members.length}:list);
     onStatus(structuredClone(state));
@@ -358,7 +362,7 @@ function createShared(account, onStatus, options = {}) {
   }
   const accountChanged = () => {
     if (state.account.user?.uid !== account.status().user?.uid)
-      selected = undefined;
+      {selected = undefined;removed.clear();}
     void reconnect().catch(() => {});
   };
   account.events.on("change", accountChanged);
@@ -370,7 +374,7 @@ function createShared(account, onStatus, options = {}) {
       const me = user(),
         id = randomUUID(),
         list = cleanList({
-          ...local,
+          ...local,assignments:Object.fromEntries(Object.entries(local.assignments||{}).filter(([,member])=>member===me.uid)),
           id,
           quick: false,
           useSupplies: false,
@@ -470,8 +474,10 @@ function createShared(account, onStatus, options = {}) {
           throw Error("Only the owner can remove another member.");
         const members = { ...record.members };
         delete members[member];
+        const content={...record.content,assignments:Object.fromEntries(Object.entries(record.content.assignments||{}).filter(([,assigned])=>assigned!==member))};
         return {
           ...record,
+          content,
           members,
           memberSlots: Object.keys(members),
           updatedAt: Date.now(),
@@ -480,6 +486,16 @@ function createShared(account, onStatus, options = {}) {
       await request("bancycraftUserLists/" + member + "/" + id, {
         method: "DELETE",
       });
+    },
+    async restoreRemoved(id){
+      listId(id);const me=user(),snapshot=removed.get(id);if(!snapshot||snapshot.record.ownerUid!==me.uid||Date.now()-snapshot.at>600000)throw Error('Deletion undo is available to the owner for ten minutes during this session.');
+      // A new UUID avoids overwriting another record and does not require read access
+      // to a deleted private record. Completion is attributed to the restoring owner.
+      const restored=await this.create(unpack(snapshot.record.content));
+      for(const member of Object.keys(snapshot.record.members))if(member!==me.uid)await this.add(restored,member);
+      const assignments=unpack(snapshot.record.content).assignments||{};
+      if(Object.keys(assignments).length)await transaction(restored,record=>({...record,content:{...record.content,assignments:Object.fromEntries(Object.entries(assignments).map(([key,member])=>[encode(key),member]))},updatedAt:Date.now()}));
+      removed.delete(id);await watch(restored);return restored;
     },
     async remove(id) {
       const me = user(),
@@ -491,6 +507,7 @@ function createShared(account, onStatus, options = {}) {
           method: "DELETE",
         });
       await request("bancycraftLists/" + id, { method: "DELETE" });
+      removed.set(id,{record,at:Date.now()});while(removed.size>5)removed.delete(removed.keys().next().value);
       if (selected === id) await watch(null);
     },
     close() {

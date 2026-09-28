@@ -46,9 +46,10 @@ function validate(data) {
     const targets = list.targets.map(target => {
       const itemId = string(target.itemId, 160, 'item ID'), name = string(target.name, 200, 'item name');
       if (!itemId || !name || targetIds.has(itemId) || !Number.isSafeInteger(target.quantity) || target.quantity < 1 || target.quantity > 999999) throw new Error('Invalid target.');
-      targetIds.add(itemId); return { itemId, name, quantity: target.quantity };
+      if(target.fromLevel!==undefined||target.toLevel!==undefined){if(list.game!=='valheim'||!Number.isInteger(target.fromLevel)||!Number.isInteger(target.toLevel)||target.fromLevel<0||target.toLevel<=target.fromLevel||target.toLevel>10)throw Error('Invalid upgrade levels.');}
+      targetIds.add(itemId); return { itemId, name, quantity: target.quantity, ...(target.toLevel!==undefined?{fromLevel:target.fromLevel,toLevel:target.toLevel}:{}) };
     });
-    return { id, name, game: list.game, quick: list.quick, targets, recipes: map(list.recipes, 'string'), progress: map(list.progress, 'number'), collapsed: map(list.collapsed, 'boolean'), useSupplies: list.useSupplies, hideCompleted: list.hideCompleted, updatedAt: string(list.updatedAt, 40, 'date') };
+    return { id, name, game: list.game, owned:map(list.owned||{},'number'),assignments:map(list.assignments||{},'string'),quick: list.quick, targets, recipes: map(list.recipes, 'string'), progress: map(list.progress, 'number'), collapsed: map(list.collapsed, 'boolean'), useSupplies: list.useSupplies, hideCompleted: list.hideCompleted, updatedAt: string(list.updatedAt, 40, 'date') };
   });
   return { schemaVersion: 2, game: data.game, plans: rows(data.plans, 'plan'), supplies: rows(data.supplies, 'supply'), lists };
 }

@@ -1,11 +1,11 @@
-# Direct feedback delivery
+# Reports and suggestions
 
-Settings opens a modal for a bug report or suggestion. The recipient is bancywaypoint@gmail.com.
+Settings embeds the owner's published Google Form in the app's dark modal. Google controls the inner form styling; its teal accent and typography are configured in Forms. No separate email-delivery service, app SMTP credentials or mail client is required. Internet is required to load and submit.
 
-Delivery is intentionally unconfigured until Darren supplies a service endpoint. No mail client is opened, no SMTP password belongs in the app, and no success message appears without service acceptance.
+Responders do not need to sign in. Game, report type, subject and details are required; app version and reply email are optional. No workspace, password, access key or account token is attached automatically. The Google confirmation is the submission result.
 
-To enable delivery, create a Formspree form with destination bancywaypoint@gmail.com, verify that destination, and supply its `https://formspree.io/f/FORM_ID` URL. Set `endpoint` in `electron/feedback-config.json`, then build/release the app. The endpoint is a public form identifier; never put an account token or Gmail password here. Formspree account limits apply; no paid plan has been added.
+Owner editor: https://docs.google.com/forms/d/1QgHzijAIPWuHXXH5f-gt9QdtCj4H_Z0a5iRKJOLhZNU/edit
 
-Reports include only the entered type, subject, details, optional reply email, selected game and app version. Workspaces, credentials and cipher keys are not automatically attached. Failed or unconfigured submissions retain the in-memory draft. Closing/reopening the modal retains it; quitting the app clears it.
+Responses are stored in Google Forms. New-response email notifications were enabled for the owner signed in as bancywaypoint@gmail.com. One labelled integration-test response was submitted and accepted; inbox arrival was not verified.
 
-Tests use a mock delivery service, never send a real email. After configuring, perform an explicitly authorized real test and verify inbox receipt before calling delivery complete.
+The external frame has no native bridge and its domain is explicitly listed in CSP. Google retains submitted responses; avoid sensitive information.

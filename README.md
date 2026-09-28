@@ -40,7 +40,7 @@ There are no invented server totals, save watchers, game plugins, game-save acce
 
 ## Data
 
-The app stores a validated, schema-versioned `workspace.json` under `%APPDATA%/BancyCraft`. A successful edit preserves the prior version as `workspace.json.bak` and replaces the current file using a temporary file and rename. Schema 1 migrates to schema 2 and keeps an original workspace.json.v1.bak on the first write. Corrupt or newer-version data produces an error rather than silently resetting it. Exported backups are saved wherever the user chooses; restoring through the UI is not implemented yet.
+The app stores a validated, schema-versioned `workspace.json` under `%APPDATA%/BancyCraft`. A successful edit preserves the prior version as `workspace.json.bak` and replaces the current file using a temporary file and rename. Schema 1 migrates to schema 2 and keeps an original workspace.json.v1.bak on the first write. Corrupt or newer-version data produces an error rather than silently resetting it. Exported backups are saved wherever the user chooses; Settings restores validated full backups including builds, favorites and recents, with confirmation and before-restore backups. Credentials and keys are excluded.
 
 SQLite remains the intended database for the later Blackbox service. Local workspace files remain independent; shared list copies use the existing website Firebase project. Introduce future storage migrations with a backup and tests preserving this schema. Never put a database on a mapped share for direct multi-client writes.
 

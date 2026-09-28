@@ -39,6 +39,10 @@ const names=[...new Set([...html.matchAll(/data-lucide="([\w-]+)"/g),...source.m
 for(const name of names){const Icon=icons[name.split('-').map(s=>s[0].toUpperCase()+s.slice(1)).join('')];if(Icon)markup[name]=renderToStaticMarkup(React.createElement(Icon,{size:20,strokeWidth:1.8}));}
 const iconScript='window.lucide={createIcons(){const icons='+JSON.stringify(markup)+';document.querySelectorAll("[data-lucide]").forEach(element=>{if(icons[element.dataset.lucide])element.outerHTML=icons[element.dataset.lucide];});}};';
 for(const file of ['ledger.js','desktop.js'])document=document.replace('<script src="'+file+'"></script>',()=>'<script>'+(file==='ledger.js'?iconScript:'')+fs.readFileSync(path.join(output,file),'utf8').replace(/<\/script/gi,'<\\/script')+'</script>');
+// Preserve the desktop design whenever the website calculations are refreshed.
+const desktopTheme=fs.readFileSync(path.join(output,'desktop-theme.css'),'utf8');
+document=document.replace('</head>',()=>'<style>'+desktopTheme+'</style></head>');
+document=document.replace(/<h1[^>]*>[\s\S]*?<\/h1>/,'<h1>Production Ledger</h1>');
 fs.writeFileSync(path.join(output,'index.html'),document);
 fs.writeFileSync(path.join(root,'docs/LEDGER-SOURCE.json'),JSON.stringify({sourceRepository:website,sourceCommit:require('node:child_process').spawnSync('git',['rev-parse','HEAD'],{cwd:website,encoding:'utf8'}).stdout.trim(),copiedAt:new Date().toISOString(),files:['dragonwilds/tannery-ledger.html','assets/js/tannery-ledger.js','assets/css/tannery-ledger.css'],sharedBank:'https://bancy.gg/dragonwilds/tannery-ledger',localChanges:['remove site navigation/CDNs','offline cloud adapter','key-gated native shared bank bridge']},null,2)+'\n');
 console.log('Copied complete public ledger tools, merchant catalog and guide; shared bank remains synchronized with the website.');

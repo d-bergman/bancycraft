@@ -26,7 +26,7 @@ The shopping-list engine builds a dependency graph from the selected game's cata
 
 - Recipe catalogs remain partial; supported recipes expand into shopping-list quantities, while unknown acquisition/processing data stays explicit.
 - The shared bank uses the existing website sign-in in an isolated window. Native account authorization/Blackbox indexing are not implemented.
-- JSON export is implemented; UI restore is not.
+- Validated list/build import and export and full workspace restore are implemented. Private builds use tools-workspace.json; shared builds use owner-protected bancycraftBuilds records.
 - Only Windows x64 installer is built.
 - Installer is unsigned; Windows security policies vary.
 - Programmatic tests cover migration, restart persistence, signature checks and live update download; installation into the user's existing Windows profile is not performed by test scripts.

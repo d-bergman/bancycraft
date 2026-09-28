@@ -103,11 +103,11 @@ export function AccountSettings({ state }: { state: SharedState }) {
 export function SharedLists({
   game,
   local,
-  state,
+  state, onGaming,
 }: {
   game: Game;
   local: ShoppingList[];
-  state: SharedState;
+  state: SharedState;onGaming?:()=>void;
 }) {
   const [busy, setBusy] = useState(false),
     [error, setError] = useState(""),
@@ -117,6 +117,7 @@ export function SharedLists({
     [adding, setAdding] = useState(false),
     [query, setQuery] = useState(""),
     [quantity, setQuantity] = useState(1),
+    [removedId,setRemovedId]=useState<string>(),
     [deleting, setDeleting] = useState(false),
     [views, setViews] = useState<
       Record<
@@ -174,7 +175,7 @@ export function SharedLists({
         hideCompleted: next.hideCompleted,
       },
     }));
-    const fields = ["name", "targets", "recipes", "progress"] as const;
+    const fields = ["name", "targets", "recipes", "progress", "owned", "assignments"] as const;
     if (
       fields.some((f) => JSON.stringify(next[f]) !== JSON.stringify(active[f]))
     )
@@ -198,6 +199,7 @@ export function SharedLists({
           {error || state.message}
         </div>
       )}
+      {removedId&&<div className="notice"><p>A shared list was deleted. You can restore it and its members for ten minutes while this app remains open.</p><button className="button outline" disabled={busy} onClick={()=>run(async()=>{await api.sharedRestore(removedId);setRemovedId(undefined);})}>Undo shared list deletion</button></div>}
       {active && displayed ? (
         <>
           <section className="panel content-panel shared-members">
@@ -351,7 +353,7 @@ export function SharedLists({
                   ))}
             </section>
           )}
-          <ListDetail
+          <ListDetail onGaming={onGaming} members={active?.members}
             key={active.id}
             list={displayed}
             supplies={[]}
@@ -388,7 +390,7 @@ export function SharedLists({
                 <button
                   className="button danger"
                   disabled={disabled}
-                  onClick={() => run(() => api.sharedRemove(active.id))}
+                  onClick={() => run(async()=>{await api.sharedRemove(active.id);setRemovedId(active.id);setDeleting(false);})}
                 >
                   Delete shared list
                 </button>

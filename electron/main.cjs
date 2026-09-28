@@ -2,12 +2,14 @@ const { app, BrowserWindow, ipcMain, shell, dialog, Menu, safeStorage } = requir
 const path = require('node:path');
 const fs = require('node:fs');
 const { pathToFileURL } = require('node:url');
+const {createToolsStore,validateTools,cleanBuild}=require('./tools-store.cjs');
+const {createBuilds}=require('./builds.cjs');
+const {validate}=require('./store.cjs');
 const { createStore } = require('./store.cjs');
 const { sourceUrl } = require('./source-links.cjs');
 const { configureUpdater, startAutomaticChecks } = require('./updates.cjs');
 const { createAccess } = require('./access.cjs');
 const { createAccount } = require('./account.cjs');
-const { createFeedback } = require('./feedback.cjs');
 const { createShared } = require('./shared.cjs');
 const { createCommunity } = require('./community.cjs');
 app.setName('BancyCraft');
@@ -20,7 +22,7 @@ let store;
 let updater;
 let access,community,account,collaboration;
 let update = { state: 'manual', message: 'Updates are installed using a newer BancyCraft installer. Your workspace stays in place.' };
-const rendererUrl = pathToFileURL(path.join(__dirname, '../dist/index.html')).href;
+const rendererUrl = pathToFileURL(path.join(__dirname, '../app-dist/index.html')).href;
 function trusted(event) {
   if (!window || event.sender !== window.webContents || event.senderFrame !== window.webContents.mainFrame || event.senderFrame.url !== rendererUrl) throw new Error('Untrusted request.');
 }
@@ -44,7 +46,7 @@ async function checkUpdates() {
 }
 async function createWindow() {
   window = new BrowserWindow({ width: 1480, height: 980, minWidth: 1050, minHeight: 740, backgroundColor: '#061016', title: 'BancyCraft', autoHideMenuBar: true,
-    icon: path.join(__dirname, '../dist/assets/app-icon.png'),
+    icon: path.join(__dirname, '../app-dist/assets/app-icon.png'),
     webPreferences: { preload: path.join(__dirname, 'preload.cjs'), nodeIntegration: false, contextIsolation: true, sandbox: true, webSecurity: true } });
   Menu.setApplicationMenu(null);
   window.webContents.setWindowOpenHandler(() => ({ action: 'deny' }));
@@ -58,21 +60,36 @@ else {
   app.on('second-instance', () => { if (window) { if (window.isMinimized()) window.restore(); window.focus(); } });
   app.whenReady().then(async () => {
     store = createStore(app.getPath('userData'));
+    const toolsStore=createToolsStore(app.getPath('userData'));
+    handle('tools:read',()=>toolsStore.read());handle('tools:write',v=>toolsStore.write(v));
     access=createAccess(app.getPath('userData'),safeStorage,fs.readFileSync(path.join(__dirname,'access-public.pem'),'utf8'));
     community=createCommunity(access);
     account=createAccount(app.getPath('userData'),safeStorage,url=>shell.openExternal(url));
+    const builds=createBuilds(account);
+    handle('builds:browse',g=>builds.browse(g));handle('builds:get',id=>builds.get(id));handle('builds:publish',b=>builds.publish(b));handle('builds:remove',id=>builds.remove(id));handle('profile:avatar',uid=>builds.avatar(uid));
+    const cleanList=v=>validate({schemaVersion:2,game:v?.game,plans:[],supplies:[],lists:[v]}).lists[0];
+    async function exportJson(value,name){const r=await dialog.showSaveDialog(window,{defaultPath:name,filters:[{name:'BancyCraft JSON',extensions:['json']}]});if(r.canceled||!r.filePath)return false;fs.writeFileSync(r.filePath,JSON.stringify(value,null,2));return true;}
+    async function importJson(){const r=await dialog.showOpenDialog(window,{properties:['openFile'],filters:[{name:'BancyCraft JSON',extensions:['json']}]});if(r.canceled)return null;const file=r.filePaths[0];if(fs.statSync(file).size>12000000)throw Error('This file is too large.');return JSON.parse(fs.readFileSync(file,'utf8'));}
+    handle('list:export',v=>exportJson({kind:'BancyCraft-list',list:cleanList(v)},'BancyCraft-list.json'));
+    handle('build:export',v=>exportJson({kind:'BancyCraft-build',build:cleanBuild(v)},'BancyCraft-build.json'));
+    handle('list:import',async()=>{const v=await importJson();return v?{...cleanList(v.list),id:require('node:crypto').randomUUID(),quick:false}:null;});
+    handle('build:import',async()=>{const v=await importJson();return v?{...cleanBuild(v.build),id:require('node:crypto').randomUUID(),owner:undefined,publishedAt:undefined}:null;});
+    handle('workspace:import',async()=>{const v=await importJson();if(!v)return null;const w=validate(v.workspace||v),t=v.tools?validateTools(v.tools):null;
+      const r=await dialog.showMessageBox(window,{type:'question',buttons:['Cancel','Restore backup'],defaultId:0,cancelId:0,message:'Replace your local workspace with this backup?',detail:'Your current workspace and builds will be backed up first. Shared online lists are unaffected.'});if(r.response!==1)return null;
+      for(const file of [store.file,toolsStore.file])if(fs.existsSync(file))fs.copyFileSync(file,file+'.before-restore.bak');
+      const old=store.read(),oldTools=toolsStore.read();try{if(t)toolsStore.write(t);return store.write(w);}catch(e){toolsStore.write(oldTools);store.write(old);throw e;}
+    });
+    let previousBounds;
+    handle('gaming:mode',enable=>{if(typeof enable!=='boolean')throw Error('Invalid view.');window.setAlwaysOnTop(enable);if(enable){previousBounds=window.getBounds();window.setMinimumSize(440,480);window.setSize(500,760);}else{window.setMinimumSize(1050,740);if(previousBounds)window.setBounds(previousBounds);}});
     collaboration=createShared(account,data=>{if(window&&!window.isDestroyed())window.webContents.send('shared:status',data);});
     handle('account:connect',()=>account.connect()); handle('account:disconnect',()=>account.disconnect());
     handle('shared:status',()=>collaboration.status()); handle('shared:watch',id=>collaboration.watch(id));
     handle('shared:create',id=>{const list=store.read().lists.find(l=>l.id===id);if(!list)throw Error('Local list not found.');return collaboration.create(list);});
     handle('shared:change',(id,base,next)=>collaboration.change(id,base,next));
     handle('shared:search',text=>collaboration.search(text)); handle('shared:add',(id,uid)=>collaboration.add(id,uid));
-    handle('shared:removeMember',(id,uid)=>collaboration.removeMember(id,uid)); handle('shared:remove',id=>collaboration.remove(id));
+    handle('shared:removeMember',(id,uid)=>collaboration.removeMember(id,uid)); handle('shared:remove',id=>collaboration.remove(id));handle('shared:restore',id=>collaboration.restoreRemoved(id));
     app.once('will-quit',()=>{collaboration.close();account.close();});
     const timer=setInterval(()=>{if(!access.status().unlocked)community.close();},15000);timer.unref();
-    const feedback = createFeedback(app.getVersion());
-    handle('feedback:status', () => feedback.status());
-    handle('feedback:send', value => feedback.send(value));
     handle('app:info', () => ({ version: app.getVersion(), dataPath: app.getPath('userData'), packaged: app.isPackaged, update, access:access.status() }));
     handle('community:unlock', key=>access.unlock(key));
     handle('community:lock', async()=>{const result=access.lock();await community.lock();return result;});
@@ -83,7 +100,7 @@ else {
     handle('website:open', () => shell.openExternal('https://bancy.gg/'));
     handle('data:open', () => shell.openPath(app.getPath('userData')));
     handle('workspace:export', async () => {
-      const data = store.read();
+      const data = {kind:"BancyCraft-backup",workspace:store.read(),tools:toolsStore.read()};
       const result = await dialog.showSaveDialog(window, { title: 'Back up your BancyCraft workspace', defaultPath: `BancyCraft-workspace-${new Date().toISOString().slice(0, 10)}.json`, filters: [{ name: 'JSON workspace', extensions: ['json'] }] });
       if (result.canceled || !result.filePath) return false;
       fs.writeFileSync(result.filePath, JSON.stringify(data, null, 2));
@@ -91,12 +108,12 @@ else {
     });
     handle('update:check', checkUpdates);
     handle('update:download', async () => { if (updater) await updater.download(); return update; });
-    handle('update:install', () => { if (updater && update.state === 'ready') { try { if (fs.existsSync(store.file)) fs.copyFileSync(store.file, store.file + '.before-update.bak'); updater.install(); } catch { status('error', 'Your workspace backup could not be saved. The update has not been installed.'); } } });
+    handle('update:install', () => { if (updater && update.state === 'ready') { try { for(const file of [store.file,toolsStore.file])if(fs.existsSync(file))fs.copyFileSync(file,file+'.before-update.bak'); updater.install(); } catch { status('error', 'Your workspace backup could not be saved. The update has not been installed.'); } } });
     setupUpdates();
     await createWindow();
     void account.restore().then(()=>collaboration.reconnect()).catch(()=>{});
     if (updater) app.once('will-quit', startAutomaticChecks(updater));
-  }).catch(error => { dialog.showErrorBox('BancyCraft could not start', error.message); app.quit(); });
+  }).catch(error => {if(process.env.BANCYCRAFT_TEST_DATA){fs.writeFileSync(path.join(app.getPath('userData'),'startup-error.txt'),String(error.stack||error));console.error(error);app.exit(1);return;} dialog.showErrorBox('BancyCraft could not start', error.message); app.quit(); });
   app.on('activate', () => { if (BrowserWindow.getAllWindows().length === 0) createWindow(); });
   app.on('window-all-closed', () => app.quit());
 }

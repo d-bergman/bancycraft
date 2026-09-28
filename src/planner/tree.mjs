@@ -4,7 +4,7 @@ import { buildShoppingList } from './engine.mjs';
 // Each material appears once; converging branches share its node instead of duplicating stock.
 export function buildCraftingTree(list, catalog, target, quantity) {
   if (!Number.isSafeInteger(quantity) || quantity < 1 || quantity > 999999) throw new Error('Choose a whole quantity from 1 to 999,999.');
-  const calculation = buildShoppingList({ ...list, targets: [{itemId: target.item?.id ?? '', name: target.name, quantity}], progress: {}, useSupplies: false }, catalog);
+  const calculation = buildShoppingList({ ...list, targets: [{...list.targets.find(t=>t.itemId===target.item?.id),itemId: target.item?.id ?? '', name: target.name, quantity}], progress: {}, owned: {}, useSupplies: false }, catalog);
   const rows = new Map(calculation.rows.map(row => [row.key, row]));
   const root = calculation.rows.find(row => row.isTarget);
   if (!root) throw new Error('This item is unavailable in the catalog.');

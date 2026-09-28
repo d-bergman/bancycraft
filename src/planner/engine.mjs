@@ -1,9 +1,13 @@
 export const normalize = value => value.trim().toLocaleLowerCase('en');
 export const itemKey = item => `i:${item.id}`;
+export function canonicalItems(catalog){
+ const ids=new Map(catalog.items.map(i=>[i.id,i]));return catalog.items.filter(i=>{if(catalog.game!=='valheim'||! /^(?:FW|SP)_/.test(i.id))return true;const original=ids.get(i.id.replace(/^(?:FW|SP)_/,''));return !original||original.name!==i.name;});
+}
 export function indexCatalog(catalog) {
   const byId = new Map(catalog.items.map(item => [item.id, item]));
   const byName = new Map();
-  for (const item of catalog.items) { const name = normalize(item.name); if (!byName.has(name)) byName.set(name, []); byName.get(name).push(item); }
+  for (const item of canonicalItems(catalog)) { const name = normalize(item.name); if (!byName.has(name)) byName.set(name, []); byName.get(name).push(item); }
+  if(catalog.game==='valheim')for(const item of catalog.items){const original=byId.get(item.id.replace(/^(?:FW|SP)_/,''));if(original&&original.name===item.name)byId.set(item.id,original);}
   const resolve = ingredient => ingredient.itemId ? byId.get(ingredient.itemId) : byName.get(normalize(ingredient.name))?.length === 1 ? byName.get(normalize(ingredient.name))[0] : undefined;
   const recipes = new Map();
   for (const recipe of catalog.recipes) for (const output of recipe.outputs) {
@@ -35,15 +39,31 @@ const checked = value => { if (!Number.isSafeInteger(value) || value < 0 || valu
 const sections = ['Vendors', 'Gathering', 'Other sources', 'Pre-crafts', 'Target items'];
 export { sections };
 
+export function canonicalList(list,catalog){
+  if(list.game==='valheim'){
+   const ids=new Map(catalog.items.map(i=>[i.id,i]));const canonicalId=id=>{const original=ids.get(id.replace(/^(?:FW|SP)_/,''));return original&&original.name===ids.get(id)?.name?original.id:id;};
+   const maps={};for(const field of ['progress','owned','recipes','assignments']){maps[field]={};for(const [key,value] of Object.entries(list[field]||{})){const k=key.startsWith('i:')?'i:'+canonicalId(key.slice(2)):key;maps[field][k]=['progress','owned'].includes(field)?checked((maps[field][k]||0)+value):maps[field][k]||value;}}
+   const targets=new Map();for(const target of list.targets){const id=canonicalId(target.itemId),old=targets.get(id);targets.set(id,{...target,itemId:id,quantity:checked((old?.quantity||0)+target.quantity)});}
+   list={...list,...maps,targets:[...targets.values()]};
+  }
+  return list;
+}
 // Build a dependency DAG, then combine demand before rounding recipe batches.
 // Completed outputs satisfy their own input branches. They never create inventory.
 export function buildShoppingList(list, catalog, supplies = []) {
+  list=canonicalList(list,catalog);
+  if(list.game==='valheim'&&list.targets.some(t=>t.toLevel!==undefined)){
+   const extra=[];const selected={...list.recipes};for(const target of list.targets){if(target.toLevel===undefined||list.recipes['i:'+target.itemId]==='gather')continue;const data=catalog.upgrades?.[target.itemId];if(!data||target.fromLevel<0||target.toLevel<=target.fromLevel||!data.levels.some(l=>l.level===target.toLevel))throw Error('Verified upgrade costs are unavailable for '+target.name+'.');const inputs=new Map();for(let level=target.fromLevel+1;level<=target.toLevel;level++){const recipe=data.levels.find(l=>l.level===level);if(!recipe)throw Error('Missing upgrade level '+level);for(const input of recipe.inputs){const key=input.itemId||input.name;const old=inputs.get(key);inputs.set(key,{...input,quantity:(old?.quantity||0)+input.quantity});}}
+    const id='upgrade:'+target.itemId+':'+target.fromLevel+':'+target.toLevel;extra.push({id,station:catalog.recipes.find(r=>r.outputs.some(o=>o.itemId===target.itemId))?.station||'Upgrade station (check source)',notes:target.fromLevel?'Upgrade your owned level '+target.fromLevel+' item to level '+target.toLevel:'Craft new through level '+target.toLevel,sourceUrl:data.sourceUrl,inputs:[...inputs.values()],outputs:[{itemId:target.itemId,name:target.name,quantity:1}]});selected['i:'+target.itemId]=id;
+   }catalog={...catalog,recipes:[...catalog.recipes,...extra]};list={...list,recipes:selected};
+  }
   const index = indexCatalog(catalog), nodes = new Map(), visiting = new Set(), warnings = new Set();
   function visit(item, fallback, depth = 0) {
     const key = item ? itemKey(item) : `n:${normalize(fallback)}`;
     if (nodes.has(key)) return nodes.get(key);
     if (nodes.size >= 2500 || depth > 32) throw new Error('Dependency limit reached. Split this project into smaller lists or choose direct acquisition for some items.');
-    const choices = index.recipes.get(key) ?? [];
+    let choices = index.recipes.get(key) ?? [];
+    if(list.recipes[key]?.startsWith('upgrade:'))choices=choices.filter(c=>c.recipe.id===list.recipes[key]);
     const selected = list.recipes[key];
     const chosen = selected === 'gather' ? undefined : choices.find(c => c.recipe.id === selected) ?? choices[0];
     const node = { key, item, name: item?.name ?? fallback, choices, recipe: chosen?.recipe, output: chosen?.output.quantity ?? 1, children: [], required: 0, inherited: 0, completed: 0, owned: 0, marked: 0, remaining: 0, isTarget: false, tier: 0 };
@@ -85,7 +105,7 @@ export function buildShoppingList(list, catalog, supplies = []) {
     const node = nodes.get(key);
     node.inherited = Math.min(node.required, node.inherited);
     const demand = node.required - node.inherited;
-    node.owned = Math.min(demand, inventory.get(key) ?? 0);
+    node.owned = Math.min(demand, checked((inventory.get(key) ?? 0) + (list.owned?.[key] ?? 0)));
     node.marked = Math.min(demand - node.owned, list.progress[key] ?? 0);
     node.completed = node.inherited + node.owned + node.marked;
     node.remaining = node.required - node.completed;

@@ -1,7 +1,9 @@
-# BancyCraft 0.6.1
+# BancyCraft 0.7.0
 
-Missing Valheim gearset recipes and processing chains are fixed: 562 recipes, all 20 catalog gearsets supported. Added 18 Enshrouded recipes and acquisition descriptions; audited all five games.
+Builds are here: save equipment, tags and play notes for every game, share with your website account, keep independent private copies and variants, and turn a build into a full shopping list. Shared builds show their owner, original creator and public website avatar.
 
-Settings now has a bug-report/suggestion modal addressed to bancywaypoint@gmail.com. Direct delivery is pending owner endpoint configuration; sending is disabled until configured.
+Shopping lists now open in dedicated workspaces, with owned-material deductions, station views, recipe comparisons, friend assignments and undo. Valheim gains sourced upgrade planning and verified internal duplicate filtering. A compact always-on-top checklist helps while gaming.
 
-35 unit tests and native UI checks cover gearset recipe chains, feedback validation, delivery acceptance/failure, and offline planning.
+The full Dragonwilds Production Ledger now matches the app. Settings embeds the published Google feedback form and adds full workspace backup restoration; lists and builds can be imported/exported separately.
+
+Your existing workspace remains in the same data folder. Use the existing in-app updater or BancyCraft-Installer.exe. Local tools remain free and work offline; sharing and feedback need internet access. Dune: Awakening remains planned.
