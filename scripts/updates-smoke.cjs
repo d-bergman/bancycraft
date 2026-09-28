@@ -53,4 +53,3 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
     throw error;
   } finally { await app.close(); }
 })().catch(error => { console.error(error.message); process.exitCode = 1; });
-

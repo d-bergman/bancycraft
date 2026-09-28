@@ -63,4 +63,3 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
   } catch(error) {await page.screenshot({path:path.join(root,'test-results/update-notification-failure.png')}).catch(()=>{});throw error;}
   finally {await app.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});
-
