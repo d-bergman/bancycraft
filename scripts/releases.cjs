@@ -55,6 +55,12 @@ async function publish(version) {
   const result = await github(`/repos/${repo}/releases/${release.id}`, { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ draft: false, make_latest: 'true' }) });
   console.log(`Published ${result.html_url}`);
 }
+async function discardDraft(version) {
+  const release = (await github(`/repos/${repo}/releases`)).find(r => r.tag_name === 'v' + version);
+  if (!release?.draft) throw new Error('Only an unpublished draft can be discarded.');
+  await github(`/repos/${repo}/releases/${release.id}`, { method: 'DELETE' });
+  console.log(`Discarded unpublished draft ${version}; published releases cannot be changed by this command.`);
+}
 (async () => {
   const [command, version] = process.argv.slice(2);
   if (command === 'keys') return keys();
@@ -63,6 +69,7 @@ async function publish(version) {
   if (!/^\d+\.\d+\.\d+$/.test(version || '')) throw new Error('A stable release version is required.');
   if (command === 'sign') return signRelease(version);
   if (command === 'draft') return draft(version);
+  if (command === 'discard-draft') return discardDraft(version);
   if (command === 'publish') return publish(version);
-  throw new Error('Use keys, status, make-public, sign, draft or publish.');
+  throw new Error('Use keys, status, make-public, sign, draft, discard-draft or publish.');
 })().catch(error => { console.error(error.message); process.exitCode = 1; });

@@ -50,7 +50,7 @@ npm.cmd ci
 npm.cmd start
 ```
 
-`npm.cmd start` builds and launches the native app. `npm.cmd run dev` opens a browser-preview server at http://127.0.0.1:5173; it uses separate browser storage and does not provide desktop folder/backup actions. Changes to native app source require restarting `npm.cmd start`. Installed copies change only when a new installer is installed.
+`npm.cmd start` builds and launches the native app. `npm.cmd run dev` opens a browser-preview server at http://127.0.0.1:5173; it uses separate browser storage and does not provide desktop folder/backup actions. Changes to native app source require restarting `npm.cmd start`. Installed copies receive new versions through Settings & updates.
 
 ```powershell
 npm.cmd test
@@ -67,7 +67,7 @@ Integration tests launch the real Electron app with an isolated profile under `t
 1. Make and verify the change.
 2. Update `CHANGELOG.md` and bump the version: `npm.cmd version patch --no-git-tag-version`.
 3. Build the installer with `npm.cmd run dist`.
-4. Test it and give the user the new versioned installer.
+4. Follow [UPDATES.md](docs/UPDATES.md) to sign, draft and publish the authorized release.
 5. Check real over-install data preservation before widening distribution.
 
 See `docs/ARCHITECTURE.md` for the boundaries and future connection flow. The original approved screen concept is in `docs/approved-concept.png`.
