@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.1 — 2026-09-28
+
+- Fixed missing Valheim recipes caused by differing prefab IDs and duplicate equipment names. All 20 catalog gearsets now have initial recipes, including Frost Foundry casts for Deep North equipment.
+- Added sourced processing conversions for Valheim metals, linen, grain, food, mead and Liquid Frost; fixed fuel is counted and time-dependent fuel is noted separately. Valheim now includes 562 recipes.
+- Audited all five games; added 18 Enshrouded recipes missing from Cargo and imported acquisition text for loot gear. Five Efflorescent Hope cosmetics still have no acquisition instructions in the source.
+- Added a Settings modal for bug reports and suggestions to bancywaypoint@gmail.com. Direct delivery awaits the owner’s configured endpoint; drafts remain available and the app does not claim unconfigured reports were sent.
+
+
 ## 0.6.0 — 2026-09-28
 
 - Add V Rising as a supported offline game, with sourced items, explicit recipes, equipment bundles and local item icons. Use standard base crafting costs and identify missing acquisition data.

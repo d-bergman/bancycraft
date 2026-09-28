@@ -52,7 +52,8 @@ function wikiItem(page, kind) {
   const name = page.title;
   const obtaining = kind === 'dragonwilds' ? text.slice(box.end).split(/\n==/)[0] : text.match(/==\s*Obtaining\s*==([\s\S]*?)(?=\n==|$)/i)?.[1] ?? '';
   // Only the wiki's explicit obtaining prose is imported; dynamic drop tables are not guessed.
-  const acquisition = plain(obtaining, name).slice(0, 1800);
+  const sourceSection = text.match(/==\s*Source\s*==([\s\S]*?)(?=\n==|$)/i)?.[1] ?? '';
+  const acquisition = plain(obtaining || sourceSection || f.source || '', name).slice(0, 1800);
   return { id: String(page.pageid), name, category: plain(f.item_type || f.type || (box.name === 'armor infobox' ? 'Armor' : 'Item')) || 'Item', description: plain(f.description, name), acquisition, sourceUrl: article(base, name, kind === 'dragonwilds' ? '/w/' : '/wiki/'), revision: revision.revid, updatedAt: revision.timestamp };
 }
 async function write(game, data) {
@@ -113,15 +114,18 @@ async function valheim() {
   const r$ = load(await request(base + 'recipe-list.html'));
   r$('tbody tr').each((_, tr) => {
     const cells = r$(tr).find('td'); const id = cells.eq(0).text().trim();
-    const item = byId.get(id.replace(/^Recipe_/, '')); const amount = quantity(cells.eq(3).text().trim());
+    const name = cells.eq(2).text().trim();
+    const candidates = items.filter(i => i.name.toLowerCase() === name.toLowerCase() && !/^(?:FW|SP)_/.test(i.id));
+    const item = byId.get(id.replace(/^Recipe_/, '')) || (candidates.length === 1 ? candidates[0] : null); const amount = quantity(cells.eq(3).text().trim());
     if (!item || !amount || cells.eq(2).text().trim() !== item.name) return;
     const lists = cells.eq(4).find('ul'); const inputs = [];
     lists.first().find('li').each((_, li) => { const match = r$(li).text().trim().match(/^(\d+) (.+)$/); inputs.push(match ? { quantity: Number(match[1]), name: match[2] } : null); });
     if (!inputs.length || inputs.some(i => !i || !i.quantity)) return;
+    for (const input of inputs) { const matches = items.filter(i => i.name.toLowerCase() === input.name.toLowerCase() && !/^(?:FW|SP)_/.test(i.id)); if (matches.length === 1) { input.itemId = matches[0].id; input.name = matches[0].name; } }
     recipes.push({ id, station: '', notes: lists.length > 1 ? 'Initial craft (level 1). Upgrade costs are not included.' : '', inputs, outputs: [{ name: item.name, itemId: item.id, quantity: amount }], sourceUrl: base + 'recipe-list.html' });
   });
   const version = ($.text().match(/generated from (Valheim [\d.]+)/)?.[1] || '');
-  await write('valheim', { source: { name: 'Jötunn generated Valheim data', url: base + 'item-list.html', license: 'Jötunn documentation / MIT project; game text belongs to its respective owners', licenseUrl: 'https://github.com/Valheim-Modding/Jotunn/blob/master/LICENSE', version }, coverage: 'Localized inventory entries with icons in Jötunn. Initial recipes with matching prefab IDs; crafting stations, processing conversions, upgrade costs and acquisition sources are not provided by these tables.', items, recipes });
+  await write('valheim', { source: { name: 'Jötunn generated Valheim data', url: base + 'item-list.html', license: 'Jötunn documentation / MIT project; game text belongs to its respective owners', licenseUrl: 'https://github.com/Valheim-Modding/Jotunn/blob/master/LICENSE', version }, coverage: 'Localized inventory entries with icons in Jötunn. Initial recipes matched by prefab ID or unique localized name. Processing coverage is added by the supplemental importer; upgrade costs are not included.', items, recipes });
 }
 (async () => {
   await fs.mkdir(cache, { recursive: true }); await fs.mkdir(output, { recursive: true });

@@ -2,6 +2,7 @@ import type { Bridge, Workspace } from './types';
 const initial = (): Workspace => ({ schemaVersion: 2, game: 'dragonwilds', plans: [], supplies: [], lists: [] });
 // Browser preview uses its own storage. Installed builds always use the protected Electron bridge.
 export const api: Bridge = window.bancy ?? {
+  feedbackStatus:async()=>({configured:false,recipient:'bancywaypoint@gmail.com'}),sendFeedback:async()=>{throw Error('Sending requires the installed app and a configured delivery endpoint.');},
   accountConnect:async()=>{throw Error('Website sharing requires the installed Windows app.');},accountDisconnect:async()=>({state:'signed-out',message:'Disconnected.'}),
   sharedStatus:async()=>({account:{state:'signed-out',message:'Install the Windows app to connect your account.'},lists:[],active:null,online:false,message:''}),
   sharedWatch:async()=>{},sharedCreate:async()=>{throw Error('Install the app to share lists.');},sharedChange:async()=>{throw Error('Install the app to share lists.');},

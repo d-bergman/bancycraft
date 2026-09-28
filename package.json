@@ -1,9 +1,9 @@
 {
   "name": "bancycraft",
   "productName": "BancyCraft",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "private": true,
-  "description": "BancyCraft \u00e2\u20ac\u201d your local crafting workspace",
+  "description": "BancyCraft â€” your local crafting workspace",
   "author": "Bancy",
   "license": "UNLICENSED",
   "main": "electron/main.cjs",

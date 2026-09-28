@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://corpus.gg/games/valheim/building/frost-foundry",
+    "fetchedAt": "2026-09-28T19:48:09.595Z",
+    "sha256": "fa05961164782fa261e18152383dd9c7f44aa15a25095e8ac61ae48dfd2cacc3",
+    "recipes": 29
+  },
+  {
+    "url": "https://corpus.gg/games/valheim/building/blast-furnace",
+    "fetchedAt": "2026-09-28T19:48:10.642Z",
+    "sha256": "c433f8d5ffa6d6cb404780a2e95cdc71d194478c262870fac38496271d80052d",
+    "recipes": 3
+  },
+  {
+    "url": "https://corpus.gg/games/valheim/building/smelter",
+    "fetchedAt": "2026-09-28T19:48:11.165Z",
+    "sha256": "e272b8f027cbbf9ec01cddb610ce8c6e270615a3ee76db748cd676f1045c643d",
+    "recipes": 7
+  },
+  {
+    "url": "https://corpus.gg/games/valheim/building/spinning-wheel",
+    "fetchedAt": "2026-09-28T19:48:11.717Z",
+    "sha256": "b40afcd23ba356815d9b4faa4d4e13a5a8880491e8eb384472ab6fb74756c7a4",
+    "recipes": 1
+  },
+  {
+    "url": "https://corpus.gg/games/valheim/building/windmill",
+    "fetchedAt": "2026-09-28T19:48:12.232Z",
+    "sha256": "59b1ab66c2aa5dd05eceb34261180a8f9db15262100204481bd11658b14e5605",
+    "recipes": 3
+  },
+  {
+    "url": "https://corpus.gg/games/valheim/building/eitr-refinery",
+    "fetchedAt": "2026-09-28T19:48:12.757Z",
+    "sha256": "915c662c82a6af3021983a2b82ef3bb0a38fd77519a658264dd3e5221e4c8299",
+    "recipes": 1
+  },
+  {
+    "url": "https://corpus.gg/games/valheim/building/charcoal-kiln",
+    "fetchedAt": "2026-09-28T19:48:13.232Z",
+    "sha256": "5849cb2a2eff47945a99ba707ef76631254dbb47fe89367484bb998b27332214",
+    "recipes": 3
+  },
+  {
+    "url": "https://corpus.gg/games/valheim/building/frigid-kiln",
+    "fetchedAt": "2026-09-28T19:48:13.702Z",
+    "sha256": "bed88aae9cb8477be978a51676196f6644fd8bc060fbcec5b064d5dd0ac0aa3c",
+    "recipes": 1
+  },
+  {
+    "url": "https://corpus.gg/games/valheim/building/fermenter",
+    "fetchedAt": "2026-09-28T19:48:14.222Z",
+    "sha256": "44fbbf556acd8e7a8f98ab4bb48cf12d29a2fd40989ffec66aeb33b2db3505b5",
+    "recipes": 20
+  },
+  {
+    "url": "https://corpus.gg/games/valheim/building/stone-oven",
+    "fetchedAt": "2026-09-28T19:48:14.966Z",
+    "sha256": "f298cbddd17879953000d4a9921404f0c8cde9739fb5b21bc2c9a0c67270b1e0",
+    "recipes": 14
+  },
+  {
+    "url": "https://corpus.gg/games/valheim/building/cooking-station",
+    "fetchedAt": "2026-09-28T19:48:15.482Z",
+    "sha256": "a3fe61f91719403f2c377f0b2c6cf8666d8007981661bca35f8260cceacd5185",
+    "recipes": 8
+  },
+  {
+    "url": "https://corpus.gg/games/valheim/building/iron-cooking-station",
+    "fetchedAt": "2026-09-28T19:48:15.950Z",
+    "sha256": "16eec940bdc3683cfd91ee355cf636d64779ce830c479623efc44168047de88b",
+    "recipes": 15
+  }
+]

@@ -7,6 +7,7 @@ const { sourceUrl } = require('./source-links.cjs');
 const { configureUpdater, startAutomaticChecks } = require('./updates.cjs');
 const { createAccess } = require('./access.cjs');
 const { createAccount } = require('./account.cjs');
+const { createFeedback } = require('./feedback.cjs');
 const { createShared } = require('./shared.cjs');
 const { createCommunity } = require('./community.cjs');
 app.setName('BancyCraft');
@@ -69,6 +70,9 @@ else {
     handle('shared:removeMember',(id,uid)=>collaboration.removeMember(id,uid)); handle('shared:remove',id=>collaboration.remove(id));
     app.once('will-quit',()=>{collaboration.close();account.close();});
     const timer=setInterval(()=>{if(!access.status().unlocked)community.close();},15000);timer.unref();
+    const feedback = createFeedback(app.getVersion());
+    handle('feedback:status', () => feedback.status());
+    handle('feedback:send', value => feedback.send(value));
     handle('app:info', () => ({ version: app.getVersion(), dataPath: app.getPath('userData'), packaged: app.isPackaged, update, access:access.status() }));
     handle('community:unlock', key=>access.unlock(key));
     handle('community:lock', async()=>{const result=access.lock();await community.lock();return result;});

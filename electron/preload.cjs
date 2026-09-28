@@ -6,6 +6,7 @@ contextBridge.exposeInMainWorld('bancy', Object.freeze({
   sharedSearch: text => ipcRenderer.invoke('shared:search',text), sharedAdd: (id,uid) => ipcRenderer.invoke('shared:add',id,uid),
   sharedRemoveMember: (id,uid) => ipcRenderer.invoke('shared:removeMember',id,uid), sharedRemove: id => ipcRenderer.invoke('shared:remove',id),
   onShared: callback => { const listener = (_event,data) => callback(data); ipcRenderer.on('shared:status',listener);return () => ipcRenderer.removeListener('shared:status',listener); },
+  feedbackStatus: () => ipcRenderer.invoke('feedback:status'), sendFeedback: value => ipcRenderer.invoke('feedback:send',value),
   info: () => ipcRenderer.invoke('app:info'),
   unlockCommunity: key => ipcRenderer.invoke('community:unlock', key),
   lockCommunity: () => ipcRenderer.invoke('community:lock'),

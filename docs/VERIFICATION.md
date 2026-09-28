@@ -102,3 +102,7 @@ Live delivery verified after publication: the website landing page, clean-URL co
 - Packaged two-user UI checks passed with a shared pre-craft tree and unchanged shared progress, live completions/reset, author names, target changes and deletion.
 - V Rising shared-list rules passed emulator and production checks with two temporary authenticated users, an outsider, stale-edit conflicts and owner-only membership/deletion. Temporary production QA records/accounts were cleaned up. Only the allowed game enum changed in the website rules.
 - Final source import: 530 inventory entries, 315 own-page crafting recipes, 25 source-defined sets and 502 local icons. Removed infobox categories/pages are excluded. Every recipe reference resolves; all required icon files exist. Room/floor/server cost modifiers remain explicitly unapplied.
+
+## 0.6.1
+
+35 unit tests pass, including all Valheim gearset recipes and the Protector → cast → Bloodgold → Petrified Tissue chain, five-game set coverage with documented loot/unknown sources, and feedback validation/configuration/service acceptance/failure. Packaged Settings modal verifies both report types, draft retention, disabled sending before configuration and Escape/focus behavior. Feedback tests never send email. Direct delivery awaits an owner-supplied Formspree endpoint and inbox confirmation.

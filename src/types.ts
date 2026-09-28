@@ -12,6 +12,7 @@ export type Account = { state:string; message:string; user?:Member & {email:stri
 export type SharedList = ShoppingList & { ownerUid:string; members:Member[]; activity:Record<string,{byUid:string;at:number;amount:number}> };
 export type SharedState = {account:Account;lists:{id:string;name:string;game:Game;ownerUid:string;members:number}[];active:SharedList|null;online:boolean;message:string};
 export interface Bridge {
+  feedbackStatus():Promise<{configured:boolean;recipient:string}>; sendFeedback(value:{kind:string;subject:string;message:string;email:string;game:string}):Promise<{accepted:boolean}>;
   accountConnect():Promise<Account>;accountDisconnect():Promise<Account>;sharedStatus():Promise<SharedState>;
   sharedWatch(id:string|null):Promise<void>;sharedCreate(id:string):Promise<string>;sharedChange(id:string,base:ShoppingList,next:ShoppingList):Promise<unknown>;
   sharedSearch(text:string):Promise<Member[]>;sharedAdd(id:string,uid:string):Promise<void>;sharedRemoveMember(id:string,uid:string):Promise<void>;sharedRemove(id:string):Promise<void>;
