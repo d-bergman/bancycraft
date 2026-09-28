@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.0 — 2026-09-28
+
+- Add Grounded 2: 1,088 sourced items, 878 explicit recipes, 29 armor sets and 1,078 icons. Retain station variants and mark missing acquisition data.
+- Mark V Rising and Dune: Awakening as Planned.
+- Connect the existing website account with consent, an encrypted handoff, verified Firebase identity and Windows-encrypted storage.
+- Share private list copies with friends using website accounts only. Stream progress and editor names; preserve independent concurrent edits and reject same-row conflicts. Only owners manage members or deletion.
+- Check for updates immediately after opening, then every six hours. Use BancyCraft-Installer.exe and a legacy signature alias for existing clients.
+- Add website download links in Projects, navbar and Nexus. Keep bank and Blackbox behind cipher keys and website permissions.
+
 ## 0.4.1 — 2026-09-28
 
 - Automatically check for stable releases ten seconds after startup and every six hours while the installed app is open, unless an update is already pending or downloading.

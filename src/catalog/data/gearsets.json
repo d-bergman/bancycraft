@@ -1878,5 +1878,326 @@
       "revision": 44557,
       "missing": []
     }
+  ],
+  "grounded2": [
+    {
+      "name": "Red Ant Armor",
+      "ids": [
+        "g2-9293a26853c822cf7471",
+        "g2-6dc527a21afbe6c3df98",
+        "g2-3071433174a9861cd691"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Red_Ant_Armor"
+    },
+    {
+      "name": "Acorn Armor",
+      "ids": [
+        "g2-30368ece893e95266947",
+        "g2-419992578160c72a5fef",
+        "g2-f703478730ed38767526"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Acorn_Armor"
+    },
+    {
+      "name": "Grub Armor",
+      "ids": [
+        "g2-f8a82ce9ab7cb5ac924b",
+        "g2-0ad0fb9adb57d732d015",
+        "g2-202f92f963ac0f3d2b1e"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Grub_Armor"
+    },
+    {
+      "name": "Ladybug Armor",
+      "ids": [
+        "g2-f8867610820a5df907af",
+        "g2-5b739d57e82c75b4b520",
+        "g2-54f2111331744e50e71a"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Ladybug_Armor"
+    },
+    {
+      "name": "Bee Armor",
+      "ids": [
+        "g2-93c475df72d344f124c8",
+        "g2-f1e6ff321f029b96a7f3",
+        "g2-dd7c2d83799374592600"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Bee_Armor"
+    },
+    {
+      "name": "Weaver Armor",
+      "ids": [
+        "g2-dffd188f3d224dae9d12",
+        "g2-ce04e050ae6abbf8d708",
+        "g2-a853970eba1a18d0d002"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Weaver_Armor"
+    },
+    {
+      "name": "Clover Armor",
+      "ids": [
+        "g2-2ec62fa257e9b2df2ced",
+        "g2-f2e2ba34834b3f5060ed",
+        "g2-e3db44a8b37428e16a04"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Clover_Armor"
+    },
+    {
+      "name": "Wolf Armor",
+      "ids": [
+        "g2-1c5975a14c5bfce05825",
+        "g2-18bb41f1de97912f00a7",
+        "g2-01554d50ecb52341edd3"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Wolf_Armor"
+    },
+    {
+      "name": "Sizzling Armor",
+      "ids": [
+        "g2-b859d64e12d9130aef69",
+        "g2-8daa966f065b8aa82119",
+        "g2-3c680c0f3d01f538be62"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Sizzling_Armor"
+    },
+    {
+      "name": "Northern Armor",
+      "ids": [
+        "g2-61e4f88d69a931ca295d",
+        "g2-9f1e4c4dfab563d301f2",
+        "g2-cb44242b3b922002236e"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Northern_Armor"
+    },
+    {
+      "name": "Butterfly Armor",
+      "ids": [
+        "g2-0a9d98c6c9225e69b1d9",
+        "g2-1adf4800b34c47b26ba5",
+        "g2-9baf6b240d958ab7e321"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Butterfly_Armor"
+    },
+    {
+      "name": "Roach Armor",
+      "ids": [
+        "g2-e321ee76833ec7d86b0d",
+        "g2-8bd5b4994596b3db3efc",
+        "g2-4664a6c5438b4ae8acc0"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Roach_Armor"
+    },
+    {
+      "name": "Snail Shell Armor",
+      "ids": [
+        "g2-3cb855257b88edb2347b",
+        "g2-c6a17cf2d21f0f31cf38",
+        "g2-95043efaf63362d8da1b"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Snail_Shell_Armor"
+    },
+    {
+      "name": "Nightstalker Armor",
+      "ids": [
+        "g2-ebb7240ad747113f91c9",
+        "g2-88a18ee18e1b1346c77b",
+        "g2-44ca1f88d69084444b2d"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Nightstalker_Armor"
+    },
+    {
+      "name": "Praying Mantis Armor",
+      "ids": [
+        "g2-79a5bb9a869237d8f990",
+        "g2-4b8774efba1f0cd64d36",
+        "g2-0369c6333e4de0640bbd"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Praying_Mantis_Armor"
+    },
+    {
+      "name": "Fuzzy Armor",
+      "ids": [
+        "g2-15da16f949b1164ffb28",
+        "g2-938a9e521039747528b8",
+        "g2-d84e26a0a5d286885456"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Fuzzy_Armor"
+    },
+    {
+      "name": "Cricket Armor",
+      "ids": [
+        "g2-8e0758e5178ab57ac515",
+        "g2-8541b645ee4d56418745",
+        "g2-0a1517bd861c621d18b8"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Cricket_Armor"
+    },
+    {
+      "name": "Earwig Armor",
+      "ids": [
+        "g2-2537c8fdf88423833c11",
+        "g2-74e0e5c45412463977f7",
+        "g2-9e5c46a95eda001e7a8b"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Earwig_Armor"
+    },
+    {
+      "name": "Potato Beetle Armor",
+      "ids": [
+        "g2-6d28796b05babb558614",
+        "g2-b73ef5b8a378ebba64bf",
+        "g2-174c58da5bfbb98346d2"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Potato_Beetle_Armor"
+    },
+    {
+      "name": "Rusty Armor",
+      "ids": [
+        "g2-e57430725081ab3a292f",
+        "g2-60ac4e1632dd2ac03492",
+        "g2-ad85f57126125ff630b2"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Rusty_Armor"
+    },
+    {
+      "name": "Serpent Armor",
+      "ids": [
+        "g2-eaadb3581d1ec9152cd1",
+        "g2-4792a890e4a7ad2ea5c2",
+        "g2-84712a6a3b96e7add012"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Serpent_Armor"
+    },
+    {
+      "name": "Wasp Armor",
+      "ids": [
+        "g2-7200e73efd1434dc47ee",
+        "g2-a72dd6b96e8bb2398577",
+        "g2-3daddad7d4bfcf90d038"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Wasp_Armor"
+    },
+    {
+      "name": "Black Ant Armor",
+      "ids": [
+        "g2-67eb8ba8f72b04dd6023",
+        "g2-fc36c617816696bc5663",
+        "g2-d07fa8b37d1b9567b7c2"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Black_Ant_Armor"
+    },
+    {
+      "name": "Wyrm Slayer Armor",
+      "ids": [
+        "g2-26a3f18cd60126e178a5",
+        "g2-88cb85c4adc2055c312c",
+        "g2-b57ee47571b98cec5933"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Wyrm_Slayer_Armor"
+    },
+    {
+      "name": "Toe Biter Armor",
+      "ids": [
+        "g2-84ee873502bd6fc02bb0",
+        "g2-8585ecc5b363f17bdc16",
+        "g2-4a5e02675f04712889b4"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Toe_Biter_Armor"
+    },
+    {
+      "name": "Striped Armor",
+      "ids": [
+        "g2-614ccbb5aaae43867796",
+        "g2-06222ebd9623ba64832d",
+        "g2-3072e8370d2ff0e565f0"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Striped_Armor"
+    },
+    {
+      "name": "Shell Shocker Armor",
+      "ids": [
+        "g2-d87307647bc468a0f70d",
+        "g2-0f96f5d739b0da2ec46e",
+        "g2-e150713ebc1a62691c4d"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Shell_Shocker_Armor"
+    },
+    {
+      "name": "Koi Scale Armor",
+      "ids": [
+        "g2-d8d723df1542223892d5",
+        "g2-331de516b49a1edcf779",
+        "g2-51a6852e0b993616faec"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Koi_Scale_Armor"
+    },
+    {
+      "name": "Diving Armor",
+      "ids": [
+        "g2-0dc7a2ac9e850e4f6958",
+        "g2-cd8ea3a8de472ec5959f",
+        "g2-3ec770bfb0093d2aa560"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://grounded.wiki.gg/wiki/Diving_Armor"
+    }
   ]
 }

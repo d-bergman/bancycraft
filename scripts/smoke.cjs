@@ -58,6 +58,15 @@ async function launch() {
     await run.page.getByRole('button', { name: 'View Linen', exact: true }).click();
     assert.match(await run.page.getByLabel('Item details', { exact: true }).innerText(), /Spinning Machine/);
     await run.page.getByRole('button', { name: 'Close Linen', exact: true }).click();
+    await run.page.getByLabel('Active game', { exact: true }).selectOption('grounded2');
+    await run.page.getByLabel('Search items', { exact: true }).fill('Crude Rope');
+    await run.page.getByRole('button', { name: 'View Crude Rope', exact: true }).click();
+    assert.match(await run.page.getByLabel('Item details', { exact: true }).innerText(), /Spinning Wheel/);
+    assert.match(await run.page.getByLabel('Item details', { exact: true }).innerText(), /Plant Fiber/);
+    await run.page.getByRole('button', { name: 'Close Crude Rope', exact: true }).click();
+    await run.page.screenshot({path:path.join(root,'test-results','grounded2-catalog.png')});
+    await run.page.getByLabel('Active game', { exact: true }).selectOption('enshrouded');
+    await run.page.getByLabel('Search items', { exact: true }).fill('Linen');
     assert.equal((await run.page.evaluate(() => window.bancy.load())).game, 'enshrouded');
     await run.page.screenshot({ path: path.join(root, 'test-results', 'catalog-desktop.png') });
     await run.application.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows()[0].setSize(1050, 740));
@@ -115,7 +124,7 @@ async function launch() {
     assert.ok(helpBounds && helpBounds.y + helpBounds.height <= (await run.page.evaluate(() => window.innerHeight)), 'Help remains visible at the minimum window size');
     await run.page.screenshot({ path: path.join(root, 'test-results', 'home-compact.png') });
     assert.deepEqual(errors, []);
-    console.log(JSON.stringify({ result: 'PASS', version: details.app.version, packaged: details.app.packaged, profile, checks: ['three offline catalogs and game-scoped search', 'recipe alternatives and station filters', 'source link rejection', 'native startup', 'renderer isolation', 'plan create/edit/delete', 'supply save', 'persistence after restart', 'update settings', 'connection placeholder', 'desktop and compact layouts'] }, null, 2));
+    console.log(JSON.stringify({ result: 'PASS', version: details.app.version, packaged: details.app.packaged, profile, checks: ['four offline catalogs and game-scoped search', 'recipe alternatives and station filters', 'source link rejection', 'native startup', 'renderer isolation', 'plan create/edit/delete', 'supply save', 'persistence after restart', 'update settings', 'connection placeholder', 'desktop and compact layouts'] }, null, 2));
   } catch (error) {
     await run.page.screenshot({ path: path.join(root, 'test-results', 'failure.png') }).catch(() => {});
     console.error(await run.page.locator('body').innerText().catch(() => 'No renderer text'));

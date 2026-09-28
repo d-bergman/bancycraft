@@ -19,3 +19,7 @@ The public source APIs supply item icon URLs. scripts/catalog/icons.cjs reads th
 ## Production ledger copy in 0.4.0
 
 The existing owned Bancy website's `assets/img/hero/banri-hero-02.webp` is copied into the local ledger. Its existing ledger CSS/HTML/calculation code and guide are reused by authorization; LEDGER-SOURCE.json records the originating commit and files. Lucide icons are rendered from the existing MIT-licensed lucide-react dependency into inline SVGs in the isolated local page. The ledger has no remote font, icon, CSS or image dependency.
+
+## Grounded 2 icons in 0.5.0
+
+1,078 local 64px WebP icons come from Grounded Wiki image metadata. Ten items lack usable source images and use a neutral fallback. Game assets retain rights-holder copyrights; contributor adaptations retain the source catalog licensing documented in CATALOGS.md. Normal runtime makes no icon requests.

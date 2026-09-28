@@ -1,5 +1,11 @@
 const { contextBridge, ipcRenderer } = require('electron');
 contextBridge.exposeInMainWorld('bancy', Object.freeze({
+  accountConnect: () => ipcRenderer.invoke('account:connect'), accountDisconnect: () => ipcRenderer.invoke('account:disconnect'),
+  sharedStatus: () => ipcRenderer.invoke('shared:status'), sharedWatch: id => ipcRenderer.invoke('shared:watch',id),
+  sharedCreate: id => ipcRenderer.invoke('shared:create',id), sharedChange: (id,base,next) => ipcRenderer.invoke('shared:change',id,base,next),
+  sharedSearch: text => ipcRenderer.invoke('shared:search',text), sharedAdd: (id,uid) => ipcRenderer.invoke('shared:add',id,uid),
+  sharedRemoveMember: (id,uid) => ipcRenderer.invoke('shared:removeMember',id,uid), sharedRemove: id => ipcRenderer.invoke('shared:remove',id),
+  onShared: callback => { const listener = (_event,data) => callback(data); ipcRenderer.on('shared:status',listener);return () => ipcRenderer.removeListener('shared:status',listener); },
   info: () => ipcRenderer.invoke('app:info'),
   unlockCommunity: key => ipcRenderer.invoke('community:unlock', key),
   lockCommunity: () => ipcRenderer.invoke('community:lock'),

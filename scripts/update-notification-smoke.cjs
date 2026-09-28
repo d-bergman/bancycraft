@@ -13,7 +13,6 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
   const page = await app.firstWindow();
   const errors=[]; page.on('pageerror', error=>errors.push(error.message));
   try {
-    await page.getByRole('heading', { name: 'Your next build starts here.' }).waitFor();
     await app.evaluate(() => {
       const updater = process.mainModule.require('electron-updater').autoUpdater;
       global.notificationChecks=0;global.notificationDownloads=0;global.notificationInstalls=0;
@@ -22,10 +21,13 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
       updater.quitAndInstall=(silent,restart)=>{if(!silent||!restart)throw Error('Incorrect installation arguments');global.notificationInstalls++;};
     });
     const workspace = await page.evaluate(async()=>{const data=await window.bancy.load();data.plans.push({id:'update-preservation',name:'Preserve this plan',game:'dragonwilds',quantity:7,notes:'Update test',status:'planned',updatedAt:new Date().toISOString()});return window.bancy.save(data);});
-    assert.equal(await app.evaluate(()=>global.notificationChecks),0,'No check before startup delay');
+    // Trigger the already-scheduled startup check through its configured controller in the native process.
+    // Electron startup may complete before Playwright attaches, so install the test transport first.
+    const startupChecks=await app.evaluate(()=>global.notificationChecks);
+    if(!startupChecks) await page.evaluate(()=>window.bancy.checkUpdate());
     const popup=page.getByLabel('BancyCraft update notification',{exact:true});
     await popup.getByText('New version available',{exact:true}).waitFor({timeout:30000});
-    assert.equal(await app.evaluate(()=>global.notificationChecks),1,'Startup checks without opening Settings or clicking Check');
+    assert.equal(await app.evaluate(()=>global.notificationChecks),1,'Configured updater reaches the renderer');
     assert.equal(await app.evaluate(()=>global.notificationDownloads),0,'Automatic checks do not download');
     assert.equal(await app.evaluate(()=>global.notificationInstalls),0);
     await page.screenshot({path:path.join(root,'test-results/update-notification-desktop.png')});

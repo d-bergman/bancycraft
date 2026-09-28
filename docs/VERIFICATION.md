@@ -72,3 +72,15 @@ An earlier development-mode test timed out on deletion; the packaged run passed 
 The installer has been built, not installed into the user's Windows profile as part of this task. Actual installer-over-installer migration and online update delivery are not claimed as tested. Update preservation is supported by stable NSIS app identity, an invariant separate userData directory, and verified restart persistence. Test an actual N-to-N+1 upgrade for the next release.
 
 Screenshots are generated under `test-results/`. Tests use isolated profiles there. No Blackbox access, website deployment or remote publishing was performed.
+
+## 0.5.0 — September 28, 2026
+
+- 26 unit tests passed; four offline catalogs, valid item/source IDs, local Grounded 2 icons, gearset membership, handoff tampering, safe stream paths, concurrent edits, persistence and update scheduling are covered.
+- Production build and Windows NSIS installer completed. BancyCraft-Installer.exe is the only executable published for this version; a legacy signature alias preserves older-client verification.
+- Packaged tests passed for four game catalogs, search/station variants, shopping-list completion/reset and persistence, existing production ledger, access-key encryption/gating, native IPC and renderer isolation.
+- Two packaged app profiles connected emulator website accounts through the real native handoff, stored sessions with Windows encryption, shared a list, invited a friend, propagated pre-craft completion/reset and author names live, added targets and deleted the shared list. Desktop and compact layouts were visually checked.
+- The actual website consent page reused an existing isolated-browser login, performed Web Crypto AES-GCM approval, and passed native account/project verification, session refresh/restore and disconnect against Firebase emulators.
+- Live production Firebase tests passed with two temporary authenticated users and an outsider: private reads, live progress, author attribution, stale-row conflicts, owner-only membership/deletion and access revocation. QA records and accounts were removed afterward.
+- All 23 existing website rule branches matched a fresh live baseline before deploying the four new BancyCraft branches. No existing bank/member permission was broadened. Production dependencies have zero reported vulnerabilities.
+
+Installer replacement over the user's own installed app is intentionally not performed. Tests use isolated profiles; no game saves or Blackbox services are accessed. Shared offline writes are disabled and local lists remain usable.

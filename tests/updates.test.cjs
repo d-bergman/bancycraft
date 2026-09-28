@@ -30,7 +30,7 @@ test('automatic schedule checks after startup and every six hours, then cancels 
   const jobs=[];const canceled=[];let checks=0;
   const timers={setTimeout(fn,ms){jobs.push({fn,ms,type:'timeout'});return 1;},setInterval(fn,ms){jobs.push({fn,ms,type:'interval'});return 2;},clearTimeout(id){canceled.push(id);},clearInterval(id){canceled.push(id);}};
   const stop=startAutomaticChecks({async check(options){assert.equal(options.background,true);checks++;}},timers);
-  assert.equal(checks,0);assert.deepEqual(jobs.map(j=>[j.type,j.ms]),[['timeout',10000],['interval',21600000]]);
+  assert.equal(checks,0);assert.deepEqual(jobs.map(j=>[j.type,j.ms]),[['timeout',0],['interval',21600000]]);
   await jobs[0].fn();await jobs[1].fn();assert.equal(checks,2);stop();assert.deepEqual(canceled,[1,2]);
   const rejecting=[];startAutomaticChecks({check(){throw Error('offline');}},{...timers,setTimeout(fn){rejecting.push(fn);return 3;},setInterval(fn){rejecting.push(fn);return 4;}});
   await rejecting[0]();await rejecting[1]();

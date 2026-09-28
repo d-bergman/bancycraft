@@ -10,7 +10,7 @@ const filename = text => text.replace(/^File:/i, '').replace(/\{\{(?:SUB)?PAGENA
 async function fetchJson(url) { const response = await fetch(url, { headers: { 'User-Agent': ua }, signal: AbortSignal.timeout(60000) }); if (!response.ok) throw new Error(`${response.status} ${url}`); const data = await response.json(); if (data.error) throw new Error(data.error.info); return data; }
 (async () => {
   await fs.mkdir(output, { recursive: true });
-  const images = { dragonwilds: {}, enshrouded: {}, valheim: {} };
+  const previous=JSON.parse(await fs.readFile(path.join(root,'src/catalog/data/icons.json'),'utf8')); const images = { dragonwilds: {}, enshrouded: {}, valheim: {}, grounded2:previous.grounded2||{} };
   const cachedPages = { dragonwilds: new Map(), enshrouded: new Map() };
   for (const file of await fs.readdir(path.join(root, '.catalog-cache'))) {
     const record = JSON.parse(await fs.readFile(path.join(root, '.catalog-cache', file), 'utf8'));

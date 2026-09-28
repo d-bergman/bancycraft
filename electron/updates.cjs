@@ -10,7 +10,7 @@ function configureUpdater(updater, status) {
   let version, available = false, ready = false, working = false;
   updater.verifyUpdateCodeSignature = async (_publishers, file) => {
     if (!version || !/^\d+\.\d+\.\d+$/.test(version)) return 'Invalid release version.';
-    const response = await fetch(`https://github.com/${repository}/releases/download/v${version}/BancyCraft-Setup-${version}-x64.exe.sig`, { signal: AbortSignal.timeout(30000) });
+    const response = await fetch(`https://github.com/${repository}/releases/download/v${version}/BancyCraft-Installer.exe.sig`, { signal: AbortSignal.timeout(30000) });
     if (!response.ok) return 'Release signature unavailable.';
     const signature = await response.text();
     return await verifyInstaller(file, signature, publicKey) ? null : 'Release signature does not match the BancyCraft update key.';
@@ -31,7 +31,7 @@ function configureUpdater(updater, status) {
 function startAutomaticChecks(updater, timers = globalThis) {
   // Leave startup responsive; recurring checks never download or restart the app.
   const check = () => Promise.resolve().then(() => updater.check({ background: true })).catch(() => {});
-  const startup = timers.setTimeout(check, 10000);
+  const startup = timers.setTimeout(check, 0);
   const recurring = timers.setInterval(check, 6 * 60 * 60 * 1000);
   startup.unref?.(); recurring.unref?.();
   return () => { timers.clearTimeout(startup); timers.clearInterval(recurring); };

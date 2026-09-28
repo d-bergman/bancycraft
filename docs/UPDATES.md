@@ -28,3 +28,7 @@ Version 0.2.0 and earlier have no connected feed and cannot discover this update
 Development/browser previews do not install updates. Real online check/download testing uses an isolated profile and an older updater version to exercise a newly published release. That test does not silently overwrite the user's existing installed application.
 
 Run `node scripts/update-notification-smoke.cjs release/win-unpacked/BancyCraft.exe` for controlled packaged startup, popup, progress, dismissal, install IPC and backup checks. Run `node scripts/updates-smoke.cjs release/win-unpacked/BancyCraft.exe` after publishing the current release to exercise the public check, corner download, signature and ready state. The test reads the current package version and simulates 0.4.0 for this release. Adapt the simulated version for subsequent releases. An unpublished draft can be discarded with `node scripts/releases.cjs discard-draft <version>` if a rebuilt installer is necessary; this command refuses to modify published releases.
+
+## Stable installer in 0.5.0
+
+The installer and manifest now use BancyCraft-Installer.exe. New clients verify BancyCraft-Installer.exe.sig. Signing also publishes the identical signature as BancyCraft-Setup-VERSION-x64.exe.sig, allowing installed 0.3/0.4 clients to verify the renamed installer. Only one executable is published. Checks start immediately after the renderer opens and recur every six hours; download and installation remain explicit. Website links use the GitHub latest/download/BancyCraft-Installer.exe endpoint.

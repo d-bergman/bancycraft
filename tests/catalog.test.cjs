@@ -2,7 +2,7 @@ const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const { templates, dragonRecipes, quantity } = require('../scripts/catalog/parse.cjs');
 const { sourceUrl } = require('../electron/source-links.cjs');
-const catalogs = ['dragonwilds', 'valheim', 'enshrouded'].map(game => require(`../src/catalog/data/${game}.json`));
+const catalogs = ['dragonwilds', 'valheim', 'enshrouded', 'grounded2'].map(game => require(`../src/catalog/data/${game}.json`));
 test('catalogs contain unique stable IDs, positive exact recipe quantities and allowlisted provenance', () => {
   for (const catalog of catalogs) {
     assert.ok(catalog.items.length > 900);

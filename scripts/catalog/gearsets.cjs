@@ -62,5 +62,6 @@ async function api(params) {
     }
   }
   for (const game of Object.keys(output)) { output[game].sort((a,b)=>a.name.localeCompare(b.name)); console.log(game,output[game].length,'sets',output[game].filter(s=>s.missing?.length).map(s=>({name:s.name,missing:s.missing}))); }
+  output.grounded2=JSON.parse(await fs.readFile(path.join(root,'src/catalog/data/gearsets.json'),'utf8')).grounded2||[];
   await fs.writeFile(path.join(root,'src/catalog/data/gearsets.json'),JSON.stringify(output,null,2)+'\n');
 })().catch(error=>{console.error(error.message);process.exitCode=1;});

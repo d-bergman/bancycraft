@@ -31,9 +31,10 @@ async function keys() {
   console.log('Update signing key is ready; private key remains outside the repository.');
 }
 async function signRelease(version) {
-  const file = path.join(root, `release/BancyCraft-Setup-${version}-x64.exe`);
+  const file = path.join(root, 'release/BancyCraft-Installer.exe');
   const signature = sign(null, await installerDigest(file), createPrivateKey(fs.readFileSync(privateFile)));
   fs.writeFileSync(file + '.sig', signature.toString('base64') + '\n');
+  fs.copyFileSync(file + '.sig', path.join(root, `release/BancyCraft-Setup-${version}-x64.exe.sig`));
   console.log(`Signed update digest for ${version}.`);
 }
 async function draft(version) {
@@ -41,7 +42,7 @@ async function draft(version) {
   let release = releases.find(r => r.tag_name === 'v' + version);
   if (release && !release.draft) throw new Error('Release is already published; do not replace its installer.');
   if (!release) release = await github(`/repos/${repo}/releases`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ tag_name: 'v' + version, target_commitish: 'main', name: 'BancyCraft ' + version, draft: true, prerelease: false, body: fs.readFileSync(path.join(root, 'docs/RELEASE-NOTES.md'), 'utf8') }) });
-  for (const file of [`BancyCraft-Setup-${version}-x64.exe`, `BancyCraft-Setup-${version}-x64.exe.blockmap`, `BancyCraft-Setup-${version}-x64.exe.sig`, 'latest.yml']) {
+  for (const file of ['BancyCraft-Installer.exe', 'BancyCraft-Installer.exe.blockmap', 'BancyCraft-Installer.exe.sig', `BancyCraft-Setup-${version}-x64.exe.sig`, 'latest.yml']) {
     if (release.assets.some(a => a.name === file)) throw new Error(`Draft asset ${file} exists; review it before replacing.`);
     const content = fs.readFileSync(path.join(root, 'release', file));
     await github(release.upload_url.split('{')[0] + '?name=' + encodeURIComponent(file), { method: 'POST', headers: { 'Content-Type': 'application/octet-stream' }, body: content });
@@ -51,7 +52,7 @@ async function draft(version) {
 }
 async function publish(version) {
   const release = (await github(`/repos/${repo}/releases`)).find(r => r.tag_name === 'v' + version);
-  if (!release?.draft || release.assets.length < 4) throw new Error('Expected a complete draft release.');
+  if (!release?.draft || release.assets.length < 5) throw new Error('Expected a complete draft release.');
   const result = await github(`/repos/${repo}/releases/${release.id}`, { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ draft: false, make_latest: 'true' }) });
   console.log(`Published ${result.html_url}`);
 }

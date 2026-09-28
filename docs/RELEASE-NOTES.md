@@ -1,11 +1,10 @@
-BancyCraft 0.4.1 adds automatic update checks and a clickable corner notification.
+BancyCraft 0.5.0 adds Grounded 2 and live shared shopping lists.
 
-- Check for new stable releases ten seconds after startup and every six hours while the app is open. Checks wait while an update is already pending or downloading.
-- A top-right New version available notification appears on every page. Click Download & prepare update to download and verify without leaving your work.
-- Follow download progress in the notification, then click Restart & install update when ready. Automatic checks never download or restart the app themselves.
-- Dismiss a notification for that version during the current session. Settings still offers the same update controls.
-- Existing gearsets, catalogs, shopping lists, supplies, production ledger and access keys remain available. Workspace backup still occurs before installation.
+- Grounded 2: 1,088 items, 878 explicit recipes, 29 armor sets and 1,078 local icons. V Rising and Dune: Awakening are Planned.
+- Connect your website account from Shared Lists or Settings. The browser reuses your Bancy.gg login and asks for approval. Your password never goes to the app.
+- Share a copy of a local list and invite friends by display name. Friends appear after connecting BancyCraft. Progress, completed crafts, resets and editor names update live. Lists are private to members; owners control membership and deletion. Conflicting edits prompt review.
+- Sharing needs only a website account. Bank and Blackbox still require cipher keys and website permissions. Local lists work offline; shared edits need internet.
+- Startup checks for updates immediately. Use the corner notification to download and verify, then restart to install.
+- Install BancyCraft-Installer.exe once, then update inside the app. Existing 0.3/0.4 clients can use their update controls; 0.2 or earlier need this installer once.
 
-If you have 0.3.0 or 0.4.0, use Settings once to check for updates, download 0.4.1, and restart to install. After this update, automatic checks and corner notifications are enabled. For 0.2.0 or earlier, install this version once. Windows x64; the installer has no purchased Windows publisher certificate, and in-app updates verify the bundled release-signing key.
-
-Gearsets reflect the current imported catalogs. Missing recipes and acquisition information remain explicit. Access keys reveal the community interface; they do not grant website membership or administrative privileges.
+Download at https://bancy.gg/bancycraft/ or GitHub Releases. Windows x64. Local workspaces are preserved outside the install folder and backed up before an in-app installation. Missing recipes and acquisition data remain explicit; uncertain creature and harvest counts are not invented.

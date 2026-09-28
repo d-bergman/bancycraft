@@ -36,3 +36,7 @@ The 0.3.0 app additionally bundles locally prepared item images from the same so
 Review catalog diffs and counts before release, then run `npm.cmd test`, `npm.cmd run build`, and `npm.cmd run test:smoke`. The generated `src/catalog/data/provenance.json` records exact source URLs, original fetch timestamps and response SHA-256 hashes. Cache files preserve source response bodies locally for auditing and repeat imports. Item pages retain revisions where available. Rebuilt JSON stores the import time separately from fetch times.
 
 No source accounts, credentials, rate-limit bypasses, third-party proxies or private endpoints are used. Source links open the system browser through an allowlisted native bridge. Catalog browsing does not make external requests.
+
+## Grounded 2 in 0.5.0
+
+Grounded Wiki contributors (https://grounded.wiki.gg) supply the sequel-only Recipe/G2 template, Grounded 2 item infoboxes and Armor Set/Grounded 2/Autofill membership. Adapted structured data is CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Attribution and page revisions are in the catalog. Run npm run catalog:grounded2 to refresh. Original-game-only infoboxes, repairs, uncertain quantities and unsupported smoothie recipes are excluded; station variants remain separate. The snapshot has 1,088 items, 878 recipes and 29 sets.
