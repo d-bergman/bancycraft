@@ -8,6 +8,8 @@ Checked on Windows x64, September 28, 2026. All 22 unit tests passed. TypeScript
 - The packaged notification test waits for the actual startup scheduler without opening Settings or invoking Check. Controlled updater transport verifies the corner popup, explicit download, progress, ready state, explicit install IPC, and a byte-equivalent workspace backup before the mocked installer call. It also checks dismissal for the session/version, a new notification for a different version, and Settings fallback. The fixture version 9.9.9 is deliberately not a real published update.
 - Notification screenshots were visually reviewed at desktop and minimum 1050 × 740 window sizes. Native installer invocation is intercepted in this test; no user installation is overwritten. Real release download/signature verification is checked separately after publication.
 
+After publishing 0.4.1, the packaged live-release test passed an anonymous current-version check, simulated 0.4.0 discovery, real installer download from the Home-page corner notification, embedded-key signature verification and the corner Restart & install update control. Uploaded assets matched local file sizes and SHA-256 digests. No actual user installation was replaced during these isolated tests.
+
 ## 0.4.0 gearsets, production ledger and access keys
 
 Checked on Windows x64, September 28, 2026. TypeScript, production renderer and NSIS installer builds passed. All 20 unit tests and all three packaged Electron tests passed against the final 0.4.0 executable.
