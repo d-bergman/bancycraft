@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.1 — 2026-09-28
+
+- Remove the duplicate Gathering Lists sidebar entry.
+- Bring shared lists into Shopping Lists, below private lists and a divider. Keep private and shared detail views separate within that page.
+- Illustrate all six home game tiles. V Rising and Dune: Awakening remain visibly Planned and cannot open a catalog.
+- Expand the BancyCraft website page with an app preview, features, illustrated games and a stable Windows installer download, linked from Projects, navbar and Nexus.
+
 ## 0.5.0 — 2026-09-28
 
 - Add Grounded 2: 1,088 sourced items, 878 explicit recipes, 29 armor sets and 1,078 icons. Retain station variants and mark missing acquisition data.

@@ -2,7 +2,7 @@
 
 Sharing needs only the existing Bancy.gg Firebase account. Bank and Blackbox retain their cipher keys and backend permissions.
 
-Connect from Settings or Shared Lists. The system browser reuses the existing website login and asks for consent. A five-minute AES-256-GCM handoff uses a random 256-bit request and encryption key in a URL fragment, which is removed from history. The database holds only ciphertext, UID, IV and expiry. Parent enumeration and expired reads are denied. Approval is write-once; accepted records are deleted. Abandoned encrypted records can remain after expiry; there is no paid cleanup function.
+Connect from Settings or the shared lists section below private lists in Shopping Lists. The system browser reuses the existing website login and asks for consent. A five-minute AES-256-GCM handoff uses a random 256-bit request and encryption key in a URL fragment, which is removed from history. The database holds only ciphertext, UID, IV and expiry. Parent enumeration and expired reads are denied. Approval is write-once; accepted records are deleted. Abandoned encrypted records can remain after expiry; there is no paid cleanup function.
 
 Native Google verification checks account and refresh credential against the configured Firebase project. Windows safeStorage encrypts the stored refresh token and UID. ID tokens stay native-only, outside renderer IPC and workspace exports. App Disconnect deletes the credential; browser sign-out is separate. Firebase session revocation revokes refresh sessions.
 

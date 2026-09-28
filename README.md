@@ -16,7 +16,9 @@ From 0.5.0 onward, the installed app checks immediately after startup and every 
 
 The stable application ID is gg.bancy.bancycraft. Lists, progress, plans and supplies remain under %APPDATA%/BancyCraft, outside the installation folder. Updates require a trusted BancyCraft release signature; private publishing credentials are never included in the app. See [UPDATES.md](docs/UPDATES.md).
 
-## Working in 0.5.0
+## Working in 0.5.1
+
+Shopping Lists brings private lists and shared copies into one page, with shared lists below a divider. All six home tiles have original artwork; V Rising and Dune: Awakening remain Planned.
 
 - Bancy-themed home screen, keyboard search (Ctrl+K), game selection and navigation.
 - Manual local crafting plans: create, edit, quantity, notes, status and deletion confirmation.

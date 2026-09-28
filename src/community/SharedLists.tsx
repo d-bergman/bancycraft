@@ -153,10 +153,10 @@ export function SharedLists({
   if (state.account.state !== "connected")
     return (
       <>
-        <div className="page-heading">
+        <div className="page-heading shared-lists-heading">
           <div>
             <p className="eyebrow">BUILD TOGETHER</p>
-            <h1>Shared lists</h1>
+            <h2>Shared lists</h2>
             <p>Your friends, the same requirements, live progress.</p>
           </div>
         </div>
@@ -182,10 +182,10 @@ export function SharedLists({
   }
   return (
     <>
-      <div className="page-heading">
+      <div className="page-heading shared-lists-heading">
         <div>
           <p className="eyebrow">BUILD TOGETHER</p>
-          <h1>Shared lists</h1>
+          <h2>Shared lists</h2>
           <p>
             {gameNames[game]} · {state.account.user?.displayName} ·{" "}
             {state.online ? "Live connection" : "Reconnecting"}

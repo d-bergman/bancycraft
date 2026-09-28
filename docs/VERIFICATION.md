@@ -86,3 +86,11 @@ Screenshots are generated under `test-results/`. Tests use isolated profiles the
 Installer replacement over the user's own installed app is intentionally not performed. Tests use isolated profiles; no game saves or Blackbox services are accessed. Shared offline writes are disabled and local lists remain usable.
 
 Live delivery verified after publication: the website landing page, clean-URL connection page, Project Archive card, navbar and Nexus downloads are live. The stable installer endpoint returns the 0.5.0 executable. A fresh packaged 0.5.0 startup checked the published release without Settings. An actual preserved 0.4.1 build automatically discovered 0.5.0, downloaded BancyCraft-Installer.exe through its unmodified updater, and verified the legacy signature alias. The new verifier also downloaded and validated the published installer. No install was invoked over the user's app. GitHub release metadata briefly retained the prior version immediately after publication; a subsequent normal fresh check saw the new release.
+## 0.5.1 — September 28, 2026
+
+- All 26 unit tests passed; TypeScript/Vite and the Windows NSIS package built successfully.
+- Packaged native smoke checks cover four offline catalogs, private/shared list placement and separator, removed duplicate sidebar entries, six loaded illustrations, Planned badges without title overlap, persistence, renderer isolation and update settings.
+- Shopping-list smoke passed: multi-selection, exact materials, craft completion propagation/reset, quick-list cleanup, gearsets and restart persistence.
+- Two packaged users passed account handoff/encrypted storage, sharing a private copy, invitation, live pre-craft progress/reset with editor names, target edits and deletion. The combined page test explicitly selects the shared section when private and shared copies have the same name.
+- The website preview passed desktop/mobile checks: all six game illustrations and the app screenshot load, planned states remain explicit, the stable installer link is correct, the navbar is included and the mobile page has no horizontal overflow.
+- Existing website navbar and Nexus links remain in place; the Projects card now uses the actual packaged app screenshot. The connection page and website database rules are unchanged.

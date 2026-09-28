@@ -28,6 +28,25 @@ async function launch() {
     const security = await run.application.evaluate(({ BrowserWindow }) => { const preferences = BrowserWindow.getAllWindows()[0].webContents.getLastWebPreferences(); return { sandbox: preferences.sandbox, contextIsolation: preferences.contextIsolation, nodeIntegration: preferences.nodeIntegration }; });
     assert.deepEqual(security, { sandbox: true, contextIsolation: true, nodeIntegration: false });
     assert.equal(await run.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+    assert.equal(await run.page.locator('.game-card').count(), 6);
+    assert.equal(await run.page.locator('.game-card.planned').count(), 2);
+    await run.page.waitForFunction(() => [...document.querySelectorAll('.game-tile-image')].every(image => image.complete && image.naturalWidth > 0));
+    assert.equal(await run.page.evaluate(() => [...document.querySelectorAll('.game-card.planned')].every(card => {
+      const badge = card.querySelector('.planned-badge').getBoundingClientRect(), title = card.querySelector('.game-name').getBoundingClientRect();
+      return title.top > badge.bottom;
+    })), true, 'Planned badges must not overlap game titles');
+    assert.equal(await run.page.getByRole('button', {name: 'Gathering Lists', exact: true}).count(), 0);
+    assert.equal(await run.page.getByRole('button', {name: 'Shared Lists', exact: true}).count(), 0);
+    await run.page.getByRole('button', {name: 'Shopping Lists', exact: true}).click();
+    await run.page.getByRole('heading', {name: 'Private lists', exact: true}).waitFor();
+    await run.page.getByRole('heading', {name: 'Shared lists', exact: true}).waitFor();
+    assert.equal(await run.page.evaluate(() => {
+      const privateHeading = document.querySelector('.private-lists-heading');
+      const sharedHeading = document.querySelector('.shared-lists-heading');
+      return !!document.querySelector('.list-sharing-divider') && !!(privateHeading.compareDocumentPosition(sharedHeading) & Node.DOCUMENT_POSITION_FOLLOWING);
+    }), true);
+    await run.page.screenshot({path: path.join(root, 'test-results', 'shopping-lists-combined.png')});
+    await run.page.getByRole('button', {name: 'Home', exact: true}).click();
     await run.page.screenshot({ path: path.join(root, 'test-results', 'home-desktop.png') });
     // Catalogs must work offline and remain isolated by the active game.
     await run.page.context().setOffline(true);

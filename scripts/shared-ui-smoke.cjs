@@ -104,7 +104,7 @@ async function launch(person, name) {
       global.testConnectionUrl = url;
     };
   });
-  await page.getByRole("button", { name: "Shared Lists", exact: true }).click();
+  await page.getByRole("button", { name: "Shopping Lists", exact: true }).click();
   await page
     .getByRole("button", { name: "Connect to Bancy.gg", exact: true })
     .click();
@@ -177,7 +177,7 @@ async function launch(person, name) {
     await a.page
       .getByRole("button", { name: "Add friend", exact: true })
       .click();
-    await b.page.getByRole("button", { name: /Friends workshop/ }).click();
+    await b.page.getByRole("region", { name: "Shared shopping lists", exact: true }).getByRole("button", { name: /Friends workshop/ }).click();
     await b.page
       .getByRole("heading", { name: "People on this list" })
       .waitFor();

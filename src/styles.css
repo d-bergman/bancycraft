@@ -10,3 +10,18 @@
 
 .game-card.grounded2 .game-art{background:radial-gradient(ellipse at 70% 30%,#81994150,transparent),linear-gradient(140deg,#16271b,#263814)}
 .planned-games{display:flex;gap:20px;flex-wrap:wrap;margin-top:20px;color:var(--muted)}.planned-games b{font-size:10px;margin-left:8px;border:1px solid #365360;border-radius:6px;padding:4px 7px}.member-chip{display:inline-flex;gap:10px;align-items:center;background:#10242e;border:1px solid #274655;border-radius:20px;padding:8px 14px}.shared-members form{margin-top:20px}.shared-members input,.shared-item-result{margin-top:10px}.shared-author{color:#75ddd0!important}.shared-item-result{justify-content:space-between;border-bottom:1px solid #19313c;padding:8px 0}
+/* Illustrated game selection, including future games. */
+.game-card.illustrated{position:relative;overflow:hidden;text-align:left;min-width:0}
+.illustrated .game-art{position:relative;height:160px;display:flex;align-items:flex-end;justify-content:flex-start;padding:18px;overflow:hidden;background:#08131a;isolation:isolate}
+.illustrated .game-art::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 15%,rgba(3,12,17,.25) 45%,rgba(3,12,17,.95));z-index:-1;transform:none}
+.game-tile-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .3s ease}
+button.illustrated:hover .game-tile-image{transform:scale(1.04)}
+.illustrated .game-name{position:relative;font-size:21px;line-height:1.1;letter-spacing:.02em;text-shadow:0 2px 8px #000;color:#eefcff}
+.planned-badge{position:absolute;top:12px;left:12px;padding:5px 9px;border:1px solid #e0bf7880;background:#151820e8;color:#f4d798;font-size:11px;letter-spacing:.1em;text-transform:uppercase;border-radius:4px}
+.game-card.planned{cursor:default}.planned .game-card-footer strong{color:#d7bc83}
+.private-lists-heading h2,.shared-lists-heading h2{font-size:25px;margin:0 0 8px}.private-lists-heading p{color:var(--muted);font-size:13px;margin:0 0 20px}
+.list-sharing-divider{border:0;border-top:1px solid #3c657280;margin:38px 0 30px}
+@media(min-width:1400px){.game-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:850px){.illustrated .game-art{height:150px}.illustrated .game-name{font-size:18px}.game-card-footer{flex-wrap:wrap;gap:7px}.game-card-footer strong{margin-left:auto}}
+.illustrated .game-name{inset:auto;transform:none;width:100%;text-align:left;margin:0;align-self:flex-end}
+.illustrated .game-name{position:absolute;top:auto;bottom:18px;left:18px;right:18px;width:auto;transform:none;text-align:left}
