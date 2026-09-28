@@ -75,7 +75,7 @@ async function until(test) {
     await until(() => left.online && right.online);
     const local = {
       id: randomUUID(),
-      game: "grounded2",
+      game: process.argv.includes("--vrising") ? "vrising" : "grounded2",
       name: "Test shared",
       targets: [{ itemId: "test", name: "Test item", quantity: 3 }],
       quick: false,

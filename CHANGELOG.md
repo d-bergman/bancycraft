@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.0 — 2026-09-28
+
+- Add V Rising as a supported offline game, with sourced items, explicit recipes, equipment bundles and local item icons. Use standard base crafting costs and identify missing acquisition data.
+- Add a paginated Settings changelog covering every release from the first Windows foundation onward. Bundle the project changelog so history remains available offline.
+- Add crafting-tree buttons beside active shopping-list rows, including pre-crafts and targets. Show selected recipe chains, exact aggregated materials, crafting stations, per-batch inputs, surplus and source links. Keep the view read-only for private and shared lists.
+
 ## 0.5.1 — 2026-09-28
 
 - Remove the duplicate Gathering Lists sidebar entry.

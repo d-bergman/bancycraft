@@ -1,10 +1,8 @@
-BancyCraft 0.5.1 brings your lists together and gives every game its own artwork.
+BancyCraft 0.6.0 adds V Rising, crafting trees and release history.
 
-- Gathering Lists has been removed from the sidebar; Shopping Lists is the place for material and crafting progress.
-- Private lists appear first. Shared lists sit below a divider on the same page, with the same live progress and website-account permissions.
-- All six games have illustrated home tiles. Dragonwilds, Valheim, Enshrouded and Grounded 2 are available. V Rising and Dune: Awakening are marked Planned.
-- The BancyCraft page on Bancy.gg now shows the app, its features and supported games, with a prominent Windows download. Find it from the main navbar, Nexus or Projects.
+- V Rising is now available: 530 sourced items, 315 recipes, 25 equipment sets and 502 local icons. Standard base costs are shown; room, floor and server bonuses are not applied. Removed pages and conflicting ingredient-use tables are excluded. Dune: Awakening remains Planned.
+- Settings & updates now has a Changelog shortcut and an offline, paginated history of every version from 0.1.0 onward.
+- Use the crafting-tree button beside shopping-list rows, including pre-crafts and target items. Follow the selected recipe chain, exact combined materials and stations. Inspect per-batch inputs, adjust the preview quantity, and open the recipe source. The preview does not change progress or supplies, and also works in shared lists.
+- Shared V Rising lists use the same Bancy.gg accounts, live progress and member-only permissions as the other games.
 
-Install BancyCraft-Installer.exe once, then use the app's update notification or Settings & updates to download and restart to install. Local workspaces remain outside the installation folder. Shared lists require only your Bancy.gg account; bank and Blackbox access still require an access key and existing website permissions.
-
-Download: https://bancy.gg/bancycraft/
+Use the app's corner notification or Settings & updates to download and restart to install. Local workspaces remain outside the installation folder. New users can install BancyCraft-Installer.exe from https://bancy.gg/bancycraft/.

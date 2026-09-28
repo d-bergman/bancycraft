@@ -29,7 +29,7 @@ async function launch() {
     assert.deepEqual(security, { sandbox: true, contextIsolation: true, nodeIntegration: false });
     assert.equal(await run.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
     assert.equal(await run.page.locator('.game-card').count(), 6);
-    assert.equal(await run.page.locator('.game-card.planned').count(), 2);
+    assert.equal(await run.page.locator('.game-card.planned').count(), 1);
     await run.page.waitForFunction(() => [...document.querySelectorAll('.game-tile-image')].every(image => image.complete && image.naturalWidth > 0));
     assert.equal(await run.page.evaluate(() => [...document.querySelectorAll('.game-card.planned')].every(card => {
       const badge = card.querySelector('.planned-badge').getBoundingClientRect(), title = card.querySelector('.game-name').getBoundingClientRect();
@@ -143,7 +143,7 @@ async function launch() {
     assert.ok(helpBounds && helpBounds.y + helpBounds.height <= (await run.page.evaluate(() => window.innerHeight)), 'Help remains visible at the minimum window size');
     await run.page.screenshot({ path: path.join(root, 'test-results', 'home-compact.png') });
     assert.deepEqual(errors, []);
-    console.log(JSON.stringify({ result: 'PASS', version: details.app.version, packaged: details.app.packaged, profile, checks: ['four offline catalogs and game-scoped search', 'recipe alternatives and station filters', 'source link rejection', 'native startup', 'renderer isolation', 'plan create/edit/delete', 'supply save', 'persistence after restart', 'update settings', 'connection placeholder', 'desktop and compact layouts'] }, null, 2));
+    console.log(JSON.stringify({ result: 'PASS', version: details.app.version, packaged: details.app.packaged, profile, checks: ['offline catalogs and game-scoped search', 'recipe alternatives and station filters', 'source link rejection', 'native startup', 'renderer isolation', 'plan create/edit/delete', 'supply save', 'persistence after restart', 'update settings', 'connection placeholder', 'desktop and compact layouts'] }, null, 2));
   } catch (error) {
     await run.page.screenshot({ path: path.join(root, 'test-results', 'failure.png') }).catch(() => {});
     console.error(await run.page.locator('body').innerText().catch(() => 'No renderer text'));

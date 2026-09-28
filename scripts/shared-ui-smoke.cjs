@@ -181,6 +181,11 @@ async function launch(person, name) {
     await b.page
       .getByRole("heading", { name: "People on this list" })
       .waitFor();
+    const sharedBefore = (await a.page.evaluate(() => window.bancy.sharedStatus())).active.progress;
+    await a.page.getByRole("button", {name: "Crafting tree for Crude Rope", exact:true}).click();
+    await a.page.getByRole("dialog", {name:"Crafting tree · Crude Rope",exact:true}).waitFor();
+    await a.page.keyboard.press("Escape");
+    assert.deepEqual((await a.page.evaluate(() => window.bancy.sharedStatus())).active.progress, sharedBefore);
     const rope = a.page.getByRole("article", {
       name: "Requirement Crude Rope",
       exact: true,

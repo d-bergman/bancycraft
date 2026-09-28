@@ -3,6 +3,7 @@ function sourceUrl(value) {
   const url = new URL(value);
   const paths = {
     'dragonwilds.runescape.wiki': ['/', '/w/'],
+    'wiki.v-ris.ing': ['/', '/w/'],
     'grounded.wiki.gg': ['/', '/wiki/'],
     'enshrouded.wiki.gg': ['/', '/wiki/'],
     'valheim-modding.github.io': ['/Jotunn/data/objects/'],

@@ -1,4 +1,4 @@
-export type Game = 'dragonwilds' | 'valheim' | 'enshrouded' | 'grounded2';
+export type Game = 'dragonwilds' | 'valheim' | 'enshrouded' | 'grounded2' | 'vrising';
 export type Plan = { id: string; name: string; game: Game; quantity: number; notes: string; status: 'planned' | 'in-progress' | 'completed'; updatedAt: string };
 export type Supply = { id: string; name: string; game: Game; quantity: number };
 export type ListTarget = { itemId: string; name: string; quantity: number };

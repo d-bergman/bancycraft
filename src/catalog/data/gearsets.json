@@ -2199,5 +2199,306 @@
       "kind": "Armor",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Diving_Armor"
     }
+  ],
+  "vrising": [
+    {
+      "name": "Alucard Armour Set",
+      "kind": "Cosmetic",
+      "ids": [
+        "vr-080b0194119811eade9e",
+        "vr-9b33852cbb0f8effdcb3",
+        "vr-2f108f9af2233172cb3f",
+        "vr-adb22a04dc592a0f6ad5",
+        "vr-3107e75f08dd1a46354b"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Alucard_Armour_Set"
+    },
+    {
+      "name": "Blood Hunter Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-67b17ed2844454ef1528",
+        "vr-e6d3691aaa88bb984b66",
+        "vr-6de12f5e1b29f65af65c",
+        "vr-b1eb478d720fd6f1be75"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Blood_Hunter_Armour_Set"
+    },
+    {
+      "name": "Boneguard Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-c730f73db4375f83f3b3",
+        "vr-7bb0a203626bec76f178",
+        "vr-7e4efb00a2c0b20f5eae",
+        "vr-c7ae8c019a8d4d8cf070"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Boneguard_Armour_Set"
+    },
+    {
+      "name": "Crimson Templar Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-5215bfcb76c629a87bdb",
+        "vr-3d7c9fa60953dcc02293",
+        "vr-789668d6d3b90bedbd2c",
+        "vr-968f285cd19ac60acfe2"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Crimson_Templar_Armour_Set"
+    },
+    {
+      "name": "Dark Magus Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-2f4a85ed30d631a89ffd",
+        "vr-5b2ac99989c2224ec51c",
+        "vr-c12bc5670e870f07401b",
+        "vr-9e20eaff8b3b43c98a1d"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Dark_Magus_Armour_Set"
+    },
+    {
+      "name": "Dawnthorn Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-f2b8d25f083a02b32319",
+        "vr-848128dffb5727755a00",
+        "vr-4b93e21ad9952fc16dc8",
+        "vr-cfaaca89db54c3fed8df"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Dawnthorn_Armour_Set"
+    },
+    {
+      "name": "Dracula's Dread Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-ba1aa8e54f82244c23b5",
+        "vr-07b6c8f5606309df64cc",
+        "vr-79f39ae436d7fa725d1a",
+        "vr-2a7f9c210f64dbc799b8"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Dracula's_Dread_Armour_Set"
+    },
+    {
+      "name": "Dracula's Grim Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-7ffe740b914ebca9de80",
+        "vr-88d5aa2ae867f4d65d10",
+        "vr-ab009618e40ead32d554",
+        "vr-232f3a31a5810a92698f"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Dracula's_Grim_Armour_Set"
+    },
+    {
+      "name": "Dracula's Maleficer Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-ba08fb9bd7074ce26cf3",
+        "vr-a6e03da36d15c313221f",
+        "vr-7c09d8d7439fb14e1419",
+        "vr-042b102a8d9decb96894"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Dracula's_Maleficer_Armour_Set"
+    },
+    {
+      "name": "Dracula's Shadow Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-c7c7557a79c9197f10c8",
+        "vr-29ea307810ee12d9f749",
+        "vr-84ccaf1ae7a29e3cbe1a",
+        "vr-3d9899a7de77a2979450"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Dracula's_Shadow_Armour_Set"
+    },
+    {
+      "name": "Dread Plate Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-045b0df85133c7c58f0e",
+        "vr-14cbf73cd0d2cf964956",
+        "vr-8f2b17d551f1595a6773",
+        "vr-7867d3ab30dc4cd1cbe2"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Dread_Plate_Armour_Set"
+    },
+    {
+      "name": "Duskwatcher Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-82e5f828eb080db580a6",
+        "vr-b46ba834036120906b79",
+        "vr-bce4f133bd8ae1ba4b11",
+        "vr-1d49f20d35c3f8e5d779"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Duskwatcher_Armour_Set"
+    },
+    {
+      "name": "Grim Knight Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-22c50fa59cc48aae9655",
+        "vr-acc37ee0ffb1451cb718",
+        "vr-bd923bbf5737e14e907d",
+        "vr-32b816d41b77d3423303"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Grim_Knight_Armour_Set"
+    },
+    {
+      "name": "Grim Ranger Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-664f27e6398493d0dc6e",
+        "vr-cc0e1b888e2a3d299aba",
+        "vr-5f29ce43032cf13a827f",
+        "vr-2bafeb7e702246098a1a"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Grim_Ranger_Armour_Set"
+    },
+    {
+      "name": "Hollowfang Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-d29dc37d861cd2d072d4",
+        "vr-fb18436ac016b808d082",
+        "vr-5c9d67a031b71b12a3b9",
+        "vr-995c9c4828a4e6f76c62"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Hollowfang_Armour_Set"
+    },
+    {
+      "name": "Maleficer Scholar Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-2cf45945827cf1103d92",
+        "vr-902851e8389027aa0260",
+        "vr-a24a0dfaddb444fd75ca",
+        "vr-1cf64bbea58cc13f7fb6"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Maleficer_Scholar_Armour_Set"
+    },
+    {
+      "name": "Marauder Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-64f21152a7761102a47d",
+        "vr-a1a7b6ebdec9ad4c23ae",
+        "vr-2beef5b594524b237635",
+        "vr-36e3072925b357779a20"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Marauder_Armour_Set"
+    },
+    {
+      "name": "Nightstalker Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-88a18ee18e1b1346c77b",
+        "vr-2341704fd0a9f968e32b",
+        "vr-61936f0ef491b97b2c5e",
+        "vr-bc60802dbb8e86c62827"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Nightstalker_Armour_Set"
+    },
+    {
+      "name": "Opulent Night Armour Set",
+      "kind": "Cosmetic",
+      "ids": [
+        "vr-de9e456fda9d371b8e33",
+        "vr-53c8d5b742fdd476e7cc",
+        "vr-fde322421b8a31ddc0bd",
+        "vr-bf8c023a9c0264da4e3e",
+        "vr-1c85f75b483ab6b6b56e"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Opulent_Night_Armour_Set"
+    },
+    {
+      "name": "Plated Boneguard Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-1689510b5ed339bca474",
+        "vr-2dc84a6e229c9bb44ee9",
+        "vr-461e2cd035a5abdc76c5",
+        "vr-3fc292fa59fb6fda1e47"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Plated_Boneguard_Armour_Set"
+    },
+    {
+      "name": "Shadewalker Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-1842e7b7b7cb496057de",
+        "vr-68183490579c9b4a16a7",
+        "vr-a0d2745189db9e2ead44",
+        "vr-c96d421806f5a9852f9c"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Shadewalker_Armour_Set"
+    },
+    {
+      "name": "Shadowmoon Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-e89aea1ce04d65fb2bad",
+        "vr-0eff7417992c08f01bd4",
+        "vr-54f8522ae9e1308ffa45",
+        "vr-a1b1d063b2d3d03a80ba"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Shadowmoon_Armour_Set"
+    },
+    {
+      "name": "Shanoa Armour Set",
+      "kind": "Cosmetic",
+      "ids": [
+        "vr-62b078f34da93489806e",
+        "vr-7d39697ad1cf04530a29"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Shanoa_Armour_Set"
+    },
+    {
+      "name": "Soma Cruz Armour Set",
+      "kind": "Cosmetic",
+      "ids": [
+        "vr-67dd2454ed2ed23059f7",
+        "vr-d0dc02a2272253ed491b",
+        "vr-c74a1f2b630016b45fae"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Soma_Cruz_Armour_Set"
+    },
+    {
+      "name": "Warlock Armour Set",
+      "kind": "Armor",
+      "ids": [
+        "vr-aa3a4b70addc41507c92",
+        "vr-060e0bf7d9c59fb03fc1",
+        "vr-26f1bbc61ee290285aa3",
+        "vr-f543337c6c77f48ebab8"
+      ],
+      "alternatives": {},
+      "sourceUrl": "https://wiki.v-ris.ing/w/Warlock_Armour_Set"
+    }
   ]
 }

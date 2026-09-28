@@ -40,3 +40,12 @@ No source accounts, credentials, rate-limit bypasses, third-party proxies or pri
 ## Grounded 2 in 0.5.0
 
 Grounded Wiki contributors (https://grounded.wiki.gg) supply the sequel-only Recipe/G2 template, Grounded 2 item infoboxes and Armor Set/Grounded 2/Autofill membership. Adapted structured data is CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Attribution and page revisions are in the catalog. Run npm run catalog:grounded2 to refresh. Original-game-only infoboxes, repairs, uncertain quantities and unsupported smoothie recipes are excluded; station variants remain separate. The snapshot has 1,088 items, 878 recipes and 29 sets.
+## V Rising in 0.6.0
+
+530 items, 315 explicit recipes, 25 source-defined armor/cosmetic sets and 502 local icons are bundled offline from [V Rising Wiki](https://wiki.v-ris.ing/). The reproducible importer is `scripts/catalog/vrising.cjs`; API responses, revisions, SHA-256 hashes and image origins are recorded in `.catalog-cache/vrising-provenance.json`.
+
+The adapted V Rising text/data catalog is distributed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), attributed to the wiki contributors. Item and recipe URLs, revision IDs and timestamps retain links to contributor history. Game artwork remains the property of Stunlock Studios and is used as item identification in this independent companion.
+
+The importer uses each item or armor set's own Crafting table. Ingredient-use tables can contain conflicting old quantities, so those are omitted. Pages marked Removed, including infobox categories marked Removed, are excluded. Named set pieces come from the set's output rows; DLC sets remain cosmetic bundles without invented bonuses.
+
+Only positive whole recipe quantities are accepted. A single nonstackable equipment piece without a displayed count is one piece; missing or uncertain raw-material quantities are rejected. Rowspans retain recipe ingredients/stations. Multiple outputs remain separate byproducts and are not credited across other targets. Base costs are shown; floor, room and server modifiers are not applied. Acquisition prose is descriptive, not a guaranteed kill or harvest count. Some items have no imported recipe or icon and use explicit fallbacks.

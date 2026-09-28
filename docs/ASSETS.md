@@ -23,3 +23,6 @@ The existing owned Bancy website's `assets/img/hero/banri-hero-02.webp` is copie
 ## Grounded 2 icons in 0.5.0
 
 1,078 local 64px WebP icons come from Grounded Wiki image metadata. Ten items lack usable source images and use a neutral fallback. Game assets retain rights-holder copyrights; contributor adaptations retain the source catalog licensing documented in CATALOGS.md. Normal runtime makes no icon requests.
+## V Rising item icons in 0.6.0
+
+502 item-identification icons are bundled as local 64px WebP files. Source image titles and URLs come from the V Rising Wiki image API and are recorded in `.catalog-cache/vrising-provenance.json`. Stunlock Studios owns the game assets. Missing icons use the generic item symbol. No runtime image download is needed.

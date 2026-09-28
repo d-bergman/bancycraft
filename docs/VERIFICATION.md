@@ -94,3 +94,11 @@ Live delivery verified after publication: the website landing page, clean-URL co
 - Two packaged users passed account handoff/encrypted storage, sharing a private copy, invitation, live pre-craft progress/reset with editor names, target edits and deletion. The combined page test explicitly selects the shared section when private and shared copies have the same name.
 - The website preview passed desktop/mobile checks: all six game illustrations and the app screenshot load, planned states remain explicit, the stable installer link is correct, the navbar is included and the mobile page has no horizontal overflow.
 - Existing website navbar and Nexus links remain in place; the Projects card now uses the actual packaged app screenshot. The connection page and website database rules are unchanged.
+## 0.6.0 — September 28, 2026
+
+- 31 unit tests passed, including shared batch aggregation in crafting trees, selected/direct recipes, real Vis Cloth loom inputs, complete changelog extraction, V Rising rowspans and rejected unknown material quantities.
+- Built the Windows NSIS installer and tested the packaged executable. Existing list progression/reset, quick lists, gearsets, persistence, renderer isolation and update controls passed.
+- Feature UI checks passed offline: Vis Cloth and Mithril Mace recipe trees, station details, preview quantity changes without modifying list progress, compact layout, paginated Settings history through 0.1.0, V Rising items/sets and persisted selection.
+- Packaged two-user UI checks passed with a shared pre-craft tree and unchanged shared progress, live completions/reset, author names, target changes and deletion.
+- V Rising shared-list rules passed emulator and production checks with two temporary authenticated users, an outsider, stale-edit conflicts and owner-only membership/deletion. Temporary production QA records/accounts were cleaned up. Only the allowed game enum changed in the website rules.
+- Final source import: 530 inventory entries, 315 own-page crafting recipes, 25 source-defined sets and 502 local icons. Removed infobox categories/pages are excluded. Every recipe reference resolves; all required icon files exist. Room/floor/server cost modifiers remain explicitly unapplied.
