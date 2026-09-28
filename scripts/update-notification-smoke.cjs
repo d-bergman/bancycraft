@@ -59,7 +59,8 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
     await page.getByRole('button',{name:'Download update 9.9.10',exact:true}).waitFor();
     assert.deepEqual(await page.evaluate(()=>window.bancy.load()),workspace);
     assert.deepEqual(errors,[]);
-    console.log(JSON.stringify({result:'PASS',checks:['automatic startup detection','no automatic download or restart','corner popup at desktop and minimum size','download progress','ready notification','explicit install IPC with workspace backup','dismissal per version','Settings fallback'],installationPerformed:false},null,2));
+    console.log(JSON.stringify({result:'PASS',checks:['native update detection and notification','no automatic download or restart','corner popup at desktop and minimum size','download progress','ready notification','explicit install IPC with workspace backup','dismissal per version','Settings fallback'],installationPerformed:false},null,2));
   } catch(error) {await page.screenshot({path:path.join(root,'test-results/update-notification-failure.png')}).catch(()=>{});throw error;}
   finally {await app.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});
+

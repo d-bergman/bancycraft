@@ -32,9 +32,10 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
     console.log('Checking installed version against the public release…');
     await page.getByRole('button', { name: 'Check for updates', exact: true }).click();
     await page.getByLabel('Update status', { exact: true }).filter({ hasText: 'You have the latest BancyCraft release.' }).waitFor({ timeout: 60000 });
+    await page.waitForFunction(async()=> (await window.bancy.info()).update.state==='current');
     assert.equal((await page.evaluate(() => window.bancy.info())).update.state, 'current');
-    console.log('Current-version check passed; simulating version 0.4.0…');
-    await app.evaluate(() => { const load = process.mainModule.require.bind(process.mainModule); load('electron-updater').autoUpdater.currentVersion = new (load('semver').SemVer)('0.4.0'); });
+    console.log('Current-version check passed; simulating version 0.4.1…');
+    await app.evaluate(() => { const load = process.mainModule.require.bind(process.mainModule); load('electron-updater').autoUpdater.currentVersion = new (load('semver').SemVer)('0.4.1'); });
     await page.getByRole('button', { name: 'Check for updates', exact: true }).click();
     const popup=page.getByLabel('BancyCraft update notification',{exact:true});
     await popup.getByText('New version available',{exact:true}).waitFor({timeout:60000});
@@ -52,3 +53,4 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
     throw error;
   } finally { await app.close(); }
 })().catch(error => { console.error(error.message); process.exitCode = 1; });
+
