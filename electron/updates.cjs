@@ -23,9 +23,17 @@ function configureUpdater(updater, status) {
   updater.on('error', () => { working = false; status('error', 'The update could not be verified or downloaded. Check your connection and try again.'); });
   status('idle', 'Check for a newer BancyCraft release.');
   return {
-    async check() { if (working || ready) return; working = true; try { await updater.checkForUpdates(); } catch { status('error', 'Unable to check for updates. Try again when you are online.'); } finally { working = false; } },
+    async check({ background = false } = {}) { if (working || ready || (background && available)) return; working = true; try { await updater.checkForUpdates(); } catch { status('error', 'Unable to check for updates. Try again when you are online.'); } finally { working = false; } },
     async download() { if (!available || working || ready) return; working = true; status('downloading', `Downloading BancyCraft ${version}…`, { version, percent: 0 }); try { await updater.downloadUpdate(); } catch { status('error', 'The update could not be verified or downloaded. Please check again and retry.'); } finally { working = false; } },
     install() { if (ready && !working) updater.quitAndInstall(true, true); }
   };
 }
-module.exports = { configureUpdater };
+function startAutomaticChecks(updater, timers = globalThis) {
+  // Leave startup responsive; recurring checks never download or restart the app.
+  const check = () => Promise.resolve().then(() => updater.check({ background: true })).catch(() => {});
+  const startup = timers.setTimeout(check, 10000);
+  const recurring = timers.setInterval(check, 6 * 60 * 60 * 1000);
+  startup.unref?.(); recurring.unref?.();
+  return () => { timers.clearTimeout(startup); timers.clearInterval(recurring); };
+}
+module.exports = { configureUpdater, startAutomaticChecks };

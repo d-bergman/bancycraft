@@ -11,6 +11,7 @@ import { Gearsets } from './planner/Gearsets';
 import { catalogs } from './catalog/catalogs';
 import { buildShoppingList } from './planner/engine.mjs';
 import { UpdateSettings } from './updates/UpdateSettings';
+import { UpdateNotification } from './updates/UpdateNotification';
 import { Ledger } from './ledger/Ledger';
 import { AccessSettings } from './community/AccessSettings';
 import './ledger/ledger.css';
@@ -128,6 +129,7 @@ function App() {
         <footer><span><Database size={14}/>{busy ? 'Saving…' : loadFailed ? 'Workspace unavailable' : 'Workspace saved on this computer'}</span><span>BancyCraft {info?.version ?? __APP_VERSION__} <i/> Local workspace</span></footer>
       </main>
     </div>
+    <UpdateNotification update={info?.update} onUpdate={update => setInfo(previous => previous ? { ...previous, update } : previous)} onOpenSettings={() => go('Settings')}/>
     {toast && <div className="toast" role="status"><Check size={17}/><div className="toast-content"><p>{toast}</p>{toastListId && <button onClick={() => { openList(toastListId); setToast(''); }}>Open list</button>}</div><button className="icon-button" aria-label="Dismiss notification" onClick={() => setToast('')}><X size={15}/></button></div>}
     {addRequest && <ListPicker request={addRequest} lists={data.lists} busy={!canWrite} error={error} onClose={() => setAddRequest(undefined)} onAdd={addToList} onNew={name => createList(addRequest,name)}/>}
     {editing && <PlanDialog plan={editing === 'new' ? undefined : editing} game={data.game} busy={!canWrite} onClose={() => setEditing(null)} onSave={async plan => { if (await save(current => ({ ...current, plans: current.plans.some(item => item.id === plan.id) ? current.plans.map(item => item.id === plan.id ? plan : item) : [...current.plans, plan] }))) { setEditing(null); setToast('Plan saved on this computer.'); } }}/>}

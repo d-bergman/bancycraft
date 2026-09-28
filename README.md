@@ -4,7 +4,7 @@ A Windows crafting companion with an independent local workspace and optional ke
 
 ## Install and open
 
-Run `release/BancyCraft-Setup-0.4.0-x64.exe`. Install for your Windows user, then launch BancyCraft from the Start menu or desktop shortcut. Node.js and Python are not required on the user's PC.
+Run `release/BancyCraft-Setup-0.4.1-x64.exe`. Install for your Windows user, then launch BancyCraft from the Start menu or desktop shortcut. Node.js and Python are not required on the user's PC.
 
 This early build is unsigned. Windows may show an unknown-publisher warning, and managed security policies may block it. Publisher signing has not been purchased or configured.
 
@@ -12,9 +12,11 @@ This early build is unsigned. Windows may show an unknown-publisher warning, and
 
 Versions 0.3.0 and later update through Settings. If upgrading from 0.2.0 or earlier, install the current version once. Then open **Settings & updates**, choose **Check for updates**, download an available release, and choose **Restart & install**. Future updates are delivered by GitHub Releases, without separate manual installer downloads.
 
+From 0.4.1 onward, the installed app also checks ten seconds after startup and every six hours while open. A top-right **New version available** notification lets you download and verify an update from any page. It then offers **Restart & install update**. Downloads and restarts require clicks. Dismissing the notification hides that version for the current session; Settings still provides the update controls. Checks pause while an update is pending or downloading.
+
 The stable application ID is gg.bancy.bancycraft. Lists, progress, plans and supplies remain under %APPDATA%/BancyCraft, outside the installation folder. Updates require a trusted BancyCraft release signature; private publishing credentials are never included in the app. See [UPDATES.md](docs/UPDATES.md).
 
-## Working in 0.4.0
+## Working in 0.4.1
 
 - Bancy-themed home screen, keyboard search (Ctrl+K), game selection and navigation.
 - Manual local crafting plans: create, edit, quantity, notes, status and deletion confirmation.

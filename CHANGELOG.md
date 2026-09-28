@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.1 — 2026-09-28
+
+- Automatically check for stable releases ten seconds after startup and every six hours while the installed app is open, unless an update is already pending or downloading.
+- Show a persistent top-right update notification on every page. Click to download and verify, follow progress, then explicitly restart and install.
+- Dismiss the notification for that version during the current session; Settings remains available. A different version can show a new notification.
+- Keep automatic checks from downloading, restarting, interrupting an active download, or overwriting an update ready to install.
+
 ## 0.4.0 — 2026-09-28
 
 - Complete the bundled gearset catalog: 37 Dragonwilds, 20 Valheim, 82 Enshrouded armor/cosmetic sets, with selectable alternate Dragonwilds helmets.

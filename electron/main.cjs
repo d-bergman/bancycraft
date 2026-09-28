@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const { pathToFileURL } = require('node:url');
 const { createStore } = require('./store.cjs');
 const { sourceUrl } = require('./source-links.cjs');
-const { configureUpdater } = require('./updates.cjs');
+const { configureUpdater, startAutomaticChecks } = require('./updates.cjs');
 const { createAccess } = require('./access.cjs');
 const { createCommunity } = require('./community.cjs');
 app.setName('BancyCraft');
@@ -79,6 +79,7 @@ else {
     handle('update:install', () => { if (updater && update.state === 'ready') { try { if (fs.existsSync(store.file)) fs.copyFileSync(store.file, store.file + '.before-update.bak'); updater.install(); } catch { status('error', 'Your workspace backup could not be saved. The update has not been installed.'); } } });
     setupUpdates();
     await createWindow();
+    if (updater) app.once('will-quit', startAutomaticChecks(updater));
   }).catch(error => { dialog.showErrorBox('BancyCraft could not start', error.message); app.quit(); });
   app.on('activate', () => { if (BrowserWindow.getAllWindows().length === 0) createWindow(); });
   app.on('window-all-closed', () => app.quit());

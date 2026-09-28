@@ -33,16 +33,19 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
     await page.getByRole('button', { name: 'Check for updates', exact: true }).click();
     await page.getByLabel('Update status', { exact: true }).filter({ hasText: 'You have the latest BancyCraft release.' }).waitFor({ timeout: 60000 });
     assert.equal((await page.evaluate(() => window.bancy.info())).update.state, 'current');
-    console.log('Current-version check passed; simulating version 0.3.0…');
-    await app.evaluate(() => { const load = process.mainModule.require.bind(process.mainModule); load('electron-updater').autoUpdater.currentVersion = new (load('semver').SemVer)('0.3.0'); });
+    console.log('Current-version check passed; simulating version 0.4.0…');
+    await app.evaluate(() => { const load = process.mainModule.require.bind(process.mainModule); load('electron-updater').autoUpdater.currentVersion = new (load('semver').SemVer)('0.4.0'); });
     await page.getByRole('button', { name: 'Check for updates', exact: true }).click();
-    await page.getByRole('button', { name: 'Download update '+targetVersion, exact: true }).waitFor({ timeout: 60000 });
+    const popup=page.getByLabel('BancyCraft update notification',{exact:true});
+    await popup.getByText('New version available',{exact:true}).waitFor({timeout:60000});
+    await page.getByRole('button', { name: 'Home', exact: true }).click();
     console.log('Release found; downloading and verifying the real installer…');
-    await page.getByRole('button', { name: 'Download update '+targetVersion, exact: true }).click();
-    await page.getByRole('button', { name: 'Restart & install', exact: true }).waitFor({ timeout: 180000 });
+    await popup.getByRole('button', { name: 'Download & prepare update', exact: true }).click();
+    await popup.getByRole('button', { name: 'Restart & install update', exact: true }).waitFor({ timeout: 180000 });
     assert.equal(await app.evaluate(() => global.bancySignatureChecks), 1, 'Actual downloaded installer must pass the embedded-key verifier');
     await page.screenshot({ path: path.join(root, 'test-results/updates-ready.png') });
-    console.log(JSON.stringify({ result: 'PASS', profile, checks: ['anonymous current-version check', 'older-version release discovery', 'public installer download', 'embedded-key signature verifier invoked', 'restart/install offered'], installationPerformed: false }, null, 2));
+    assert.equal((await page.evaluate(() => window.bancy.info())).update.version,targetVersion);
+    console.log(JSON.stringify({ result: 'PASS', profile, checks: ['anonymous current-version check', 'older-version release discovery', 'corner popup download from Home', 'public installer download', 'embedded-key signature verifier invoked', 'corner restart/install offered'], installationPerformed: false }, null, 2));
   } catch (error) {
     console.error(JSON.stringify(await page.evaluate(() => window.bancy.info())));
     await page.screenshot({ path: path.join(root, 'test-results/updates-failure.png') });

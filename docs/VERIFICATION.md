@@ -1,5 +1,13 @@
 # Verification
 
+## 0.4.1 automatic checks and corner update notification
+
+Checked on Windows x64, September 28, 2026. All 22 unit tests passed. TypeScript, production renderer and NSIS x64 installer builds passed. Existing packaged startup/persistence/search smoke checks and the new packaged update-notification test passed against 0.4.1.
+
+- Timer tests cover the ten-second startup delay, six-hour repeat, cleanup on shutdown and rejected checks. Updater tests prevent concurrent background checks, automatic downloads/restarts and overwriting pending/ready updates.
+- The packaged notification test waits for the actual startup scheduler without opening Settings or invoking Check. Controlled updater transport verifies the corner popup, explicit download, progress, ready state, explicit install IPC, and a byte-equivalent workspace backup before the mocked installer call. It also checks dismissal for the session/version, a new notification for a different version, and Settings fallback. The fixture version 9.9.9 is deliberately not a real published update.
+- Notification screenshots were visually reviewed at desktop and minimum 1050 × 740 window sizes. Native installer invocation is intercepted in this test; no user installation is overwritten. Real release download/signature verification is checked separately after publication.
+
 ## 0.4.0 gearsets, production ledger and access keys
 
 Checked on Windows x64, September 28, 2026. TypeScript, production renderer and NSIS installer builds passed. All 20 unit tests and all three packaged Electron tests passed against the final 0.4.0 executable.
