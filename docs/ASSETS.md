@@ -1,5 +1,7 @@
 # Visual assets
 
+`../public/assets/bancycraft-wordmark.png` is the user's supplied BancyCraft logo, copied unchanged from `ChatGPT Image Sep 27, 2026, 10_19_26 PM.png`. It replaces the sidebar lettermark and wordmark in 0.1.1. CSS preserves its aspect ratio and blends its black background into the sidebar. The Windows icon remains the existing compact mark.
+
 `approved-concept.png` preserves the user-approved BancyCraft home-screen concept.
 
 `../public/assets/workshop.png` is original decorative artwork generated with the built-in imagegen tool for this project. No remote image request is made by the application. Dragonwilds and Valheim cards use this original fantasy landscape as decorative art and plain-text game names; the app does not ship copied game logos or imply official affiliation.

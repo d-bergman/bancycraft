@@ -45,6 +45,7 @@ async function launch() {
     await run.page.getByLabel('Quantity owned').fill('50');
     await run.page.getByRole('button', { name: 'Save supply', exact: true }).click();
     await run.page.getByRole('dialog').waitFor({ state: 'hidden' });
+    assert.equal((await run.page.evaluate(() => window.bancy.load())).supplies[0]?.quantity, 50, 'Supply reaches the native store before leaving the page');
     await run.page.getByRole('button', { name: 'Settings & updates', exact: true }).click();
     await run.page.getByRole('heading', { name: 'BancyCraft updates' }).waitFor();
     await run.page.screenshot({ path: path.join(root, 'test-results', 'settings-desktop.png') });

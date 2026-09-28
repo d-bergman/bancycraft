@@ -52,7 +52,7 @@ function App() {
   if (loading) return <div className="boot"><span className="brand-letter">B</span><h1>BancyCraft</h1><p>Opening your workspace…</p></div>;
   return <SaveError.Provider value={error}><div className="app-shell">
     <aside className="sidebar">
-      <button className="brand" onClick={() => go('Home')} aria-label="BancyCraft home"><span className="brand-letter">B</span><span className="brand-name">BancyCraft</span><span className="eyebrow">Plan · Craft · Progress</span></button>
+      <button className="brand" onClick={() => go('Home')} aria-label="BancyCraft home"><img className="brand-wordmark" src="./assets/bancycraft-wordmark.png" alt="BancyCraft"/><span className="eyebrow">Plan · Craft · Progress</span></button>
       <nav aria-label="Main navigation">{navigation.map(({ label, icon: Icon }) => <button key={label} className={`nav-item ${page === label ? 'active' : ''}`} onClick={() => go(label)} aria-current={page === label ? 'page' : undefined}><Icon size={20}/><span>{label}</span></button>)}</nav>
       <div className="nav-divider"><span>Bancy.gg</span><span className="tiny-badge">Optional</span></div>
       <nav aria-label="Connected features">{shared.map(label => <button key={label} className={`nav-item shared ${page === label ? 'active' : ''}`} onClick={() => go(label)}><LockKeyhole size={17}/><span>{label}</span></button>)}</nav>

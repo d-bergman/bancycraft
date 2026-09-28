@@ -1,5 +1,9 @@
 # Verification — 0.1.0
 
+## 0.1.1 logo update
+
+Production build and packaged Electron smoke test passed with the supplied sidebar artwork. Home screen visually inspected at desktop size; the existing compact-layout test passed. A prior smoke attempt lost its expected test supply after restart; an immediate-store assertion was added for diagnostics and the subsequent packaged run passed. No persistence implementation was changed in this release. Recipe work is documentation-only. Installer-over-installer upgrade remains untested.
+
 Checked on Windows x64, September 27, 2026.
 
 - TypeScript check and production renderer build passed.

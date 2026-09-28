@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 — 2026-09-27
+
+- Replace the sidebar lettermark and text with the user's supplied BancyCraft artwork, preserving its aspect ratio.
+- Document candidate recipe sources for Valheim, Dragonwilds and Enshrouded. Research only; no catalog connections or new game features enabled.
+
 ## 0.1.0 — 2026-09-27
 
 First installable Windows foundation.

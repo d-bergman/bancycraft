@@ -4,7 +4,7 @@ A Windows crafting companion with an independent local workspace and optional fu
 
 ## Install and open
 
-Run `release/BancyCraft-Setup-0.1.0-x64.exe`. Install for your Windows user, then launch BancyCraft from the Start menu or desktop shortcut. Node.js and Python are not required on the user's PC.
+Run `release/BancyCraft-Setup-0.1.1-x64.exe`. Install for your Windows user, then launch BancyCraft from the Start menu or desktop shortcut. Node.js and Python are not required on the user's PC.
 
 This early build is unsigned. Windows may show an unknown-publisher warning, and managed security policies may block it. Publisher signing has not been purchased or configured.
 
