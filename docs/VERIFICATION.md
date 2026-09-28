@@ -1,5 +1,17 @@
 # Verification
 
+## 0.4.0 gearsets, production ledger and access keys
+
+Checked on Windows x64, September 28, 2026. TypeScript, production renderer and NSIS installer builds passed. All 20 unit tests and all three packaged Electron tests passed against the final 0.4.0 executable.
+
+- Gearset checks validate every bundled item ID, unique pieces, all seven Dragonwilds helmet alternatives, and authoritative Enshrouded set-page membership. Packaged checks exercise Dragonwilds alternatives, 20 Valheim bundles and 82 Enshrouded bundles including 23 cosmetic sets.
+- The offline ledger reproduces the website regression: 3,384 hides (34 stacks plus 18 loose), four purchases (999 + 999 + 999 + 387), 152,280 Chit cost, 203,040 revenue and 50,760 profit. Station timing, merchant filtering and order totals also pass. Owned website assets and calculation code are copied with recorded provenance; the website repository remains unchanged.
+- Access tests reject altered, expired, future-issued, wrong-scope and untrusted keys. Packaged checks confirm actual Windows encrypted persistence across restart, hidden navigation while locked, direct native request rejection without a key, and key removal/session closure when locking.
+- The native community window has no Node access or app preload and is restricted to Bancy.gg. Packaged checks load the real signed-out website bank, prefill a reviewed merchant request, and verify closing the bank when changing games or locking. No request was submitted and no production bank record was written. An anonymous live Firebase bank read returned HTTP 401.
+- Desktop ledger, gearsets and signed-out bank screenshots were visually reviewed. Existing search, shopping-list progress, migration and persistence smoke tests also pass. The packaged archive contains the access public key and ledger, with no private issuer key or issued access key.
+
+Actual installer-over-installer replacement has not been performed against the user's installed copy. Shared-bank member/admin mutations retain the website's existing implementation and were not exercised against production data.
+
 ## 0.3.0 shopping lists and updates
 
 Checked on Windows x64, September 28, 2026. Production build, 17 unit tests, and both packaged Electron integration tests passed. NSIS x64 installer built successfully.

@@ -1,0 +1,1882 @@
+{
+  "dragonwilds": [
+    {
+      "name": "Adamant armor",
+      "ids": [
+        "14171",
+        "14172",
+        "14173"
+      ],
+      "alternatives": {
+        "14171": [
+          "20044"
+        ]
+      },
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Adamant_Helmet"
+    },
+    {
+      "name": "Ancestral armor",
+      "ids": [
+        "19614",
+        "15060",
+        "19616"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Ancestral_Hat"
+    },
+    {
+      "name": "Apprentice armor",
+      "ids": [
+        "833",
+        "835",
+        "836"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Apprentice_Hat"
+    },
+    {
+      "name": "Black Dragonhide armor",
+      "ids": [
+        "19619",
+        "19543",
+        "19621"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Black_Dragonhide_Coif"
+    },
+    {
+      "name": "Black Knight armor",
+      "ids": [
+        "10742",
+        "10898",
+        "10899"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Black_Knight_Helmet"
+    },
+    {
+      "name": "Blue Dragonhide armor",
+      "ids": [
+        "10939",
+        "10936",
+        "10940"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Blue_Dragonhide_Coif"
+    },
+    {
+      "name": "Bronze armor",
+      "ids": [
+        "872",
+        "847",
+        "875"
+      ],
+      "alternatives": {
+        "872": [
+          "20035"
+        ]
+      },
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Bronze_Helmet"
+    },
+    {
+      "name": "Dark Mage armor",
+      "ids": [
+        "861",
+        "867",
+        "865"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Dark_Mage_Hood"
+    },
+    {
+      "name": "Desert armor",
+      "ids": [
+        "14519",
+        "13952",
+        "14482"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Desert_Hood"
+    },
+    {
+      "name": "Dragon armor",
+      "ids": [
+        "19528",
+        "19531",
+        "19532"
+      ],
+      "alternatives": {
+        "19528": [
+          "19661"
+        ]
+      },
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Dragon_Full_Helm"
+    },
+    {
+      "name": "Dragonkin Mage armor",
+      "ids": [
+        "1252",
+        "850",
+        "948"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Dragonkin_Mage_Hood"
+    },
+    {
+      "name": "Fallen Hoplite's armor",
+      "ids": [
+        "8998",
+        "8999",
+        "9000"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Fallen_Hoplite's_Helm"
+    },
+    {
+      "name": "Gilded Paladin armor",
+      "ids": [
+        "19629",
+        "19631",
+        "19633"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Gilded_Paladin_Helmet"
+    },
+    {
+      "name": "Green Dragonhide armor",
+      "ids": [
+        "8968",
+        "8971",
+        "8974"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Green_Dragonhide_Coif"
+    },
+    {
+      "name": "Hard Leather armor",
+      "ids": [
+        "957",
+        "949",
+        "956"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Hard_Leather_Cowl"
+    },
+    {
+      "name": "Infinity armor",
+      "ids": [
+        "14262",
+        "14264",
+        "14265"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Infinity_Robe_Hat"
+    },
+    {
+      "name": "Iron armor",
+      "ids": [
+        "958",
+        "552",
+        "961"
+      ],
+      "alternatives": {
+        "958": [
+          "20037"
+        ]
+      },
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Iron_Helmet"
+    },
+    {
+      "name": "Kalphite Carapace armor",
+      "ids": [
+        "14650",
+        "14512",
+        "14651"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Kalphite_Carapace_Helmet"
+    },
+    {
+      "name": "Leather armor",
+      "ids": [
+        "837",
+        "838",
+        "839"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Leather_Cowl"
+    },
+    {
+      "name": "Lunar Garou armor",
+      "ids": [
+        "14250",
+        "14251",
+        "14252"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Lunar_Garou_Hat"
+    },
+    {
+      "name": "Mithril armor",
+      "ids": [
+        "10743",
+        "10888",
+        "10889"
+      ],
+      "alternatives": {
+        "10743": [
+          "20043"
+        ]
+      },
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Mithril_Helmet"
+    },
+    {
+      "name": "Mystic armor",
+      "ids": [
+        "10973",
+        "10975",
+        "10977"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Mystic_Hat"
+    },
+    {
+      "name": "Necromancer armor",
+      "ids": [
+        "9318",
+        "9323",
+        "9294"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Necromancer's_Crown"
+    },
+    {
+      "name": "Obsidian armor",
+      "ids": [
+        "14438",
+        "14439",
+        "14440"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Obsidian_Helmet"
+    },
+    {
+      "name": "Paladin armor",
+      "ids": [
+        "1205",
+        "982",
+        "984"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Paladin's_Helm"
+    },
+    {
+      "name": "Ranger armor",
+      "ids": [
+        "9361",
+        "9362",
+        "9363"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Ranger_Hat"
+    },
+    {
+      "name": "Red Dragonhide armor",
+      "ids": [
+        "14398",
+        "14392",
+        "14399"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Red_Dragonhide_Coif"
+    },
+    {
+      "name": "Reinforced armor",
+      "ids": [
+        "758",
+        "988",
+        "997"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Reinforced_Helmet"
+    },
+    {
+      "name": "Rune armor",
+      "ids": [
+        "19524",
+        "19529",
+        "19530"
+      ],
+      "alternatives": {
+        "19524": [
+          "20045"
+        ]
+      },
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Rune_Helm"
+    },
+    {
+      "name": "Shadow armor",
+      "ids": [
+        "11008",
+        "11129",
+        "11130"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Shadow_Cowl"
+    },
+    {
+      "name": "Splitbark armor",
+      "ids": [
+        "9325",
+        "9376",
+        "9377"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Splitbark_Helm"
+    },
+    {
+      "name": "Steel armor",
+      "ids": [
+        "8806",
+        "8815",
+        "8817"
+      ],
+      "alternatives": {
+        "8806": [
+          "20039"
+        ]
+      },
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Steel_Full_Helm"
+    },
+    {
+      "name": "Studded Leather armor",
+      "ids": [
+        "1017",
+        "1000",
+        "1002"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Studded_Leather_Cowl"
+    },
+    {
+      "name": "White armor",
+      "ids": [
+        "9372",
+        "9375",
+        "9190"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/White_Full_Helm"
+    },
+    {
+      "name": "Wild Archer armor",
+      "ids": [
+        "1026",
+        "1019",
+        "1025"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Wild_Archer_Cowl"
+    },
+    {
+      "name": "Wizard armor",
+      "ids": [
+        "1031",
+        "1041",
+        "1037"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Wizard_Hat"
+    },
+    {
+      "name": "Zamorak armor",
+      "ids": [
+        "11082",
+        "11171",
+        "11173"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://dragonwilds.runescape.wiki/w/Zamorak_Hood"
+    }
+  ],
+  "valheim": [
+    {
+      "name": "Ask armor",
+      "ids": [
+        "HelmetAshlandsMediumHood",
+        "ArmorAshlandsMediumChest",
+        "ArmorAshlandsMediumlegs"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Bear armor",
+      "ids": [
+        "HelmetBerserkerHood",
+        "ArmorBerserkerChest",
+        "ArmorBerserkerLegs"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Bronze armor",
+      "ids": [
+        "HelmetBronze",
+        "ArmorBronzeChest",
+        "ArmorBronzeLegs"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Caller armor",
+      "ids": [
+        "HelmetDNMage",
+        "ArmorDeepNorthMageChest",
+        "ArmorDeepNorthMagelegs",
+        "CapeDeepNorthMage"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Carapace armor",
+      "ids": [
+        "HelmetCarapace",
+        "ArmorCarapaceChest",
+        "ArmorCarapaceLegs"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Eitr-weave armor",
+      "ids": [
+        "HelmetMage",
+        "ArmorMageChest",
+        "ArmorMageLegs"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Embla armor",
+      "ids": [
+        "HelmetMage_Ashlands",
+        "ArmorMageChest_Ashlands",
+        "ArmorMageLegs_Ashlands"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Fenris armor",
+      "ids": [
+        "HelmetFenring",
+        "ArmorFenringChest",
+        "ArmorFenringLegs"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Flametal armor",
+      "ids": [
+        "HelmetFlametal",
+        "ArmorFlametalChest",
+        "ArmorFlametalLegs"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Iron armor",
+      "ids": [
+        "HelmetIron",
+        "ArmorIronChest",
+        "ArmorIronLegs"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Leather armor",
+      "ids": [
+        "HelmetLeather",
+        "ArmorLeatherChest",
+        "ArmorLeatherLegs"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Lox fur armor",
+      "ids": [
+        "HelmetLox",
+        "ArmorLoxChest",
+        "ArmorLoxLegs"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Padded armor",
+      "ids": [
+        "HelmetPadded",
+        "ArmorPaddedCuirass",
+        "ArmorPaddedGreaves"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Protector armor",
+      "ids": [
+        "HelmetDNHeavy",
+        "ArmorDeepNorthHeavyChest",
+        "ArmorDeepNorthHeavylegs"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Rag armor",
+      "ids": [
+        "ArmorRagsChest",
+        "ArmorRagsLegs"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Root armor",
+      "ids": [
+        "HelmetRoot",
+        "ArmorRootChest",
+        "ArmorRootLegs"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Troll armor",
+      "ids": [
+        "HelmetTrollLeather",
+        "ArmorTrollLeatherChest",
+        "ArmorTrollLeatherLegs",
+        "CapeTrollHide"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Vanguard armor",
+      "ids": [
+        "HelmetDNMediumHood",
+        "ArmorDeepNorthMediumChest",
+        "ArmorDeepNorthMediumlegs"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Vilebone armor",
+      "ids": [
+        "HelmetBerserkerUndead",
+        "ArmorBerserkerUndeadChest",
+        "ArmorBerserkerUndeadLegs"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    },
+    {
+      "name": "Wolf armor",
+      "ids": [
+        "HelmetDrake",
+        "ArmorWolfChest",
+        "ArmorWolfLegs",
+        "CapeWolf"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/item-list.html"
+    }
+  ],
+  "enshrouded": [
+    {
+      "name": "Adventurer armor",
+      "ids": [
+        "2187",
+        "2188",
+        "2189",
+        "2190",
+        "2191"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Adventurer_Set",
+      "revision": 36528,
+      "missing": []
+    },
+    {
+      "name": "Alchemist Apprentice armor",
+      "ids": [
+        "2124",
+        "2125",
+        "2126",
+        "2127",
+        "2128"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Alchemist_Apprentice_Set",
+      "revision": 38396,
+      "missing": []
+    },
+    {
+      "name": "Alpine Antler armor",
+      "ids": [
+        "5072",
+        "5073",
+        "5076",
+        "5079",
+        "5084"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Alpine_Antler_Set",
+      "revision": 36270,
+      "missing": []
+    },
+    {
+      "name": "Archer armor",
+      "ids": [
+        "2267",
+        "2268",
+        "2269",
+        "2270",
+        "2271"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Archer_Set",
+      "revision": 49817,
+      "missing": []
+    },
+    {
+      "name": "Archmage armor",
+      "ids": [
+        "2150",
+        "2151",
+        "2152",
+        "2153",
+        "2154"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Archmage_Set",
+      "revision": 44503,
+      "missing": []
+    },
+    {
+      "name": "Assassin armor",
+      "ids": [
+        "2292",
+        "2293",
+        "2294",
+        "2295",
+        "2296"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Assassin_Set",
+      "revision": 44514,
+      "missing": []
+    },
+    {
+      "name": "Blackguard armor",
+      "ids": [
+        "6341",
+        "6342",
+        "6343",
+        "6344",
+        "6345"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Blackguard_Set",
+      "revision": 36531,
+      "missing": []
+    },
+    {
+      "name": "Blacksmith armor",
+      "ids": [
+        "4564",
+        "4565",
+        "4566",
+        "4567"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Blacksmith_Set",
+      "revision": 50189,
+      "missing": []
+    },
+    {
+      "name": "Blood Rose armor",
+      "ids": [
+        "9414",
+        "9413",
+        "9412",
+        "9411",
+        "9410"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Blood_Rose_Set",
+      "revision": 48319,
+      "missing": []
+    },
+    {
+      "name": "Bloodfeather armor",
+      "ids": [
+        "7827",
+        "7828",
+        "7829",
+        "7830",
+        "7826"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Bloodfeather_Set",
+      "revision": 49842,
+      "missing": []
+    },
+    {
+      "name": "Brazen Bull armor",
+      "ids": [
+        "4312",
+        "4419",
+        "4420",
+        "4421",
+        "4422"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Brazen_Bull_Set",
+      "revision": 36551,
+      "missing": []
+    },
+    {
+      "name": "Deadeye armor",
+      "ids": [
+        "2287",
+        "2288",
+        "2289",
+        "2290",
+        "2291"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Deadeye_Set",
+      "revision": 36240,
+      "missing": []
+    },
+    {
+      "name": "Deerstalker armor",
+      "ids": [
+        "2297",
+        "2298",
+        "2299",
+        "2300",
+        "2301"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Deerstalker_Set",
+      "revision": 36251,
+      "missing": []
+    },
+    {
+      "name": "Eagle Eye armor",
+      "ids": [
+        "2307",
+        "2308",
+        "2309",
+        "2310",
+        "2311"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Eagle_Eye_Set",
+      "revision": 49525,
+      "missing": []
+    },
+    {
+      "name": "Efflorescent Hope armor",
+      "ids": [
+        "10376",
+        "10377",
+        "10378",
+        "10379",
+        "10380"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Efflorescent_Hope_Set",
+      "revision": 50143,
+      "missing": []
+    },
+    {
+      "name": "Elder armor",
+      "ids": [
+        "2170",
+        "2171",
+        "2172",
+        "2173",
+        "2174"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Elder_Set",
+      "revision": 49526,
+      "missing": []
+    },
+    {
+      "name": "Elite Hollow armor",
+      "ids": [
+        "3473",
+        "3474",
+        "3475",
+        "3476",
+        "3477"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Elite_Hollow_Set",
+      "revision": 36773,
+      "missing": []
+    },
+    {
+      "name": "Exclusive Hollow armor",
+      "ids": [
+        "3462",
+        "3463",
+        "3464",
+        "3465",
+        "3466"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Exclusive_Hollow_Set",
+      "revision": 34380,
+      "missing": []
+    },
+    {
+      "name": "Explorer armor",
+      "ids": [
+        "3429",
+        "3431",
+        "3432",
+        "3433",
+        "3434"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Explorer_Set",
+      "revision": 34383,
+      "missing": []
+    },
+    {
+      "name": "Farmer armor",
+      "ids": [
+        "4554",
+        "4555",
+        "4556",
+        "4557"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Farmer_Set",
+      "revision": 50176,
+      "missing": []
+    },
+    {
+      "name": "Flame Pact armor",
+      "ids": [
+        "6028",
+        "6029",
+        "6030",
+        "6031",
+        "6032"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Flame_Pact_Set",
+      "revision": 50163,
+      "missing": []
+    },
+    {
+      "name": "Fluffy armor",
+      "ids": [
+        "4580",
+        "4579",
+        "4578",
+        "4577",
+        "4576"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Fluffy_Set",
+      "revision": 36280,
+      "missing": []
+    },
+    {
+      "name": "Fowler armor",
+      "ids": [
+        "2282",
+        "2283",
+        "2284",
+        "2285",
+        "2286"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Fowler_Set",
+      "revision": 44546,
+      "missing": []
+    },
+    {
+      "name": "Frostbite Slasher armor",
+      "ids": [
+        "5070",
+        "5075",
+        "5078",
+        "5081",
+        "5082"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Frostbite_Slasher_Set",
+      "revision": 44556,
+      "missing": []
+    },
+    {
+      "name": "Fur Armor armor",
+      "ids": [
+        "2089",
+        "2090",
+        "2092",
+        "2180",
+        "2181"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Fur_Armor_Set",
+      "revision": 36294,
+      "missing": []
+    },
+    {
+      "name": "Gloom Monarch armor",
+      "ids": [
+        "2242",
+        "2243",
+        "2244",
+        "2245",
+        "2246"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Gloom_Monarch_Set",
+      "revision": 49527,
+      "missing": []
+    },
+    {
+      "name": "Golden Bulwark armor",
+      "ids": [
+        "7810",
+        "7811",
+        "7812",
+        "7813",
+        "7814"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Golden_Bulwark_Set",
+      "revision": 38101,
+      "missing": []
+    },
+    {
+      "name": "Gravedigger armor",
+      "ids": [
+        "4559",
+        "4560",
+        "4561",
+        "4562"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Gravedigger_Set",
+      "revision": 50169,
+      "missing": []
+    },
+    {
+      "name": "Guard of the North armor",
+      "ids": [
+        "2232",
+        "2233",
+        "2234",
+        "2235",
+        "2236"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Guard_of_the_North_Set",
+      "revision": 36548,
+      "missing": []
+    },
+    {
+      "name": "Guardian armor",
+      "ids": [
+        "2197",
+        "2198",
+        "2199",
+        "2200",
+        "2201"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Guardian_Set",
+      "revision": 36532,
+      "missing": []
+    },
+    {
+      "name": "Hailcaster armor",
+      "ids": [
+        "4978",
+        "4980",
+        "4982",
+        "4984",
+        "4987"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Hailcaster_Set",
+      "revision": 44577,
+      "missing": []
+    },
+    {
+      "name": "Hawk armor",
+      "ids": [
+        "2302",
+        "2303",
+        "2304",
+        "2305",
+        "2306"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Hawk_Set",
+      "revision": 49529,
+      "missing": []
+    },
+    {
+      "name": "Healer armor",
+      "ids": [
+        "2134",
+        "2135",
+        "2136",
+        "2137",
+        "2138"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Healer_Set",
+      "revision": 36303,
+      "missing": []
+    },
+    {
+      "name": "Herbalist armor",
+      "ids": [
+        "2145",
+        "2146",
+        "2147",
+        "2148",
+        "2149"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Herbalist_Set",
+      "revision": 36516,
+      "missing": []
+    },
+    {
+      "name": "Hollow's Eve armor",
+      "ids": [
+        "4586",
+        "4585",
+        "4584",
+        "4583",
+        "4582"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Hollow's_Eve_Set",
+      "revision": 34374,
+      "missing": []
+    },
+    {
+      "name": "Hunter armor",
+      "ids": [
+        "2277",
+        "2278",
+        "2279",
+        "2280",
+        "2281"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Hunter_Set",
+      "revision": 36237,
+      "missing": []
+    },
+    {
+      "name": "Hunter Set (Cosmetic)",
+      "ids": [
+        "6024",
+        "6025",
+        "6026",
+        "6027"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Hunter_Set_(Cosmetic)",
+      "revision": 50383,
+      "missing": []
+    },
+    {
+      "name": "Knight armor",
+      "ids": [
+        "2237",
+        "2238",
+        "2239",
+        "2240",
+        "2241"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Knight_Set",
+      "revision": 44550,
+      "missing": []
+    },
+    {
+      "name": "Lumberer armor",
+      "ids": [
+        "7143",
+        "7144",
+        "7146",
+        "7145",
+        "7147"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Lumberer_Set",
+      "revision": 48309,
+      "missing": []
+    },
+    {
+      "name": "Mage armor",
+      "ids": [
+        "2129",
+        "2130",
+        "2131",
+        "2132",
+        "2133"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Mage_Set",
+      "revision": 44573,
+      "missing": []
+    },
+    {
+      "name": "Magician armor",
+      "ids": [
+        "2139",
+        "2140",
+        "2141",
+        "2143",
+        "2144"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Magician_Set",
+      "revision": 44574,
+      "missing": []
+    },
+    {
+      "name": "Maid armor",
+      "ids": [
+        "4569",
+        "4570"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Maid_Set",
+      "revision": 50186,
+      "missing": []
+    },
+    {
+      "name": "Marksman armor",
+      "ids": [
+        "2257",
+        "2258",
+        "2259",
+        "2260",
+        "2261"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Marksman_Set",
+      "revision": 36226,
+      "missing": []
+    },
+    {
+      "name": "Mercenary armor",
+      "ids": [
+        "2202",
+        "2203",
+        "2204",
+        "2205",
+        "2206"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Mercenary_Set",
+      "revision": 36533,
+      "missing": []
+    },
+    {
+      "name": "Milkmaid armor",
+      "ids": [
+        "6021",
+        "6022",
+        "6023"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Milkmaid_Set",
+      "revision": 50181,
+      "missing": []
+    },
+    {
+      "name": "Mountain's Shadow armor",
+      "ids": [
+        "4298",
+        "4299",
+        "4309",
+        "4310",
+        "4311"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Mountain's_Shadow_Set",
+      "revision": 44553,
+      "missing": []
+    },
+    {
+      "name": "Mystic armor",
+      "ids": [
+        "2175",
+        "2176",
+        "2177",
+        "2178",
+        "2179"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Mystic_Set",
+      "revision": 44580,
+      "missing": []
+    },
+    {
+      "name": "Noble armor",
+      "ids": [
+        "3457",
+        "3458",
+        "3459",
+        "3460",
+        "3461"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Noble_Set",
+      "revision": 50164,
+      "missing": []
+    },
+    {
+      "name": "Omen armor",
+      "ids": [
+        "6351",
+        "6352",
+        "6353",
+        "6354",
+        "6355"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Omen_Set",
+      "revision": 36306,
+      "missing": []
+    },
+    {
+      "name": "Pearlfrost Mentor armor",
+      "ids": [
+        "4979",
+        "4981",
+        "4983",
+        "4985",
+        "4986"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Pearlfrost_Mentor_Set",
+      "revision": 36526,
+      "missing": []
+    },
+    {
+      "name": "Plaguebringer armor",
+      "ids": [
+        "6346",
+        "6347",
+        "6348",
+        "6349",
+        "6350"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Plaguebringer_Set",
+      "revision": 36235,
+      "missing": []
+    },
+    {
+      "name": "Quetzal Hunter armor",
+      "ids": [
+        "8507",
+        "8508",
+        "8509",
+        "8510",
+        "8512"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Quetzal_Hunter_Set",
+      "revision": 42585,
+      "missing": []
+    },
+    {
+      "name": "Radiant Paladin armor",
+      "ids": [
+        "2247",
+        "2248",
+        "2249",
+        "2250",
+        "2251"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Radiant_Paladin_Set",
+      "revision": 49524,
+      "missing": []
+    },
+    {
+      "name": "Ragged armor",
+      "ids": [
+        "2317",
+        "2318",
+        "2319"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Ragged_Set",
+      "revision": 36293,
+      "missing": []
+    },
+    {
+      "name": "Ranger armor",
+      "ids": [
+        "2262",
+        "2263",
+        "2264",
+        "2265",
+        "2266"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Ranger_Set",
+      "revision": 36227,
+      "missing": []
+    },
+    {
+      "name": "Rising Fighter armor",
+      "ids": [
+        "2182",
+        "2183",
+        "2184",
+        "2185",
+        "2186"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Rising_Fighter_Set",
+      "revision": 36565,
+      "missing": []
+    },
+    {
+      "name": "Rogue armor",
+      "ids": [
+        "2207",
+        "2208",
+        "2209",
+        "2210",
+        "2211"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Rogue_Set",
+      "revision": 44552,
+      "missing": []
+    },
+    {
+      "name": "Royal armor",
+      "ids": [
+        "3452",
+        "3453",
+        "3454",
+        "3455",
+        "3456"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Royal_Set",
+      "revision": 50175,
+      "missing": []
+    },
+    {
+      "name": "Sage armor",
+      "ids": [
+        "2155",
+        "2156",
+        "2157",
+        "2158",
+        "2159"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Sage_Set",
+      "revision": 36520,
+      "missing": []
+    },
+    {
+      "name": "Scholar Of The Empyrean armor",
+      "ids": [
+        "6489",
+        "6490",
+        "6491",
+        "6492",
+        "6493"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Scholar_Of_The_Empyrean_Set",
+      "revision": 36736,
+      "missing": []
+    },
+    {
+      "name": "Scholar Of The Young Flame armor",
+      "ids": [
+        "6496",
+        "6497",
+        "6498",
+        "6499",
+        "6500"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Scholar_Of_The_Young_Flame_Set",
+      "revision": 34368,
+      "missing": []
+    },
+    {
+      "name": "Scout armor",
+      "ids": [
+        "2252",
+        "2253",
+        "2254",
+        "2255",
+        "2256"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Scout_Set",
+      "revision": 36298,
+      "missing": []
+    },
+    {
+      "name": "Serpent Warrior armor",
+      "ids": [
+        "6033",
+        "6034",
+        "6035",
+        "6036",
+        "6037"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Serpent_Warrior_Set",
+      "revision": 35772,
+      "missing": []
+    },
+    {
+      "name": "Sharpshooter armor",
+      "ids": [
+        "2272",
+        "2273",
+        "2274",
+        "2275",
+        "2276"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Sharpshooter_Set",
+      "revision": 36236,
+      "missing": []
+    },
+    {
+      "name": "Siren Seeker armor",
+      "ids": [
+        "8616",
+        "8617",
+        "8618",
+        "8619",
+        "8620"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Siren_Seeker_Set",
+      "revision": 41735,
+      "missing": []
+    },
+    {
+      "name": "Skull Stalker armor",
+      "ids": [
+        "7831",
+        "7832",
+        "7833",
+        "7834",
+        "7835"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Skull_Stalker_Set",
+      "revision": 42583,
+      "missing": []
+    },
+    {
+      "name": "Soldier armor",
+      "ids": [
+        "1875",
+        "2218",
+        "2219",
+        "2220",
+        "2221"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Soldier_Set",
+      "revision": 44548,
+      "missing": []
+    },
+    {
+      "name": "Spellbreaker armor",
+      "ids": [
+        "2165",
+        "2166",
+        "2167",
+        "2168",
+        "2169"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Spellbreaker_Set",
+      "revision": 49798,
+      "missing": []
+    },
+    {
+      "name": "Summer Games armor",
+      "ids": [
+        "8606",
+        "8607",
+        "8608",
+        "8609",
+        "8610"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Summer_Games_Set",
+      "revision": 40097,
+      "missing": []
+    },
+    {
+      "name": "Sunny Loungewear Garb armor",
+      "ids": [
+        "7015",
+        "7010",
+        "7009"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Sunny_Loungewear_Garb_Set",
+      "revision": 34369,
+      "missing": []
+    },
+    {
+      "name": "Sunpiercer armor",
+      "ids": [
+        "7816",
+        "7817",
+        "7818",
+        "7819",
+        "7820"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Sunpiercer_Set",
+      "revision": 42577,
+      "missing": []
+    },
+    {
+      "name": "Tank armor",
+      "ids": [
+        "2192",
+        "2193",
+        "2194",
+        "2195",
+        "2196"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Tank_Set",
+      "revision": 36529,
+      "missing": []
+    },
+    {
+      "name": "Thaumaturge armor",
+      "ids": [
+        "4974",
+        "4753",
+        "4975",
+        "4976",
+        "4977"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Thaumaturge_Set",
+      "revision": 44576,
+      "missing": []
+    },
+    {
+      "name": "Tidecaller armor",
+      "ids": [
+        "8898",
+        "8899",
+        "8900",
+        "8901",
+        "8902"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Tidecaller_Set",
+      "revision": 42582,
+      "missing": []
+    },
+    {
+      "name": "Trailblazer armor",
+      "ids": [
+        "5071",
+        "5074",
+        "5077",
+        "5080",
+        "5083"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Trailblazer_Set",
+      "revision": 36271,
+      "missing": []
+    },
+    {
+      "name": "Warden armor",
+      "ids": [
+        "2213",
+        "2214",
+        "2215",
+        "2216",
+        "2217"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Warden_Set",
+      "revision": 36536,
+      "missing": []
+    },
+    {
+      "name": "Warlock armor",
+      "ids": [
+        "2160",
+        "2161",
+        "2162",
+        "2163",
+        "2164"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Warlock_Set",
+      "revision": 44581,
+      "missing": []
+    },
+    {
+      "name": "Warrior armor",
+      "ids": [
+        "2222",
+        "2223",
+        "2224",
+        "2225",
+        "2227"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Warrior_Set",
+      "revision": 44551,
+      "missing": []
+    },
+    {
+      "name": "Waveborne Ritualist armor",
+      "ids": [
+        "8907",
+        "8906",
+        "8905",
+        "8904",
+        "8903"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Waveborne_Ritualist_Set",
+      "revision": 42584,
+      "missing": []
+    },
+    {
+      "name": "Winterly armor",
+      "ids": [
+        "4588",
+        "4589",
+        "4590",
+        "4591",
+        "4592"
+      ],
+      "alternatives": {},
+      "kind": "Cosmetic",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Winterly_Set",
+      "revision": 34373,
+      "missing": []
+    },
+    {
+      "name": "Wizard armor",
+      "ids": [
+        "2312",
+        "2313",
+        "2314",
+        "2315",
+        "2316"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Wizard_Set",
+      "revision": 44571,
+      "missing": []
+    },
+    {
+      "name": "Wolf's Fang armor",
+      "ids": [
+        "4928",
+        "4929",
+        "4930",
+        "4931",
+        "4932"
+      ],
+      "alternatives": {},
+      "kind": "Armor",
+      "sourceUrl": "https://enshrouded.wiki.gg/wiki/Wolf's_Fang_Set",
+      "revision": 44557,
+      "missing": []
+    }
+  ]
+}

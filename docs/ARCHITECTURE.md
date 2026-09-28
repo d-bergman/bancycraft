@@ -2,9 +2,9 @@
 
 ## Current boundaries
 
-React/TypeScript renders bundled local content. Electron runs with sandbox, context isolation and no renderer Node integration. A restricted preload bridge exposes individual methods. Main-process handlers validate the sender and workspace payload. New windows, navigation away from the local UI, webviews and permission requests are blocked. External browser links are limited to the fixed Bancy.gg URL and validated HTTPS source/license domains and paths.
+React/TypeScript renders bundled local content. Electron runs with sandbox, context isolation and no renderer Node integration. A restricted preload bridge exposes individual methods. Main-process handlers validate the sender and workspace payload. The local renderer cannot navigate away or create windows/webviews. A validated access key allows a separate main-process-owned, sandboxed Bancy.gg bank browser, with no preload bridge. Permission requests are denied. External browser links are limited to the fixed Bancy.gg URL and validated HTTPS source/license domains and paths.
 
-The local JSON store owns manual plans and supplies. It has a schema version, write validation, previous-save backup and safe failure on unknown data. No game or website credentials are requested. There is no telemetry.
+The local JSON store owns manual plans and supplies. It has a schema version, write validation, previous-save backup and safe failure on unknown data. The native app does not collect game or website credentials. Bank sign-in happens only in the isolated real website window. There is no telemetry.
 
 ## Future Bancy connection
 
@@ -25,8 +25,12 @@ The shopping-list engine builds a dependency graph from the selected game's cata
 ## Known foundation limits
 
 - Recipe catalogs remain partial; supported recipes expand into shopping-list quantities, while unknown acquisition/processing data stays explicit.
-- Website authentication and Blackbox indexing are not implemented.
+- The shared bank uses the existing website sign-in in an isolated window. Native account authorization/Blackbox indexing are not implemented.
 - JSON export is implemented; UI restore is not.
 - Only Windows x64 installer is built.
 - Installer is unsigned; Windows security policies vary.
 - Programmatic tests cover migration, restart persistence, signature checks and live update download; installation into the user's existing Windows profile is not performed by test scripts.
+
+## Current community and ledger integration
+
+Signed offline access keys hide or reveal app community navigation; native bank IPC rechecks them. This gate is separate from website membership/admin authorization. Local production tools are the owned website copy inside an opaque sandboxed frame. Shared bank records are maintained by the existing website backend, accessed inside the pinned Bancy.gg browser window. See LEDGER.md and ACCESS-KEYS.md for boundaries and key issuance.

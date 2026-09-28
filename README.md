@@ -1,20 +1,20 @@
 # BancyCraft
 
-A Windows crafting companion with an independent local workspace and optional future Bancy.gg community features.
+A Windows crafting companion with an independent local workspace and optional key-gated Bancy.gg community features.
 
 ## Install and open
 
-Run `release/BancyCraft-Setup-0.3.0-x64.exe`. Install for your Windows user, then launch BancyCraft from the Start menu or desktop shortcut. Node.js and Python are not required on the user's PC.
+Run `release/BancyCraft-Setup-0.4.0-x64.exe`. Install for your Windows user, then launch BancyCraft from the Start menu or desktop shortcut. Node.js and Python are not required on the user's PC.
 
 This early build is unsigned. Windows may show an unknown-publisher warning, and managed security policies may block it. Publisher signing has not been purchased or configured.
 
 ## Updating this installation
 
-Install 0.3.0 once if upgrading from an earlier build. Then open **Settings & updates**, choose **Check for updates**, download an available release, and choose **Restart & install**. Future updates are delivered by GitHub Releases, without separate manual installer downloads.
+Versions 0.3.0 and later update through Settings. If upgrading from 0.2.0 or earlier, install the current version once. Then open **Settings & updates**, choose **Check for updates**, download an available release, and choose **Restart & install**. Future updates are delivered by GitHub Releases, without separate manual installer downloads.
 
 The stable application ID is gg.bancy.bancycraft. Lists, progress, plans and supplies remain under %APPDATA%/BancyCraft, outside the installation folder. Updates require a trusted BancyCraft release signature; private publishing credentials are never included in the app. See [UPDATES.md](docs/UPDATES.md).
 
-## Working in 0.3.0
+## Working in 0.4.0
 
 - Bancy-themed home screen, keyboard search (Ctrl+K), game selection and navigation.
 - Manual local crafting plans: create, edit, quantity, notes, status and deletion confirmation.
@@ -24,12 +24,14 @@ The stable application ID is gg.bancy.bancycraft. Lists, progress, plans and sup
 - Persistent local data and a previous-save backup.
 - Export a JSON workspace backup and open the data directory.
 - TeamCraft-inspired shopping lists, pre-craft calculation, partial completion, dependency propagation and reset controls.
-- Saved lists, auto-deleting quick lists, multi-select drawer and starter armor bundles.
+- Saved lists, auto-deleting quick lists, multi-select drawer and 139 armor/cosmetic sets and equipment bundles.
 - Real offline item icons and numbered results.
 - In-app update checks, downloads and restart-to-install.
-- Browser link to Bancy.gg. This is not an authenticated app connection yet.
+- Offline Dragonwilds production ledger, merchant orders and full guide copied from the existing website.
+- Private signed cipher keys, Windows-encrypted storage, and community navigation hidden when locked.
+- Existing website bank inside an isolated app browser window, with the same sign-in, records and permissions.
 
-There are no invented server totals, save watchers, game plugins, game-save access, credential collection or Blackbox services in this build.
+There are no invented server totals, save watchers, game plugins, game-save access or Blackbox services. Website credentials are entered only into the real Bancy.gg bank window; native keys grant no website role. See [LEDGER.md](docs/LEDGER.md), [ACCESS-KEYS.md](docs/ACCESS-KEYS.md) and [GEARSETS.md](docs/GEARSETS.md).
 
 ## Data
 

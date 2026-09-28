@@ -91,9 +91,8 @@ async function launch() {
     await run.page.getByRole('button', { name: 'Settings & updates', exact: true }).click();
     await run.page.getByRole('heading', { name: 'BancyCraft updates' }).waitFor();
     await run.page.screenshot({ path: path.join(root, 'test-results', 'settings-desktop.png') });
-    await run.page.getByRole('button', { name: 'Connect to Bancy.gg', exact: true }).click();
-    assert.match(await run.page.getByRole('dialog').innerText(), /will not connect this build/);
-    await run.page.getByRole('button', { name: 'Keep planning' }).click();
+    await run.page.getByLabel('BancyCraft cipher key',{exact:true}).waitFor();
+    assert.equal(await run.page.getByRole('navigation',{name:'Connected features'}).count(),0,'Community sidebar is hidden without a validated key');
     await run.application.close();
     run = await launch();
     stored = await run.page.evaluate(() => window.bancy.load());

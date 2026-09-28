@@ -5,6 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
+const targetVersion=require('../package.json').version;
 const profile = path.join(root, 'test-results', `updates-profile-${Date.now()}`);
 const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTRON_RUN_AS_NODE;
 (async () => {
@@ -32,12 +33,12 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
     await page.getByRole('button', { name: 'Check for updates', exact: true }).click();
     await page.getByLabel('Update status', { exact: true }).filter({ hasText: 'You have the latest BancyCraft release.' }).waitFor({ timeout: 60000 });
     assert.equal((await page.evaluate(() => window.bancy.info())).update.state, 'current');
-    console.log('Current-version check passed; simulating version 0.2.0…');
-    await app.evaluate(() => { const load = process.mainModule.require.bind(process.mainModule); load('electron-updater').autoUpdater.currentVersion = new (load('semver').SemVer)('0.2.0'); });
+    console.log('Current-version check passed; simulating version 0.3.0…');
+    await app.evaluate(() => { const load = process.mainModule.require.bind(process.mainModule); load('electron-updater').autoUpdater.currentVersion = new (load('semver').SemVer)('0.3.0'); });
     await page.getByRole('button', { name: 'Check for updates', exact: true }).click();
-    await page.getByRole('button', { name: 'Download update 0.3.0', exact: true }).waitFor({ timeout: 60000 });
+    await page.getByRole('button', { name: 'Download update '+targetVersion, exact: true }).waitFor({ timeout: 60000 });
     console.log('Release found; downloading and verifying the real installer…');
-    await page.getByRole('button', { name: 'Download update 0.3.0', exact: true }).click();
+    await page.getByRole('button', { name: 'Download update '+targetVersion, exact: true }).click();
     await page.getByRole('button', { name: 'Restart & install', exact: true }).waitFor({ timeout: 180000 });
     assert.equal(await app.evaluate(() => global.bancySignatureChecks), 1, 'Actual downloaded installer must pass the embedded-key verifier');
     await page.screenshot({ path: path.join(root, 'test-results/updates-ready.png') });

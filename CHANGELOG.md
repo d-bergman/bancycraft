@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0 — 2026-09-28
+
+- Complete the bundled gearset catalog: 37 Dragonwilds, 20 Valheim, 82 Enshrouded armor/cosmetic sets, with selectable alternate Dragonwilds helmets.
+- Copy the website's Dragonwilds production tools, merchant catalog/orders and full guide into an offline sandboxed app screen. Show its navigation only for Dragonwilds.
+- Open the existing shared bank inside a secure app browser window, retaining the same website sign-in, records, requests, administrator approvals and capacity controls. Local merchant orders transfer for review without automatic submission.
+- Hide the Bancy.gg sidebar and home area unless Settings validates a privately issued, signed access key. Encrypt accepted keys with Windows storage, exclude them from workspace backups, and close/clear the community session when locked.
+- Keep manual project notes and recipe shopping lists available without keys or a network connection. Leave the website available and unchanged.
+
 ## 0.3.0 — 2026-09-28
 
 - Add item-first shopping lists inspired by the supplied TeamCraft references: Type/item-type filters, icons, quantities, multi-selection, numbered pages and a list-picker drawer.

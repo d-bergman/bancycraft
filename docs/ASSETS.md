@@ -15,3 +15,7 @@ The application icon is an original code-native SVG mark in `build/icon.svg`, co
 ## Item icons in 0.3.0
 
 The public source APIs supply item icon URLs. scripts/catalog/icons.cjs reads the pinned item pages, requests image metadata in batches, and prepares 64px WebP icons locally. 1,253 Dragonwilds, 2,593 Enshrouded and 958 Valheim icons are bundled. Unavailable icons use a neutral box fallback. Catalog contributors and game-rights holders retain their rights; wiki adaptations retain the source catalog licenses documented in CATALOGS.md. No item-icon requests occur at normal runtime.
+
+## Production ledger copy in 0.4.0
+
+The existing owned Bancy website's `assets/img/hero/banri-hero-02.webp` is copied into the local ledger. Its existing ledger CSS/HTML/calculation code and guide are reused by authorization; LEDGER-SOURCE.json records the originating commit and files. Lucide icons are rendered from the existing MIT-licensed lucide-react dependency into inline SVGs in the isolated local page. The ledger has no remote font, icon, CSS or image dependency.

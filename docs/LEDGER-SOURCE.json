@@ -1,0 +1,16 @@
+{
+  "sourceRepository": "C:\\Users\\Darren\\Documents\\Git Archive\\banrigaming.github.io",
+  "sourceCommit": "f3a01e5bbfbb58d3e1d567f61ac51e49ae6d5545",
+  "copiedAt": "2026-09-28T10:29:31.408Z",
+  "files": [
+    "dragonwilds/tannery-ledger.html",
+    "assets/js/tannery-ledger.js",
+    "assets/css/tannery-ledger.css"
+  ],
+  "sharedBank": "https://bancy.gg/dragonwilds/tannery-ledger",
+  "localChanges": [
+    "remove site navigation/CDNs",
+    "offline cloud adapter",
+    "key-gated native shared bank bridge"
+  ]
+}

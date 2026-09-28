@@ -1,10 +1,12 @@
-const { app, BrowserWindow, ipcMain, shell, dialog, Menu } = require('electron');
+const { app, BrowserWindow, ipcMain, shell, dialog, Menu, safeStorage } = require('electron');
 const path = require('node:path');
 const fs = require('node:fs');
 const { pathToFileURL } = require('node:url');
 const { createStore } = require('./store.cjs');
 const { sourceUrl } = require('./source-links.cjs');
 const { configureUpdater } = require('./updates.cjs');
+const { createAccess } = require('./access.cjs');
+const { createCommunity } = require('./community.cjs');
 app.setName('BancyCraft');
 app.setAppUserModelId('gg.bancy.bancycraft');
 // Stable across installer versions; deliberately outside the installation folder.
@@ -13,6 +15,7 @@ const locked = app.requestSingleInstanceLock();
 let window;
 let store;
 let updater;
+let access,community;
 let update = { state: 'manual', message: 'Updates are installed using a newer BancyCraft installer. Your workspace stays in place.' };
 const rendererUrl = pathToFileURL(path.join(__dirname, '../dist/index.html')).href;
 function trusted(event) {
@@ -52,9 +55,15 @@ else {
   app.on('second-instance', () => { if (window) { if (window.isMinimized()) window.restore(); window.focus(); } });
   app.whenReady().then(async () => {
     store = createStore(app.getPath('userData'));
-    handle('app:info', () => ({ version: app.getVersion(), dataPath: app.getPath('userData'), packaged: app.isPackaged, update }));
+    access=createAccess(app.getPath('userData'),safeStorage,fs.readFileSync(path.join(__dirname,'access-public.pem'),'utf8'));
+    community=createCommunity(access);
+    const timer=setInterval(()=>{if(!access.status().unlocked)community.close();},15000);timer.unref();
+    handle('app:info', () => ({ version: app.getVersion(), dataPath: app.getPath('userData'), packaged: app.isPackaged, update, access:access.status() }));
+    handle('community:unlock', key=>access.unlock(key));
+    handle('community:lock', async()=>{const result=access.lock();await community.lock();return result;});
+    handle('community:bank', order=>{access.require();if(store.read().game!=='dragonwilds')throw new Error('Select Dragonwilds to open its shared bank.');if(order!==undefined&&(!order||!Number.isSafeInteger(order.amount)||order.amount<1||order.amount>1e12||typeof order.note!=='string'||!order.note.trim()||order.note.length>160))throw new Error('Invalid merchant requisition.');return community.bank(order);});
     handle('workspace:read', () => store.read());
-    handle('workspace:write', data => store.write(data));
+    handle('workspace:write', data => {const saved=store.write(data);if(saved.game!=='dragonwilds')community.close();return saved;});
     handle('source:open', url => shell.openExternal(sourceUrl(url)));
     handle('website:open', () => shell.openExternal('https://bancy.gg/'));
     handle('data:open', () => shell.openPath(app.getPath('userData')));
