@@ -1,0 +1,11 @@
+import { useState } from 'react';
+import { Check, Plus, Search } from 'lucide-react';
+import type { Game, ListTarget, ShoppingList } from '../types';
+import { Dialog } from '../ui/Dialog';
+import { gameNames } from '../catalog/catalogs';
+export type AddRequest = { game: Game; targets: ListTarget[] };
+export function ListPicker({ request, lists, busy, error, onClose, onAdd, onNew }: { request: AddRequest; lists: ShoppingList[]; busy: boolean; error: string; onClose: () => void; onAdd: (id: string) => void; onNew: (name: string) => void }) {
+  const [query, setQuery] = useState(''), [creating, setCreating] = useState(false), [name, setName] = useState('');
+  const available = lists.filter(list => list.game === request.game && !list.quick && list.name.toLowerCase().includes(query.toLowerCase()));
+  return <Dialog title="Pick a list" drawer onClose={onClose}><p className="muted small">{request.targets.length} selected items · {gameNames[request.game]}</p>{error && <p role="alert" className="error-banner">{error}</p>}<button className="button primary full" disabled={busy} onClick={() => setCreating(value => !value)}><Plus size={16}/>New list</button>{creating && <form className="new-list-form" onSubmit={event => { event.preventDefault(); if (name.trim()) onNew(name.trim()); }}><label>List name<input autoFocus value={name} maxLength={140} required onChange={event => setName(event.target.value)}/></label><button className="button primary" disabled={busy || !name.trim()}>Create & add items</button></form>}<div className="drawer-divider">or</div><label className="picker-search"><Search size={17}/><input aria-label="Search lists" placeholder="Search for a list…" value={query} onChange={event => setQuery(event.target.value)}/></label><h3>Your lists</h3>{available.length ? available.map(list => <button className="picker-row" disabled={busy} key={list.id} onClick={() => onAdd(list.id)}><span>{list.name}<small>{list.targets.length} target items</small></span><Check size={18}/></button>) : <p className="muted">No matching lists for this game. Create one above.</p>}<p className="drawer-footnote">Lists are saved on this computer. Quick lists finish and delete automatically.</p></Dialog>;
+}

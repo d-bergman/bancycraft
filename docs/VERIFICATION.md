@@ -1,5 +1,18 @@
 # Verification
 
+## 0.3.0 shopping lists and updates
+
+Checked on Windows x64, September 28, 2026. Production build, 17 unit tests, and both packaged Electron integration tests passed. NSIS x64 installer built successfully.
+
+- Offline, game-scoped search; icons; filters; quantity input; multi-selection appearing only for multiple items; new/existing list drawer; gearset bundle; and numbered pagination are implemented. Packaged tests exercise searching across all three games and actual Dragonwilds recipes.
+- Packaged shopping-list test verifies version-one migration with an immutable original backup, pre-craft completion propagating to material requirements, reset, regular-list retention, hiding completed rows, quick-list deletion, adding a selection to an existing list, gearset addition and restart persistence.
+- Engine tests verify combined shared demand before batch rounding, partial completion, recipe alternatives, direct acquisition, opt-in supplies, missing data and recipe-cycle handling. Material origins never become invented kill/node counts.
+- Desktop search/selection and shopping-list screenshots, plus minimum 1050 × 740 layout, visually checked. Help and Settings remain reachable.
+- 4,804 item icons are bundled locally. Packaged attribution notices and the pinned public GitHub update feed were checked. The updater config includes the publisher field required to invoke the custom Ed25519 verifier; the private key is outside the repository.
+- Unit tests reject altered installers and unrelated keys, and require explicit download and ready state before invoking installation. Workspace data stays outside the installation folder, with an additional backup before update installation.
+
+Actual installer-over-installer replacement has not been performed against the user's installed copy. Online release discovery and download are verified after publication and recorded below. Earlier coverage limitations in the imported catalogs still apply; missing recipes remain explicit.
+
 ## 0.2.0 catalogs
 
 Checked on Windows x64, September 27, 2026. TypeScript/production build, eight unit tests and packaged Electron integration test passed. The NSIS x64 installer was built successfully.

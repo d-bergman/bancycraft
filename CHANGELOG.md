@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.3.0 — 2026-09-28
+
+- Add item-first shopping lists inspired by the supplied TeamCraft references: Type/item-type filters, icons, quantities, multi-selection, numbered pages and a list-picker drawer.
+- Add saved lists and auto-deleting quick lists, recursive pre-crafts, alternative recipes, exact batch quantities, shared materials, partial progress and reset propagation.
+- Add collapsible source/pre-craft/target sections, section completion/reset, hide completed and optional supply counting.
+- Add verified starter armor bundles for all three games.
+- Import 4,804 locally bundled item icons with source attribution and fallbacks for unavailable images.
+- Migrate existing workspaces to schema 2 with an original schema-1 backup.
+- Connect Settings to public GitHub Releases for check, download and restart-to-install, with detached Ed25519 update verification.
+- Publish the repository publicly by the user's explicit choice; no publishing credentials or signing private key are bundled.
+
+
 ## 0.2.0 — 2026-09-27
 
 - Add offline, game-scoped item browsing for Dragonwilds (1,347 items), Enshrouded (2,607) and Valheim (958 localized inventory entries).

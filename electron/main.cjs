@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const { pathToFileURL } = require('node:url');
 const { createStore } = require('./store.cjs');
 const { sourceUrl } = require('./source-links.cjs');
-const release = require('./release-config.json');
+const { configureUpdater } = require('./updates.cjs');
 app.setName('BancyCraft');
 app.setAppUserModelId('gg.bancy.bancycraft');
 // Stable across installer versions; deliberately outside the installation folder.
@@ -24,21 +24,17 @@ function status(state, message, extra = {}) {
   if (window && !window.isDestroyed()) window.webContents.send('update:status', update);
 }
 function setupUpdates() {
-  if (!release.feedUrl || !app.isPackaged) return;
-  const url = new URL(release.feedUrl);
-  if (url.protocol !== 'https:' || url.username || url.password) throw new Error('Update feed must use HTTPS.');
-  updater = require('electron-updater').autoUpdater;
-  updater.autoDownload = false;
-  updater.autoInstallOnAppQuit = false;
-  updater.allowDowngrade = false;
-  updater.setFeedURL({ provider: 'generic', url: url.href });
-  updater.on('checking-for-update', () => status('checking', 'Checking for updates…'));
-  updater.on('update-available', info => status('available', `BancyCraft ${info.version} is available.`, { version: info.version }));
-  updater.on('update-not-available', () => status('current', 'You have the latest version.'));
-  updater.on('download-progress', progress => status('downloading', `Downloading update · ${Math.round(progress.percent)}%`));
-  updater.on('update-downloaded', () => status('ready', 'Your update is ready. Restart BancyCraft to install it.'));
-  updater.on('error', () => status('error', 'The update service could not be reached. Your local workspace is still available.'));
-  status('idle', 'Check for a newer BancyCraft version.');
+  if (!app.isPackaged) { status('idle', 'Check the published release. Download and installation require the installed Windows app.'); return; }
+  updater = configureUpdater(require('electron-updater').autoUpdater, status);
+}
+async function checkUpdates() {
+  if (updater) await updater.check();
+  else {
+    status('checking', 'Checking GitHub Releases…');
+    try { const response = await fetch('https://api.github.com/repos/d-bergman/bancycraft/releases/latest', { signal: AbortSignal.timeout(20000), headers: { 'User-Agent': 'BancyCraft' } }); if (!response.ok) throw new Error(); const release = await response.json(); const latest = release.tag_name.replace(/^v/, ''); status('current', 'Latest published release: '+latest+'. Install the Windows app to download updates here.', { version: latest }); }
+    catch { status('error', 'Unable to check for updates. Check your connection or try again later.'); }
+  }
+  return update;
 }
 async function createWindow() {
   window = new BrowserWindow({ width: 1480, height: 980, minWidth: 1050, minHeight: 740, backgroundColor: '#061016', title: 'BancyCraft', autoHideMenuBar: true,
@@ -69,9 +65,9 @@ else {
       fs.writeFileSync(result.filePath, JSON.stringify(data, null, 2));
       return true;
     });
-    handle('update:check', async () => { if (updater) await updater.checkForUpdates().catch(() => {}); return update; });
-    handle('update:download', async () => { if (updater && update.state === 'available') await updater.downloadUpdate().catch(() => {}); return update; });
-    handle('update:install', () => { if (updater && update.state === 'ready') updater.quitAndInstall(); });
+    handle('update:check', checkUpdates);
+    handle('update:download', async () => { if (updater) await updater.download(); return update; });
+    handle('update:install', () => { if (updater && update.state === 'ready') { try { if (fs.existsSync(store.file)) fs.copyFileSync(store.file, store.file + '.before-update.bak'); updater.install(); } catch { status('error', 'Your workspace backup could not be saved. The update has not been installed.'); } } });
     setupUpdates();
     await createWindow();
   }).catch(error => { dialog.showErrorBox('BancyCraft could not start', error.message); app.quit(); });

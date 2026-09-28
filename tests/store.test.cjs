@@ -40,3 +40,15 @@ test('plans and supplies survive changing the active game', t => {
   assert.equal(store.read().game, 'enshrouded');
   assert.equal(store.read().supplies[0].quantity, 100);
 });
+
+test('version one workspace migrates with an immutable original backup; shopping lists persist', t => {
+  const { store, directory } = fixture(t);
+  const old = { schemaVersion: 1, game: 'dragonwilds', plans: [{id:'legacy',name:'Old plan',game:'dragonwilds',quantity:2,notes:'Keep',status:'planned',updatedAt:'2026-09-27'}], supplies: [] };
+  fs.writeFileSync(store.file,JSON.stringify(old));
+  const data=store.read();assert.equal(data.schemaVersion,2);assert.deepEqual(data.lists,[]);
+  data.lists.push({id:'list',name:'Thread',game:'dragonwilds',quick:false,targets:[{itemId:'176',name:'Coarse Thread',quantity:4}],recipes:{'i:176':'Coarse Thread:1'},progress:{'i:176':1},collapsed:{Gathering:true},hideCompleted:false,useSupplies:false,updatedAt:'2026-09-28'});
+  store.write(data);store.write({...data,game:'valheim'});
+  assert.deepEqual(JSON.parse(fs.readFileSync(`${store.file}.v1.bak`)),old);
+  const read=createStore(directory).read();assert.equal(read.plans[0].notes,'Keep');assert.deepEqual(read.lists,data.lists);
+  assert.throws(()=>store.write({...read,lists:[{...data.lists[0],progress:{'i:176':-1}}]}));
+});

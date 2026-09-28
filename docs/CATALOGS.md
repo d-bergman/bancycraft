@@ -25,6 +25,10 @@ Valheim data comes from the **Jötunn / Valheim-Modding contributors**, generate
 - **Valheim:** Jötunn also documents creature attacks and internal objects. Keep inventory entries with `$item_` tokens, images and resolved English names; exclude unresolved localization placeholders. Distinct prefab variants remain distinct even when English names match. Recipe outputs match their prefab ID, not just their name. Import the first ingredient list only (initial craft); upgrades are explicitly excluded. The source table lacks station and processing-conversion fields, so those are unknown. Bloodgold is searchable, but the Petrified Tissue conversion and Gammeltroll acquisition are not invented from the user's example. No acquisition data is supplied by these tables.
 - **All games:** recipes are fixed input/output relationships; acquisition is descriptive text. There is no creature-count or harvest-count calculator. Unknown recipes do not imply that an item is uncraftable. Full recursive planning, quantity targets, inventory subtraction and gathering lists remain later work.
 
+## Icons
+
+The 0.3.0 app additionally bundles locally prepared item images from the same sources. Wiki contributor licenses and the respective game owners' rights continue to apply to those images. Icons are resized to 64px WebP, with a neutral fallback for unavailable images. The generated icons.json maps each image to the attributed catalog item. See ASSETS.md for counts and import details.
+
 ## Rebuilding and reviewing
 
 `npm.cmd run catalog:import` uses an ignored `.catalog-cache/`, fetching missing responses with an identifying user agent and a modest request delay. `-- --refresh` re-fetches; an optional game argument imports only that game. HTTP/API errors stop the importer. This is an explicit developer operation, not a task run on each user's computer.

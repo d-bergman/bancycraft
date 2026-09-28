@@ -18,15 +18,15 @@ Blackbox owns its local SQLite file behind an authenticated API. Clients do not 
 
 ## Updates
 
-0.2.0 uses versioned NSIS installers. Data is outside the install directory. Installer identity and userData path are invariant. No network request is made for updates while `feedUrl` is null.
+0.3.0 uses public GitHub Releases with electron-updater's GitHub provider. Check, download and installation remain explicit. Stable app ID and userData path preserve the workspace. Each installer is checked against both its manifest hash and the embedded Ed25519 update key. See [UPDATES.md](UPDATES.md) for release signing, publication and bootstrap instructions.
 
-The optional electron-updater integration is main-process-only, HTTPS-only, disallows downgrades and waits for user actions to download and restart. Hosting is deliberately unconfigured. Before enabling, choose the distribution location, configure release metadata, decide update-artifact authenticity controls for unsigned Windows builds, and test actual N-to-N+1 installation, interrupted downloads and migration rollback. Do not add arbitrary update URL input to the renderer or ship publisher credentials in the app.
+The shopping-list engine builds a dependency graph from the selected game's catalog, combines shared needs before batch rounding, and propagates completed outputs to ingredients. Acquisition sources are descriptive. See [SHOPPING-LISTS.md](SHOPPING-LISTS.md).
 
 ## Known foundation limits
 
-- Partial recipe catalogs are bundled; quantity calculators and automatic gathering lists are not implemented.
+- Recipe catalogs remain partial; supported recipes expand into shopping-list quantities, while unknown acquisition/processing data stays explicit.
 - Website authentication and Blackbox indexing are not implemented.
 - JSON export is implemented; UI restore is not.
 - Only Windows x64 installer is built.
 - Installer is unsigned; Windows security policies vary.
-- Programmatic tests cover restart persistence; real installer upgrade testing is a separate release check.
+- Programmatic tests cover migration, restart persistence, signature checks and live update download; installation into the user's existing Windows profile is not performed by test scripts.

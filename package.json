@@ -1,7 +1,7 @@
 {
   "name": "bancycraft",
   "productName": "BancyCraft",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "description": "BancyCraft — your local crafting workspace",
   "author": "Bancy",
@@ -15,7 +15,9 @@
     "test:smoke": "node scripts/smoke.cjs",
     "dist": "npm run build && electron-builder --win nsis --x64 --publish never",
     "pack": "npm run build && electron-builder --win --dir --x64",
-    "catalog:import": "node scripts/catalog/import.cjs"
+    "catalog:import": "node scripts/catalog/import.cjs",
+    "catalog:icons": "node scripts/catalog/icons.cjs",
+    "test:lists": "node scripts/lists-smoke.cjs"
   },
   "dependencies": {
     "electron-updater": "^6.8.0",
@@ -50,7 +52,10 @@
     "win": {
       "target": "nsis",
       "icon": "build/icon.ico",
-      "signExecutable": false
+      "signExecutable": false,
+      "signtoolOptions": {
+        "publisherName": "BancyCraft"
+      }
     },
     "nsis": {
       "oneClick": false,
@@ -61,6 +66,15 @@
       "createStartMenuShortcut": true,
       "deleteAppDataOnUninstall": false,
       "artifactName": "BancyCraft-Setup-${version}-${arch}.${ext}"
-    }
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "d-bergman",
+        "repo": "bancycraft",
+        "releaseType": "release",
+        "private": false
+      }
+    ]
   }
 }

@@ -1,0 +1,17 @@
+# Shopping-list behavior
+
+Lists are stored locally and scoped to one game. Search selections may span result pages and filters, but never span games. Lists support up to 500 unique targets and a target quantity of 999,999 per item; quantities and dependency expansion are bounded.
+
+The browser's Type groups equipment, materials, recipes, consumables and quest items. Item type uses the game's categories, plus weapon subtypes derived from the item name and explicit source descriptions/categories. Handedness is added only when the source says it. Results have quantities, individual add/quick-list actions, multi-selection, numbered pages, and local item icons. A multi-selection panel appears for two or more selections. Adding to an existing list increases the quantity of matching item IDs. The notification opens the affected list.
+
+The calculator resolves exact item IDs, or a unique name within the selected game. Ambiguous names stay unresolved acquisition rows. It builds a dependency graph for the chosen recipes, aggregates shared demand, rounds processing batches, and then applies completion and optionally owned supplies. Byproducts are not credited to unrelated targets. Missing data, cycles and excessive depth stop expansion safely with source-check notes.
+
+Completed crafts satisfy the ingredients used to produce them. For three ingots requiring six ore, marking two ingots done satisfies four ore, leaving two. Other targets' demands still contribute. Gathering a raw ingredient does not mark its parent craft completed. Resetting an auto-satisfied ingredient also reopens completed dependent crafts that had satisfied that ingredient; unrelated progress stays intact. A reset with Count My Supplies enabled still counts the user's supplies.
+
+Vendors contains items whose imported acquisition prose mentions purchase or sale. Gathering contains uncrafteable material/resource rows; it may include drops as well as harvested materials, with descriptive acquisition notes. Other sources holds unknown or other acquisition rows. Pre-crafts are intermediate crafts, shown by dependency tier. Target items are the requested outputs. Empty sections are omitted. Every section collapses independently, offers complete/reset controls and a progress bar. Hide completed removes finished rows from view. Individual quantities support partial completion and +/- adjustments.
+
+Recipe selection offers imported alternatives, or Acquire directly for purchased/looted/already-crafted outputs. Unknown source data is not invented. Source links provide complete unlocking/station conditions. No material amount is translated into creature kills or harvest counts.
+
+Count My Supplies is opt-in per list. Supplies are a local planning snapshot: counted once inside that list, filtered by game, never removed from inventory or reserved globally across other lists. Saved lists persist after completion. Quick lists are removed after an explicit progress action completes every target; they are not silently deleted on startup. Starter gearsets enumerate their actual pieces before adding them.
+
+Workspace schema 2 adds lists while preserving manual plans, supplies and game selection. Schema 1 reads migrate in memory; the first subsequent write keeps `workspace.json.v1.bak`, then atomically saves schema 2. That original migration backup is not overwritten by later saves. Normal previous-save backups continue.

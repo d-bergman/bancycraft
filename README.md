@@ -4,21 +4,17 @@ A Windows crafting companion with an independent local workspace and optional fu
 
 ## Install and open
 
-Run `release/BancyCraft-Setup-0.2.0-x64.exe`. Install for your Windows user, then launch BancyCraft from the Start menu or desktop shortcut. Node.js and Python are not required on the user's PC.
+Run `release/BancyCraft-Setup-0.3.0-x64.exe`. Install for your Windows user, then launch BancyCraft from the Start menu or desktop shortcut. Node.js and Python are not required on the user's PC.
 
 This early build is unsigned. Windows may show an unknown-publisher warning, and managed security policies may block it. Publisher signing has not been purchased or configured.
 
 ## Updating this installation
 
-1. Download the next version's `BancyCraft-Setup-<version>-x64.exe`.
-2. Close BancyCraft and run that installer. Keep the same installation location.
-3. Open BancyCraft again. The application files have changed; your workspace remains.
+Install 0.3.0 once if upgrading from an earlier build. Then open **Settings & updates**, choose **Check for updates**, download an available release, and choose **Restart & install**. Future updates are delivered by GitHub Releases, without separate manual installer downloads.
 
-Do not uninstall before updating. The stable application ID is `gg.bancy.bancycraft`, and data lives at `%APPDATA%/BancyCraft`, outside the installation folder. Never change either identity casually. Settings & updates includes these instructions and a workspace backup button.
+The stable application ID is gg.bancy.bancycraft. Lists, progress, plans and supplies remain under %APPDATA%/BancyCraft, outside the installation folder. Updates require a trusted BancyCraft release signature; private publishing credentials are never included in the app. See [UPDATES.md](docs/UPDATES.md).
 
-Automatic online update delivery is not active in 0.2.0. There is no deployed update server, GitHub release repository or website change. Future hosted updates have a main-process electron-updater integration, with explicit check/download/restart actions, and a disabled `electron/release-config.json` feed. It must remain disabled until a trusted HTTPS feed and its upgrade path are tested. Manual installer updates work independently of Bancy.gg login or Blackbox.
-
-## Working in 0.2.0
+## Working in 0.3.0
 
 - Bancy-themed home screen, keyboard search (Ctrl+K), game selection and navigation.
 - Manual local crafting plans: create, edit, quantity, notes, status and deletion confirmation.
@@ -27,14 +23,17 @@ Automatic online update delivery is not active in 0.2.0. There is no deployed up
 - Three offline catalogs: Dragonwilds, Valheim and Enshrouded.
 - Persistent local data and a previous-save backup.
 - Export a JSON workspace backup and open the data directory.
-- Clear upcoming-feature screens for quantity calculations, gathering lists and shared services.
+- TeamCraft-inspired shopping lists, pre-craft calculation, partial completion, dependency propagation and reset controls.
+- Saved lists, auto-deleting quick lists, multi-select drawer and starter armor bundles.
+- Real offline item icons and numbered results.
+- In-app update checks, downloads and restart-to-install.
 - Browser link to Bancy.gg. This is not an authenticated app connection yet.
 
 There are no invented server totals, save watchers, game plugins, game-save access, credential collection or Blackbox services in this build.
 
 ## Data
 
-The foundation stores a validated, schema-versioned `workspace.json` under `%APPDATA%/BancyCraft`. A successful edit preserves the prior version as `workspace.json.bak` and replaces the current file using a temporary file and rename. Corrupt or newer-version data produces an error rather than silently resetting it. Exported backups are saved wherever the user chooses; restoring through the UI is not implemented yet.
+The app stores a validated, schema-versioned `workspace.json` under `%APPDATA%/BancyCraft`. A successful edit preserves the prior version as `workspace.json.bak` and replaces the current file using a temporary file and rename. Schema 1 migrates to schema 2 and keeps an original workspace.json.v1.bak on the first write. Corrupt or newer-version data produces an error rather than silently resetting it. Exported backups are saved wherever the user chooses; restoring through the UI is not implemented yet.
 
 SQLite remains the intended database for the later Blackbox service. The small local skeleton does not need a shared database. Introduce future storage migrations with a backup and tests preserving this schema. Never put a database on a mapped share for direct multi-client writes.
 
