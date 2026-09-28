@@ -12,6 +12,8 @@ Checked on Windows x64, September 28, 2026. TypeScript, production renderer and 
 
 Actual installer-over-installer replacement has not been performed against the user's installed copy. Shared-bank member/admin mutations retain the website's existing implementation and were not exercised against production data.
 
+After publishing 0.4.0, the packaged live-update test passed: anonymous current-version check, simulated 0.3.0 discovery of 0.4.0, actual public installer download, embedded-key signature verification, and the Restart & install control. The four uploaded release assets matched the local tested files by SHA-256 and size. The test used an isolated profile and did not install over the user's copy.
+
 ## 0.3.0 shopping lists and updates
 
 Checked on Windows x64, September 28, 2026. Production build, 17 unit tests, and both packaged Electron integration tests passed. NSIS x64 installer built successfully.
