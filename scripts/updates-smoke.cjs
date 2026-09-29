@@ -48,7 +48,8 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
     await popup.getByRole('button', { name: 'Download & prepare update', exact: true }).click();
     await popup.getByRole('button', { name: 'Restart & install update', exact: true }).waitFor({ timeout: 180000 });
     assert.equal(await app.evaluate(() => global.bancySignatureChecks), 1, 'Actual downloaded installer must pass the embedded-key verifier');
-    await page.screenshot({ path: path.join(root, 'test-results/updates-ready.png') });
+    // Live delivery assertions do not depend on capturing a background Windows window.
+    // Update UI screenshots are covered separately by the controlled UI smoke checks.
     assert.equal((await page.evaluate(() => window.bancy.info())).update.version,targetVersion);
     console.log(JSON.stringify({ result: 'PASS', profile, checks: ['anonymous current-version check', 'older-version release discovery', 'corner popup download from Home', 'public installer download', 'embedded-key signature verifier invoked', 'corner restart/install offered'], installationPerformed: false }, null, 2));
   } catch (error) {

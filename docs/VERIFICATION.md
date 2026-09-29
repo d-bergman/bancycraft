@@ -155,3 +155,5 @@ Native checks verify linked supplies and once-only deduction (154 Mithril Bars t
 
 - Published 0.8.1 after verifying the draft description and all five uploaded asset sizes/SHA256 against the signed local build. A separate packaged profile verified the actual owner panel and server registry with the final native module. No production game actions were performed.
 - Temporary encrypted QA copies from the first owner-panel run remain in ignored local test data after tool-policy rejection of cleanup; they are absent from Git and the installer. Subsequent owner-panel test runs remove their own credential copies after closing.
+
+- Final live updater smoke passes: anonymous current-version check, simulated older-version discovery, Home corner notification, actual 157,854,880-byte public installer download, embedded Ed25519 verification and Restart/install offer. Installation was not invoked. A background screenshot timeout on the first run occurred after signature verification; screenshot capture is now kept in the separate UI smoke checks rather than the live delivery test.
