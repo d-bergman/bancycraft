@@ -22,7 +22,7 @@ function validate(data) {
       if (!['planned', 'in-progress', 'completed'].includes(item.status)) throw new Error('Invalid plan status.');
       return { ...result, notes: string(item.notes, 5000, 'notes'), status: item.status, updatedAt: string(item.updatedAt, 40, 'date') };
     }
-    return result;
+    return {...result,...(item.itemId?{itemId:string(item.itemId,160,'item ID')}:{})};
   });
   const map = (value, type) => {
     if (!value || typeof value !== 'object' || Array.isArray(value) || Object.keys(value).length > 5000) throw new Error('Invalid list details.');

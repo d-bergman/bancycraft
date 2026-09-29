@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.1 — 2026-09-28
+
+- Adopt the numbered loadout layout with slot-specific equipment, capes, consumables and two-handed off-hand exclusion. Keep unsupported slots visible but inactive.
+- Move Changelog to its own Settings sidebar page. Display the embedded Google Form with a dark background and light text.
+- Add private-list card deletion and per-target quantity controls. Remove stale deletion recovery and target Already have fields.
+- Link My Supplies to selected-game catalog items; new lists count stock and completing a private list deducts used stock once. Completion persists independently of remaining inventory.
+
 ## 0.7.0 — 2026-09-28
 
 - Keep Shopping Lists as a compact library; open each list in its own workspace.

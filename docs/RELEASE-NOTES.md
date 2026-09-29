@@ -1,9 +1,7 @@
-# BancyCraft 0.7.0
+# BancyCraft 0.7.1
 
-Builds are here: save equipment, tags and play notes for every game, share with your website account, keep independent private copies and variants, and turn a build into a full shopping list. Shared builds show their owner, original creator and public website avatar.
+The build planner follows the illustrated equipment arrangement, filters by slot and blocks off-hand selection for two-handed weapons. Valheim capes include Ashen Cape, Feather Cape and Lox Cape.
 
-Shopping lists now open in dedicated workspaces, with owned-material deductions, station views, recipe comparisons, friend assignments and undo. Valheim gains sourced upgrade planning and verified internal duplicate filtering. A compact always-on-top checklist helps while gaming.
+Changelog has its own page under Settings. The Google form displays dark in the app. Shopping-list cards have delete controls; targets have quantity buttons and no Already have field. Deleted private lists cannot be recovered by stale notifications or late edits.
 
-The full Dragonwilds Production Ledger now matches the app. Settings embeds the published Google feedback form and adds full workspace backup restoration; lists and builds can be imported/exported separately.
-
-Your existing workspace remains in the same data folder. Use the existing in-app updater or BancyCraft-Installer.exe. Local tools remain free and work offline; sharing and feedback need internet access. Dune: Awakening remains planned.
+My Supplies searches the selected game and stores item IDs. New private lists count inventory; completing a list deducts planned stock once and retains completion after deduction. Reset/re-complete does not spend the same stock twice. Shared lists do not spend private inventory.

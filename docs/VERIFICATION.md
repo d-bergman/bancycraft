@@ -121,3 +121,7 @@ Live delivery verified after publication: the website landing page, clean-URL co
 - After publication, the actual 0.4.1 client discovered 0.7.0, downloaded BancyCraft-Installer.exe and verified the compatibility signature before offering restart/install. GitHub's briefly stale feed was rechecked successfully. The fresh 0.7.0 client checked automatically on startup. Installation was not invoked in QA.
 - The live website download page, responsive layout, Projects card, navbar/Nexus links and clean login URL passed verification.
 - The final current-app live updater test also passed anonymous release discovery, public installer download and embedded-key verification, with the restart/install corner prompt. QA polling now waits for completed native status rather than treating an async renderer promise as completion.
+
+## 0.7.1
+
+Native checks verify linked supplies and once-only deduction (154 Mithril Bars to 138 for two Mithril Maces), reset/re-complete without repeat deduction, target quantity editing, no target Already have field, overview deletion without recovery, Ashen Cape selection, helmet filtering, two-handed off-hand lock, separate Changelog and dark form display. The illustrated loadout was visually inspected. Isolated profiles protect user data.

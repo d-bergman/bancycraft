@@ -21,7 +21,7 @@ export function broadType(item, crafted = false) {
   const category = item.category.toLowerCase();
   if (/quest/.test(category)) return 'Quest items';
   if (/sword|weapon|wand|staff|axe|bow|mace|spear|dagger|twohand|onehand/.test(category)) return 'Weapons';
-  if (/armou?r|helmet|chest|legs|cape|shield|head|body|boots|gloves/.test(category)) return 'Armor';
+  if (/armou?r|helmet|chest|legs|cape|shoulder|shield|head|body|boots|gloves/.test(category)) return 'Armor';
   if (/consum|food|potion|drink/.test(category)) return 'Consumables';
   if (/material|resource|seed/.test(category)) return 'Materials';
   return crafted ? 'Crafted items' : 'Other items';

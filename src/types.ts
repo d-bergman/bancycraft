@@ -1,6 +1,6 @@
 export type Game = 'dragonwilds' | 'valheim' | 'enshrouded' | 'grounded2' | 'vrising';
 export type Plan = { id: string; name: string; game: Game; quantity: number; notes: string; status: 'planned' | 'in-progress' | 'completed'; updatedAt: string };
-export type Supply = { id: string; name: string; game: Game; quantity: number };
+export type Supply = { itemId?:string; id: string; name: string; game: Game; quantity: number };
 export type ListTarget = { itemId: string; name: string; quantity: number; fromLevel?:number; toLevel?:number };
 export type ShoppingList = { id: string; name: string; game: Game; quick: boolean; targets: ListTarget[]; owned?:Record<string,number>; assignments?:Record<string,string>; recipes: Record<string, string>; progress: Record<string, number>; useSupplies: boolean; hideCompleted: boolean; collapsed: Record<string, boolean>; updatedAt: string };
 export type Workspace = { schemaVersion: 2; game: Game; plans: Plan[]; supplies: Supply[]; lists: ShoppingList[] };
