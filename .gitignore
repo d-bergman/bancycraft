@@ -13,5 +13,6 @@ issuer-private.pem
 update-signing.pem
 community-key.bin
 controller-key.bin
+admin-key-vault.bin
 website-account.bin
 *.access-key.txt

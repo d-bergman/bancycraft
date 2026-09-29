@@ -27,3 +27,12 @@ The issuer writes a private file outside the repository and prints its path only
 To revoke an issued controller key immediately, set `serverController/revokedKeys/KEY_ID` to `true` using an administrator's Firebase console. KEY_ID is the `id` in the signed key payload. Never publish a key or its payload. Deleting a local key removes its Windows-encrypted controller-key.bin. Signing out prevents controller actions. Workspace backups omit keys and account tokens.
 
 The reviewed public verifier and installation helper are in `server/controller-key.mjs` and `scripts/controller-install.cjs`. The private controller retains its existing website-role path for website requests; app requests supplying a controller key cannot fall back to that role path if their key is rejected. No private controller configuration, Docker address, service account, passwords or issued key is bundled.
+
+
+## Private administrator key panel (0.8.1)
+
+Settings displays a private key panel only when an encrypted `admin-key-vault.bin` was provisioned in the owner’s app data folder. Exact Firebase UID and a live administrator grant are checked before displaying metadata and before every copy. Display names and email prefixes grant no access. Key values stay in the native process and Windows-encrypted storage, outside the repository, installer and workspace backups; the renderer receives labels and expiry only. Clipboard values clear after one minute if unchanged.
+
+This release provisions the owner's current computer with its existing community key, a newly issued controller key and the website registration code. A controller key is bound to its recipient's account; issue another key for another person rather than handing out the owner's key. The private signing PEM is never bundled or exposed by the panel. A replacement computer must be separately provisioned.
+
+The website registration code currently lives in public website JavaScript and is not a secret or an authorization boundary. Moving registration enforcement to a backend is separate website work. BancyCraft does not bundle that code.

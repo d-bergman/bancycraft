@@ -140,3 +140,15 @@ Live delivery verified after publication: the website landing page, clean-URL co
 ## 0.7.1
 
 Native checks verify linked supplies and once-only deduction (154 Mithril Bars to 138 for two Mithril Maces), reset/re-complete without repeat deduction, target quantity editing, no target Already have field, overview deletion without recovery, Ashen Cape selection, helmet filtering, two-handed off-hand lock, separate Changelog and dark form display. The illustrated loadout was visually inspected. Isolated profiles protect user data.
+
+## 0.8.1 verification — 2026-09-29
+
+- 48 unit tests pass, including feedback receipt/validation/schema changes and owner key-panel denial for a copied display name, wrong UID, missing admin grant, sign-out and sign-out during verification.
+- Packaged UI: fixed 680-pixel-wide, 624-pixel-high equipment grid; capped 64-pixel icon fallback; unsupported titles; read-only/edit flow; shopping cards at most 340 pixels; shared creator portrait and inline attribution; single-open Help accordion; combined authentication; native blue-gray feedback form; failure keeps draft; confirmed success; animated, disabled server refresh.
+- Existing list/supply regression checks pass: linked supplies, once-only deduction, target quantity edit, deletion without recovery, capes, slot filtering and two-handed off-hand lock.
+- Real Banri login verifies the encrypted owner-only panel with three key labels and no secret values in the DOM. The privately issued controller key was authorized by the live backend and activated locally; real registry and nine controller entries loaded. No production start/stop/restart operations were performed.
+- Two clearly labeled form delivery test records were accepted by Google; the custom confirmation text initially failed the old receipt matcher. The receipt matcher now uses Google's confirmation link and rejects question/validation pages. The saved real confirmation receipt was verified without submitting another record. UI send/failure tests use mocks.
+- The native feedback layout replaces the Google iframe. Existing form notifications/settings are preserved; there is no new mail-delivery service. Changing the hosted form questions requires updating the adapter.
+- Keys are Windows-encrypted outside the repository and installer; public verification PEM files remain public. The website's pre-existing public registration code was copied only into the encrypted local vault, not the app source. Moving website registration enforcement to a backend remains separate website work.
+
+- Final ASAR has 12,723 entries, contains the final native account-change safeguard, and contains no issuer/private signing PEMs, encrypted key vaults or account credentials. Working-tree and Git-history credential scans report no findings.

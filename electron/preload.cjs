@@ -1,5 +1,6 @@
 const { contextBridge, ipcRenderer } = require('electron');
 contextBridge.exposeInMainWorld('bancy', Object.freeze({
+  adminKeys:()=>ipcRenderer.invoke('admin:keys'),copyAdminKey:id=>ipcRenderer.invoke('admin:copy-key',id),sendFeedback:v=>ipcRenderer.invoke('feedback:send',v),
   accountConnect: () => ipcRenderer.invoke('account:connect'), accountDisconnect: () => ipcRenderer.invoke('account:disconnect'),
   sharedStatus: () => ipcRenderer.invoke('shared:status'), sharedWatch: id => ipcRenderer.invoke('shared:watch',id),
   sharedCreate: id => ipcRenderer.invoke('shared:create',id), sharedChange: (id,base,next) => ipcRenderer.invoke('shared:change',id,base,next),

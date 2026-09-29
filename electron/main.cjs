@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, shell, dialog, Menu, safeStorage } = require('electron');
+const { app, BrowserWindow, ipcMain, shell, dialog, Menu, safeStorage, clipboard } = require('electron');
 const path = require('node:path');
 const fs = require('node:fs');
 const { pathToFileURL } = require('node:url');
@@ -67,6 +67,10 @@ else {
     account=createAccount(app.getPath('userData'),safeStorage,url=>shell.openExternal(url));
     controllerAccess=createAccess(app.getPath('userData'),safeStorage,fs.readFileSync(path.join(__dirname,'access-public.pem'),'utf8'),{scope:'bancy-controller',file:'controller-key.bin'});
     servers=require('./servers.cjs').createServers(account,access,controllerAccess);
+    const vault=require('./key-vault.cjs').createKeyVault(app.getPath('userData'),safeStorage,account,clipboard);
+    const feedback=require('./feedback.cjs').createFeedback();
+    handle('admin:keys',()=>vault.status());handle('admin:copy-key',id=>vault.copy(id));
+    handle('feedback:send',v=>feedback.send({...v,version:app.getVersion()}));
     handle('controller:unlock',key=>servers.unlock(key));handle('controller:lock',()=>servers.lock());handle('servers:snapshot',()=>servers.snapshot());handle('servers:action',(id,action)=>servers.action(id,action));
     const builds=createBuilds(account);
     handle('builds:browse',g=>builds.browse(g));handle('builds:get',id=>builds.get(id));handle('builds:publish',b=>builds.publish(b));handle('builds:remove',id=>builds.remove(id));handle('profile:avatar',uid=>builds.avatar(uid));

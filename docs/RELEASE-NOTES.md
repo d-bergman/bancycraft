@@ -1,26 +1,21 @@
-# BancyCraft 0.8.0
+# BancyCraft 0.8.1
 
-A clearer build workspace, faster list editing, expanded recipe/source coverage and separately authorized server controls.
+A more compact loadout workspace, feedback that matches the app, and a private administrator key panel.
 
 ### New Content
-- App-themed Servers page with the website registry, live controller status, player details and confirmed start/stop/restart controls. A separate account-bound controller key is verified by the Blackbox backend.
-- Search, filter, select and add items directly inside the active private or shared shopping list.
-- Complete Help guide, expanded FAQs and local metrics for completed lists, saved builds and supplies. Completion history starts with this release.
-- Larger offline item artwork where the sources provide it, with inventory-icon fallbacks.
+- Private administrator key panel with copy buttons for provisioned community, account-bound controller and website registration keys. Windows encryption keeps key values outside the installer, backups and public repository. Each copy verifies the exact owner account and live administrator grant.
+- App-native bug and suggestion form submits to the existing Google Form and requires a confirmed receipt. No Google iframe or branding appears inside the app form.
 
 ### App Changes
-- Builds open in view mode, including for owners. Edit from the top toolbar or a card icon. Build actions now sit at the top; slot controls use icons with hover labels.
-- Sharing moves the owner’s build into Shared builds. Unshare returns it to My builds; owner deletion removes the shared entry while friends’ independent copies remain.
-- Combined Boots / Legs choices, glove/gauntlet matching, mirrored Cape and Accessory slots, centered foods/potions and crossed-out unavailable slots. Valheim belts are accessories.
-- Changelog navigation aligns with Settings and Help. Release notes now include a summary and categorized New Content, App Changes and Bug Fixes.
-- Settings checks for updates on entry. The corner notification stays hidden while the same update is shown on Settings.
-- Import List sits next to Add Items. Removed the optional label from key-gated community navigation.
+- Fixed-size build slots and smaller artwork prevent images from stretching the loadout. Small inventory-icon fallbacks are capped to avoid excessive enlargement.
+- Compact build and shopping-list overview cards. Shared build creator portraits sit at the top right with aligned creator text.
+- Both access-key inputs sit under Bancy.gg authentication; website account connection remains separate.
+- Builds uses a distinct loadout icon. Unavailable slots keep their titles and crossed-out symbols.
+- Help guide and FAQ entries form one accordion: opening another closes the previous entry.
 
 ### Bug Fixes
-- Hide duplicate equipment in builder pickers and use selected-game item data.
-- Theme supply search suggestions to match the dark app.
-- Recover missing acquisition relationships, exact ingredient links and additional source-defined recipes across the five catalogs.
-- Valheim initial crafts distinguish upgrade-only recipes from cast processing. Martial casts use Black Forge; magic casts retain their verified Galdr Table stations. Added fish needed by recipe trees and restored Acorn, Amber and Amber Pearl acquisition details.
-- Keep incomplete source data explicit; gathering origins never become estimated kill or harvest counts.
+- Server Refresh shows an animated busy state and prevents overlapping refresh requests.
+- Feedback uses blue-gray app surfaces, readable light text and themed controls. Failed sends keep the draft and do not falsely report success.
+- Private key-panel metadata never returns secret values to the renderer. Copy authorization is checked again before writing the clipboard; unchanged clipboard contents clear after one minute.
 
-Free Windows 10/11 x64. Install once using BancyCraft-Installer.exe, then update through Settings or the corner notification. Local workspace and backups are preserved. Server actions require an account and privately issued controller key; bank permissions remain separate.
+Free Windows 10/11 x64. Your workspace stays outside the installation folder. The private administrator key vault is provisioned on the owner's computer and is not included in exports or installers. Controller keys are tied to one website account and do not grant bank access. The website's existing client-side registration code remains a public registration gate, not a private security credential.

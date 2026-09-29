@@ -14,7 +14,10 @@ export type SharedState = {account:Account;lists:{id:string;name:string;game:Gam
 export type Build = {id:string;name:string;game:Game;tags:string[];description:string;skills:string;items:{slot:string;itemId:string;name:string;quantity:number}[];updatedAt:string;owner?:Member;creator?:Member;publishedAt?:string;sourceId?:string;sourceUpdatedAt?:string};
 export type ToolsWorkspace={schemaVersion:1;builds:Build[];favorites:Partial<Record<Game,string[]>>;recent:Partial<Record<Game,string[]>>};
 export type ServerSnapshot={registry:{id:string;title:string;game:string;description:string;region:string;host:string;notes:string;rules:string[];status:string;controllerServerId:string;image:string;address:string;password:string;joinUrl:string}[];control:null|{servers:{id:string;label:string;status:string;playersOnline?:number;playersMax?:number;playerNames?:string[]}[]};controlError:string};
+export type KeyVault={available:boolean;keys:{id:string;label:string;subject?:string;expiresAt?:number}[]};
+export type FeedbackReport={game:Game;type:string;subject:string;details:string;email:string;version:string};
 export interface Bridge {
+  adminKeys():Promise<KeyVault>;copyAdminKey(id:string):Promise<boolean>;sendFeedback(report:FeedbackReport):Promise<{sent:boolean}>;
   unlockController(key:string):Promise<Access>;lockController():Promise<Access>;serversSnapshot():Promise<ServerSnapshot>;serverAction(id:string,action:string):Promise<unknown>;
   toolsLoad():Promise<ToolsWorkspace>;toolsSave(value:ToolsWorkspace):Promise<ToolsWorkspace>;
   buildsBrowse(game:Game):Promise<Build[]>;buildsGet(id:string):Promise<Build|null>;buildsPublish(build:Build):Promise<Build>;buildsRemove(id:string):Promise<void>;profileAvatar(uid:string):Promise<{uid:string;displayName:string;image:string}|null>;
