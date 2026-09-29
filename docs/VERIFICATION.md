@@ -157,3 +157,14 @@ Native checks verify linked supplies and once-only deduction (154 Mithril Bars t
 - Temporary encrypted QA copies from the first owner-panel run remain in ignored local test data after tool-policy rejection of cleanup; they are absent from Git and the installer. Subsequent owner-panel test runs remove their own credential copies after closing.
 
 - Final live updater smoke passes: anonymous current-version check, simulated older-version discovery, Home corner notification, actual 157,854,880-byte public installer download, embedded Ed25519 verification and Restart/install offer. Installation was not invoked. A background screenshot timeout on the first run occurred after signature verification; screenshot capture is now kept in the separate UI smoke checks rather than the live delivery test.
+
+
+## 0.9.0 verification — 2026-09-29
+
+- 48 unit tests pass; TypeScript/Vite and the Windows installer build pass.
+- Packaged UI verifies a 680-by-466-pixel equipment grid with 150-pixel helmet, main-hand, off-hand and chest boxes. The loadout was visually inspected.
+- Clicking the owner build name enters edit mode; empty notes stay hidden until Add play notes, then save and persist correctly. Tags are part of the action toolbar. Food quantity fields are absent and existing saved quantities are preserved.
+- Fresh/signed-out Settings exposes only website connection among Bancy.gg access controls. Successful account connection reveals both key inputs; sign-out hides the authentication panel and keyed sidebar entries even with stored keys. Local settings/updates remain available.
+- Mocked server snapshots verify separate registry/controller tabs, running-first order in each, and the animated refresh guard. No server mutations are exercised.
+- Real Banri authentication and the live server registry/controller are checked in an isolated packaged profile; the owner key panel remains available only for the verified account. Credential copies made by this test are removed when its own test app closes.
+- The 0.9.0 ASAR contains no private issuer/signing PEMs, encrypted key vaults or account credential files. Working-tree and Git-history credential scans report no findings.
