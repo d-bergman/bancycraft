@@ -168,3 +168,5 @@ Native checks verify linked supplies and once-only deduction (154 Mithril Bars t
 - Mocked server snapshots verify separate registry/controller tabs, running-first order in each, and the animated refresh guard. No server mutations are exercised.
 - Real Banri authentication and the live server registry/controller are checked in an isolated packaged profile; the owner key panel remains available only for the verified account. Credential copies made by this test are removed when its own test app closes.
 - The 0.9.0 ASAR contains no private issuer/signing PEMs, encrypted key vaults or account credential files. Working-tree and Git-history credential scans report no findings.
+
+- Published 0.9.0 after the draft release notes and all five uploaded assets matched local sizes/SHA256. Live updater smoke passes current-version checking, older-version discovery, corner download notification, actual 157,857,302-byte installer download, embedded Ed25519 signature verification and Restart/install offer. Installation was not invoked.
