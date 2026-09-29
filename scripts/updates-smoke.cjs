@@ -39,9 +39,11 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
     console.log('Current-version check passed; simulating version 0.4.1…');
     await app.evaluate(() => { const load = process.mainModule.require.bind(process.mainModule); load('electron-updater').autoUpdater.currentVersion = new (load('semver').SemVer)('0.4.1'); });
     await page.getByRole('button', { name: 'Check for updates', exact: true }).click();
+    await expect.poll(async()=> (await page.evaluate(()=>window.bancy.info())).update.state,{timeout:60000}).toBe('available');
+    assert.equal(await page.getByLabel('BancyCraft update notification',{exact:true}).count(),0,'Settings uses its inline status');
+    await page.getByRole('button', { name: 'Home', exact: true }).click();
     const popup=page.getByLabel('BancyCraft update notification',{exact:true});
     await popup.getByText('New version available',{exact:true}).waitFor({timeout:60000});
-    await page.getByRole('button', { name: 'Home', exact: true }).click();
     console.log('Release found; downloading and verifying the real installer…');
     await popup.getByRole('button', { name: 'Download & prepare update', exact: true }).click();
     await popup.getByRole('button', { name: 'Restart & install update', exact: true }).waitFor({ timeout: 180000 });
