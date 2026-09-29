@@ -1,6 +1,6 @@
-# BancyCraft 0.2.0 — new public release
+# BancyCraft 1.0.0 — version correction
 
-Build one loadout with multiple named variants and spare item slots. The redesigned builder centers a choice of five character illustrations between compact equipment columns, with food and potions below.
+BancyCraft 1.0.0 contains the complete build-planner changes from the 0.2.0 release, now under a version number that existing 0.10.0 and 0.2.0 users can receive in-app. The app remains in active development.
 
 ### New Content
 - Five selectable character illustrations: Warrior, Mage, Ranged, Exploration and Gathering.
@@ -15,4 +15,4 @@ Build one loadout with multiple named variants and spare item slots. The redesig
 - Restore missing Dragonwilds capes and Rune armor choices in build pickers.
 - Fix Add slots persistence and keep character art within the builder on large monitors.
 
-This version number is intentionally lower than 0.10.0. Existing users on 0.10.0 must download and run BancyCraft-Installer.exe once because the in-app updater does not offer downgrades. Workspace data remains in the user's AppData folder.
+Existing users can open Settings & updates to download and install 1.0.0. New users can run BancyCraft-Installer.exe. The NSIS update replaces the old program files and retains the workspace in AppData.

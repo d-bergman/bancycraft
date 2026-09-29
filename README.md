@@ -10,7 +10,7 @@ This early build is unsigned. Windows may show an unknown-publisher warning, and
 
 ## Updating this installation
 
-Versions 0.3.0 and later update through Settings. If upgrading from 0.2.0 or earlier, install the current version once. Then open **Settings & updates**, choose **Check for updates**, download an available release, and choose **Restart & install**. Future updates are delivered by GitHub Releases, without separate manual installer downloads.
+Installed public releases from 0.3.0 onward, including 0.10.0 and the later 0.2.0 release, update through Settings. The original 2026-09-27 development build of 0.2.0 needs one manual install. Open **Settings & updates**, choose **Check for updates**, download an available release, and choose **Restart & install**. Version 1.0.0 is newer than both 0.10.0 and the later 0.2.0 release, so both can receive it in-app.
 
 From 0.5.0 onward, the installed app checks immediately after startup and every six hours while open. A top-right **New version available** notification lets you download and verify an update from any page. It then offers **Restart & install update**. Downloads and restarts require clicks. Dismissing the notification hides that version for the current session; Settings still provides the update controls. Checks pause while an update is pending or downloading. Settings entry also checks; corner notices are hidden while Settings displays the update.
 

@@ -21,15 +21,15 @@ The Windows executable currently has no purchased Authenticode certificate. Inst
 
 The release tool obtains GitHub credentials from the configured git credential manager in process memory. It does not log, persist or package the token. Published installers are immutable; do not overwrite a version. Back up user data before attempting a manual rollback to schema 1.
 
-The 2026-09-29 release intentionally reuses version 0.2.0 after 0.10.0. Users on 0.10.0 must run the installer manually once because `allowDowngrade` is false. A later release must use a version greater than 0.10.0 for automatic updates to reach both groups again.
+The 2026-09-29 version 0.2.0 release followed 0.10.0 and could not be offered as an update to 0.10.0 users because `allowDowngrade` is false. Version 1.0.0 corrects the sequence and is newer than both installed versions.
 
 ## Bootstrap
 
-Version 0.2.0 and earlier have no connected feed and cannot discover this update themselves. Install the current release once over the existing installation. From 0.3.0 onward, use Settings. The updater launches the NSIS installer silently and restarts the app after the user clicks Restart & install.
+The original 0.2.0 development build from 2026-09-27 had no connected feed. Public releases from 0.3.0 onward, including the later 0.2.0 release from 2026-09-29, use Settings for updates. The updater launches the NSIS installer silently and restarts the app after the user clicks Restart & install.
 
 Development/browser previews do not install updates. Real online check/download testing uses an isolated profile and an older updater version to exercise a newly published release. That test does not silently overwrite the user's existing installed application.
 
-Run `node scripts/update-notification-smoke.cjs release/win-unpacked/BancyCraft.exe` for controlled packaged startup, popup, progress, dismissal, install IPC and backup checks. Run `node scripts/updates-smoke.cjs release/win-unpacked/BancyCraft.exe` after publishing the current release to exercise the public check, corner download, signature and ready state. The test reads the current package version and simulates 0.4.0 for this release. Adapt the simulated version for subsequent releases. An unpublished draft can be discarded with `node scripts/releases.cjs discard-draft <version>` if a rebuilt installer is necessary; this command refuses to modify published releases.
+Run `node scripts/update-notification-smoke.cjs release/win-unpacked/BancyCraft.exe` for controlled packaged startup, popup, progress, dismissal, install IPC and backup checks. Run `node scripts/updates-smoke.cjs release/win-unpacked/BancyCraft.exe` after publishing the current release to exercise the public check, corner download, signature and ready state. The test reads the current package version and simulates 0.10.0 for this release. Adapt the simulated version for subsequent releases. An unpublished draft can be discarded with `node scripts/releases.cjs discard-draft <version>` if a rebuilt installer is necessary; this command refuses to modify published releases.
 
 ## Stable installer in 0.5.0
 

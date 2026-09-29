@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.0 — 2026-09-29
+
+This release corrects the version sequence so existing 0.10.0 and 0.2.0 installations can receive the current app through Settings & updates. BancyCraft remains in active development.
+
+### App Changes
+- Move the complete 0.2.0 feature set to version 1.0.0 without changing the installer identity or local workspace location.
+- Restore the normal in-app update path for users on 0.10.0 and 0.2.0. Download and installation still require a click.
+
+### Bug Fixes
+- Prevent the lower 0.2.0 version number from leaving 0.10.0 users without an in-app update offer.
+
 ## 0.2.0 — 2026-09-29
 
 The loadout builder now supports a full character layout, named variants and spare equipment, while keeping planning and feedback inside BancyCraft.
