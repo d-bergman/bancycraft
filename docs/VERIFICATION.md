@@ -152,3 +152,6 @@ Native checks verify linked supplies and once-only deduction (154 Mithril Bars t
 - Keys are Windows-encrypted outside the repository and installer; public verification PEM files remain public. The website's pre-existing public registration code was copied only into the encrypted local vault, not the app source. Moving website registration enforcement to a backend remains separate website work.
 
 - Final ASAR has 12,723 entries, contains the final native account-change safeguard, and contains no issuer/private signing PEMs, encrypted key vaults or account credentials. Working-tree and Git-history credential scans report no findings.
+
+- Published 0.8.1 after verifying the draft description and all five uploaded asset sizes/SHA256 against the signed local build. A separate packaged profile verified the actual owner panel and server registry with the final native module. No production game actions were performed.
+- Temporary encrypted QA copies from the first owner-panel run remain in ignored local test data after tool-policy rejection of cleanup; they are absent from Git and the installer. Subsequent owner-panel test runs remove their own credential copies after closing.
