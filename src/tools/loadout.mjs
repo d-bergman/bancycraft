@@ -1,7 +1,7 @@
 export const layout=['Main weapon','Off-hand','Head','Chest','Gloves','Boots / Legs','Ring 1','Ring 2','Belt','Accessory','Food 1','Food 2','Food 3','Potion 1','Potion 2','Cape'];
-export function supported(game,slot){if(game==='valheim')return !['Gloves','Ring 1','Ring 2','Belt'].includes(slot);if(game==='dragonwilds')return !['Gloves','Ring 1','Ring 2','Belt'].includes(slot);if(game==='grounded2')return !['Gloves','Ring 1','Ring 2','Belt','Cape'].includes(slot);if(game==='vrising')return !/^Ring|^Food|^Belt/.test(slot);return slot!=='Belt'&&slot!=='Cape';}
+export function supported(game,slot){if(game==='duneawakening')return !['Off-hand','Ring 1','Ring 2','Belt','Cape'].includes(slot);if(game==='valheim')return !['Gloves','Ring 1','Ring 2','Belt'].includes(slot);if(game==='dragonwilds')return !['Gloves','Ring 1','Ring 2','Belt'].includes(slot);if(game==='grounded2')return !['Gloves','Ring 1','Ring 2','Belt','Cape'].includes(slot);if(game==='vrising')return !/^Ring|^Food|^Belt/.test(slot);return slot!=='Belt'&&slot!=='Cape';}
 export function fits(item,slot){const c=item.category.toLowerCase(),n=item.name.toLowerCase();
- if(/material|resource|component|pattern|basic|quest|arrow|ammo/.test(c))return false;
+ if(/material|resource|component|pattern|schematic|basic|quest|arrow|ammo/.test(c))return false;
  const head=/helmet|head armor|head cosmetic/.test(c)||/\bhelm|\bhood|\bhat|\bheadgear|\bhelmet/.test(n);
  const chest=/chest|upper body|body armor/.test(c)||/\bchest|\btunic|\brobe|\bbody|\bcuirass|\bvest/.test(n);
  const gloves=/arm armor|arm cosmetic|glove/.test(c)||/gloves|gauntlets|handwraps/.test(n);

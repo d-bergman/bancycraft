@@ -2500,5 +2500,474 @@
       "alternatives": {},
       "sourceUrl": "https://wiki.v-ris.ing/w/Warlock_Armour_Set"
     }
+  ],
+  "duneawakening": [
+    {
+      "name": "Acheronian equipment bundle",
+      "ids": [
+        "Combat_Neut_AtreidesDeserterUnique04_Boots",
+        "Combat_Neut_AtreidesDeserterUnique04_Top",
+        "Combat_Neut_AtreidesDeserterUnique04_Gloves",
+        "Combat_Neut_AtreidesDeserterUnique04_Helmet",
+        "Combat_Neut_AtreidesDeserterUnique04_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Acheronian_Boots"
+    },
+    {
+      "name": "Aren's equipment bundle",
+      "ids": [
+        "Combat_Neut_SmugglerDeserterUnique01_Boots",
+        "Combat_Neut_SmugglerDeserterUnique01_Gloves",
+        "Combat_Neut_SmugglerDeserterUnique01_Helmet",
+        "Combat_Neut_SmugglerDeserterUnique01_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Aren's_Boots"
+    },
+    {
+      "name": "Batigh Stillsuit equipment bundle",
+      "ids": [
+        "Stillsuit_Unique_Efficient_05_Boots",
+        "Stillsuit_Unique_Efficient_05_Gloves",
+        "Stillsuit_Unique_Efficient_05_Mask"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Batigh_Stillsuit_Boots"
+    },
+    {
+      "name": "Bulwark equipment bundle",
+      "ids": [
+        "Combat_Heavy_Unique_Reinforced_Boots_06",
+        "Combat_Heavy_Unique_Reinforced_Gloves_06",
+        "Combat_Heavy_Unique_Reinforced_Helmet_06",
+        "Combat_Heavy_Unique_Reinforced_Bottom_06"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Bulwark_Boots"
+    },
+    {
+      "name": "CHOAM Heavy equipment bundle",
+      "ids": [
+        "Combat_Choam_Heavy06_Boots",
+        "Combat_Choam_Heavy06_Top",
+        "Combat_Choam_Heavy06_Gloves",
+        "Combat_Choam_Heavy06_Helmet"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/CHOAM_Heavy_Boots"
+    },
+    {
+      "name": "CHOAM Scout equipment bundle",
+      "ids": [
+        "Combat_Choam_Light06_Boots",
+        "Combat_Choam_Light06_Top",
+        "Combat_Choam_Light06_Gloves",
+        "Combat_Choam_Light06_Helmet",
+        "Combat_Choam_Light06_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/CHOAM_Scout_Boots"
+    },
+    {
+      "name": "CHOAM Stillsuit equipment bundle",
+      "ids": [
+        "Stillsuit_Choam_06_Boots",
+        "Stillsuit_Choam_06_Gloves",
+        "Stillsuit_Choam_06_Mask"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/CHOAM_Stillsuit_Boots"
+    },
+    {
+      "name": "Chosen equipment bundle",
+      "ids": [
+        "Combat_Neut_SmugglerDeserterUnique05_Boots",
+        "Combat_Neut_SmugglerDeserterUnique05_Top",
+        "Combat_Neut_SmugglerDeserterUnique05_Gloves",
+        "Combat_Neut_SmugglerDeserterUnique05_Helmet",
+        "Combat_Neut_SmugglerDeserterUnique05_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Chosen_Boots"
+    },
+    {
+      "name": "Duneman Scout equipment bundle",
+      "ids": [
+        "Combat_Choam_Scout03_Boots",
+        "Combat_Choam_Scout03_Gloves",
+        "Combat_Choam_Scout03_Helmet",
+        "Combat_Choam_Scout03_Top",
+        "Combat_Choam_Scout03_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Duneman_Scout_Boots"
+    },
+    {
+      "name": "Executor's equipment bundle",
+      "ids": [
+        "Combat_Neut_AtreidesDeserterUnique05_Boots",
+        "Combat_Neut_AtreidesDeserterUnique05_Gloves",
+        "Combat_Neut_AtreidesDeserterUnique05_Helmet",
+        "Combat_Neut_AtreidesDeserterUnique05_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Executor's_Boots"
+    },
+    {
+      "name": "Hollower Stillsuit equipment bundle",
+      "ids": [
+        "Stillsuit_Unique_Armored_01_Boots",
+        "Stillsuit_Unique_Armored_01_Gloves",
+        "Stillsuit_Unique_Armored_01_Mask"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Hollower_Stillsuit_Boots"
+    },
+    {
+      "name": "Imperial Stillsuit equipment bundle",
+      "ids": [
+        "Stillsuit_Unique_Armored_06_Boots",
+        "Stillsuit_Unique_Armored_06_Gloves",
+        "Stillsuit_Unique_Armored_06_Mask"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Imperial_Stillsuit_Boots"
+    },
+    {
+      "name": "Inkvine equipment bundle",
+      "ids": [
+        "Combat_Neut_SmugglerDeserterUnique03_Boots",
+        "Combat_Neut_SmugglerDeserterUnique03_Gloves",
+        "Combat_Neut_SmugglerDeserterUnique03_Top",
+        "Combat_Neut_SmugglerDeserterUnique03_Helmet",
+        "Combat_Neut_SmugglerDeserterUnique03_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Inkvine_Boots"
+    },
+    {
+      "name": "Karak's equipment bundle",
+      "ids": [
+        "Combat_Neut_AtreidesDeserterUnique02_Boots",
+        "Combat_Neut_AtreidesDeserterUnique02_Gloves",
+        "Combat_Neut_AtreidesDeserterUnique02_Helmet",
+        "Combat_Neut_AtreidesDeserterUnique02_Top",
+        "Combat_Neut_AtreidesDeserterUnique02_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Karak's_Boots"
+    },
+    {
+      "name": "Kel's Stillsuit equipment bundle",
+      "ids": [
+        "Stillsuit_Unique_Armored_03_Boots",
+        "Stillsuit_Unique_Armored_03_Gloves",
+        "Stillsuit_Unique_Armored_03_Mask"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Kel's_Stillsuit_Boots"
+    },
+    {
+      "name": "Kirab Scout equipment bundle",
+      "ids": [
+        "Combat_Choam_Light02_Boots",
+        "Combat_Choam_Light02_Gloves",
+        "Combat_Choam_Light02_Helmet",
+        "Combat_Choam_Light02_Top",
+        "Combat_Choam_Light02_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Kirab_Scout_Boots"
+    },
+    {
+      "name": "Kirab Stillsuit equipment bundle",
+      "ids": [
+        "Stillsuit_Choam_02_Boots",
+        "Stillsuit_Choam_02_Gloves",
+        "Stillsuit_Choam_02_Mask"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Kirab_Stillsuit_Boots"
+    },
+    {
+      "name": "Makeshift equipment bundle",
+      "ids": [
+        "Combat_Nati_SandtroutLeathers01_Gloves",
+        "Combat_Nati_SandtroutLeathers01_Helmet",
+        "Combat_Nati_SandtroutLeathers01_Top",
+        "Combat_Nati_SandtroutLeathers01_Bottom",
+        "Combat_Nati_SandtroutLeathers01_Boots"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Makeshift_Gloves"
+    },
+    {
+      "name": "Maraqeb Stillsuit equipment bundle",
+      "ids": [
+        "Stillsuit_Unique_Efficient_04_Boots",
+        "Stillsuit_Unique_Efficient_04_Gloves",
+        "Stillsuit_Unique_Efficient_04_Mask"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Maraqeb_Stillsuit_Boots"
+    },
+    {
+      "name": "Mendek's equipment bundle",
+      "ids": [
+        "Combat_Heavy_Unique_Reinforced_Boots_05",
+        "Combat_Heavy_Unique_Reinforced_Top_05",
+        "Combat_Heavy_Unique_Reinforced_Gloves_05",
+        "Combat_Heavy_Unique_Reinforced_Helmet_05",
+        "Combat_Heavy_Unique_Reinforced_Bottom_05"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Mendek's_Boots"
+    },
+    {
+      "name": "Mendia's equipment bundle",
+      "ids": [
+        "Combat_Neut_SmugglerDeserterUnique02_Boots",
+        "Combat_Neut_SmugglerDeserterUnique02_Gloves",
+        "Combat_Neut_SmugglerDeserterUnique02_Top",
+        "Combat_Neut_SmugglerDeserterUnique02_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Mendia's_Boots"
+    },
+    {
+      "name": "Menol's Stillsuit equipment bundle",
+      "ids": [
+        "Stillsuit_Unique_Armored_02_Boots",
+        "Stillsuit_Unique_Armored_02_Gloves",
+        "Stillsuit_Unique_Armored_02_Mask"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Menol's_Stillsuit_Boots"
+    },
+    {
+      "name": "Mercenary Heavy equipment bundle",
+      "ids": [
+        "Combat_Choam_Heavy04_Shoes",
+        "Combat_Choam_Heavy04_Top",
+        "Combat_Choam_Heavy04_Gloves",
+        "Combat_Choam_Heavy04_Helmet",
+        "Combat_Choam_Heavy04_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Mercenary_Heavy_Boots"
+    },
+    {
+      "name": "Mercenary Scout equipment bundle",
+      "ids": [
+        "Combat_Choam_Light05_Boots",
+        "Combat_Choam_Light05_Gloves",
+        "Combat_Choam_Light05_Helmet",
+        "Combat_Choam_Light05_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Mercenary_Scout_Boots"
+    },
+    {
+      "name": "Mercenary Stillsuit equipment bundle",
+      "ids": [
+        "Stillsuit_Choam_05_Boots",
+        "Stillsuit_Choam_05_Gloves",
+        "Stillsuit_Choam_05_Mask"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Mercenary_Stillsuit_Boots"
+    },
+    {
+      "name": "Native Stillsuit equipment bundle",
+      "ids": [
+        "Stillsuit_Choam_04_Boots",
+        "Stillsuit_Choam_04_Gloves",
+        "Stillsuit_Choam_04_Mask"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Native_Stillsuit_Boots"
+    },
+    {
+      "name": "Oathbreaker equipment bundle",
+      "ids": [
+        "Combat_Neut_AtreidesDeserterUnique01_Boots",
+        "Combat_Neut_AtreidesDeserterUnique01_Gloves",
+        "Combat_Neut_AtreidesDeserterUnique01_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Oathbreaker_Boots"
+    },
+    {
+      "name": "Pincushion equipment bundle",
+      "ids": [
+        "Combat_Neut_SmugglerDeserterUnique06_Boots",
+        "Combat_Neut_SmugglerDeserterUnique06_Gloves",
+        "Combat_Neut_SmugglerDeserterUnique06_Helmet",
+        "Combat_Neut_SmugglerDeserterUnique06_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Pincushion_Boots"
+    },
+    {
+      "name": "Quirth's equipment bundle",
+      "ids": [
+        "Combat_Neut_SmugglerDeserterUnique04_Boots",
+        "Combat_Neut_SmugglerDeserterUnique04_Gloves",
+        "Combat_Neut_SmugglerDeserterUnique04_Helmet",
+        "Combat_Neut_SmugglerDeserterUnique04_Top",
+        "Combat_Neut_SmugglerDeserterUnique04_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Quirth's_Boots"
+    },
+    {
+      "name": "Saturnine Stillsuit equipment bundle",
+      "ids": [
+        "Stillsuit_Unique_Armored_05_Boots",
+        "Stillsuit_Unique_Armored_05_Gloves",
+        "Stillsuit_Unique_Armored_05_Mask"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Saturnine_Stillsuit_Boots"
+    },
+    {
+      "name": "Scavenger equipment bundle",
+      "ids": [
+        "Combat_Nati_ScavengerRags02_Boots",
+        "Combat_Nati_ScavengerRags02_Gloves",
+        "Combat_Nati_ScavengerRags02_Helmet",
+        "Combat_Nati_ScavengerRags02_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Scavenger_Boots"
+    },
+    {
+      "name": "Scavenger Stillsuit equipment bundle",
+      "ids": [
+        "Stillsuit_Neut_Leaking01_Boots",
+        "Stillsuit_Neut_Leaking01_Gloves",
+        "Stillsuit_Neut_Leaking01_Mask"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Scavenger_Stillsuit_Boots"
+    },
+    {
+      "name": "Sentinel equipment bundle",
+      "ids": [
+        "Combat_Neut_AtreidesDeserterUnique03_Boots",
+        "Combat_Neut_AtreidesDeserterUnique03_Gloves",
+        "Combat_Neut_AtreidesDeserterUnique03_Helmet",
+        "Combat_Neut_AtreidesDeserterUnique03_Top",
+        "Combat_Neut_AtreidesDeserterUnique03_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Sentinel_Boots"
+    },
+    {
+      "name": "Shadrath's Stillsuit equipment bundle",
+      "ids": [
+        "Stillsuit_Unique_Armored_04_Boots",
+        "Stillsuit_Unique_Armored_04_Gloves",
+        "Stillsuit_Unique_Armored_04_Mask"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Shadrath's_Stillsuit_Boots"
+    },
+    {
+      "name": "Slaver Heavy equipment bundle",
+      "ids": [
+        "Combat_Choam_Heavy03_Boots",
+        "Combat_Choam_Heavy03_Gloves",
+        "Combat_Choam_Heavy03_Helmet",
+        "Combat_Choam_Heavy03_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Slaver_Heavy_Boots"
+    },
+    {
+      "name": "Slaver Scout equipment bundle",
+      "ids": [
+        "Combat_Choam_Light03_Boots",
+        "Combat_Choam_Light03_Gloves",
+        "Combat_Choam_Light03_Top",
+        "Combat_Choam_Light03_Helmet",
+        "Combat_Choam_Light03_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Slaver_Scout_Boots"
+    },
+    {
+      "name": "Syndicate equipment bundle",
+      "ids": [
+        "Combat_Hark_MedUnique01_Boots",
+        "Combat_Hark_MedUnique01_Top",
+        "Combat_Hark_MedUnique01_Gloves",
+        "Combat_Hark_MedUnique01_Helmet",
+        "Combat_Hark_MedUnique01_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Syndicate_Boots"
+    },
+    {
+      "name": "The Forge equipment bundle",
+      "ids": [
+        "Combat_Hark_MedUnique02_Boots",
+        "Combat_Hark_MedUnique02_Gloves",
+        "Combat_Hark_MedUnique02_Helmet",
+        "Combat_Hark_MedUnique02_Bottom"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/The_Forge_Boots"
+    },
+    {
+      "name": "Villari's Stillsuit equipment bundle",
+      "ids": [
+        "Stillsuit_Unique_Efficient_06_Boots",
+        "Stillsuit_Unique_Efficient_06_Gloves",
+        "Stillsuit_Unique_Efficient_06_Mask"
+      ],
+      "alternatives": {},
+      "kind": "Equipment bundle",
+      "sourceUrl": "https://awakening.wiki/Villari's_Stillsuit_Boots"
+    }
   ]
 }

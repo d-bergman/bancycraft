@@ -26,7 +26,7 @@ import { AccessSettings } from './community/AccessSettings';
 import './ledger/ledger.css';
 
 type Page = 'Home' | 'Builds' | 'Shopping Lists' | 'Gearsets' | 'Item Browser' | 'Crafting Planner' | 'My Supplies' | 'Production Ledger' | 'Shared Storage' | 'Group Plans' | 'Server Bank' | 'Servers' | 'Settings' | 'Changelog' | 'Help';
-const games: Record<Game, string> = { dragonwilds: 'RuneScape: Dragonwilds', valheim: 'Valheim', enshrouded: 'Enshrouded', grounded2: 'Grounded 2', vrising: 'V Rising' };
+const games: Record<Game, string> = { dragonwilds: 'RuneScape: Dragonwilds', valheim: 'Valheim', enshrouded: 'Enshrouded', grounded2: 'Grounded 2', vrising: 'V Rising', duneawakening: 'Dune: Awakening' };
 const navigation = [{ label: 'Home', icon: Home }, { label: 'Item Browser', icon: BookOpen }, { label: 'Shopping Lists', icon: ScrollText }, { label: 'Gearsets', icon: ShieldCheck }, {label:'Builds',icon:ContactRound}, { label: 'Crafting Planner', icon: Hammer }, { label: 'My Supplies', icon: Box }] as const;
 const gameTiles: { id: string; name: string; game?: Game }[] = [
   { id: 'dragonwilds', name: 'RuneScape: Dragonwilds', game: 'dragonwilds' },
@@ -34,7 +34,7 @@ const gameTiles: { id: string; name: string; game?: Game }[] = [
   { id: 'enshrouded', name: 'Enshrouded', game: 'enshrouded' },
   { id: 'grounded2', name: 'Grounded 2', game: 'grounded2' },
   { id: 'vrising', name: 'V Rising', game: 'vrising' },
-  { id: 'duneawakening', name: 'Dune: Awakening' },
+  { id: 'duneawakening', name: 'Dune: Awakening', game: 'duneawakening' },
 ];
 const shared = ['Shared Storage', 'Group Plans', 'Server Bank'] as const;
 const empty: Workspace = { schemaVersion: 2, game: 'dragonwilds', plans: [], supplies: [], lists: [] };

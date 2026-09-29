@@ -11915,7 +11915,7 @@
       "name": "Ice",
       "category": "Terrain Materials",
       "description": "Crystalline, ice-cold, and slippery.",
-      "acquisition": "",
+      "acquisition": "Ice is a terrain material in Enshrouded. This can be obtained by mining ice around the Albaneve Summits. It creates a slippery surface where you slide around.",
       "sourceUrl": "https://enshrouded.wiki.gg/wiki/Ice",
       "revision": 49608,
       "updatedAt": "2026-06-03T00:33:06Z"
@@ -16505,7 +16505,7 @@
       "name": "Plantain",
       "category": "Consumables",
       "description": "This plantain, not to be confused with a common banana, cannot be eaten raw. It's high in starch and can be used as a staple in many foods once cooked.",
-      "acquisition": "",
+      "acquisition": "Plantain is obtained from chopping Banana trees in Veilwater Basin or harvested from a .",
       "sourceUrl": "https://enshrouded.wiki.gg/wiki/Plantain",
       "revision": 50623,
       "updatedAt": "2026-08-18T07:17:39Z"
@@ -16545,7 +16545,7 @@
       "name": "Poison Sack",
       "category": "Materials",
       "description": "It's considered to be one of the most dangerous materials in the world! Touching it directly is usually not a good idea.",
-      "acquisition": "",
+      "acquisition": "Dropped from: Mushroom Crab; Scorpion; Vicious Vine; Yellow Stinger. Drop quantities vary.",
       "sourceUrl": "https://enshrouded.wiki.gg/wiki/Poison_Sack",
       "revision": 51147,
       "updatedAt": "2026-09-17T17:13:39Z"
@@ -17325,7 +17325,7 @@
       "name": "Raw Bird Meat",
       "category": "Consumables",
       "description": "It's not properly cooked. Eating this raw would cause nausea.",
-      "acquisition": "",
+      "acquisition": "Dropped from: Draconian Vulture; Flightless Redtail; Round-Billed Sailer; Vukah Berserker; Vukah Ranger; Vukah Shaman; Vukah Warrior; Whitewing Vulture. Drop quantities vary.",
       "sourceUrl": "https://enshrouded.wiki.gg/wiki/Raw_Bird_Meat",
       "revision": 43674,
       "updatedAt": "2026-01-10T02:54:34Z"
@@ -17365,7 +17365,7 @@
       "name": "Raw Lean Meat",
       "category": "Consumables",
       "description": "Inedible, raw meat. Must be cooked over a campfire.",
-      "acquisition": "",
+      "acquisition": "Dropped from: Common Goat; Hophare; Rat. Drop quantities vary.",
       "sourceUrl": "https://enshrouded.wiki.gg/wiki/Raw_Lean_Meat",
       "revision": 46418,
       "updatedAt": "2026-02-19T16:25:50Z"
@@ -17765,7 +17765,7 @@
       "name": "Right Cyclops Arm",
       "category": "Materials",
       "description": "The right arm of a Cyclops. It's taller than your whole body when propped up!",
-      "acquisition": "",
+      "acquisition": "Right Cyclops Arm is part of the Cyclops Statue and can be found at .",
       "sourceUrl": "https://enshrouded.wiki.gg/wiki/Right_Cyclops_Arm",
       "revision": 48261,
       "updatedAt": "2026-04-27T16:34:16Z"
@@ -18985,7 +18985,7 @@
       "name": "Scavenger Matron Helmet",
       "category": "Materials",
       "description": "She is less fearsome when headless. The acidic scent lingers, however.",
-      "acquisition": "",
+      "acquisition": "The Scavenger Matron Head is a trophy that is dropped from the Scavenger Matron. This item is used as part of the Sacrificial offerings to Strengthen the Flame at a Flame Altar from Level 2 to Level 3, thus allowing the Flameborn to go into higher level shrouded areas. It can also be used to craft trophy items for house decoration.",
       "sourceUrl": "https://enshrouded.wiki.gg/wiki/Scavenger_Matron_Helmet",
       "revision": 29341,
       "updatedAt": "2025-05-19T16:46:42Z"
@@ -20245,7 +20245,7 @@
       "name": "Shroud Sack",
       "category": "Materials",
       "description": "An organic bag containing highly concentrated Shroud spores.",
-      "acquisition": "",
+      "acquisition": "Dropped from: Fell Boar; Fell Mushroom Crab; Fell Vicious Vine. Drop quantities vary.",
       "sourceUrl": "https://enshrouded.wiki.gg/wiki/Shroud_Sack",
       "revision": 51224,
       "updatedAt": "2026-09-17T17:16:02Z"
@@ -21375,7 +21375,7 @@
       "name": "Snow",
       "category": "Terrain Materials",
       "description": "Powdery, lily-white snow. The way it drowns out the sounds of chaos makes he world seem just a little more peaceful.",
-      "acquisition": "",
+      "acquisition": "Snow is a terrain material in Enshrouded. This can be obtained by mining Snow around the Albaneve Summits. Its deep enough that it will stick to you causing you stamina drain when jumping.",
       "sourceUrl": "https://enshrouded.wiki.gg/wiki/Snow",
       "revision": 49590,
       "updatedAt": "2026-06-02T23:59:50Z"
@@ -23675,7 +23675,7 @@
       "name": "Toxic Sack",
       "category": "Materials",
       "description": "A large gland filled with lethal substance. Handle it with care.",
-      "acquisition": "",
+      "acquisition": "Dropped from: Pink Stinger. Drop quantities vary.",
       "sourceUrl": "https://enshrouded.wiki.gg/wiki/Toxic_Sack",
       "revision": 40078,
       "updatedAt": "2025-11-30T06:50:01Z"
@@ -24815,7 +24815,7 @@
       "name": "Water",
       "category": "Item",
       "description": "",
-      "acquisition": "",
+      "acquisition": "Water is a fluid in Enshrouded. It can be found in natural pools or generated by Water Dispensers. It can be stored in containers and crafting stations.",
       "sourceUrl": "https://enshrouded.wiki.gg/wiki/Water",
       "revision": 43727,
       "updatedAt": "2026-01-10T02:59:06Z"
@@ -25455,7 +25455,7 @@
       "name": "Wolfsbane",
       "category": "Materials",
       "description": "This plant is notable due to its stunning electrifying colorway, its delicate petals, and its deadly poison.",
-      "acquisition": "",
+      "acquisition": "An uncommon plant with purple flowers and green stems. It can be found in the Albaneve Summits or grown by the player using a seedbed when one Wolfsbane has been acquired. FR:Aconit",
       "sourceUrl": "https://enshrouded.wiki.gg/wiki/Wolfsbane",
       "revision": 51731,
       "updatedAt": "2026-09-19T07:34:40Z"
@@ -78919,7 +78919,8 @@
         },
         {
           "name": "Copper Bar",
-          "quantity": 4
+          "quantity": 4,
+          "itemId": "448"
         },
         {
           "name": "Hardwood",
@@ -79943,7 +79944,8 @@
         },
         {
           "name": "Copper Bar",
-          "quantity": 1
+          "quantity": 1,
+          "itemId": "448"
         },
         {
           "name": "Flintstone",
@@ -83987,7 +83989,8 @@
         },
         {
           "name": "Copper Bar",
-          "quantity": 2
+          "quantity": 2,
+          "itemId": "448"
         },
         {
           "name": "Charcoal",
@@ -84026,7 +84029,8 @@
         },
         {
           "name": "Copper Bar",
-          "quantity": 3
+          "quantity": 3,
+          "itemId": "448"
         },
         {
           "name": "Charcoal",
@@ -84070,7 +84074,8 @@
         },
         {
           "name": "Copper Bar",
-          "quantity": 2
+          "quantity": 2,
+          "itemId": "448"
         },
         {
           "name": "Brittle Shroud Petals",
@@ -87093,7 +87098,8 @@
         },
         {
           "name": "Copper Bar",
-          "quantity": 2
+          "quantity": 2,
+          "itemId": "448"
         },
         {
           "name": "Bonemeal",
@@ -88191,7 +88197,8 @@
         },
         {
           "name": "Copper Bar",
-          "quantity": 1
+          "quantity": 1,
+          "itemId": "448"
         }
       ],
       "outputs": [
@@ -88215,7 +88222,8 @@
         },
         {
           "name": "Copper Bar",
-          "quantity": 1
+          "quantity": 1,
+          "itemId": "448"
         }
       ],
       "outputs": [
@@ -88514,7 +88522,8 @@
       "inputs": [
         {
           "name": "Copper Bar",
-          "quantity": 1
+          "quantity": 1,
+          "itemId": "448"
         },
         {
           "name": "Charcoal",
@@ -88538,7 +88547,8 @@
       "inputs": [
         {
           "name": "Copper Bar",
-          "quantity": 1
+          "quantity": 1,
+          "itemId": "448"
         },
         {
           "name": "Charcoal",
@@ -88677,7 +88687,8 @@
       "inputs": [
         {
           "name": "Copper Bar",
-          "quantity": 1
+          "quantity": 1,
+          "itemId": "448"
         },
         {
           "name": "Charcoal",
@@ -88716,7 +88727,8 @@
         },
         {
           "name": "Copper Bar",
-          "quantity": 3
+          "quantity": 3,
+          "itemId": "448"
         },
         {
           "name": "Charcoal",
@@ -88750,7 +88762,8 @@
         },
         {
           "name": "Copper Bar",
-          "quantity": 1
+          "quantity": 1,
+          "itemId": "448"
         },
         {
           "name": "Charcoal",
@@ -88794,7 +88807,8 @@
         },
         {
           "name": "Copper Bar",
-          "quantity": 2
+          "quantity": 2,
+          "itemId": "448"
         },
         {
           "name": "Charcoal",
@@ -88833,7 +88847,8 @@
         },
         {
           "name": "Copper Bar",
-          "quantity": 1
+          "quantity": 1,
+          "itemId": "448"
         },
         {
           "name": "Charcoal",
@@ -88866,7 +88881,8 @@
       "inputs": [
         {
           "name": "Copper Bar",
-          "quantity": 2
+          "quantity": 2,
+          "itemId": "448"
         },
         {
           "name": "Charcoal",
@@ -88910,7 +88926,8 @@
         },
         {
           "name": "Copper Bar",
-          "quantity": 5
+          "quantity": 5,
+          "itemId": "448"
         },
         {
           "name": "Amber",

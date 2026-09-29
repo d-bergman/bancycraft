@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { randomUUID } = require('node:crypto');
-const GAMES = ['dragonwilds', 'valheim', 'enshrouded', 'grounded2', 'vrising'];
+const GAMES = ['dragonwilds', 'valheim', 'enshrouded', 'grounded2', 'vrising', 'duneawakening'];
 const defaults = () => ({ schemaVersion: 2, game: 'dragonwilds', plans: [], supplies: [], lists: [] });
 function string(value, max, label) {
   if (typeof value !== 'string' || value.length > max) throw new Error(`Invalid ${label}.`);

@@ -1,3 +1,4 @@
+const {actionLock}=require('./player-lockouts.cjs');
 function createServers(account,community,controller,options={}){
  const network=options.fetch||((...args)=>fetch(...args));
  function user(){const state=account.status();if(state.state!=='connected'||!state.user)throw Error('Connect your website account first.');return state.user;}
@@ -10,7 +11,7 @@ function createServers(account,community,controller,options={}){
   async unlock(token){const u=user(),key=controller.unlock(token);if(key.uid!==u.uid){controller.lock();throw Error('This controller key belongs to another website account.');}try{await request('/api/app-access',{headers:{'X-BancyCraft-Key':controller.token()}});}catch(e){controller.lock();throw e;}return status();},
   lock:()=>controller.lock(),
   async snapshot(){user();if(!community.status().unlocked&&!status().unlocked)throw Error('A community or controller key is required.');const registry=await readRegistry();let control=null,controlError='';if(status().unlocked)try{await request('/api/app-access',{headers:{'X-BancyCraft-Key':controller.token()}});control=await request('/api/servers');}catch(e){controlError=e.message;}return {registry,control,controlError};},
-  async action(id,action){requireKey();if(typeof id!=='string'||! /^[a-z0-9_-]{1,80}$/.test(id)||!['start','stop','restart'].includes(action))throw Error('Invalid server action.');return request('/api/servers/'+encodeURIComponent(id)+'/'+action,{method:'POST',headers:{'X-BancyCraft-Key':controller.token()},body:'{}'});}
+  async action(id,action){requireKey();if(typeof id!=='string'||! /^[a-z0-9_-]{1,80}$/.test(id)||!['start','stop','restart'].includes(action))throw Error('Invalid server action.');const snapshot=await request('/api/servers');requireKey();const reason=actionLock(snapshot,id,action);if(reason)throw Error(reason);return request('/api/servers/'+encodeURIComponent(id)+'/'+action,{method:'POST',headers:{'X-BancyCraft-Key':controller.token()},body:'{}'});}
  };
 }
 module.exports={createServers};

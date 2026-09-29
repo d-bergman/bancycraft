@@ -1,7 +1,7 @@
 {
   "name": "bancycraft",
   "productName": "BancyCraft",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "private": true,
   "description": "BancyCraft â€” your local crafting workspace",
   "author": "Bancy",
@@ -18,6 +18,7 @@
     "catalog:import": "node scripts/catalog/import.cjs",
     "catalog:icons": "node scripts/catalog/icons.cjs",
     "test:lists": "node scripts/lists-smoke.cjs",
+    "catalog:dune": "node scripts/catalog/duneawakening.cjs",
     "catalog:grounded2": "node scripts/catalog/grounded2.cjs"
   },
   "dependencies": {

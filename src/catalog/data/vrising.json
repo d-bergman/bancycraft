@@ -14049,6 +14049,76 @@
         }
       ],
       "sourceUrl": "https://wiki.v-ris.ing/w/Wrangler's_Potion"
+    },
+    {
+      "id": "Verified:vr-c7f7008b6194a610bcb3",
+      "station": "Smithy",
+      "sourceUrl": "https://wiki.v-ris.ing/w/Iron_Castle_Key",
+      "inputs": [
+        {
+          "itemId": "vr-4efe071f337dfa0bae77",
+          "name": "Greater Blood Essence",
+          "quantity": 20
+        },
+        {
+          "itemId": "vr-837bf1b32cefecc07989",
+          "name": "Gem Dust",
+          "quantity": 240
+        },
+        {
+          "itemId": "vr-766d61c71d43f8d910ff",
+          "name": "Scourgestone",
+          "quantity": 80
+        },
+        {
+          "itemId": "vr-84f158438e182b4ca03b",
+          "name": "Reinforced Plank",
+          "quantity": 60
+        }
+      ],
+      "outputs": [
+        {
+          "itemId": "vr-c7f7008b6194a610bcb3",
+          "name": "Iron Castle Key",
+          "quantity": 1
+        }
+      ],
+      "notes": "Base costs from the rendered recipe table; parenthesized floor discounts are not applied."
+    },
+    {
+      "id": "Verified:vr-fae75a3f7375267b1678",
+      "station": "Anvil",
+      "sourceUrl": "https://wiki.v-ris.ing/w/Golden_Castle_Key",
+      "inputs": [
+        {
+          "itemId": "vr-f1a18c25e8cbbd8b39b3",
+          "name": "Primal Blood Essence",
+          "quantity": 12
+        },
+        {
+          "itemId": "vr-865297885d4dc5a38fdc",
+          "name": "Gold Ingot",
+          "quantity": 24
+        },
+        {
+          "itemId": "vr-a637350f86e141dbadb5",
+          "name": "Dark Silver Ingot",
+          "quantity": 80
+        },
+        {
+          "itemId": "vr-84f158438e182b4ca03b",
+          "name": "Reinforced Plank",
+          "quantity": 80
+        }
+      ],
+      "outputs": [
+        {
+          "itemId": "vr-fae75a3f7375267b1678",
+          "name": "Golden Castle Key",
+          "quantity": 1
+        }
+      ],
+      "notes": "Base costs from the rendered recipe table; parenthesized floor discounts are not applied."
     }
   ]
 }

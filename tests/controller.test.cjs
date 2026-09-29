@@ -11,13 +11,13 @@ test('native server bridge cannot send actions without a controller key for the 
  let key={unlocked:false},requests=[],identity={state:'connected',user:{uid:'member-one'}};
  const account={status:()=>identity,token:async()=>'test-firebase-token',config:{databaseURL:'https://example.test'}};
  const controller={status:()=>key,token:()=>'test-key',lock:()=>{key={unlocked:false};return key;},unlock:()=>{key={unlocked:true,uid:'member-one'};return key;}};
- const network=async(url,options)=>{requests.push({url:String(url),options});return {ok:true,json:async()=>({authorized:true})};};
+ const network=async(url,options)=>{requests.push({url:String(url),options});return {ok:true,json:async()=>({authorized:true,servers:[{id:'valheim',label:'Valheim',status:'running',playerQueryStatus:'ok',playersOnline:0}]})};};
  const servers=createServers(account,{status:()=>({unlocked:true})},controller,{fetch:network});
  await assert.rejects(()=>servers.action('valheim','restart'),/controller key/);assert.equal(requests.length,0);
  key={unlocked:true,uid:'member-two'};await assert.rejects(()=>servers.action('valheim','restart'),/controller key/);assert.equal(requests.length,0);
  key={unlocked:true,uid:'member-one'};await assert.rejects(()=>servers.action('../unknown','start'),/Invalid/);await assert.rejects(()=>servers.action('valheim','delete'),/Invalid/);
- await servers.action('valheim','restart');assert.equal(requests[0].url,'https://servers-api.bancy.gg/api/servers/valheim/restart');assert.equal(requests[0].options.headers['X-BancyCraft-Key'],'test-key');assert.equal(requests[0].options.redirect,'error');
- identity={state:'signed-out'};await assert.rejects(()=>servers.action('valheim','stop'),/Connect/);assert.equal(requests.length,1);
+ await servers.action('valheim','restart');assert.equal(requests[1].url,'https://servers-api.bancy.gg/api/servers/valheim/restart');assert.equal(requests[1].options.headers['X-BancyCraft-Key'],'test-key');assert.equal(requests[0].options.redirect,'error');
+ identity={state:'signed-out'};await assert.rejects(()=>servers.action('valheim','stop'),/Connect/);assert.equal(requests.length,2);
 });
 test('server key activation fails closed when the backend rejects it',async()=>{
  let locked=false;const controller={status:()=>({unlocked:true,uid:'member-one'}),token:()=> 'signed-test-key',unlock:()=>({unlocked:true,uid:'member-one'}),lock:()=>{locked=true;}};

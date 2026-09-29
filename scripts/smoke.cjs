@@ -29,7 +29,7 @@ async function launch() {
     assert.deepEqual(security, { sandbox: true, contextIsolation: true, nodeIntegration: false });
     assert.equal(await run.page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
     assert.equal(await run.page.locator('.game-card').count(), 6);
-    assert.equal(await run.page.locator('.game-card.planned').count(), 1);
+    assert.equal(await run.page.locator('.game-card.planned').count(), 0);
     await run.page.waitForFunction(() => [...document.querySelectorAll('.game-tile-image')].every(image => image.complete && image.naturalWidth > 0));
     assert.equal(await run.page.evaluate(() => [...document.querySelectorAll('.game-card.planned')].every(card => {
       const badge = card.querySelector('.planned-badge').getBoundingClientRect(), title = card.querySelector('.game-name').getBoundingClientRect();
@@ -119,7 +119,7 @@ async function launch() {
     await run.page.getByRole('button', { name: 'Settings & updates', exact: true }).click();
     await run.page.getByRole('heading', { name: 'BancyCraft updates' }).waitFor();
     await run.page.screenshot({ path: path.join(root, 'test-results', 'settings-desktop.png') });
-    await run.page.getByLabel('BancyCraft cipher key',{exact:true}).waitFor();
+    assert.equal(await run.page.getByLabel('BancyCraft cipher key',{exact:true}).count(),0,'Key inputs remain hidden before website connection');
     assert.equal(await run.page.getByRole('navigation',{name:'Connected features'}).count(),0,'Community sidebar is hidden without a validated key');
     await run.application.close();
     run = await launch();

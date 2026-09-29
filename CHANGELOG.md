@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.10.0 — 2026-09-29
+
+Dune: Awakening joins the offline crafting workspace, with player-safe controller actions and another catalog coverage pass.
+
+### New Content
+- Dune: Awakening item browser, exact crafting alternatives, recipe trees, shopping lists, supplies, loadouts and source-linked equipment bundles.
+- Backend player lockouts protect game switching, stops and restarts. Unknown player counts also block disruptive manual actions.
+
+### App Changes
+- Potion slots show selected items without quantity inputs. Existing saved build quantities are preserved.
+- Dune refinery alternatives remain separate; water requirements are labeled and calculated in milliliters.
+- Dune community-wiki/API attribution and import exclusions are bundled with the catalog.
+
+### Bug Fixes
+- Recheck server population before submitting an action; the backend refreshes population inside its serialized mutation queue.
+- Recover sequel-specific Grounded 2 acquisition fields from shared item pages.
+- Import the missing V Rising Iron and Golden Castle Key recipes with their real stations and base costs.
+- Correct Valheim Raw Fish conversion so each recipe uses one fish alternative rather than all fish species together.
+- Audit every bundled recipe tree and station across all six games. Unverified sources and unsupported generic ingredients remain explicitly incomplete.
+
 ## 0.9.0 — 2026-09-29
 
 A tighter loadout workspace and clearer server navigation, with Bancy.gg key controls revealed only after website authentication.

@@ -61,5 +61,7 @@
 .build-toolbar-tags{margin-left:auto;width:240px;min-width:160px;max-width:100%;text-align:right;font-size:11px;padding:8px}
 .build-editor>.build-description{margin:10px 0 12px;gap:6px;font-size:12px}.build-description textarea{padding:8px;min-height:50px}
 .build-consumables .build-slot{height:150px;width:120px;padding:6px;gap:3px}.build-consumables .item-art{height:40px}.build-consumables .slot-11 .item-art,.build-consumables .slot-12 .item-art,.build-consumables .slot-13 .item-art{height:56px}
-.build-consumables .potion-quantity{display:flex;align-items:center;justify-content:center;gap:4px;font-size:10px;flex-wrap:nowrap}.build-consumables .potion-quantity input{width:45px;font-size:11px;padding:2px;text-align:center}
+
 .build-footer{margin-top:14px;padding-top:12px;border-top:1px solid #29414e}.add-build-notes{margin-bottom:10px}.server-tabs{margin:0 0 20px}
+
+.build-consumables .item-art{height:56px}

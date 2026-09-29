@@ -705,7 +705,7 @@
       "name": "Blazin' Brew",
       "category": "smoothies",
       "description": "Nutritious and mouth-watering hot! This spicy, fruity blend keeps you warm in cold areas.",
-      "acquisition": "",
+      "acquisition": "Crafted at Smoothie Station. Named ingredients: Spicy Shard; Lingonberry Chunk; Apple Bits. Requires a smoothie base; exact ingredient counts and variant effects must be checked at the source. Analyze Lingonberry Chunk",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Blazin'_Brew#_Grounded_2_-0",
       "revision": 55805,
       "updatedAt": "2026-04-07T04:33:38Z"
@@ -865,7 +865,7 @@
       "name": "Boost Juice",
       "category": "smoothies",
       "description": "Filled with vitamins and nutrients! Boosts your max stamina.",
-      "acquisition": "",
+      "acquisition": "Crafted at Smoothie Station. Named ingredients: Raw Aphid Meat; Mushroom; Acorn Bits. Requires a smoothie base; exact ingredient counts and variant effects must be checked at the source. Analyze Acorn Bits",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Boost_Juice#_Grounded_2_-0",
       "revision": 52361,
       "updatedAt": "2026-01-29T17:40:01Z"
@@ -2835,7 +2835,7 @@
       "name": "Gastro Goo",
       "category": "smoothies",
       "description": "Smells almost as bad as it looks, but goes down surprisingly smooth. Makes you immune to gas damage.",
-      "acquisition": "",
+      "acquisition": "Crafted at Smoothie Station. Named ingredients: Stinkbug Gas Sack; Roach Chunk; Aphid Honeydew. Requires a smoothie base; exact ingredient counts and variant effects must be checked at the source. Analyze Stinkbug Gas Sack",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Gastro_Goo#_Grounded_2_-0",
       "revision": 55806,
       "updatedAt": "2026-04-07T04:34:32Z"
@@ -3255,9 +3255,9 @@
       "name": "Grass Seeds",
       "category": "Item",
       "description": "",
-      "acquisition": "",
+      "acquisition": "Flowering Grass. * Ceremony Area * Entrance Area * Fire Pit * Grass Games Area * Ice Cream Cart Surroundings * Picnic Table Area * Pine Hill * Snackbar Front Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Template%3ARecipe/G2",
-      "revision": 59967,
+      "revision": 48677,
       "updatedAt": "2026-09-24T21:27:31Z"
     },
     {
@@ -3365,7 +3365,7 @@
       "name": "Green Machine",
       "category": "smoothies",
       "description": "A delicious blend of locally sourced greens. Boosts your stamina recovery rate.",
-      "acquisition": "",
+      "acquisition": "Crafted at Smoothie Station. Named ingredients: Slime Mold Stalk; Grass Seeds; Clover Leaf. Requires a smoothie base; exact ingredient counts and variant effects must be checked at the source. Purchase Mixology from a Ranger Station",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Green_Machine#_Grounded_2_-0",
       "revision": 59922,
       "updatedAt": "2026-09-10T23:50:25Z"
@@ -3645,7 +3645,7 @@
       "name": "Hedge Lord",
       "category": "smoothies",
       "description": "Refreshing and nutritious. Lowers the rates of both hunger and thirst.",
-      "acquisition": "",
+      "acquisition": "Crafted at Smoothie Station. Named ingredients: Blueberry Chunk; Aphid Honeydew; Acorn Bits. Requires a smoothie base; exact ingredient counts and variant effects must be checked at the source. Analyze Blueberry Chunk",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Hedge_Lord#_Grounded_2_-0",
       "revision": 52421,
       "updatedAt": "2026-01-30T19:06:57Z"
@@ -3775,7 +3775,7 @@
       "name": "Human Food",
       "category": "smoothies",
       "description": "All of the ingredients are normal everyday foods; what could go wrong if you smash them all together?",
-      "acquisition": "",
+      "acquisition": "Crafted at Smoothie Station. Named ingredients: Fresh Apple Bits; Fresh Cookie Sandwich Bits; Fresh Billy Hog Bite. Requires a smoothie base; exact ingredient counts and variant effects must be checked at the source. Analyze Fresh Apple Bits, Fresh Billy Hog Bite, or Fresh Cookie Sandwich Bits",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Human_Food#_Grounded_2_-0",
       "revision": 52368,
       "updatedAt": "2026-01-29T17:52:55Z"
@@ -4025,7 +4025,7 @@
       "name": "Lady in Red",
       "category": "smoothies",
       "description": "Bitter but tasty. Makes you ready to take on the park, boosting your health for a while.",
-      "acquisition": "",
+      "acquisition": "Crafted at Smoothie Station. Named ingredients: Ladybug Part; Lingonberry Chunk; Ice Splinter. Requires a smoothie base; exact ingredient counts and variant effects must be checked at the source. Analyze Ladybug Part",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Lady_in_Red#_Grounded_2_-0",
       "revision": 52357,
       "updatedAt": "2026-01-29T16:14:26Z"
@@ -4285,7 +4285,7 @@
       "name": "Liquid Rage",
       "category": "smoothies",
       "description": "All sorts of dangerous things in drinkable form! Consuming this makes you feel way stronger.",
-      "acquisition": "",
+      "acquisition": "Crafted at Smoothie Station. Named ingredients: Larva Spike; Orb Weaver Fang; Red Ant Mandibles. Requires a smoothie base; exact ingredient counts and variant effects must be checked at the source. Analyze Larva Spike",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Liquid_Rage#_Grounded_2_-0",
       "revision": 52754,
       "updatedAt": "2026-02-05T18:25:14Z"
@@ -4635,7 +4635,7 @@
       "name": "Mintito",
       "category": "smoothies",
       "description": "A sweet mint beverage to keep you cool on a hot day. Will also give you brain freeze.",
-      "acquisition": "",
+      "acquisition": "Crafted at Smoothie Station. Named ingredients: Mint Shard; Ice Splinter; Nectar. Requires a smoothie base; exact ingredient counts and variant effects must be checked at the source. Analyze Ice Splinter",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Mintito#_Grounded_2_-0",
       "revision": 55808,
       "updatedAt": "2026-04-07T04:37:05Z"
@@ -6545,7 +6545,7 @@
       "name": "Pumpkin Pie",
       "category": "smoothies",
       "description": "A comforting harvest blend that cures any tang that ails you.",
-      "acquisition": "",
+      "acquisition": "Crafted at Smoothie Station. Named ingredients: Pumpkin Bits; Corn Hog Chunk; Cookie Sandwich Bits. Requires a smoothie base; exact ingredient counts and variant effects must be checked at the source. Analyze Pumpkin Bits",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Pumpkin_Pie#_Grounded_2_-0",
       "revision": 52416,
       "updatedAt": "2026-01-30T19:02:13Z"
@@ -6805,7 +6805,7 @@
       "name": "Raw Science",
       "category": "Item",
       "description": "",
-      "acquisition": "",
+      "acquisition": "Grounded 2 sources: Resource Analyzer; MIX.R; Ranger Challenges; O.R.C. Raids. Amounts vary; no gathering yield is inferred.",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Template%3ARecipe/G2",
       "revision": 59967,
       "updatedAt": "2026-09-24T21:27:31Z"
@@ -7035,7 +7035,7 @@
       "name": "Rilkshake",
       "category": "smoothies",
       "description": "A sketchy protein shake that helps you power through difficult fights. May cause wooziness use responsibly!",
-      "acquisition": "",
+      "acquisition": "Crafted at Smoothie Station. Named ingredients: Roach Milk; Billy Hog Bite; Caterpillar Goop. Requires a smoothie base; exact ingredient counts and variant effects must be checked at the source. Analyze Roach Milk",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Rilkshake#_Grounded_2_-0",
       "revision": 58005,
       "updatedAt": "2026-08-16T21:02:35Z"
@@ -7315,9 +7315,9 @@
       "name": "Salt Shard",
       "category": "Item",
       "description": "",
-      "acquisition": "",
+      "acquisition": "Buried Treasure",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Template%3ARecipe/G2",
-      "revision": 59967,
+      "revision": 48752,
       "updatedAt": "2026-09-24T21:27:31Z"
     },
     {
@@ -7325,7 +7325,7 @@
       "name": "Sandy Blossom",
       "category": "smoothies",
       "description": "A refreshing drink that adds some zest to your adventure.",
-      "acquisition": "",
+      "acquisition": "Crafted at Smoothie Station. Named ingredients: Cactus Petal; Sour Lump; Gloom Sap. Requires a smoothie base; exact ingredient counts and variant effects must be checked at the source. Analyze Cactus Petal",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Sandy_Blossom#_Grounded_2_-0",
       "revision": 52772,
       "updatedAt": "2026-02-06T16:40:19Z"
@@ -7595,7 +7595,7 @@
       "name": "Scorpidote",
       "category": "smoothies",
       "description": "An antidote synthesized from scorpion venom. Provides instant relief, resistance to venom.",
-      "acquisition": "",
+      "acquisition": "Crafted at Smoothie Station. Named ingredients: Scorpion Venom; Northern Scorpion Chunk; Orb Weaver Chunk. Requires a smoothie base; exact ingredient counts and variant effects must be checked at the source. Analyze Scorpion Venom",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Scorpidote#_Grounded_2_-0",
       "revision": 58891,
       "updatedAt": "2026-08-26T09:58:53Z"
@@ -8095,7 +8095,7 @@
       "name": "Spider Cider",
       "category": "smoothies",
       "description": "A fizzy beverage with a pungent aftertaste. Drinking this helps you traverse webs safely",
-      "acquisition": "",
+      "acquisition": "Crafted at Smoothie Station. Named ingredients: Orb Weaver Chunk; Apple Bits; Lingonberry Chunk. Requires a smoothie base; exact ingredient counts and variant effects must be checked at the source. Analyze Ladybug Part",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Spider_Cider#_Grounded_2_-0",
       "revision": 57844,
       "updatedAt": "2026-08-15T17:33:29Z"
@@ -10835,7 +10835,7 @@
       "name": "Worker's Comp",
       "category": "smoothies",
       "description": "The power of an ant in the palm of your hand. Drinking this makes you feel like you can haul more.",
-      "acquisition": "",
+      "acquisition": "Crafted at Smoothie Station. Named ingredients: Red Ant Part; Red Ant Head; Red Ant Mandibles. Requires a smoothie base; exact ingredient counts and variant effects must be checked at the source. Analyze Red Ant Mandibles",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Worker's_Comp#_Grounded_2_-0",
       "revision": 52440,
       "updatedAt": "2026-01-30T21:15:38Z"

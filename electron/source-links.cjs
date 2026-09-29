@@ -3,6 +3,8 @@ function sourceUrl(value) {
   const url = new URL(value);
   const paths = {
     'dragonwilds.runescape.wiki': ['/', '/w/'],
+    'awakening.wiki': ['/'],
+    'api.awakening.wiki': ['/items'],
     'corpus.gg': ['/games/valheim/'],
     'wiki.v-ris.ing': ['/', '/w/'],
     'grounded.wiki.gg': ['/', '/wiki/'],
@@ -11,7 +13,7 @@ function sourceUrl(value) {
     'creativecommons.org': ['/licenses/'],
     'github.com': ['/Valheim-Modding/Jotunn/blob/master/LICENSE']
   };
-  if (url.protocol !== 'https:' || url.username || url.password || url.port || !paths[url.hostname]?.some(p => p === '/' ? url.pathname === '/' : url.pathname.startsWith(p))) throw new Error('Source URL is not allowed.');
+  if (url.protocol !== 'https:' || url.username || url.password || url.port || !paths[url.hostname]?.some(p => p === '/' ? (url.hostname === 'awakening.wiki' || url.pathname === '/') : url.pathname.startsWith(p))) throw new Error('Source URL is not allowed.');
   return url.href;
 }
 module.exports = { sourceUrl };

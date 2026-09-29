@@ -18,13 +18,13 @@ The stable application ID is gg.bancy.bancycraft. Lists, progress, plans and sup
 
 ## Working in 0.8.0
 
-Shopping Lists brings private lists and shared copies into one page, with shared lists below a divider. All six home tiles have original artwork; five games are available and Dune: Awakening remains Planned. A separate paginated Changelog includes every release. Shopping-list row buttons open read-only crafting trees with selected recipes, stations and exact aggregated quantities.
+Shopping Lists brings private lists and shared copies into one page, with shared lists below a divider. All six home tiles have original artwork; all six games are available. A separate paginated Changelog includes every release. Shopping-list row buttons open read-only crafting trees with selected recipes, stations and exact aggregated quantities.
 
 - Bancy-themed home screen, keyboard search (Ctrl+K), game selection and navigation.
 - Manual local crafting plans: create, edit, quantity, notes, status and deletion confirmation.
 - Manually entered supplies scoped to each game.
 - Item-first search within the selected game, with item-type/station filters, imported recipes and source details.
-- Five offline catalogs: Dragonwilds, Valheim, Enshrouded, Grounded 2 and V Rising. Dune: Awakening remains Planned.
+- Six offline catalogs: Dragonwilds, Valheim, Enshrouded, Grounded 2, V Rising and Dune: Awakening.
 - Persistent local data and a previous-save backup.
 - Export a JSON workspace backup and open the data directory.
 - TeamCraft-inspired shopping lists, pre-craft calculation, partial completion, dependency propagation and reset controls.

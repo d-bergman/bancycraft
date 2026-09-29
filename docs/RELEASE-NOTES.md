@@ -1,20 +1,23 @@
-# BancyCraft 0.9.0
+# BancyCraft 0.10.0
 
-A tighter loadout workspace and clearer server navigation, with Bancy.gg key controls revealed only after website authentication.
+Dune: Awakening joins the offline crafting tools, and server controls now protect occupied worlds at the backend as well as in the app.
 
 ### New Content
-- Separate Servers and Server controllers tabs on the Servers page. Controller controls remain restricted to account-bound controller-key holders.
+- Dune: Awakening: 2,267 items, 953 explicit recipe alternatives, 1,868 local icons and 39 equipment bundles. Includes game-scoped search, shopping lists, crafting trees, supplies, builds and shared lists/builds.
+- Player lockouts for stopping, restarting and switching servers. Disruptive actions are blocked when affected players are online or their count cannot be verified; fresh backend checks run inside the action queue.
 
 ### App Changes
-- Weapon, off-hand and chest boxes now use the compact helmet-sized height. The equipment grid has three fixed rows instead of four.
-- Build name sits directly above the action toolbar without a separate heading. Owners can click the name to enter editing; shared builds remain read-only for other members.
-- Tags sit at the right of the action toolbar. Description is the only content above the equipment grid; attribution moves below it.
-- Empty skills, mutations, spells and play notes are hidden. Owners can add play notes in edit mode.
-- Food slots have no quantity field. Potion quantities remain available in compact controls. Existing saved item quantities are preserved.
-- Bancy.gg authentication and keyed sidebar features appear only after a completed website connection and hide again on sign-out. Normal local settings and updates remain available without login.
+- Remove quantity fields from both potion slots. Existing saved quantities remain intact.
+- Preserve Dune refinery alternatives and water costs in milliliters.
+- Record source snapshots, rejected incomplete recipes and remaining unknowns in the catalog audit.
 
 ### Bug Fixes
-- Remove excess height from weapon and chest slots and prevent consumable controls from clipping their titles.
-- Running servers appear before stopped servers in both tabs, preserving the existing order within each group.
+- Fix Valheim Raw Fish conversion: choose one fish type rather than requiring every fish type together.
+- Restore Grounded 2 acquisition fields from shared infoboxes and sequel-specific sources; add explicit smoothie source notes without inventing ingredient counts.
+- Add V Rising Iron and Golden Castle Key recipes with verified crafting stations.
+- Fill additional Valheim and Enshrouded acquisition details from their source pages.
+- Recheck server population before sending a controller request; enforce the same lockout on website and app requests.
 
-Free Windows 10/11 x64. Local workspace and existing private keys remain outside the installation folder. Update through Settings & updates.
+Community sources remain incomplete. Unknown acquisition, station, generic ingredient and byproduct details are surfaced instead of guessed. Dune excludes 25 incomplete recipe rows; API-only item entries link to their public API provenance.
+
+Free Windows 10/11 x64. Update through Settings & updates. The stable BancyCraft-Installer.exe download remains available for new users.

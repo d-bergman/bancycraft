@@ -13,7 +13,7 @@ test('every Valheim gearset member resolves to an actual recipe and complete pre
   assert.ok(built.rows.some(r => r.name === 'Bloodgold' && r.recipe?.station === 'Blast Furnace'));
   assert.ok(built.rows.some(r => r.name === 'Petrified Tissue'));
 });
-test('all five catalogs have recipes or genuine acquisition information for gearsets', () => {
+test('all catalogs have recipes or genuine acquisition information for gearsets', () => {
   const sets = require('../src/catalog/data/gearsets.json');
   for (const game of Object.keys(sets)) {
     const c = require('../src/catalog/data/' + game + '.json');

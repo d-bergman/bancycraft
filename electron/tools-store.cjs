@@ -1,5 +1,5 @@
 const fs=require('node:fs'),path=require('node:path'),{randomUUID}=require('node:crypto');
-const games=['dragonwilds','valheim','enshrouded','grounded2','vrising'];
+const games=['dragonwilds','valheim','enshrouded','grounded2','vrising', 'duneawakening'];
 function text(v,max){if(typeof v!=='string'||v.length>max)throw Error('Invalid build text.');return v.trim();}
 function cleanBuild(v){
  if(v)v={...v,items:v.items||[],tags:v.tags||[]};

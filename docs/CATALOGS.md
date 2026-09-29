@@ -65,3 +65,22 @@ Run `node scripts/catalog/coverage-audit.cjs` for the Valheim page refresh, `nod
 coverage-audit.json lists every remaining station, ingredient and acquisition gap, plus checks for default and alternate crafting trees. Generic requirements such as Any Wood or Any Plant remain generic; the app does not choose an arbitrary substitute or infer resource yields. Not every upstream page documents an acquisition method, and internal/obsolete Valheim prefabs remain distinguishable by ID. Missing information stays explicit rather than being filled with guesses.
 
 Original item artwork from attributed source pages is trimmed and resized inside a 512px box, without enlargement, and stored offline. Game-owner artwork rights and the existing contributor attribution continue to apply. When no larger original is available, the app falls back to its inventory icon.
+
+## Dune: Awakening and catalog audit in 0.10.0
+
+The [Dune: Awakening Community Wiki](https://awakening.wiki/) and its [public item API](https://api.awakening.wiki/) supply 2,267 items, 953 exact station recipe alternatives, 1,868 local icons and 39 equipment bundles. Adapted wiki/API data is distributed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); game materials belong to Funcom Oslo AS. Images are prepared as WebP up to 256px without enlargement. Equipment bundles group named pieces and do not claim an in-game set bonus.
+
+Run `npm run catalog:dune`; raw response URLs, timestamps and SHA256 are cached in `.catalog-cache/`. `dune-import-audit.json` records provenance and rejects 25 rows with unresolved or incomplete numeric ingredients. Water is a volume material in mL. Station alternatives remain independent: different refineries have different ore costs. 1,269 API records lack an item wiki revision, so those entries link to their public API record rather than a nonexistent wiki page.
+
+`node scripts/catalog/repair-gaps.cjs` repairs source-backed acquisition details, shared Grounded 2 infobox fields, V Rising key recipes and Valheim fish alternatives. `node scripts/catalog/coverage-audit.cjs --report-only` checks every supported game, all default and alternate recipe trees, missing stations, unresolved ingredients and acquisition gaps. The audit report is committed with the release.
+
+| Game | Canonical items | Recipes | Missing station entries | Unresolved input references | Items without recipe/acquisition |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Valheim | 917 | 521 | 2 | 0 | 19 |
+| Dragonwilds | 1,347 | 864 | 0 | 0 | 1 |
+| Enshrouded | 2,607 | 2,198 | 0 | 52 | 57 |
+| Grounded 2 | 1,088 | 878 | 0 | 0 | 12 |
+| V Rising | 522 | 317 | 0 | 0 | 0 |
+| Dune: Awakening | 2,267 | 953 | 0 | 0 | 1,482 |
+
+Dune includes many internal variants and schematics: no acquisition source is inferred from an API description. Enshrouded unresolved references include generic material constraints. Valheim's two remaining station gaps are Stone Pickaxe and Iron Tower Shield source recipe entries; station requirements are not invented. Three Dragonwilds alternate trees and 218 V Rising alternate trees retain warnings for source cycles or uncertain outputs/byproducts. These are explicit limitations, not verified complete recipes. Existing sections above document the earlier imports; this table is the current audited snapshot.

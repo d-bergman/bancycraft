@@ -176,7 +176,7 @@
       "name": "Ashlands Gourmet Bowl",
       "category": "Consumable",
       "description": "",
-      "acquisition": "",
+      "acquisition": "Build with: Serving Tray; Serving Tray",
       "sourceUrl": "https://corpus.gg/games/valheim/items/ashlands-gourmet-bowl-feastashlands"
     },
     {
@@ -216,7 +216,7 @@
       "name": "Asksvin Egg",
       "category": "Misc",
       "description": "Hard as rock, yet you can sense the presence of something inside. This should be kept warm.",
-      "acquisition": "",
+      "acquisition": "Parents: Asksvin; Asksvin",
       "sourceUrl": "https://corpus.gg/games/valheim/items/asksvin-egg"
     },
     {
@@ -480,7 +480,7 @@
       "name": "Black Forest Buffet Platter",
       "category": "Consumable",
       "description": "",
-      "acquisition": "",
+      "acquisition": "Build with: Serving Tray; Serving Tray",
       "sourceUrl": "https://corpus.gg/games/valheim/items/black-forest-buffet-platter"
     },
     {
@@ -3408,7 +3408,7 @@
       "name": "Hearty Mountain Logger's Stew",
       "category": "Consumable",
       "description": "",
-      "acquisition": "",
+      "acquisition": "Build with: Serving Tray; Serving Tray",
       "sourceUrl": "https://corpus.gg/games/valheim/items/hearty-mountain-logger-s-stew-feastmountains"
     },
     {
@@ -4872,7 +4872,7 @@
       "name": "Mushrooms Galore  la Mistlands",
       "category": "Consumable",
       "description": "",
-      "acquisition": "",
+      "acquisition": "Build with: Serving Tray; Serving Tray",
       "sourceUrl": "https://corpus.gg/games/valheim/items/mushrooms-galore-a-la-mistlands-feastmistlands"
     },
     {
@@ -5104,7 +5104,7 @@
       "name": "Northern Morning Fare",
       "category": "Consumable",
       "description": "",
-      "acquisition": "",
+      "acquisition": "Build with: Serving Tray; Serving Tray",
       "sourceUrl": "https://corpus.gg/games/valheim/items/northern-morning-fare"
     },
     {
@@ -5400,7 +5400,7 @@
       "name": "Plains Pie Picnic",
       "category": "Consumable",
       "description": "",
-      "acquisition": "",
+      "acquisition": "Build with: Serving Tray; Serving Tray",
       "sourceUrl": "https://corpus.gg/games/valheim/items/plains-pie-picnic"
     },
     {
@@ -5816,7 +5816,7 @@
       "name": "Sailor's Bounty",
       "category": "Consumable",
       "description": "",
-      "acquisition": "",
+      "acquisition": "Build with: Serving Tray; Serving Tray",
       "sourceUrl": "https://corpus.gg/games/valheim/items/sailor-s-bounty-feastoceans"
     },
     {
@@ -6584,7 +6584,7 @@
       "name": "Swamp Dweller's Delight",
       "category": "Consumable",
       "description": "",
-      "acquisition": "",
+      "acquisition": "Build with: Serving Tray; Serving Tray",
       "sourceUrl": "https://corpus.gg/games/valheim/items/swamp-dweller-s-delight-feastswamps"
     },
     {
@@ -7256,7 +7256,7 @@
       "name": "Whole Roasted Meadow Boar",
       "category": "Consumable",
       "description": "",
-      "acquisition": "",
+      "acquisition": "Build with: Serving Tray; Serving Tray",
       "sourceUrl": "https://corpus.gg/games/valheim/items/whole-roasted-meadow-boar"
     },
     {
@@ -22596,66 +22596,6 @@
       ]
     },
     {
-      "id": "Corpus:FishRaw",
-      "station": "Food Preparation Table",
-      "notes": "Explicit initial ingredient amounts; versioned source page.",
-      "sourceUrl": "https://corpus.gg/games/valheim/items/raw-fish",
-      "inputs": [
-        {
-          "itemId": "Fish1",
-          "name": "Perch",
-          "quantity": 1
-        },
-        {
-          "itemId": "Fish2",
-          "name": "Pike",
-          "quantity": 1
-        },
-        {
-          "itemId": "Fish6",
-          "name": "Giant Herring",
-          "quantity": 1
-        },
-        {
-          "itemId": "Fish7",
-          "name": "Grouper",
-          "quantity": 1
-        },
-        {
-          "itemId": "Fish8",
-          "name": "Coral Cod",
-          "quantity": 1
-        },
-        {
-          "itemId": "Fish9",
-          "name": "Anglerfish",
-          "quantity": 1
-        },
-        {
-          "itemId": "Fish10",
-          "name": "Northern Salmon",
-          "quantity": 1
-        },
-        {
-          "itemId": "Fish11",
-          "name": "Magmafish",
-          "quantity": 1
-        },
-        {
-          "itemId": "Fish12",
-          "name": "Pufferfish",
-          "quantity": 1
-        }
-      ],
-      "outputs": [
-        {
-          "itemId": "FishRaw",
-          "name": "Raw Fish",
-          "quantity": 1
-        }
-      ]
-    },
-    {
       "id": "Corpus:FeastMeadows_Material",
       "station": "Food Preparation Table",
       "notes": "Explicit initial ingredient amounts; versioned source page.",
@@ -22904,6 +22844,226 @@
           "quantity": 1
         }
       ]
+    },
+    {
+      "id": "Alternative:FishRaw:Fish1",
+      "station": "Food Preparation Table",
+      "sourceUrl": "https://corpus.gg/games/valheim/items/raw-fish",
+      "inputs": [
+        {
+          "itemId": "Fish1",
+          "name": "Perch",
+          "quantity": 1
+        }
+      ],
+      "outputs": [
+        {
+          "itemId": "FishRaw",
+          "name": "Raw Fish",
+          "quantity": 1
+        }
+      ],
+      "notes": "One fish alternative per conversion, not all fish together."
+    },
+    {
+      "id": "Alternative:FishRaw:Fish2",
+      "station": "Food Preparation Table",
+      "sourceUrl": "https://corpus.gg/games/valheim/items/raw-fish",
+      "inputs": [
+        {
+          "itemId": "Fish2",
+          "name": "Pike",
+          "quantity": 1
+        }
+      ],
+      "outputs": [
+        {
+          "itemId": "FishRaw",
+          "name": "Raw Fish",
+          "quantity": 1
+        }
+      ],
+      "notes": "One fish alternative per conversion, not all fish together."
+    },
+    {
+      "id": "Alternative:FishRaw:Fish3",
+      "station": "Food Preparation Table",
+      "sourceUrl": "https://corpus.gg/games/valheim/items/raw-fish",
+      "inputs": [
+        {
+          "itemId": "Fish3",
+          "name": "Tuna",
+          "quantity": 1
+        }
+      ],
+      "outputs": [
+        {
+          "itemId": "FishRaw",
+          "name": "Raw Fish",
+          "quantity": 1
+        }
+      ],
+      "notes": "One fish alternative per conversion, not all fish together."
+    },
+    {
+      "id": "Alternative:FishRaw:Fish5",
+      "station": "Food Preparation Table",
+      "sourceUrl": "https://corpus.gg/games/valheim/items/raw-fish",
+      "inputs": [
+        {
+          "itemId": "Fish5",
+          "name": "Trollfish",
+          "quantity": 1
+        }
+      ],
+      "outputs": [
+        {
+          "itemId": "FishRaw",
+          "name": "Raw Fish",
+          "quantity": 1
+        }
+      ],
+      "notes": "One fish alternative per conversion, not all fish together."
+    },
+    {
+      "id": "Alternative:FishRaw:Fish6",
+      "station": "Food Preparation Table",
+      "sourceUrl": "https://corpus.gg/games/valheim/items/raw-fish",
+      "inputs": [
+        {
+          "itemId": "Fish6",
+          "name": "Giant Herring",
+          "quantity": 1
+        }
+      ],
+      "outputs": [
+        {
+          "itemId": "FishRaw",
+          "name": "Raw Fish",
+          "quantity": 1
+        }
+      ],
+      "notes": "One fish alternative per conversion, not all fish together."
+    },
+    {
+      "id": "Alternative:FishRaw:Fish7",
+      "station": "Food Preparation Table",
+      "sourceUrl": "https://corpus.gg/games/valheim/items/raw-fish",
+      "inputs": [
+        {
+          "itemId": "Fish7",
+          "name": "Grouper",
+          "quantity": 1
+        }
+      ],
+      "outputs": [
+        {
+          "itemId": "FishRaw",
+          "name": "Raw Fish",
+          "quantity": 1
+        }
+      ],
+      "notes": "One fish alternative per conversion, not all fish together."
+    },
+    {
+      "id": "Alternative:FishRaw:Fish8",
+      "station": "Food Preparation Table",
+      "sourceUrl": "https://corpus.gg/games/valheim/items/raw-fish",
+      "inputs": [
+        {
+          "itemId": "Fish8",
+          "name": "Coral Cod",
+          "quantity": 1
+        }
+      ],
+      "outputs": [
+        {
+          "itemId": "FishRaw",
+          "name": "Raw Fish",
+          "quantity": 1
+        }
+      ],
+      "notes": "One fish alternative per conversion, not all fish together."
+    },
+    {
+      "id": "Alternative:FishRaw:Fish9",
+      "station": "Food Preparation Table",
+      "sourceUrl": "https://corpus.gg/games/valheim/items/raw-fish",
+      "inputs": [
+        {
+          "itemId": "Fish9",
+          "name": "Anglerfish",
+          "quantity": 1
+        }
+      ],
+      "outputs": [
+        {
+          "itemId": "FishRaw",
+          "name": "Raw Fish",
+          "quantity": 1
+        }
+      ],
+      "notes": "One fish alternative per conversion, not all fish together."
+    },
+    {
+      "id": "Alternative:FishRaw:Fish10",
+      "station": "Food Preparation Table",
+      "sourceUrl": "https://corpus.gg/games/valheim/items/raw-fish",
+      "inputs": [
+        {
+          "itemId": "Fish10",
+          "name": "Northern Salmon",
+          "quantity": 1
+        }
+      ],
+      "outputs": [
+        {
+          "itemId": "FishRaw",
+          "name": "Raw Fish",
+          "quantity": 1
+        }
+      ],
+      "notes": "One fish alternative per conversion, not all fish together."
+    },
+    {
+      "id": "Alternative:FishRaw:Fish11",
+      "station": "Food Preparation Table",
+      "sourceUrl": "https://corpus.gg/games/valheim/items/raw-fish",
+      "inputs": [
+        {
+          "itemId": "Fish11",
+          "name": "Magmafish",
+          "quantity": 1
+        }
+      ],
+      "outputs": [
+        {
+          "itemId": "FishRaw",
+          "name": "Raw Fish",
+          "quantity": 1
+        }
+      ],
+      "notes": "One fish alternative per conversion, not all fish together."
+    },
+    {
+      "id": "Alternative:FishRaw:Fish12",
+      "station": "Food Preparation Table",
+      "sourceUrl": "https://corpus.gg/games/valheim/items/raw-fish",
+      "inputs": [
+        {
+          "itemId": "Fish12",
+          "name": "Pufferfish",
+          "quantity": 1
+        }
+      ],
+      "outputs": [
+        {
+          "itemId": "FishRaw",
+          "name": "Raw Fish",
+          "quantity": 1
+        }
+      ],
+      "notes": "One fish alternative per conversion, not all fish together."
     }
   ]
 }
