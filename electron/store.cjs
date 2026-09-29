@@ -51,7 +51,8 @@ function validate(data) {
     });
     return { id, name, game: list.game, owned:map(list.owned||{},'number'),assignments:map(list.assignments||{},'string'),quick: list.quick, targets, recipes: map(list.recipes, 'string'), progress: map(list.progress, 'number'), collapsed: map(list.collapsed, 'boolean'), useSupplies: list.useSupplies, hideCompleted: list.hideCompleted, updatedAt: string(list.updatedAt, 40, 'date') };
   });
-  return { schemaVersion: 2, game: data.game, plans: rows(data.plans, 'plan'), supplies: rows(data.supplies, 'supply'), lists };
+  if(data.completionLog!==undefined&&(!Array.isArray(data.completionLog)||data.completionLog.length>10000))throw Error('Invalid completion history.');const completionLog=data.completionLog?.map(x=>{if(!GAMES.includes(x.game))throw Error('Invalid completion game.');return {id:string(x.id,80,'completion ID'),game:x.game,at:string(x.at,40,'completion date')};});if(completionLog&&new Set(completionLog.map(x=>x.id)).size!==completionLog.length)throw Error('Duplicate completion ID.');
+  return { schemaVersion: 2, game: data.game, plans: rows(data.plans, 'plan'), supplies: rows(data.supplies, 'supply'), lists,...(completionLog?{completionLog}:{}) };
 }
 function createStore(directory) {
   fs.mkdirSync(directory, { recursive: true });

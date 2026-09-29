@@ -3,7 +3,7 @@ export function parseChangelog(markdown) {
     const blocks=[];
     for(const line of body.split('\n')) {
       const text=line.trim(); if(!text)continue;
-      const kind=text.startsWith('- ')?'list':'paragraph', value=kind==='list'?text.slice(2):text;
+      const kind=text.startsWith('### ')?'heading':text.startsWith('- ')?'list':'paragraph', value=kind==='heading'?text.slice(4):kind==='list'?text.slice(2):text;
       if(kind==='list' && blocks.at(-1)?.kind==='list')blocks.at(-1).lines.push(value);
       else blocks.push({kind,lines:[value]});
     }

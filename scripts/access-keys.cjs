@@ -14,12 +14,12 @@ if(!fs.existsSync(privateFile)) {
 }
 const privateKey=fs.readFileSync(privateFile);
 if(createPublicKey(privateKey).export({format:'pem',type:'spki'})!==createPublicKey(fs.readFileSync(publicFile)).export({format:'pem',type:'spki'}))throw new Error('Issuer key does not match the app.');
-const [command,subject,days,output]=process.argv.slice(2);
+const command=process.argv[2],controller=command==='issue-controller';const [uid,subject,days,output]=controller?process.argv.slice(3):[undefined,...process.argv.slice(3)];if(controller&&!/^[A-Za-z0-9_-]{1,128}$/.test(uid||''))throw Error('Controller keys need the recipient website UID.');
 if(command==='init')console.log('Private access-key issuer initialized outside the repository.');
-else if(command==='issue') {
+else if(command==='issue'||controller) {
   if(!subject?.trim()||subject.length>120||!/^\d+$/.test(days||'')||Number(days)<1||Number(days)>3650)throw new Error('Use issue <recipient> <days 1-3650> [private output path].');
-  const now=Date.now(),payload=Buffer.from(JSON.stringify({id:randomUUID(),subject:subject.trim(),scope:'bancy-community',issuedAt:now,expiresAt:now+Number(days)*86400000})).toString('base64url');
+  const now=Date.now(),payload=Buffer.from(JSON.stringify({id:randomUUID(),subject:subject.trim(),scope:controller?'bancy-controller':'bancy-community',...(controller?{uid}:{}),issuedAt:now,expiresAt:now+Number(days)*86400000})).toString('base64url');
   const token='BC1.'+payload+'.'+sign(null,Buffer.from('BC1.'+payload),privateKey).toString('base64url');
   const target=output?path.resolve(output):path.join(directory,subject.replace(/[^\w-]/g,'-')+'-'+now+'.txt');
   fs.writeFileSync(target,token+'\n',{flag:'wx'});console.log('Access key saved to '+target);
-} else throw new Error('Use init or issue.');
+} else throw new Error('Use init, issue, or issue-controller <website UID> <recipient> <days> [private output path].');

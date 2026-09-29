@@ -57,7 +57,7 @@ async function idle(page) { await page.waitForFunction(() => !document.querySele
     await run.page.getByRole('button',{name:'Add gearset to list',exact:true}).click();await run.page.locator('.picker-row').filter({hasText:'Workshop test'}).click();
     await run.page.getByRole('dialog',{name:'Pick a list'}).waitFor({state:'hidden'});assert.equal((await stored(run.page)).lists[0].targets.length,6);
     await run.app.close();run=await launch();assert.equal((await stored(run.page)).lists[0].targets.length,6);
-    await run.page.getByRole('button',{name:'Shopping Lists',exact:true}).click();await run.page.getByRole('button',{name:/Workshop test/}).click();
+    await run.page.getByRole('button',{name:'Shopping Lists',exact:true}).click();await run.page.getByRole('button',{name:/^Workshop test/}).click();
     await run.app.evaluate(({BrowserWindow})=>BrowserWindow.getAllWindows()[0].setSize(1050,740));
     assert.equal(await run.page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth),false);
     const help=await run.page.getByRole('button',{name:'Help',exact:true}).boundingBox();assert.ok(help.y+help.height<=await run.page.evaluate(()=>window.innerHeight));

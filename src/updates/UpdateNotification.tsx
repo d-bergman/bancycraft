@@ -4,7 +4,7 @@ import { api } from '../bridge';
 import type { Update } from '../types';
 import './updates.css';
 
-export function UpdateNotification({ update, onUpdate, onOpenSettings }: { update?: Update; onUpdate: (value: Update) => void; onOpenSettings: () => void }) {
+export function UpdateNotification({ update, onUpdate, onOpenSettings, hidden=false }: {hidden?:boolean; update?: Update; onUpdate: (value: Update) => void; onOpenSettings: () => void }) {
   const [dismissed, setDismissed] = useState('');
   const [acting, setActing] = useState(false);
   const [started, setStarted] = useState(false);
@@ -12,7 +12,7 @@ export function UpdateNotification({ update, onUpdate, onOpenSettings }: { updat
   if (update?.version) lastVersion.current = update.version;
   const version = update?.version || lastVersion.current;
   const state = update?.state;
-  if (!version || dismissed === version || !(['available', 'downloading', 'ready'].includes(state || '') || (state === 'error' && started))) return null;
+  if (hidden || !version || dismissed === version || !(['available', 'downloading', 'ready'].includes(state || '') || (state === 'error' && started))) return null;
   async function action() {
     if (acting) return;
     setActing(true); setStarted(true);

@@ -1,3 +1,4 @@
+import {AddItemsDialog} from '../planner/AddItemsDialog';
 import { useEffect, useRef, useState } from "react";
 import { Users, LogIn, Plus, Search } from "lucide-react";
 import { api } from "../bridge";
@@ -65,7 +66,7 @@ export function AccountSettings({ state }: { state: SharedState }) {
         <p>
           <strong>{state.account.user.displayName}</strong>
           <br />
-          <small>{state.account.user.email}</small>
+          <small>{state.account.user.email}</small><br/><button className="text-button" title="Copy the account ID for a privately issued controller key" onClick={()=>navigator.clipboard.writeText(state.account.user!.uid).catch(()=>setError("Unable to copy account ID."))}>Copy account ID</button>
         </p>
       )}
       <p role="status">{state.account.message}</p>
@@ -94,8 +95,7 @@ export function AccountSettings({ state }: { state: SharedState }) {
         )}
       </div>
       <p className="small muted">
-        The browser asks you to approve this app. Your bank and Blackbox still
-        require a cipher key and existing website permissions.
+        The browser asks you to approve this app. Bank access needs a community key and existing bank permissions. Server controls need a separate key issued for this account.
       </p>
     </section>
   );
@@ -287,72 +287,7 @@ export function SharedLists({
               </p>
             )}
           </section>
-          {adding && (
-            <section className="panel content-panel">
-              <h2>Add an item</h2>
-              <div className="actions">
-                <input
-                  aria-label="Search shared list items"
-                  placeholder={`Search ${gameNames[game]}…`}
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                />
-                <label>
-                  Quantity
-                  <input
-                    aria-label="Shared item quantity"
-                    type="number"
-                    min={1}
-                    max={999999}
-                    value={quantity}
-                    onChange={(e) =>
-                      setQuantity(
-                        Math.max(
-                          1,
-                          Math.min(
-                            999999,
-                            Math.floor(Number(e.target.value) || 1),
-                          ),
-                        ),
-                      )
-                    }
-                  />
-                </label>
-              </div>
-              {query.trim().length >= 2 &&
-                catalogs[game].items
-                  .filter((i) =>
-                    i.name.toLowerCase().includes(query.toLowerCase()),
-                  )
-                  .slice(0, 12)
-                  .map((item) => (
-                    <div className="actions shared-item-result" key={item.id}>
-                      <span>{item.name}</span>
-                      <button
-                        className="button outline"
-                        disabled={disabled}
-                        onClick={() => {
-                          const targets = active.targets.map((t) => ({ ...t })),
-                            existing = targets.find(
-                              (t) => t.itemId === item.id,
-                            );
-                          if (existing) existing.quantity += quantity;
-                          else
-                            targets.push({
-                              itemId: item.id,
-                              name: item.name,
-                              quantity,
-                            });
-                          change({ ...active, targets });
-                        }}
-                      >
-                        <Plus size={16} />
-                        Add
-                      </button>
-                    </div>
-                  ))}
-            </section>
-          )}
+          {adding&&<AddItemsDialog game={game} busy={disabled} onClose={()=>setAdding(false)} onAdd={async incoming=>{const targets=active.targets.map(t=>({...t}));for(const item of incoming){const old=targets.find(t=>t.itemId===item.itemId);if(old)old.quantity+=item.quantity;else targets.push(item);}try{await api.sharedChange(active.id,active,{...active,targets});return true;}catch(e){setError(e instanceof Error?e.message:'Unable to add items.');return false;}}}/>}
           <ListDetail onGaming={onGaming} members={active?.members}
             key={active.id}
             list={displayed}

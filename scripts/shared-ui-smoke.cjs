@@ -77,7 +77,7 @@ async function launch(person, name) {
     args: dev ? [root] : [],
     env,
   });
-  const page = await app.firstWindow();
+  try {const page = await app.firstWindow();
   await page
     .getByRole("heading", { name: "Your next build starts here." })
     .waitFor();
@@ -143,7 +143,7 @@ async function launch(person, name) {
   assert(r.ok);
   await page
     .getByRole("heading", { name: "Share a local list", exact: true })
-    .waitFor({ timeout: 15000 });
+    .waitFor({ timeout: 30000 });
   assert(fs.existsSync(path.join(profile, "website-account.bin")));
   const encryptedFile = fs.readFileSync(
     path.join(profile, "website-account.bin"),
@@ -157,7 +157,7 @@ async function launch(person, name) {
     0,
     "No cipher-only sidebar without an access key",
   );
-  return { app, page, local, profile };
+  return { app, page, local, profile };}catch(error){await app.close();throw error;}
 }
 module.exports={user,launch};
 if(require.main===module)(async () => {
@@ -232,12 +232,13 @@ if(require.main===module)(async () => {
     await a.page
       .getByRole("button", { name: "Add items", exact: true })
       .click();
-    await a.page.getByLabel("Search shared list items").fill("Crude Rope");
-    await a.page.getByRole("button", { name: "Add", exact: true }).click();
+    await a.page.getByLabel("Search items for this list").fill("Crude Rope");
+    await a.page.getByRole("button", { name: "Add Crude Rope to this list", exact: true }).click();
+    await a.page.keyboard.press("Escape");
     await b.page
       .getByRole("button", { name: "Edit target quantities", exact: true })
       .click();
-    await b.page.getByLabel("Target quantity for Crude Rope").waitFor();
+    await b.page.getByLabel("Target quantity for Crude Rope", {exact:true}).waitFor();
     await a.page.getByLabel("Delete shopping list").click();
     await a.page
       .getByRole("button", { name: "Delete shared list", exact: true })

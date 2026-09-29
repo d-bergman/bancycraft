@@ -20,7 +20,7 @@ const locked = app.requestSingleInstanceLock();
 let window;
 let store;
 let updater;
-let access,community,account,collaboration;
+let access,community,account,collaboration,controllerAccess,servers;
 let update = { state: 'manual', message: 'Updates are installed using a newer BancyCraft installer. Your workspace stays in place.' };
 const rendererUrl = pathToFileURL(path.join(__dirname, '../app-dist/index.html')).href;
 function trusted(event) {
@@ -65,6 +65,9 @@ else {
     access=createAccess(app.getPath('userData'),safeStorage,fs.readFileSync(path.join(__dirname,'access-public.pem'),'utf8'));
     community=createCommunity(access);
     account=createAccount(app.getPath('userData'),safeStorage,url=>shell.openExternal(url));
+    controllerAccess=createAccess(app.getPath('userData'),safeStorage,fs.readFileSync(path.join(__dirname,'access-public.pem'),'utf8'),{scope:'bancy-controller',file:'controller-key.bin'});
+    servers=require('./servers.cjs').createServers(account,access,controllerAccess);
+    handle('controller:unlock',key=>servers.unlock(key));handle('controller:lock',()=>servers.lock());handle('servers:snapshot',()=>servers.snapshot());handle('servers:action',(id,action)=>servers.action(id,action));
     const builds=createBuilds(account);
     handle('builds:browse',g=>builds.browse(g));handle('builds:get',id=>builds.get(id));handle('builds:publish',b=>builds.publish(b));handle('builds:remove',id=>builds.remove(id));handle('profile:avatar',uid=>builds.avatar(uid));
     const cleanList=v=>validate({schemaVersion:2,game:v?.game,plans:[],supplies:[],lists:[v]}).lists[0];
@@ -90,7 +93,7 @@ else {
     handle('shared:removeMember',(id,uid)=>collaboration.removeMember(id,uid)); handle('shared:remove',id=>collaboration.remove(id));handle('shared:restore',id=>collaboration.restoreRemoved(id));
     app.once('will-quit',()=>{collaboration.close();account.close();});
     const timer=setInterval(()=>{if(!access.status().unlocked)community.close();},15000);timer.unref();
-    handle('app:info', () => ({ version: app.getVersion(), dataPath: app.getPath('userData'), packaged: app.isPackaged, update, access:access.status() }));
+    handle('app:info', () => ({ version: app.getVersion(), dataPath: app.getPath('userData'), packaged: app.isPackaged, update, access:access.status(),controllerAccess:servers.status() }));
     handle('community:unlock', key=>access.unlock(key));
     handle('community:lock', async()=>{const result=access.lock();await community.lock();return result;});
     handle('community:bank', order=>{access.require();if(store.read().game!=='dragonwilds')throw new Error('Select Dragonwilds to open its shared bank.');if(order!==undefined&&(!order||!Number.isSafeInteger(order.amount)||order.amount<1||order.amount>1e12||typeof order.note!=='string'||!order.note.trim()||order.note.length>160))throw new Error('Invalid merchant requisition.');return community.bank(order);});

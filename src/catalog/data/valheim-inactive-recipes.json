@@ -1,0 +1,1756 @@
+[
+  {
+    "recipe": {
+      "id": "Recipe_FeastAshlands",
+      "station": "",
+      "notes": "",
+      "inputs": [
+        {
+          "quantity": 3,
+          "name": "Cooked Asksvin Tail",
+          "itemId": "CookedAsksvinMeat"
+        },
+        {
+          "quantity": 5,
+          "name": "Vineberry Cluster",
+          "itemId": "Vineberry"
+        },
+        {
+          "quantity": 2,
+          "name": "Scorching Medley",
+          "itemId": "ScorchingMedley"
+        },
+        {
+          "quantity": 1,
+          "name": "Fiery Spice Powder",
+          "itemId": "SpiceAshlands"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Ashlands Gourmet Bowl",
+          "itemId": "FeastAshlands",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/ashlands-gourmet-bowl-feastashlands"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_FeastBlackforest",
+      "station": "",
+      "notes": "",
+      "inputs": [
+        {
+          "quantity": 3,
+          "name": "Deer Stew",
+          "itemId": "DeerStew"
+        },
+        {
+          "quantity": 5,
+          "name": "Thistle",
+          "itemId": "Thistle"
+        },
+        {
+          "quantity": 4,
+          "name": "Queen's Jam",
+          "itemId": "QueensJam"
+        },
+        {
+          "quantity": 1,
+          "name": "Woodland Herb Blend",
+          "itemId": "SpiceForests"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Black Forest Buffet Platter",
+          "itemId": "FeastBlackforest",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/black-forest-buffet-platter"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorDress6",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Blue Dress with Beads",
+          "itemId": "ArmorDress6",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/blue-dress-with-beads"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorDress5",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Blue Dress with Shawl",
+          "itemId": "ArmorDress5",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/blue-dress-with-shawl"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_HelmetHat1",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Blue Tied Headscarf",
+          "itemId": "HelmetHat1",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/blue-tied-headscarf"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorTunic3",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Blue Tunic with Beads",
+          "itemId": "ArmorTunic3",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/blue-tunic-with-beads"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorTunic2",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Blue Tunic with Cape",
+          "itemId": "ArmorTunic2",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/blue-tunic-with-cape"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorDress3",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Brown Dress with Beads",
+          "itemId": "ArmorDress3",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/brown-dress-with-beads"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorDress2",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Brown Dress with Shawl",
+          "itemId": "ArmorDress2",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/brown-dress-with-shawl"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_HelmetHat3",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Brown Fur Cap",
+          "itemId": "HelmetHat3",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/brown-fur-cap"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_HelmetHat4",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Extravagant Green Cap",
+          "itemId": "HelmetHat4",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/extravagant-green-cap"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_HelmetHat9",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Extravagant Orange Cap",
+          "itemId": "HelmetHat9",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/extravagant-orange-cap"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_HelmetHat2",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Green Twisted Headscarf",
+          "itemId": "HelmetHat2",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/green-twisted-headscarf"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_HelmetHat8",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Grey Fur Cap",
+          "itemId": "HelmetHat8",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/grey-fur-cap"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorHarvester2",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Harvest Dress",
+          "itemId": "ArmorHarvester2",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/harvest-dress"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorHarvester1",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Harvest Tunic",
+          "itemId": "ArmorHarvester1",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/harvest-tunic"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_FeastMountains",
+      "station": "",
+      "notes": "",
+      "inputs": [
+        {
+          "quantity": 2,
+          "name": "Wolf Skewer",
+          "itemId": "WolfMeatSkewer"
+        },
+        {
+          "quantity": 3,
+          "name": "Onion Soup",
+          "itemId": "OnionSoup"
+        },
+        {
+          "quantity": 4,
+          "name": "Carrot",
+          "itemId": "Carrot"
+        },
+        {
+          "quantity": 1,
+          "name": "Mountain Peak Pepper Powder",
+          "itemId": "SpiceMountains"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Hearty Mountain Logger's Stew",
+          "itemId": "FeastMountains",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/hearty-mountain-logger-s-stew-feastmountains"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_PotionHealthMinor",
+      "station": "",
+      "notes": "",
+      "inputs": [
+        {
+          "quantity": 1,
+          "name": "Mushroom",
+          "itemId": "Mushroom"
+        },
+        {
+          "quantity": 1,
+          "name": "Blueberries",
+          "itemId": "Blueberries"
+        },
+        {
+          "quantity": 1,
+          "name": "Dandelion",
+          "itemId": "Dandelion"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Minor Healing Mead",
+          "itemId": "MeadHealthMinor",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/minor-healing-mead"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_PotionStaminaMinor",
+      "station": "",
+      "notes": "",
+      "inputs": [
+        {
+          "quantity": 1,
+          "name": "Yellow Mushroom",
+          "itemId": "MushroomYellow"
+        },
+        {
+          "quantity": 1,
+          "name": "Raspberries",
+          "itemId": "Raspberry"
+        },
+        {
+          "quantity": 1,
+          "name": "Honey",
+          "itemId": "Honey"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Minor Stamina Mead",
+          "itemId": "MeadStaminaMinor",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/minor-stamina-mead"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_FeastMistlands",
+      "station": "",
+      "notes": "",
+      "inputs": [
+        {
+          "quantity": 1,
+          "name": "Misthare Supreme",
+          "itemId": "MisthareSupreme"
+        },
+        {
+          "quantity": 3,
+          "name": "Cooked Seeker Meat",
+          "itemId": "CookedBugMeat"
+        },
+        {
+          "quantity": 1,
+          "name": "Yggdrasil Porridge",
+          "itemId": "YggdrasilPorridge"
+        },
+        {
+          "quantity": 1,
+          "name": "Herbs of the Hidden Hills",
+          "itemId": "SpiceMistlands"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Mushrooms Galore  la Mistlands",
+          "itemId": "FeastMistlands",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/mushrooms-galore-a-la-mistlands-feastmistlands"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_FeastDeepNorth",
+      "station": "",
+      "notes": "",
+      "inputs": [
+        {
+          "quantity": 3,
+          "name": "Cooked Moose Meat",
+          "itemId": "CookedMooseMeat"
+        },
+        {
+          "quantity": 5,
+          "name": "Poteitr",
+          "itemId": "Poteitr"
+        },
+        {
+          "quantity": 2,
+          "name": "Oat Flour",
+          "itemId": "OatFlour"
+        },
+        {
+          "quantity": 1,
+          "name": "Seasoning of the Gourd",
+          "itemId": "SpiceDeepNorth"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Northern Morning Fare",
+          "itemId": "FeastDeepNorth",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/northern-morning-fare"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorDress4",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Plain Blue Dress",
+          "itemId": "ArmorDress4",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/plain-blue-dress"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorTunic1",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Plain Blue Tunic",
+          "itemId": "ArmorTunic1",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/plain-blue-tunic"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorDress1",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Plain Brown Dress",
+          "itemId": "ArmorDress1",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/plain-brown-dress"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorTunic4",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Plain Red Tunic",
+          "itemId": "ArmorTunic4",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/plain-red-tunic"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorDress7",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Plain Yellow Dress",
+          "itemId": "ArmorDress7",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/plain-yellow-dress"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorTunic7",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Plain Yellow Tunic",
+          "itemId": "ArmorTunic7",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/plain-yellow-tunic"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_FeastPlains",
+      "station": "",
+      "notes": "",
+      "inputs": [
+        {
+          "quantity": 3,
+          "name": "Bread",
+          "itemId": "Bread"
+        },
+        {
+          "quantity": 2,
+          "name": "Lox Meat Pie",
+          "itemId": "LoxPie"
+        },
+        {
+          "quantity": 5,
+          "name": "Cloudberries",
+          "itemId": "Cloudberry"
+        },
+        {
+          "quantity": 1,
+          "name": "Grasslands Herbalist Harvest",
+          "itemId": "SpicePlains"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Plains Pie Picnic",
+          "itemId": "FeastPlains",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/plains-pie-picnic"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorTunic6",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Red Tunic with Beads",
+          "itemId": "ArmorTunic6",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/red-tunic-with-beads"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorTunic5",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Red Tunic with Cape",
+          "itemId": "ArmorTunic5",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/red-tunic-with-cape"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_HelmetHat7",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Red Twisted Headscarf",
+          "itemId": "HelmetHat7",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/red-twisted-headscarf"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_FeastOceans",
+      "station": "",
+      "notes": "",
+      "inputs": [
+        {
+          "quantity": 5,
+          "name": "Cooked Fish",
+          "itemId": "FishCooked"
+        },
+        {
+          "quantity": 4,
+          "name": "Thistle",
+          "itemId": "Thistle"
+        },
+        {
+          "quantity": 2,
+          "name": "Cooked Serpent Meat",
+          "itemId": "SerpentMeatCooked"
+        },
+        {
+          "quantity": 1,
+          "name": "Seafarer's Herbs",
+          "itemId": "SpiceOceans"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Sailor's Bounty",
+          "itemId": "FeastOceans",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/sailor-s-bounty-feastoceans"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_Feaster",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Battle Idol",
+          "itemId": "Upgrader0Weapon"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Serving Tray",
+          "itemId": "Feaster",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/serving-tray"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_HelmetHat10",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Simple Purple Cap",
+          "itemId": "HelmetHat10",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/simple-purple-cap"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_HelmetHat5",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Simple Red Cap",
+          "itemId": "HelmetHat5",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/simple-red-cap"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorDress10",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Simple Undyed Dress",
+          "itemId": "ArmorDress10",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/simple-undyed-dress"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorTunic10",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Simple Undyed Tunic",
+          "itemId": "ArmorTunic10",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/simple-undyed-tunic"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_HelmetStrawhat",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Straw Hat",
+          "itemId": "HelmetStrawHat",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/straw-hat"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_FeastSwamps",
+      "station": "",
+      "notes": "",
+      "inputs": [
+        {
+          "quantity": 8,
+          "name": "Sausages",
+          "itemId": "Sausages"
+        },
+        {
+          "quantity": 4,
+          "name": "Bloodbag",
+          "itemId": "Bloodbag"
+        },
+        {
+          "quantity": 2,
+          "name": "Turnip Stew",
+          "itemId": "TurnipStew"
+        },
+        {
+          "quantity": 1,
+          "name": "Woodland Herb Blend",
+          "itemId": "SpiceForests"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Swamp Dweller's Delight",
+          "itemId": "FeastSwamps",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/swamp-dweller-s-delight-feastswamps"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_KnifeVoid",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 1,
+          "name": "Ectoplasm"
+        },
+        {
+          "quantity": 8,
+          "name": "Ectoplasm"
+        },
+        {
+          "quantity": 2,
+          "name": "Bloodgold",
+          "itemId": "Gold"
+        },
+        {
+          "quantity": 1,
+          "name": "Bronze Battle Idol",
+          "itemId": "Upgrader1Weapon"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Voidcaller",
+          "itemId": "KnifeVoid",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/voidcaller"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_FeastMeadows",
+      "station": "",
+      "notes": "",
+      "inputs": [
+        {
+          "quantity": 2,
+          "name": "Cooked Deer Meat",
+          "itemId": "CookedDeerMeat"
+        },
+        {
+          "quantity": 5,
+          "name": "Cooked Boar Meat",
+          "itemId": "CookedMeat"
+        },
+        {
+          "quantity": 4,
+          "name": "Dandelion",
+          "itemId": "Dandelion"
+        },
+        {
+          "quantity": 1,
+          "name": "Woodland Herb Blend",
+          "itemId": "SpiceForests"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Whole Roasted Meadow Boar",
+          "itemId": "FeastMeadows",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/whole-roasted-meadow-boar"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_AtgeirWood",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 5,
+          "name": "Wood",
+          "itemId": "Wood"
+        },
+        {
+          "quantity": 3,
+          "name": "Finewood",
+          "itemId": "FineWood"
+        },
+        {
+          "quantity": 2,
+          "name": "Corewood",
+          "itemId": "RoundLog"
+        },
+        {
+          "quantity": 1,
+          "name": "Bronze Battle Idol",
+          "itemId": "Upgrader1Weapon"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Wooden Atgeir",
+          "itemId": "AtgeirWood",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/wooden-atgeir"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_AxeWood",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 5,
+          "name": "Wood",
+          "itemId": "Wood"
+        },
+        {
+          "quantity": 3,
+          "name": "Finewood",
+          "itemId": "FineWood"
+        },
+        {
+          "quantity": 2,
+          "name": "Corewood",
+          "itemId": "RoundLog"
+        },
+        {
+          "quantity": 1,
+          "name": "Bronze Battle Idol",
+          "itemId": "Upgrader1Weapon"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Wooden Axe",
+          "itemId": "AxeWood",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/wooden-axe"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_THSwordWood",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 5,
+          "name": "Wood",
+          "itemId": "Wood"
+        },
+        {
+          "quantity": 3,
+          "name": "Finewood",
+          "itemId": "FineWood"
+        },
+        {
+          "quantity": 2,
+          "name": "Corewood",
+          "itemId": "RoundLog"
+        },
+        {
+          "quantity": 1,
+          "name": "Bronze Battle Idol",
+          "itemId": "Upgrader1Weapon"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Wooden Greatsword",
+          "itemId": "THSwordWood",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/wooden-greatsword"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_BattleaxeWood",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 5,
+          "name": "Wood",
+          "itemId": "Wood"
+        },
+        {
+          "quantity": 3,
+          "name": "Finewood",
+          "itemId": "FineWood"
+        },
+        {
+          "quantity": 2,
+          "name": "Corewood",
+          "itemId": "RoundLog"
+        },
+        {
+          "quantity": 1,
+          "name": "Bronze Battle Idol",
+          "itemId": "Upgrader1Weapon"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Wooden Battleaxe",
+          "itemId": "BattleaxeWood",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/wooden-battleaxe"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_KnifeWood",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 5,
+          "name": "Wood",
+          "itemId": "Wood"
+        },
+        {
+          "quantity": 3,
+          "name": "Finewood",
+          "itemId": "FineWood"
+        },
+        {
+          "quantity": 2,
+          "name": "Corewood",
+          "itemId": "RoundLog"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Battle Idol",
+          "itemId": "Upgrader0Weapon"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Wooden Knife",
+          "itemId": "KnifeWood",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/wooden-knife"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_MaceWood",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 5,
+          "name": "Wood",
+          "itemId": "Wood"
+        },
+        {
+          "quantity": 3,
+          "name": "Finewood",
+          "itemId": "FineWood"
+        },
+        {
+          "quantity": 2,
+          "name": "Corewood",
+          "itemId": "RoundLog"
+        },
+        {
+          "quantity": 1,
+          "name": "Bronze Battle Idol",
+          "itemId": "Upgrader1Weapon"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Wooden Mace",
+          "itemId": "MaceWood",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/wooden-mace"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_SledgeWood",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 5,
+          "name": "Wood",
+          "itemId": "Wood"
+        },
+        {
+          "quantity": 3,
+          "name": "Finewood",
+          "itemId": "FineWood"
+        },
+        {
+          "quantity": 2,
+          "name": "Corewood",
+          "itemId": "RoundLog"
+        },
+        {
+          "quantity": 1,
+          "name": "Bronze Battle Idol",
+          "itemId": "Upgrader1Weapon"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Wooden Sledge",
+          "itemId": "SledgeWood",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/wooden-sledge"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_SpearWood",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 5,
+          "name": "Wood",
+          "itemId": "Wood"
+        },
+        {
+          "quantity": 3,
+          "name": "Finewood",
+          "itemId": "FineWood"
+        },
+        {
+          "quantity": 2,
+          "name": "Corewood",
+          "itemId": "RoundLog"
+        },
+        {
+          "quantity": 1,
+          "name": "Bronze Battle Idol",
+          "itemId": "Upgrader1Weapon"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Wooden Spear",
+          "itemId": "SpearWood",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/wooden-spear"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorDress9",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Yellow Dress with Beads",
+          "itemId": "ArmorDress9",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/yellow-dress-with-beads"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorDress8",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Yellow Dress with Shawl",
+          "itemId": "ArmorDress8",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/yellow-dress-with-shawl"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_HelmetHat6",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Yellow Tied Headscarf",
+          "itemId": "HelmetHat6",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/yellow-tied-headscarf"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorTunic8",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Yellow Tunic with Cape",
+          "itemId": "ArmorTunic8",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/yellow-tunic-with-cape"
+  },
+  {
+    "recipe": {
+      "id": "Recipe_ArmorTunic9",
+      "station": "",
+      "notes": "Initial craft (level 1). Upgrade costs are not included.",
+      "inputs": [
+        {
+          "quantity": 6,
+          "name": "Deer Hide",
+          "itemId": "DeerHide"
+        },
+        {
+          "quantity": 1,
+          "name": "Wooden Protection Idol",
+          "itemId": "Upgrader0Armor"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Yellow Tunic with Beads",
+          "itemId": "ArmorTunic9",
+          "quantity": 1
+        }
+      ],
+      "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html"
+    },
+    "reason": "No active ordinary or upgrade-only recipe on the current source item page",
+    "sourceUrl": "https://corpus.gg/games/valheim/items/yellow-tunic-with-beads"
+  }
+]

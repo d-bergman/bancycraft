@@ -111,7 +111,7 @@ async function launch() {
     assert.equal(stored.plans[0].quantity, 3);
     await run.page.getByRole('button', { name: 'My Supplies', exact: true }).click();
     await run.page.getByRole('button', { name: 'Add supply', exact: true }).click();
-    await run.page.getByLabel('Material name').fill('Wood');
+    await run.page.getByLabel('Material name').fill('Blightwood');
     await run.page.getByLabel('Quantity owned').fill('50');
     await run.page.getByRole('button', { name: 'Save supply', exact: true }).click();
     await run.page.getByRole('dialog').waitFor({ state: 'hidden' });

@@ -3,17 +3,19 @@ export type Plan = { id: string; name: string; game: Game; quantity: number; not
 export type Supply = { itemId?:string; id: string; name: string; game: Game; quantity: number };
 export type ListTarget = { itemId: string; name: string; quantity: number; fromLevel?:number; toLevel?:number };
 export type ShoppingList = { id: string; name: string; game: Game; quick: boolean; targets: ListTarget[]; owned?:Record<string,number>; assignments?:Record<string,string>; recipes: Record<string, string>; progress: Record<string, number>; useSupplies: boolean; hideCompleted: boolean; collapsed: Record<string, boolean>; updatedAt: string };
-export type Workspace = { schemaVersion: 2; game: Game; plans: Plan[]; supplies: Supply[]; lists: ShoppingList[] };
+export type Workspace = { completionLog?:{id:string;game:Game;at:string}[]; schemaVersion: 2; game: Game; plans: Plan[]; supplies: Supply[]; lists: ShoppingList[] };
 export type Update = { state: string; message: string; version?: string; percent?: number };
 export type Access = { unlocked:boolean; subject?:string; expiresAt?:number };
-export type Info = { version: string; dataPath: string; packaged: boolean; update: Update; access:Access };
+export type Info = { version: string; dataPath: string; packaged: boolean; update: Update; access:Access;controllerAccess?:Access };
 export type Member = { uid:string; displayName:string };
 export type Account = { state:string; message:string; user?:Member & {email:string} };
 export type SharedList = ShoppingList & { ownerUid:string; members:Member[]; activity:Record<string,{byUid:string;at:number;amount:number}> };
 export type SharedState = {account:Account;lists:{id:string;name:string;game:Game;ownerUid:string;members:number}[];active:SharedList|null;online:boolean;message:string};
 export type Build = {id:string;name:string;game:Game;tags:string[];description:string;skills:string;items:{slot:string;itemId:string;name:string;quantity:number}[];updatedAt:string;owner?:Member;creator?:Member;publishedAt?:string;sourceId?:string;sourceUpdatedAt?:string};
 export type ToolsWorkspace={schemaVersion:1;builds:Build[];favorites:Partial<Record<Game,string[]>>;recent:Partial<Record<Game,string[]>>};
+export type ServerSnapshot={registry:{id:string;title:string;game:string;description:string;region:string;host:string;notes:string;rules:string[];status:string;controllerServerId:string;image:string;address:string;password:string;joinUrl:string}[];control:null|{servers:{id:string;label:string;status:string;playersOnline?:number;playersMax?:number;playerNames?:string[]}[]};controlError:string};
 export interface Bridge {
+  unlockController(key:string):Promise<Access>;lockController():Promise<Access>;serversSnapshot():Promise<ServerSnapshot>;serverAction(id:string,action:string):Promise<unknown>;
   toolsLoad():Promise<ToolsWorkspace>;toolsSave(value:ToolsWorkspace):Promise<ToolsWorkspace>;
   buildsBrowse(game:Game):Promise<Build[]>;buildsGet(id:string):Promise<Build|null>;buildsPublish(build:Build):Promise<Build>;buildsRemove(id:string):Promise<void>;profileAvatar(uid:string):Promise<{uid:string;displayName:string;image:string}|null>;
   importWorkspace():Promise<Workspace|null>;exportList(list:ShoppingList):Promise<boolean>;importList():Promise<ShoppingList|null>;exportBuild(build:Build):Promise<boolean>;importBuild():Promise<Build|null>;gamingMode(enable:boolean):Promise<void>;

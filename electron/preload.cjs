@@ -10,6 +10,7 @@ contextBridge.exposeInMainWorld('bancy', Object.freeze({
   toolsLoad:()=>ipcRenderer.invoke('tools:read'),toolsSave:v=>ipcRenderer.invoke('tools:write',v),
   buildsBrowse:g=>ipcRenderer.invoke('builds:browse',g),buildsGet:id=>ipcRenderer.invoke('builds:get',id),buildsPublish:b=>ipcRenderer.invoke('builds:publish',b),buildsRemove:id=>ipcRenderer.invoke('builds:remove',id),profileAvatar:uid=>ipcRenderer.invoke('profile:avatar',uid),
   importWorkspace:()=>ipcRenderer.invoke('workspace:import'),exportList:l=>ipcRenderer.invoke('list:export',l),importList:()=>ipcRenderer.invoke('list:import'),exportBuild:b=>ipcRenderer.invoke('build:export',b),importBuild:()=>ipcRenderer.invoke('build:import'),gamingMode:e=>ipcRenderer.invoke('gaming:mode',e),
+  unlockController:key=>ipcRenderer.invoke('controller:unlock',key),lockController:()=>ipcRenderer.invoke('controller:lock'),serversSnapshot:()=>ipcRenderer.invoke('servers:snapshot'),serverAction:(id,action)=>ipcRenderer.invoke('servers:action',id,action),
   info: () => ipcRenderer.invoke('app:info'),
   unlockCommunity: key => ipcRenderer.invoke('community:unlock', key),
   lockCommunity: () => ipcRenderer.invoke('community:lock'),

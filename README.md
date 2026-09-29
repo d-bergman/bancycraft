@@ -12,19 +12,19 @@ This early build is unsigned. Windows may show an unknown-publisher warning, and
 
 Versions 0.3.0 and later update through Settings. If upgrading from 0.2.0 or earlier, install the current version once. Then open **Settings & updates**, choose **Check for updates**, download an available release, and choose **Restart & install**. Future updates are delivered by GitHub Releases, without separate manual installer downloads.
 
-From 0.5.0 onward, the installed app checks immediately after startup and every six hours while open. A top-right **New version available** notification lets you download and verify an update from any page. It then offers **Restart & install update**. Downloads and restarts require clicks. Dismissing the notification hides that version for the current session; Settings still provides the update controls. Checks pause while an update is pending or downloading.
+From 0.5.0 onward, the installed app checks immediately after startup and every six hours while open. A top-right **New version available** notification lets you download and verify an update from any page. It then offers **Restart & install update**. Downloads and restarts require clicks. Dismissing the notification hides that version for the current session; Settings still provides the update controls. Checks pause while an update is pending or downloading. Settings entry also checks; corner notices are hidden while Settings displays the update.
 
 The stable application ID is gg.bancy.bancycraft. Lists, progress, plans and supplies remain under %APPDATA%/BancyCraft, outside the installation folder. Updates require a trusted BancyCraft release signature; private publishing credentials are never included in the app. See [UPDATES.md](docs/UPDATES.md).
 
-## Working in 0.6.0
+## Working in 0.8.0
 
-Shopping Lists brings private lists and shared copies into one page, with shared lists below a divider. All six home tiles have original artwork; five games are available and Dune: Awakening remains Planned. Settings includes every release in a paginated changelog. Shopping-list row buttons open read-only crafting trees with selected recipes, stations and exact aggregated quantities.
+Shopping Lists brings private lists and shared copies into one page, with shared lists below a divider. All six home tiles have original artwork; five games are available and Dune: Awakening remains Planned. A separate paginated Changelog includes every release. Shopping-list row buttons open read-only crafting trees with selected recipes, stations and exact aggregated quantities.
 
 - Bancy-themed home screen, keyboard search (Ctrl+K), game selection and navigation.
 - Manual local crafting plans: create, edit, quantity, notes, status and deletion confirmation.
 - Manually entered supplies scoped to each game.
 - Item-first search within the selected game, with item-type/station filters, imported recipes and source details.
-- Four offline catalogs: Dragonwilds, Valheim, Enshrouded and Grounded 2. V Rising and Dune: Awakening are Planned.
+- Five offline catalogs: Dragonwilds, Valheim, Enshrouded, Grounded 2 and V Rising. Dune: Awakening remains Planned.
 - Persistent local data and a previous-save backup.
 - Export a JSON workspace backup and open the data directory.
 - TeamCraft-inspired shopping lists, pre-craft calculation, partial completion, dependency propagation and reset controls.
@@ -36,7 +36,7 @@ Shopping Lists brings private lists and shared copies into one page, with shared
 - Private signed cipher keys, Windows-encrypted storage, and community navigation hidden when locked.
 - Existing website bank inside an isolated app browser window, with the same sign-in, records and permissions.
 
-There are no invented server totals, save watchers, game plugins, game-save access or Blackbox services. Website credentials are entered only on the real Bancy.gg website or bank window; native keys grant no website role. See [LEDGER.md](docs/LEDGER.md), [ACCESS-KEYS.md](docs/ACCESS-KEYS.md) and [GEARSETS.md](docs/GEARSETS.md).
+Server registry and start/stop/restart controls use the existing Blackbox backend with a separately issued, account-bound controller key. There are no invented save totals, save watchers, game plugins or game-save access. Website credentials are entered only on the real Bancy.gg website or bank window; native keys grant no website role. See [LEDGER.md](docs/LEDGER.md), [ACCESS-KEYS.md](docs/ACCESS-KEYS.md) and [GEARSETS.md](docs/GEARSETS.md).
 
 ## Data
 

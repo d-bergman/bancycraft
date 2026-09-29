@@ -7,3 +7,11 @@ test-results/
 .catalog-cache/
 
 /app-dist/
+
+# Local encrypted credentials and private signing material
+issuer-private.pem
+update-signing.pem
+community-key.bin
+controller-key.bin
+website-account.bin
+*.access-key.txt

@@ -2,6 +2,7 @@ import type { Bridge, Workspace } from './types';
 const initial = (): Workspace => ({ schemaVersion: 2, game: 'dragonwilds', plans: [], supplies: [], lists: [] });
 // Browser preview uses its own storage. Installed builds always use the protected Electron bridge.
 export const api: Bridge = window.bancy ?? {
+  unlockController:async()=>{throw Error('Controller access requires the installed Windows app.');},lockController:async()=>({unlocked:false}),serversSnapshot:async()=>{throw Error('Connect your account in the installed app to load servers.');},serverAction:async()=>{throw Error('Controller actions require the installed app and an authorized key.');},
   toolsLoad:async()=>JSON.parse(localStorage.getItem('bancycraft-tools')||'{"schemaVersion":1,"builds":[],"favorites":{},"recent":{}}'),toolsSave:async v=>{localStorage.setItem('bancycraft-tools',JSON.stringify(v));return v;},
   buildsBrowse:async()=>[],buildsGet:async()=>null,buildsPublish:async()=>{throw Error('Install the app and connect your website account to share builds.');},buildsRemove:async()=>{},profileAvatar:async()=>null,
   importWorkspace:async()=>null,exportList:async()=>false,importList:async()=>null,exportBuild:async()=>false,importBuild:async()=>null,gamingMode:async()=>{},

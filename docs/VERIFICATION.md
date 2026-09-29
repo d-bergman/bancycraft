@@ -1,5 +1,18 @@
 # Verification
 
+## 0.8.0 builds, lists, catalog audit and server access
+
+Checked on Windows x64, September 28, 2026. All 46 unit tests pass. Source Electron UI checks passed for share/unshare/delete ownership, default view mode, explicit editing, independent variants, linked supplies, once-only consumption and completion counts, no list recovery after deletion, capes, slot filtering and two-handed off-hand locking. Backend emulator checks passed for sharing permissions, stale writes and member removal.
+
+The NSIS x64 installer and final renderer built successfully. Final packaged startup/search/persistence, list migration/quantity/completion/reset, two-user shared-list direct insertion and live progress, owner build actions, server-key controls and backup checks all passed. The packaged archive contains no private credential files; the installer signature validates against the bundled public key. Packaged checks passed for the server-key UI and in-place list insertion, build sharing, supplies, changelog, dark feedback, workspace backups and controlled update entry/notification/install behavior. Real install invocation is intercepted in QA; the user’s installed copy is not replaced.
+
+The server UI test uses an isolated profile and mocked registry/controller transport. It verifies hidden navigation without a key, account-bound activation, separate bank access, confirmation before mutation, key removal and direct private-list insertion. No production game server actions are invoked by this test. The live read-only controller check verifies a valid key and rejects wrong-account, wrong-scope, expired, forged and anonymous requests, then removes its temporary account. Only the game-server-controller service was restarted for deployment; the running game server was left up.
+
+The source pass pins 900 Valheim item pages and checks default and alternate trees across all five snapshots. Valheim's active recipes have no unresolved ingredient IDs; two internal-prefab recipes lack a verified station. Remaining acquisition gaps and generic Enshrouded ingredient constraints are itemized in coverage-audit.json. Recycling cycles and uncredited byproducts remain explicitly warned rather than inventing inputs or output credit. Removed V Rising pages are excluded from current pickers. Original artwork has a safe icon fallback.
+
+Credential scans cover Git history and tracked/unignored current text in both public repositories. No private signing keys, issued access tokens, GitHub credentials, Discord credentials or service-account private keys were found. Public verification keys and Firebase web configuration are intentionally public. Private runtime credentials and key issuer files remain outside the repositories.
+
+
 ## 0.4.1 automatic checks and corner update notification
 
 Checked on Windows x64, September 28, 2026. All 22 unit tests passed. TypeScript, production renderer and NSIS x64 installer builds passed. Existing packaged startup/persistence/search smoke checks and the new packaged update-notification test passed against 0.4.1.

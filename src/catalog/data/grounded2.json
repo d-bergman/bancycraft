@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "game": "grounded2",
-  "importedAt": "2026-09-28T17:52:30.383Z",
+  "importedAt": "2026-09-29T03:50:17.402Z",
   "source": {
     "name": "Grounded Wiki contributors",
     "url": "https://grounded.wiki.gg",
@@ -25,7 +25,7 @@
       "name": "Acid Gland",
       "category": "Natural Resources",
       "description": "A gooey gland for use in crafting.",
-      "acquisition": "",
+      "acquisition": "Larva * O.R.C. Larva * O.R.C. Red Soldier Ant * Red Soldier Ant",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Acid_Gland#_Grounded_2_-0",
       "revision": 55338,
       "updatedAt": "2026-04-02T05:36:48Z"
@@ -45,7 +45,7 @@
       "name": "Acorn Bits",
       "category": "Natural Resources",
       "description": "Edible morsels of an acorn for use in snacks.",
-      "acquisition": "Location/source: *Entrance Area *Ice Cream Cart Surroundings *Minor Caves *Picnic Table Area *Pine Hill *Pumpkin Patch *Veggie Garden",
+      "acquisition": "Acorn. Entrance Area *Ice Cream Cart Surroundings *Minor Caves *Picnic Table Area *Pine Hill *Pumpkin Patch *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Acorn_Bits#_Grounded_2_-0",
       "revision": 59256,
       "updatedAt": "2026-09-01T21:24:28Z"
@@ -155,7 +155,7 @@
       "name": "Acorn Shell",
       "category": "Natural Resources",
       "description": "A hard, hollow shell useful for construction.",
-      "acquisition": "Location/source: *Entrance Area *Ice Cream Cart Surroundings *Minor Caves *Picnic Table Area *Pine Hill *Pumpkin Patch *Veggie Garden",
+      "acquisition": "Acorn. Entrance Area *Ice Cream Cart Surroundings *Minor Caves *Picnic Table Area *Pine Hill *Pumpkin Patch *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Acorn_Shell#_Grounded_2_-0",
       "revision": 58359,
       "updatedAt": "2026-08-20T03:15:50Z"
@@ -195,7 +195,7 @@
       "name": "Acorn Top",
       "category": "Natural Resources",
       "description": "A hollow acorn useful construction.",
-      "acquisition": "Location/source: *Entrance Area *Ice Cream Cart Surroundings *Minor Caves *Picnic Table Area *Pine Hill *Pumpkin Patch *Veggie Garden",
+      "acquisition": "Acorn. Entrance Area *Ice Cream Cart Surroundings *Minor Caves *Picnic Table Area *Pine Hill *Pumpkin Patch *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Acorn_Top#_Grounded_2_-0",
       "revision": 57161,
       "updatedAt": "2026-08-11T03:50:50Z"
@@ -225,7 +225,7 @@
       "name": "Algae",
       "category": "Natural Resources",
       "description": "A squishy strip of an edible aquatic plant. Restores a small amount of hunger.",
-      "acquisition": "Location/source: *Boom Stick Cave *Glowing Fissure *Sunken Outpost Cave",
+      "acquisition": "Boom Stick Cave *Glowing Fissure *Sunken Outpost Cave",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Algae#_Grounded_2_-0",
       "revision": 56342,
       "updatedAt": "2026-05-16T07:52:13Z"
@@ -275,7 +275,7 @@
       "name": "Aphid Honeydew",
       "category": "Natural Resources",
       "description": "A sweet secretion from aphidss that restores a small amount of hunger and thirst.",
-      "acquisition": "",
+      "acquisition": "Aphid *Woolly Aphid",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Aphid_Honeydew#_Grounded_2_-0",
       "revision": 59334,
       "updatedAt": "2026-09-03T21:22:07Z"
@@ -325,7 +325,7 @@
       "name": "Apple Bits",
       "category": "Natural Resources",
       "description": "Tiny bits of Marmotcrisp apple. A satisfying snack that restores a fair amount of hunger.",
-      "acquisition": "Location/source: *Ceremony Area *Entrance Area *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Veggie Garden",
+      "acquisition": "Apple *Cockroach *Cockroach Queen *Gnat *O.R.C. Cockroach *O.R.C. Cockroach Queen. Ceremony Area *Entrance Area *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Apple_Bits#_Grounded_2_-0",
       "revision": 59342,
       "updatedAt": "2026-09-03T21:35:39Z"
@@ -425,7 +425,7 @@
       "name": "Bale Scale",
       "category": "trinkets",
       "description": "An immaculate scale, brimming with primeval power.",
-      "acquisition": "Location/source: Bale Scale Stash",
+      "acquisition": "Bale Scale Stash",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Bale_Scale#_Grounded_2_-0",
       "revision": 58791,
       "updatedAt": "2026-08-25T03:32:56Z"
@@ -465,7 +465,7 @@
       "name": "Bee Fuzz",
       "category": "Natural Resources",
       "description": "High quality fuzz in iconic black and yellow colors.",
-      "acquisition": "",
+      "acquisition": "Bee *O.R.C. Bee",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Bee_Fuzz#_Grounded_2_-0",
       "revision": 59258,
       "updatedAt": "2026-09-01T21:29:19Z"
@@ -515,7 +515,7 @@
       "name": "Bee Stinger",
       "category": "Natural Resources",
       "description": "A long and sharp stabby bit from a bee.",
-      "acquisition": "",
+      "acquisition": "Bee *O.R.C. Bee",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Bee_Stinger#_Grounded_2_-0",
       "revision": 54314,
       "updatedAt": "2026-02-22T06:38:30Z"
@@ -545,7 +545,7 @@
       "name": "Billy Hog Bite",
       "category": "Natural Resources",
       "description": "A moist n' meaty morsel of a Get N' Jet Billy Hog. Quick Billy's signature 50 cent roller grill hot dogs are never fresh, but always fine.",
-      "acquisition": "Location/source: *Ceremony Area *Croquet Court *Fire Pit *Pumpkin Patch *Snackbar Front Area *Veggie Garden",
+      "acquisition": "Billy Hog *Corn Hog *Cockroach *Cockroach Queen *Gnat *O.R.C. Cockroach *O.R.C. Cockroach Queen. Ceremony Area *Croquet Court *Fire Pit *Pumpkin Patch *Snackbar Front Area *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Billy_Hog_Bite#_Grounded_2_-0",
       "revision": 54277,
       "updatedAt": "2026-02-21T07:28:48Z"
@@ -555,7 +555,7 @@
       "name": "Biomedical Token",
       "category": "trinkets",
       "description": "The secret to eternal life... at the cost of a void that can never be satiated.",
-      "acquisition": "Location/source: Abyss Outpost #1",
+      "acquisition": "Abyss Outpost #1",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Biomedical_Token#_Grounded_2_-0",
       "revision": 58785,
       "updatedAt": "2026-08-25T03:29:08Z"
@@ -575,7 +575,7 @@
       "name": "Black Ant Egg",
       "category": "Natural Resources",
       "description": "A ripe black ant egg that can hatch if left to sit. Keep insect eggs from hatching by destroying them at the source or trashing them once picked up.",
-      "acquisition": "Location/source: Sinkhole Anthill",
+      "acquisition": "Black Worker Ant. Sinkhole Anthill",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Black_Ant_Egg#_Grounded_2_-0",
       "revision": 59151,
       "updatedAt": "2026-08-31T14:26:09Z"
@@ -585,7 +585,7 @@
       "name": "Black Ant Head",
       "category": "Natural Resources",
       "description": "The entire head of a black ant. Surprisingly intact.",
-      "acquisition": "",
+      "acquisition": "Black Soldier Ant * Black Worker Ant * O.R.C. Black Soldier Ant",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Black_Ant_Head#_Grounded_2_-0",
       "revision": 55717,
       "updatedAt": "2026-04-06T16:19:42Z"
@@ -615,7 +615,7 @@
       "name": "Black Ant Mandibles",
       "category": "Natural Resources",
       "description": "The seemingly indestructible pincers of a black soldier ant.",
-      "acquisition": "",
+      "acquisition": "Black Soldier Ant *O.R.C. Black Soldier Ant",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Black_Ant_Mandibles#_Grounded_2_-0",
       "revision": 55715,
       "updatedAt": "2026-04-06T16:19:11Z"
@@ -625,7 +625,7 @@
       "name": "Black Ant Part",
       "category": "Natural Resources",
       "description": "Thick chunks of black ant that seem very strong.",
-      "acquisition": "",
+      "acquisition": "Black Soldier Ant * Black Worker Ant * O.R.C. Black Soldier Ant",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Black_Ant_Part#_Grounded_2_-0",
       "revision": 58473,
       "updatedAt": "2026-08-22T05:43:04Z"
@@ -675,7 +675,7 @@
       "name": "Black Soldier Ant Egg",
       "category": "Natural Resources",
       "description": "This egg will hatch an Black Soldier Ant Buggy. Carrying one around will anger any black ants nearby.",
-      "acquisition": "Location/source: *Sinkhole Anthill",
+      "acquisition": "Sinkhole Anthill",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Black_Soldier_Ant_Egg#_Grounded_2_-0",
       "revision": 57405,
       "updatedAt": "2026-08-14T02:11:38Z"
@@ -715,7 +715,7 @@
       "name": "Blistering Boiler",
       "category": "trinkets",
       "description": "An unstable boiling gland radiating blistering heat.",
-      "acquisition": "",
+      "acquisition": "Bombardier Beetle *O.R.C. Bombardier Beetle",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Blistering_Boiler#_Grounded_2_-0",
       "revision": 58773,
       "updatedAt": "2026-08-25T03:17:54Z"
@@ -725,7 +725,7 @@
       "name": "Blue Butterfly Chunk",
       "category": "Natural Resources",
       "description": "A chunk of a blue butterfly.",
-      "acquisition": "",
+      "acquisition": "Blue Butterfly *O.G.R.R. Blue Butterfly *O.R.C. Blue Butterfly",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Blue_Butterfly_Chunk#_Grounded_2_-0",
       "revision": 55849,
       "updatedAt": "2026-04-08T03:38:36Z"
@@ -745,7 +745,7 @@
       "name": "Blue Butterfly Scales",
       "category": "Natural Resources",
       "description": "A vivid blue scale of a blue butterfly.",
-      "acquisition": "",
+      "acquisition": "Blue Butterfly *O.G.R.R. Blue Butterfly *O.R.C. Blue Butterfly",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Blue_Butterfly_Scales#_Grounded_2_-0",
       "revision": 55850,
       "updatedAt": "2026-04-08T03:39:04Z"
@@ -755,7 +755,7 @@
       "name": "Blue Butterfly Wing",
       "category": "Natural Resources",
       "description": "The pristine, delicate wing of a blue butterfly.",
-      "acquisition": "",
+      "acquisition": "Blue Butterfly *O.G.R.R. Blue Butterfly *O.R.C. Blue Butterfly",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Blue_Butterfly_Wing#_Grounded_2_-0",
       "revision": 55851,
       "updatedAt": "2026-04-08T03:39:30Z"
@@ -785,7 +785,7 @@
       "name": "Blueberry Chunk",
       "category": "Natural Resources",
       "description": "A plump slice of blueberry. Its skin is tough and luxurious.",
-      "acquisition": "Location/source: *Fire Pit *Ice Cream Cart Surroundings *Picnic Table Area * Veggie Garden",
+      "acquisition": "Blueberry. Fire Pit *Ice Cream Cart Surroundings *Picnic Table Area * Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Blueberry_Chunk#_Grounded_2_-0",
       "revision": 55507,
       "updatedAt": "2026-04-03T05:09:09Z"
@@ -815,7 +815,7 @@
       "name": "Boiling Gland",
       "category": "Natural Resources",
       "description": "The part of the bombardier beetle that can instantly boil liquids. Doesn't actually explode.",
-      "acquisition": "",
+      "acquisition": "Bombardier Beetle *O.G.R.R. Rust Beetle *O.R.C. Bombardier Beetle *O.R.C. Rust Beetle *Rust Beetle",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Boiling_Gland#_Grounded_2_-0",
       "revision": 55361,
       "updatedAt": "2026-04-02T05:47:20Z"
@@ -835,7 +835,7 @@
       "name": "Bombardier Part",
       "category": "Natural Resources",
       "description": "Strong bombardier beetle bits suitable for a variety of powerful crafts.",
-      "acquisition": "",
+      "acquisition": "Bombardier Beetle *O.R.C. Bombardier Beetle *Web Sac",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Bombardier_Part#_Grounded_2_-0",
       "revision": 59336,
       "updatedAt": "2026-09-03T21:24:51Z"
@@ -855,7 +855,7 @@
       "name": "Boom Stick",
       "category": "Club",
       "description": "A boosted variant of the Wallopeño, when charged it deals extra spicy damage.",
-      "acquisition": "Location/source: Boom Stick Stash",
+      "acquisition": "Boom Stick Stash",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Boom_Stick#_Grounded_2_-0",
       "revision": 59130,
       "updatedAt": "2026-08-30T08:23:21Z"
@@ -905,7 +905,7 @@
       "name": "Brittle Marble Shard",
       "category": "Natural Resources",
       "description": "A nugget that seems useful for one thing: upgrading armor.",
-      "acquisition": "Location/source: * Anthills * Ceremony Area * Fire Pit * Minor Caves * O.R.C. Caves * Picnic Table Area * Pine Hill * Snackbar Front Area * Statue Area",
+      "acquisition": "Brittle Marble * Sturdy Marble. Anthills * Ceremony Area * Fire Pit * Minor Caves * O.R.C. Caves * Picnic Table Area * Pine Hill * Snackbar Front Area * Statue Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Brittle_Marble_Shard#_Grounded_2_-0",
       "revision": 56475,
       "updatedAt": "2026-05-21T07:52:27Z"
@@ -915,7 +915,7 @@
       "name": "Brittle Plating",
       "category": "Upgrade Materials",
       "description": "Brittle material used to upgrade armors.",
-      "acquisition": "",
+      "acquisition": "Buried Treasure",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Brittle_Plating#_Grounded_2_-0",
       "revision": 54021,
       "updatedAt": "2026-02-18T22:36:54Z"
@@ -925,7 +925,7 @@
       "name": "Brittle Quartzite Shard",
       "category": "Natural Resources",
       "description": "A nugget that seems useful for one thing: upgrading weapons.",
-      "acquisition": "Location/source: * Anthills * Ceremony Area * Entrance Area * Fire Pit * Ice Cream Cart Surroundings * Minor Caves * O.R.C. Caves * Picnic Table Area * Pine Hill * Snackbar Front Area",
+      "acquisition": "Brittle Quartzite * Sturdy Quartzite. Anthills * Ceremony Area * Entrance Area * Fire Pit * Ice Cream Cart Surroundings * Minor Caves * O.R.C. Caves * Picnic Table Area * Pine Hill * Snackbar Front Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Brittle_Quartzite_Shard#_Grounded_2_-0",
       "revision": 56474,
       "updatedAt": "2026-05-21T07:52:23Z"
@@ -935,7 +935,7 @@
       "name": "Brittle Whetstone",
       "category": "Upgrade Materials",
       "description": "Brittle material used to upgrade weapons.",
-      "acquisition": "",
+      "acquisition": "Buried Treasure",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Brittle_Whetstone#_Grounded_2_-0",
       "revision": 54022,
       "updatedAt": "2026-02-18T22:40:08Z"
@@ -955,7 +955,7 @@
       "name": "Broodmother Chunk",
       "category": "Natural Resources",
       "description": "An unidentifiable piece of the demonic mother spider.",
-      "acquisition": "",
+      "acquisition": "O.R.C. Broodmother",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Broodmother_Chunk#_Grounded_2_-0",
       "revision": 56203,
       "updatedAt": "2026-05-12T22:47:36Z"
@@ -1025,7 +1025,7 @@
       "name": "Buffin' Gland",
       "category": "Natural Resources",
       "description": "A mutated gland pulsating with candy flavor. It can trigger a critical buffin' event for one of your Buggies.",
-      "acquisition": "",
+      "acquisition": "All O.G.R.R. Creatures",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Buffin'_Gland#_Grounded_2_-0",
       "revision": 55886,
       "updatedAt": "2026-04-14T15:21:07Z"
@@ -1205,7 +1205,7 @@
       "name": "Bushwacker",
       "category": "Bow",
       "description": "A modifed Spider Stringer, tuned to make your first shot count.",
-      "acquisition": "Location/source: Pine Hill",
+      "acquisition": "Pine Hill",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Bushwacker#_Grounded_2_-0",
       "revision": 58710,
       "updatedAt": "2026-08-24T05:10:14Z"
@@ -1245,7 +1245,7 @@
       "name": "Cactus Petal",
       "category": "Natural Resources",
       "description": "A petal plucked from a cactus flower. Useful for binding wounds.",
-      "acquisition": "Location/source: Greenhouse",
+      "acquisition": "Cactus Flower. Greenhouse",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Cactus_Petal#_Grounded_2_-0",
       "revision": 54078,
       "updatedAt": "2026-02-19T17:57:42Z"
@@ -1265,7 +1265,7 @@
       "name": "Candy Cornlet",
       "category": "Natural Resources",
       "description": "An autumn hued hunk of one of the world’s worst candies that someone rightfully discarded.",
-      "acquisition": "Location/source: *Anthills *Candy Processing Facility * Ceremony Area * Croquet Court * Entrance Area * Fire Pit * Greenhouse Surroundings * Ice Cream Cart Surroundings * Ice Cream Cart *Minor Caves * O.R.C. Caves * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Toxic Anthill * Veggie Garden",
+      "acquisition": "Candy Corn. Anthills *Candy Processing Facility * Ceremony Area * Croquet Court * Entrance Area * Fire Pit * Greenhouse Surroundings * Ice Cream Cart Surroundings * Ice Cream Cart *Minor Caves * O.R.C. Caves * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Toxic Anthill * Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Candy_Cornlet#_Grounded_2_-0",
       "revision": 55780,
       "updatedAt": "2026-04-07T02:57:56Z"
@@ -1285,7 +1285,7 @@
       "name": "Carrot Bits",
       "category": "Natural Resources",
       "description": "A crunchy carrot bit rich in fiber. A satisfying snack that restores a fair amount of hunger.",
-      "acquisition": "Location/source: *Carrot Cave *War-Torn Anthill",
+      "acquisition": "Carrot. Carrot Cave *War-Torn Anthill",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Carrot_Bits#_Grounded_2_-0",
       "revision": 59152,
       "updatedAt": "2026-08-31T14:27:24Z"
@@ -1295,7 +1295,7 @@
       "name": "Carrot Frond",
       "category": "Natural Resources",
       "description": "The leafy greens from teh top of a carrot.",
-      "acquisition": "Location/source: Veggie Garden",
+      "acquisition": "Carrot Top. Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Carrot_Frond#_Grounded_2_-0",
       "revision": 55742,
       "updatedAt": "2026-04-06T21:31:46Z"
@@ -1305,7 +1305,7 @@
       "name": "Caterpillar Goop",
       "category": "Natural Resources",
       "description": "A glob of caterpillar saliva. Smells bad but seems useful for disinfecting wounds.",
-      "acquisition": "",
+      "acquisition": "Caterpillar *Trick-Or-Treatery",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Caterpillar_Goop#_Grounded_2_-0",
       "revision": 57324,
       "updatedAt": "2026-08-13T04:35:22Z"
@@ -1335,7 +1335,7 @@
       "name": "Cattail Fluff",
       "category": "Natural Resources",
       "description": "These fluffy clumps are useful for building water structures and stuffing furniture. They can even insulate against the cold.",
-      "acquisition": "Location/source: *Bridge Area *Skunk Pond",
+      "acquisition": "Cattail. Bridge Area *Skunk Pond",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Cattail_Fluff#_Grounded_2_-0",
       "revision": 58281,
       "updatedAt": "2026-08-19T03:15:37Z"
@@ -1425,7 +1425,7 @@
       "name": "Chocolate Chunk",
       "category": "Natural Resources",
       "description": "Deliciously smooth and dangerously easy to eat",
-      "acquisition": "Location/source: *Ice Cream Cart *Veggie Garden",
+      "acquisition": "Buried Treasure *Chocolate Chip * Chocolate Leprechaun's Loot *Chocolate Smoochies *Trick-Or-Treatery. Ice Cream Cart *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Chocolate_Chunk#_Grounded_2_-0",
       "revision": 59167,
       "updatedAt": "2026-08-31T14:35:58Z"
@@ -1445,7 +1445,7 @@
       "name": "Chrysalis Hide",
       "category": "Natural Resources",
       "description": "A thick hide from a butterfly chrysalis, dripping with digestive juices.",
-      "acquisition": "Location/source: *Greenhouse *Pumpkin Patch *Veggie Garden",
+      "acquisition": "Butterfly Chrysalis. Greenhouse *Pumpkin Patch *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Chrysalis_Hide#_Grounded_2_-0",
       "revision": 54080,
       "updatedAt": "2026-02-19T17:58:59Z"
@@ -1465,7 +1465,7 @@
       "name": "Clay",
       "category": "Natural Resources",
       "description": "Soft, wet dirt clumps that hold form. Typically found around pools of water and damp areas.",
-      "acquisition": "Location/source: *Anthills *Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse Surroundings *Ice Cream Cart Surroundings *Minor Caves *O.R.C. Caves *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Statue Area *Veggie Garden",
+      "acquisition": "Clay (Node). Anthills *Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse Surroundings *Ice Cream Cart Surroundings *Minor Caves *O.R.C. Caves *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Statue Area *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Clay#_Grounded_2_-0",
       "revision": 56213,
       "updatedAt": "2026-05-12T23:40:57Z"
@@ -1505,7 +1505,7 @@
       "name": "Cleaving Claw",
       "category": "trinkets",
       "description": "A peerless claw with a keen edge, the true mark of an apex predator.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Praying Mantis Nymph *O.R.C. Praying Mantis Nymph *Praying Mantis Nymph",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Cleaving_Claw#_Grounded_2_-0",
       "revision": 58759,
       "updatedAt": "2026-08-25T02:59:48Z"
@@ -1605,7 +1605,7 @@
       "name": "Clover Leaf",
       "category": "Natural Resources",
       "description": "Single leaf from the top of a clover.",
-      "acquisition": "Location/source: *Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Statue Area *Veggie Garden",
+      "acquisition": "Clover. Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Statue Area *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Clover_Leaf#_Grounded_2_-0",
       "revision": 55366,
       "updatedAt": "2026-04-02T05:49:51Z"
@@ -1765,7 +1765,7 @@
       "name": "Cookie Sandwich Bits",
       "category": "Natural Resources",
       "description": "Chunks of a cookie sandwich. Most people think the filling is the best part, but they’re wrong.",
-      "acquisition": "Location/source: *Ceremony Area *Fire Pit *Greenhouse Surroundings *Picnic Table Area *Pumpkin Patch *Ice Cream Cart *Entrance Area *Snackbar Front Area *Veggie Garden",
+      "acquisition": "Cockroach *Cockroach Queen *Cookie Sandwich *Gnat *O.R.C. Cockroach *O.R.C. Cockroach Queen *Trick-Or-Treatery. Ceremony Area *Fire Pit *Greenhouse Surroundings *Picnic Table Area *Pumpkin Patch *Ice Cream Cart *Entrance Area *Snackbar Front Area *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Cookie_Sandwich_Bits#_Grounded_2_-0",
       "revision": 54280,
       "updatedAt": "2026-02-21T07:32:47Z"
@@ -1775,7 +1775,7 @@
       "name": "Corn Hog Chunk",
       "category": "Natural Resources",
       "description": "A crispy golden chunk of a Get N' Jet Corn Hog, deep fried to perfection.",
-      "acquisition": "Location/source: *Fire Pit *Greenhouse Surroundings *Pumpkin Patch *Veggie Garden",
+      "acquisition": "Corn Hog. Fire Pit *Greenhouse Surroundings *Pumpkin Patch *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Corn_Hog_Chunk#_Grounded_2_-0",
       "revision": 54330,
       "updatedAt": "2026-02-22T19:24:08Z"
@@ -1815,7 +1815,7 @@
       "name": "Cricket Drumstick",
       "category": "Natural Resources",
       "description": "Meaty hind leg of a cricket, bursting with jumping power.",
-      "acquisition": "",
+      "acquisition": "Cricket *O.R.C. Cricket *O.G.R.R. Cricket",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Cricket_Drumstick#_Grounded_2_-0",
       "revision": 59146,
       "updatedAt": "2026-08-31T14:22:52Z"
@@ -1825,7 +1825,7 @@
       "name": "Cricket Head",
       "category": "Natural Resources",
       "description": "A fully intact cricket head. Sadly, didn't survive the final act.",
-      "acquisition": "",
+      "acquisition": "Cricket *O.R.C. Cricket *O.G.R.R. Cricket",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Cricket_Head#_Grounded_2_-0",
       "revision": 53893,
       "updatedAt": "2026-02-16T21:45:44Z"
@@ -1855,7 +1855,7 @@
       "name": "Cricket Part",
       "category": "Natural Resources",
       "description": "A dazzling piece of a cricket.",
-      "acquisition": "",
+      "acquisition": "Cricket *O.R.C. Cricket *O.G.R.R. Cricket",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Cricket_Part#_Grounded_2_-0",
       "revision": 59147,
       "updatedAt": "2026-08-31T14:23:06Z"
@@ -1885,7 +1885,7 @@
       "name": "Crimson Avenger",
       "category": "Sword",
       "description": "Forged from the mandible of a veteran soldier ant, defy the invaders.",
-      "acquisition": "Location/source: Spider Den Anthill",
+      "acquisition": "Spider Den Anthill",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Crimson_Avenger#_Grounded_2_-0",
       "revision": 58548,
       "updatedAt": "2026-08-22T23:12:44Z"
@@ -1905,7 +1905,7 @@
       "name": "Crimson Reapers",
       "category": "Sickle",
       "description": "This stranger-modified version of the classic Dusk Blades gives you health for your kills! How vampiric!",
-      "acquisition": "Location/source: Pumpkin Patch",
+      "acquisition": "Pumpkin Patch",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Crimson_Reapers#_Grounded_2_-0",
       "revision": 59578,
       "updatedAt": "2026-09-08T01:14:31Z"
@@ -1965,7 +1965,7 @@
       "name": "Crow Feather Piece",
       "category": "Natural Resources",
       "description": "A wisp of a crow's jet black feather. A dark omen from the harbinger of death that soars above.",
-      "acquisition": "Location/source: * Crow's perch spots and flight path",
+      "acquisition": "Buried Treasure *Crow Feather. Crow's perch spots and flight path",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Crow_Feather_Piece#_Grounded_2_-0",
       "revision": 55406,
       "updatedAt": "2026-04-02T13:50:14Z"
@@ -2065,7 +2065,7 @@
       "name": "Cut Lass",
       "category": "Sword",
       "description": "Forged from Dr. Tully's toenail, this blade will see vengeance through.",
-      "acquisition": "Location/source: Cut Lass Stash",
+      "acquisition": "Cut Lass Stash",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Cut_Lass#_Grounded_2_-0",
       "revision": 58886,
       "updatedAt": "2026-08-26T04:03:00Z"
@@ -2085,7 +2085,7 @@
       "name": "Discord",
       "category": "Bow",
       "description": "A Cricket Lute Bow modified by the masked stranger to sow chaos on the battlefield.",
-      "acquisition": "Location/source: O.G.R.R. Labs",
+      "acquisition": "O.G.R.R. Labs",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Discord#_Grounded_2_-0",
       "revision": 59362,
       "updatedAt": "2026-09-06T01:25:02Z"
@@ -2125,7 +2125,7 @@
       "name": "Diving Bell Spider Chunk",
       "category": "Natural Resources",
       "description": "An ambiguous chunk of an aquatic spider.",
-      "acquisition": "",
+      "acquisition": "Diving Bell Spider",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Diving_Bell_Spider_Chunk#_Grounded_2_-0",
       "revision": 57877,
       "updatedAt": "2026-08-15T22:42:20Z"
@@ -2165,7 +2165,7 @@
       "name": "Donut Chunk",
       "category": "Natural Resources",
       "description": "A piece of a sugar filled donut. Looks brand new, but it could be ancient.",
-      "acquisition": "Location/source: *Croquet Court *Snackbar Front Area",
+      "acquisition": "Donut *Trick-Or-Treatery. Croquet Court *Snackbar Front Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Donut_Chunk#_Grounded_2_-0",
       "revision": 59169,
       "updatedAt": "2026-08-31T14:37:45Z"
@@ -2185,7 +2185,7 @@
       "name": "Dry Grass Chunk",
       "category": "Natural Resources",
       "description": "Brittle fiber harvested from dry grass.",
-      "acquisition": "Location/source: * Ceremony Area * Croquet Court * Entrance Area * Fire Pit * Greenhouse Surroundings * Ice Cream Cart Surroundings * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Statue Area",
+      "acquisition": "Dry Grass. Ceremony Area * Croquet Court * Entrance Area * Fire Pit * Greenhouse Surroundings * Ice Cream Cart Surroundings * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Statue Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Dry_Grass_Chunk#_Grounded_2_-0",
       "revision": 55400,
       "updatedAt": "2026-04-02T13:47:20Z"
@@ -2235,7 +2235,7 @@
       "name": "Earwig Head",
       "category": "Natural Resources",
       "description": "A fully intact head of an earwig. Its pinching days are over.",
-      "acquisition": "",
+      "acquisition": "O.R.C. Pincher Earwig *O.G.R.R. Pincher Earwig *O.R.C. Whipper Earwig *O.G.R.R. Whipper Earwig *Pincher Earwig *Whipper Earwig",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Earwig_Head#_Grounded_2_-0",
       "revision": 54138,
       "updatedAt": "2026-02-19T22:37:33Z"
@@ -2265,7 +2265,7 @@
       "name": "Earwig Part",
       "category": "Natural Resources",
       "description": "A collection of earwig bits and banded armor plates.",
-      "acquisition": "",
+      "acquisition": "O.R.C. Pincher Earwig *O.G.R.R. Pincher Earwig *O.R.C. Whipper Earwig *O.G.R.R. Whipper Earwig *Pincher Earwig *Whipper Earwig",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Earwig_Part#_Grounded_2_-0",
       "revision": 55351,
       "updatedAt": "2026-04-02T05:43:11Z"
@@ -2275,7 +2275,7 @@
       "name": "Earwig Pincer",
       "category": "Natural Resources",
       "description": "As sharp as it is terrifying. Plucked from the corpse of an earwig.",
-      "acquisition": "",
+      "acquisition": "O.R.C. Pincher Earwig *O.G.R.R. Pincher Earwig *O.R.C. Whipper Earwig *O.G.R.R. Whipper Earwig *Pincher Earwig *Whipper Earwig",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Earwig_Pincer#_Grounded_2_-0",
       "revision": 56278,
       "updatedAt": "2026-05-14T22:04:04Z"
@@ -2285,7 +2285,7 @@
       "name": "Eco Exploitation Token",
       "category": "trinkets",
       "description": "Leave no stone ungathered, no leaf unchopped, no enemy undefeated... well except for spiders.",
-      "acquisition": "Location/source: Spider Den Anthill",
+      "acquisition": "Spider Den Anthill",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Eco_Exploitation_Token#_Grounded_2_-0",
       "revision": 58787,
       "updatedAt": "2026-08-25T03:29:44Z"
@@ -2295,7 +2295,7 @@
       "name": "Eelgrass Strand",
       "category": "Natural Resources",
       "description": "A hydrophobic strip useful for binding things used in water. Cut from a tall, wispy eelgrass weed reaching up from the bottom of the pond.",
-      "acquisition": "Location/source: * Galleries *Monitoring Station * Rocky Chambers * Skunk Pond * Touchdown Zone",
+      "acquisition": "Eelgrass. Galleries *Monitoring Station * Rocky Chambers * Skunk Pond * Touchdown Zone",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Eelgrass_Strand#_Grounded_2_-0",
       "revision": 57920,
       "updatedAt": "2026-08-16T03:14:57Z"
@@ -2315,7 +2315,7 @@
       "name": "EverChar Coal Chunk",
       "category": "Natural Resources",
       "description": "A hunk of EverChar everburning charcoal. Stays piping hot and is perfect for constructing an Oven.",
-      "acquisition": "Location/source: Fire Pit",
+      "acquisition": "Charcoal *Holiday Tree. Fire Pit",
       "sourceUrl": "https://grounded.wiki.gg/wiki/EverChar_Coal_Chunk#_Grounded_2_-0",
       "revision": 59141,
       "updatedAt": "2026-08-31T14:21:04Z"
@@ -2355,7 +2355,7 @@
       "name": "Everlasting Hogstopper",
       "category": "trinkets",
       "description": "A source of infinite food. A nibble now and then satiates your hunger in just the right amounts.",
-      "acquisition": "",
+      "acquisition": "Billy Hog *Cockroach Queen *O.R.C. Cockroach Queen",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Everlasting_Hogstopper#_Grounded_2_-0",
       "revision": 58760,
       "updatedAt": "2026-08-25T03:00:43Z"
@@ -2375,7 +2375,7 @@
       "name": "Fabulous Femur",
       "category": "trinkets",
       "description": "A vivid cricket drumstick that inspires lyrical poise and grace.",
-      "acquisition": "",
+      "acquisition": "Cricket *O.G.R.R. Cricket *O.R.C. Cricket",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Fabulous_Femur#_Grounded_2_-0",
       "revision": 58761,
       "updatedAt": "2026-08-25T03:01:34Z"
@@ -2395,7 +2395,7 @@
       "name": "Fancy Fletching",
       "category": "trinkets",
       "description": "A mysterious feather that significantly improves your marksmanship with bows.",
-      "acquisition": "",
+      "acquisition": "Crow Feather",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Fancy_Fletching#_Grounded_2_-0",
       "revision": 58781,
       "updatedAt": "2026-08-25T03:26:54Z"
@@ -2405,7 +2405,7 @@
       "name": "Feasting Fangs",
       "category": "trinkets",
       "description": "An incredibly sharp pair of tick fangs. Become a creature of the night.",
-      "acquisition": "",
+      "acquisition": "Tick",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Feasting_Fangs#_Grounded_2_-0",
       "revision": 58762,
       "updatedAt": "2026-08-25T03:04:09Z"
@@ -2535,7 +2535,7 @@
       "name": "Fellfeast",
       "category": "Sword",
       "description": "A pox on Ominent, a hex on Sloane, a feast of blood for that vile crone.",
-      "acquisition": "Location/source: Fellfeast Cave",
+      "acquisition": "Fellfeast Cave",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Fellfeast#_Grounded_2_-0",
       "revision": 59958,
       "updatedAt": "2026-09-20T19:44:01Z"
@@ -2545,7 +2545,7 @@
       "name": "Fertilizer",
       "category": "Natural Resources",
       "description": "A handful of Green Thumb fertilizer. Helps your plants grow strong and fast!",
-      "acquisition": "Location/source: *Bale Scale Cave *Greenhouse *Greenhouse Surroundings *Minor Caves *Pumpkin Patch *Veggie Garden",
+      "acquisition": "Fertilizer Pellet. Bale Scale Cave *Greenhouse *Greenhouse Surroundings *Minor Caves *Pumpkin Patch *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Fertilizer#_Grounded_2_-0",
       "revision": 56238,
       "updatedAt": "2026-05-13T19:53:41Z"
@@ -2615,7 +2615,7 @@
       "name": "Firefly Shell",
       "category": "Natural Resources",
       "description": "A beautiful shell taken from a firefly that makes a strong, pliable resource for crafting.",
-      "acquisition": "",
+      "acquisition": "Firefly *O.R.C. Firefly",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Firefly_Shell#_Grounded_2_-0",
       "revision": 55718,
       "updatedAt": "2026-04-06T16:19:56Z"
@@ -2695,7 +2695,7 @@
       "name": "Flower Petal",
       "category": "Natural Resources",
       "description": "A soft petal from one of the yard's flowers. Smells like grandma.",
-      "acquisition": "Location/source: * Greenhouse *Greenhouse Surroundings * Picnic Table Area *Pumpkin Patch * Statue Area *Veggie Garden",
+      "acquisition": "Hosta Plant. Greenhouse *Greenhouse Surroundings * Picnic Table Area *Pumpkin Patch * Statue Area *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Flower_Petal#_Grounded_2_-0",
       "revision": 55358,
       "updatedAt": "2026-04-02T05:45:42Z"
@@ -2705,7 +2705,7 @@
       "name": "Fluffy Dandelion Tuft",
       "category": "trinkets",
       "description": "A fluffy puff of dandelion of exceptionally high quality. Could be used to drift down from even greater heights.",
-      "acquisition": "",
+      "acquisition": "Dandelion",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Fluffy_Dandelion_Tuft#_Grounded_2_-0",
       "revision": 58782,
       "updatedAt": "2026-08-25T03:27:48Z"
@@ -2735,7 +2735,7 @@
       "name": "Frozen Droplet",
       "category": "trinkets",
       "description": "A frosty droplet that makes you erupt with minty particles when danger is near.",
-      "acquisition": "",
+      "acquisition": "Woolly Aphid",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Frozen_Droplet#_Grounded_2_-0",
       "revision": 58763,
       "updatedAt": "2026-08-25T03:04:55Z"
@@ -2785,7 +2785,7 @@
       "name": "Garden Snail Eyestalk",
       "category": "Natural Resources",
       "description": "A slick and slimey eye stalk from a garden snail. Feels like it's still watching you.",
-      "acquisition": "",
+      "acquisition": "Garden Snail",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Garden_Snail_Eyestalk#_Grounded_2_-0",
       "revision": 58111,
       "updatedAt": "2026-08-17T20:32:09Z"
@@ -2795,7 +2795,7 @@
       "name": "Garden Snail Fragment",
       "category": "Natural Resources",
       "description": "A pretty shell fragment from a garden snail. These shells excel at deflecting attacks.",
-      "acquisition": "Location/source: Network Center",
+      "acquisition": "Baby Garden Snail *Garden Snail. Network Center",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Garden_Snail_Fragment#_Grounded_2_-0",
       "revision": 55337,
       "updatedAt": "2026-04-02T05:33:29Z"
@@ -2805,7 +2805,7 @@
       "name": "Garden Snail Slime",
       "category": "Natural Resources",
       "description": "A glob of mucus from a garden snail. Sticky and gross but useful in healing applications.",
-      "acquisition": "",
+      "acquisition": "Baby Garden Snail *Garden Snail *Trick-Or-Treatery",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Garden_Snail_Slime#_Grounded_2_-0",
       "revision": 59140,
       "updatedAt": "2026-08-31T14:19:16Z"
@@ -2865,7 +2865,7 @@
       "name": "Gloom Chunk",
       "category": "Natural Resources",
       "description": "A chunk of fungus hacked from a gloom shroom. Definitely not edible but could be ground into something useful.",
-      "acquisition": "Location/source: *Fire Pit *Greenhouse *Greenhouse Surroundings *Minor Caves *Pumpkin Patch *Veggie Garden",
+      "acquisition": "Gloom Shroom. Fire Pit *Greenhouse *Greenhouse Surroundings *Minor Caves *Pumpkin Patch *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Gloom_Chunk#_Grounded_2_-0",
       "revision": 54081,
       "updatedAt": "2026-02-19T17:59:28Z"
@@ -2895,7 +2895,7 @@
       "name": "Gloom Skewer",
       "category": "Spear",
       "description": "A keen pincer of a larva tops this spear. Dangerously sharp.",
-      "acquisition": "Location/source: Toxic Anthill",
+      "acquisition": "Toxic Anthill",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Gloom_Skewer#_Grounded_2_-0",
       "revision": 58547,
       "updatedAt": "2026-08-22T23:12:27Z"
@@ -2905,7 +2905,7 @@
       "name": "Glow Goo",
       "category": "Natural Resources",
       "description": "The mysterious juices that allow fireflies to glow.",
-      "acquisition": "",
+      "acquisition": "Firefly *O.R.C. Firefly",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Glow_Goo#_Grounded_2_-0",
       "revision": 56351,
       "updatedAt": "2026-05-16T07:54:56Z"
@@ -2925,7 +2925,7 @@
       "name": "Gnat Fuzz",
       "category": "Natural Resources",
       "description": "Dull gray hairs taken from a gnat.",
-      "acquisition": "",
+      "acquisition": "Gnat * Web Sac",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Gnat_Fuzz#_Grounded_2_-0",
       "revision": 55398,
       "updatedAt": "2026-04-02T13:46:33Z"
@@ -2985,7 +2985,7 @@
       "name": "Gold Foil",
       "category": "Natural Resources",
       "description": "A torn strip of Uncle Jim's chocolate wrapper. Shiny and sharp.",
-      "acquisition": "Location/source: *Bridge Area *Gnarly Bark *Gnarly Grotto *Pergola Area",
+      "acquisition": "Chocolate Cup. Bridge Area *Gnarly Bark *Gnarly Grotto *Pergola Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Gold_Foil#_Grounded_2_-0",
       "revision": 58854,
       "updatedAt": "2026-08-26T01:22:54Z"
@@ -3195,7 +3195,7 @@
       "name": "Grass Plank",
       "category": "Natural Resources",
       "description": "Broad, flexible plank perfect for fortifications. Acquired by chopping down grass with an axe.",
-      "acquisition": "Location/source: * Ceremony Area * Croquet Court * Entrance Area * Fire Pit * Greenhouse * Greenhouse Surroundings * Ice Cream Cart Surroundings * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Veggie Garden",
+      "acquisition": "Flowering Grass *Frosted Grass *Grass. Ceremony Area * Croquet Court * Entrance Area * Fire Pit * Greenhouse * Greenhouse Surroundings * Ice Cream Cart Surroundings * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Grass_Plank#_Grounded_2_-0",
       "revision": 54066,
       "updatedAt": "2026-02-19T17:43:27Z"
@@ -3425,7 +3425,7 @@
       "name": "Grub Hide",
       "category": "Natural Resources",
       "description": "Plush, warm skin harvested from a common grub.",
-      "acquisition": "",
+      "acquisition": "Grub *Web Sac",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Grub_Hide#_Grounded_2_-0",
       "revision": 55396,
       "updatedAt": "2026-04-02T13:45:50Z"
@@ -3475,7 +3475,7 @@
       "name": "Grub Sludge",
       "category": "Natural Resources",
       "description": "Mysterious goo excreted from grubs.",
-      "acquisition": "",
+      "acquisition": "Grub *Trick-Or-Treatery",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Grub_Sludge#_Grounded_2_-0",
       "revision": 55399,
       "updatedAt": "2026-04-02T13:47:00Z"
@@ -3495,7 +3495,7 @@
       "name": "Gum Nugget",
       "category": "Natural Resources",
       "description": "A petrified wad stronger than most metals. Can be used in spectacular crafts and enhancing smoothies.",
-      "acquisition": "Location/source: *Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse *Greenhouse Surroundings *Ice Cream Cart *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Spider Den Anthill *Veggie Garden",
+      "acquisition": "Buried Treasure * Chewed Gum *Trick-Or-Treatery. Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse *Greenhouse Surroundings *Ice Cream Cart *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Spider Den Anthill *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Gum_Nugget#_Grounded_2_-0",
       "revision": 54333,
       "updatedAt": "2026-02-22T19:25:20Z"
@@ -3515,7 +3515,7 @@
       "name": "Gunpowder Clump",
       "category": "Natural Resources",
       "description": "Stable but deadly pile of gunpowder.",
-      "acquisition": "Location/source: * Croquet Court * Minor Caves * Picnic Table Area * Pumpkin Patch * Snackbar Front Area",
+      "acquisition": "Pop Cap. Croquet Court * Minor Caves * Picnic Table Area * Pumpkin Patch * Snackbar Front Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Gunpowder_Clump#_Grounded_2_-0",
       "revision": 54171,
       "updatedAt": "2026-02-20T04:20:12Z"
@@ -3635,7 +3635,7 @@
       "name": "Heatwave",
       "category": "Staff",
       "description": "This masterwork Scorching Orb staff packs extra heat.",
-      "acquisition": "Location/source: Fire Pit",
+      "acquisition": "Fire Pit",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Heatwave#_Grounded_2_-0",
       "revision": 59283,
       "updatedAt": "2026-09-02T03:45:19Z"
@@ -3735,7 +3735,7 @@
       "name": "Horsetail Stem",
       "category": "Natural Resources",
       "description": "A hollow yet rigid segment of a horsetail. Great for buildings that require tubing.",
-      "acquisition": "Location/source: Bridge Area",
+      "acquisition": "Horsetail. Bridge Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Horsetail_Stem#_Grounded_2_-0",
       "revision": 58220,
       "updatedAt": "2026-08-18T07:31:26Z"
@@ -3785,7 +3785,7 @@
       "name": "Hyper Beam",
       "category": "Natural Resources",
       "description": "A laser tuned to different radiation frequencies and mounted on O.R.C. creatures.",
-      "acquisition": "",
+      "acquisition": "O.R.C. Northern Scorpion Jr. *O.R.C. Potato Beetle *O.R.C. Toe Biter Leviathan",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Hyper_Beam#_Grounded_2_-0",
       "revision": 58601,
       "updatedAt": "2026-08-23T07:57:32Z"
@@ -3795,7 +3795,7 @@
       "name": "Ice Breakers",
       "category": "Fist",
       "description": "This tweaked version of the Woolly Whoppers deals devestating damage to frozen creatures.",
-      "acquisition": "Location/source: Ice Breakers Stash",
+      "acquisition": "Ice Breakers Stash",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Ice_Breakers#_Grounded_2_-0",
       "revision": 58684,
       "updatedAt": "2026-08-24T04:54:52Z"
@@ -3815,7 +3815,7 @@
       "name": "Ice Splinter",
       "category": "Natural Resources",
       "description": "A frozen splinter of pure ice.",
-      "acquisition": "Location/source: *Ice Cream Cart *Ice Cream Cart Surroundings *Picnic Table Area",
+      "acquisition": "Frosted Grass *Icicle. Ice Cream Cart *Ice Cream Cart Surroundings *Picnic Table Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Ice_Splinter#_Grounded_2_-0",
       "revision": 56765,
       "updatedAt": "2026-07-24T05:50:00Z"
@@ -3905,7 +3905,7 @@
       "name": "Key Lime Chunk",
       "category": "Natural Resources",
       "description": "A chunk of key lime, bursting with flavor and absurdly sour.",
-      "acquisition": "Location/source: Greenhouse",
+      "acquisition": "Key Lime. Greenhouse",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Key_Lime_Chunk#_Grounded_2_-0",
       "revision": 54083,
       "updatedAt": "2026-02-19T18:00:34Z"
@@ -3925,7 +3925,7 @@
       "name": "King Dozer's Light",
       "category": "trinkets",
       "description": "There once was a lizard, it's true. The spiciest treats he did chew. He lapped up the tang, Then burped with a bang. If you cross him, it's fire he'll spew.",
-      "acquisition": "",
+      "acquisition": "King Dozer",
       "sourceUrl": "https://grounded.wiki.gg/wiki/King_Dozer's_Light#_Grounded_2_-0",
       "revision": 58764,
       "updatedAt": "2026-08-25T03:05:21Z"
@@ -3945,7 +3945,7 @@
       "name": "Koi Fish Scale",
       "category": "Natural Resources",
       "description": "A shiny scale from the koi fish. Sturdy and reliable, this scale can be used to craft protective gear.",
-      "acquisition": "Location/source: * Bridge Area * Gnarly Bark * Monitoring Station * Skunk Pond",
+      "acquisition": "Calico * Dagon * Muddy Scale * Oriole * Sunny. Bridge Area * Gnarly Bark * Monitoring Station * Skunk Pond",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Koi_Fish_Scale#_Grounded_2_-0",
       "revision": 59027,
       "updatedAt": "2026-08-30T01:43:38Z"
@@ -4055,7 +4055,7 @@
       "name": "Ladybug Egg",
       "category": "Natural Resources",
       "description": "This egg will hatch an Ladybug Buggy. Carrying one around will anger any ladybugs nearby.",
-      "acquisition": "Location/source: Veggie Garden",
+      "acquisition": "Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Ladybug_Egg#_Grounded_2_-0",
       "revision": 57398,
       "updatedAt": "2026-08-14T01:58:02Z"
@@ -4075,7 +4075,7 @@
       "name": "Ladybug Head",
       "category": "Natural Resources",
       "description": "Fully intact tough and glistening head of a ladybug.",
-      "acquisition": "",
+      "acquisition": "Ladybug *O.G.R.R. Ladybug *O.R.C. Ladybug",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Ladybug_Head#_Grounded_2_-0",
       "revision": 55983,
       "updatedAt": "2026-04-30T06:32:29Z"
@@ -4105,7 +4105,7 @@
       "name": "Ladybug Part",
       "category": "Natural Resources",
       "description": "Iconic red and black piece of a ladybug. Beautiful and tough.",
-      "acquisition": "",
+      "acquisition": "Ladybug *O.G.R.R. Ladybug * O.R.C. Ladybug * Web Sac",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Ladybug_Part#_Grounded_2_-0",
       "revision": 56283,
       "updatedAt": "2026-05-14T22:05:53Z"
@@ -4195,7 +4195,7 @@
       "name": "Larva Spike",
       "category": "Natural Resources",
       "description": "A sharp, dangly appendage taken from the corpse of a disgusting larva.",
-      "acquisition": "",
+      "acquisition": "Larva *O.R.C. Larva",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Larva_Spike#_Grounded_2_-0",
       "revision": 58355,
       "updatedAt": "2026-08-20T03:12:53Z"
@@ -4245,7 +4245,7 @@
       "name": "Lingonberry Chunk",
       "category": "Natural Resources",
       "description": "A tart chunk of lingonberry. Useful to craft strong and stylish red armor.",
-      "acquisition": "Location/source: *Picnic Table Area *Pine Hill *Veggie Garden",
+      "acquisition": "Lingonberry. Picnic Table Area *Pine Hill *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Lingonberry_Chunk#_Grounded_2_-0",
       "revision": 59267,
       "updatedAt": "2026-09-01T21:33:25Z"
@@ -4265,7 +4265,7 @@
       "name": "Lint",
       "category": "Natural Resources",
       "description": "A dense tangle of fibers from many sources. Very useful if woven together.",
-      "acquisition": "Location/source: *Picnic Table Area * Scarecrow *Veggie Garden",
+      "acquisition": "Lint Clump. Picnic Table Area * Scarecrow *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Lint#_Grounded_2_-0",
       "revision": 55471,
       "updatedAt": "2026-04-03T01:58:20Z"
@@ -4315,7 +4315,7 @@
       "name": "Lizard Horn",
       "category": "Natural Resources",
       "description": "A massive horn knocked loose from a lizard. The thick point makes it ideal for weapon crafting.",
-      "acquisition": "",
+      "acquisition": "King Dozer",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Lizard_Horn#_Grounded_2_-0",
       "revision": 55247,
       "updatedAt": "2026-04-02T04:07:02Z"
@@ -4335,7 +4335,7 @@
       "name": "Lizard Scale",
       "category": "Natural Resources",
       "description": "A thick scale harvested from a lizard. Extremely tough and perfect for crafting heavy armor.",
-      "acquisition": "",
+      "acquisition": "King Dozer",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Lizard_Scale#_Grounded_2_-0",
       "revision": 55326,
       "updatedAt": "2026-04-02T05:19:37Z"
@@ -4395,7 +4395,7 @@
       "name": "Mantis Trinket",
       "category": "trinkets",
       "description": "A rare and powerful memento from the mysterious mantis",
-      "acquisition": "",
+      "acquisition": "Orchid Mantis",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Mantis_Trinket#_Grounded_2_-0",
       "revision": 54506,
       "updatedAt": "2026-02-28T00:37:56Z"
@@ -4555,7 +4555,7 @@
       "name": "Milkweed Chunk",
       "category": "Natural Resources",
       "description": "Tough fiber harvested from a husky milkweed pod.",
-      "acquisition": "Location/source: *Croquet Court *Entrance Area *Greenhouse Surroundings *Ice Cream Cart Surroundings *Pumpkin Patch *Snackbar Front Area *Veggie Garden",
+      "acquisition": "Milkweed Pod. Croquet Court *Entrance Area *Greenhouse Surroundings *Ice Cream Cart Surroundings *Pumpkin Patch *Snackbar Front Area *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Milkweed_Chunk#_Grounded_2_-0",
       "revision": 54108,
       "updatedAt": "2026-02-19T18:34:38Z"
@@ -4565,7 +4565,7 @@
       "name": "Milkweed Tuft",
       "category": "Natural Resources",
       "description": "A downy milkweed tuft that's great for stuffing furniture and insulating against the cold.",
-      "acquisition": "Location/source: *Croquet Court *Entrance Area *Greenhouse Surroundings *Ice Cream Cart Surroundings *Pumpkin Patch *Snackbar Front Area *Veggie Garden",
+      "acquisition": "Milkweed Pod. Croquet Court *Entrance Area *Greenhouse Surroundings *Ice Cream Cart Surroundings *Pumpkin Patch *Snackbar Front Area *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Milkweed_Tuft#_Grounded_2_-0",
       "revision": 58605,
       "updatedAt": "2026-08-23T23:22:42Z"
@@ -4575,7 +4575,7 @@
       "name": "Mini Marshmallow",
       "category": "Natural Resources",
       "description": "",
-      "acquisition": "Location/source: *Anthills *Candy Processing Facility * Ceremony Area * Croquet Court * Entrance Area * Fire Pit * Greenhouse Surroundings * Ice Cream Cart Surroundings * Ice Cream Cart *Minor Caves * O.R.C. Caves * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Toxic Anthill * Veggie Garden",
+      "acquisition": "Easter Egg. Anthills *Candy Processing Facility * Ceremony Area * Croquet Court * Entrance Area * Fire Pit * Greenhouse Surroundings * Ice Cream Cart Surroundings * Ice Cream Cart *Minor Caves * O.R.C. Caves * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Toxic Anthill * Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Mini_Marshmallow#_Grounded_2_-0",
       "revision": 59168,
       "updatedAt": "2026-08-31T14:36:58Z"
@@ -4615,7 +4615,7 @@
       "name": "Mint Glob",
       "category": "Upgrade Materials",
       "description": "A collection of mint shards, baked and formed into a cubular glob. Perfect for imbuing equipment with special properties.",
-      "acquisition": "Location/source: Ice Cream Cart",
+      "acquisition": "Ice Cream Cart",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Mint_Glob#_Grounded_2_-0",
       "revision": 57016,
       "updatedAt": "2026-08-10T03:11:49Z"
@@ -4625,7 +4625,7 @@
       "name": "Mint Shard",
       "category": "Natural Resources",
       "description": "A nugget of breath-freshening mint. Much more filling at this size.",
-      "acquisition": "Location/source: *Anthills *Candy Processing Facility *Ceremony Area *Croquet Court *Entrance Area *Ice Cream Cart *Ice Cream Cart Surroundings *Minor Caves *Picnic Table Area *Pine Hill * Scarecrow *Snackbar Front Area",
+      "acquisition": "Buried Treasure * Fresh Mint *Holiday Tree *Trick-Or-Treatery. Anthills *Candy Processing Facility *Ceremony Area *Croquet Court *Entrance Area *Ice Cream Cart *Ice Cream Cart Surroundings *Minor Caves *Picnic Table Area *Pine Hill * Scarecrow *Snackbar Front Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Mint_Shard#_Grounded_2_-0",
       "revision": 59375,
       "updatedAt": "2026-09-07T22:01:25Z"
@@ -4645,7 +4645,7 @@
       "name": "Misting Head",
       "category": "Quest Item",
       "description": "A misting head that can be hauled to repair an irrigation system.",
-      "acquisition": "Location/source: Greenhouse",
+      "acquisition": "Greenhouse",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Misting_Head#_Grounded_2_-0",
       "revision": 54379,
       "updatedAt": "2026-02-23T18:15:37Z"
@@ -4655,7 +4655,7 @@
       "name": "Mite Fang",
       "category": "Natural Resources",
       "description": "The sharp fang of a lawn mite. Tiny but oh so sharp.",
-      "acquisition": "",
+      "acquisition": "Lawn Mite *Trick-Or-Treatery",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Mite_Fang#_Grounded_2_-0",
       "revision": 54114,
       "updatedAt": "2026-02-19T22:25:18Z"
@@ -4665,7 +4665,7 @@
       "name": "Mite Fuzz",
       "category": "Natural Resources",
       "description": "Vibrant red hairs taken from a mite.",
-      "acquisition": "",
+      "acquisition": "Lawn Mite *Trick-Or-Treatery * Web Sac",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Mite_Fuzz#_Grounded_2_-0",
       "revision": 55365,
       "updatedAt": "2026-04-02T05:49:17Z"
@@ -4735,7 +4735,7 @@
       "name": "Mosquito Beak",
       "category": "Natural Resources",
       "description": "The thin, sharp beak of a mosquito. Seems like it could penetrate almost anything.",
-      "acquisition": "",
+      "acquisition": "Mosquito *O.R.C. Mosquito",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Mosquito_Beak#_Grounded_2_-0",
       "revision": 54399,
       "updatedAt": "2026-02-24T16:51:41Z"
@@ -4745,7 +4745,7 @@
       "name": "Mosquito Blood Sack",
       "category": "Natural Resources",
       "description": "A mosquito's blood-filled rump.",
-      "acquisition": "",
+      "acquisition": "Mosquito * O.G.R.R. Tiger Mosquito * O.R.C. Mosquito * O.R.C. Tiger Mosquito * Tiger Mosquito",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Mosquito_Blood_Sack#_Grounded_2_-0",
       "revision": 58472,
       "updatedAt": "2026-08-22T05:41:34Z"
@@ -4785,7 +4785,7 @@
       "name": "Mushroom",
       "category": "Natural Resources",
       "description": "Edible fungus that restores a small amount of hunger.",
-      "acquisition": "Location/source: * Anthills * Ceremony Area * Croquet Court * Entrance Area * Greenhouse * Greenhouse Surroundings * Ice Cream Cart Surroundings * Minor Caves * Picnic Table Area * Pine Hill * Pumpkin Patch * Scarecrow * Snackbar Front Area * Statue Area",
+      "acquisition": "Anthills * Ceremony Area * Croquet Court * Entrance Area * Greenhouse * Greenhouse Surroundings * Ice Cream Cart Surroundings * Minor Caves * Picnic Table Area * Pine Hill * Pumpkin Patch * Scarecrow * Snackbar Front Area * Statue Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Mushroom#_Grounded_2_-0",
       "revision": 54186,
       "updatedAt": "2026-02-20T04:41:15Z"
@@ -4815,7 +4815,7 @@
       "name": "Mushroom Chunk",
       "category": "Natural Resources",
       "description": "A big piece from a large mushroom. Too strange to eat but just right for grinding.",
-      "acquisition": "Location/source: *Anthills *Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse *Greenhouse Surroundings *Ice Cream Cart Surroundings *Minor Caves *Picnic Table Area *Pine Hill *Pumpkin Patch *Scarecrow *Snackbar Front Area *Statue Area *Veggie Garden",
+      "acquisition": "Mushroom (Node) *Weevil. Anthills *Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse *Greenhouse Surroundings *Ice Cream Cart Surroundings *Minor Caves *Picnic Table Area *Pine Hill *Pumpkin Patch *Scarecrow *Snackbar Front Area *Statue Area *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Mushroom_Chunk#_Grounded_2_-0",
       "revision": 59333,
       "updatedAt": "2026-09-03T21:21:11Z"
@@ -5075,7 +5075,7 @@
       "name": "Myrmecologist Token",
       "category": "trinkets",
       "description": "With this in your hands, your contributions to ant science are finally being recognized.",
-      "acquisition": "Location/source: Snackbar Anthill",
+      "acquisition": "Snackbar Anthill",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Myrmecologist_Token#_Grounded_2_-0",
       "revision": 58786,
       "updatedAt": "2026-08-25T03:29:27Z"
@@ -5095,7 +5095,7 @@
       "name": "Nectar",
       "category": "Natural Resources",
       "description": "Sweet and edible crafting resource. Restores a small amount of hunger.",
-      "acquisition": "Location/source: * Croquet Court *Entrance Area *Picnic Table Area *Snackbar Front Area *Statue Area",
+      "acquisition": "Croquet Court *Entrance Area *Picnic Table Area *Snackbar Front Area *Statue Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Nectar#_Grounded_2_-0",
       "revision": 59265,
       "updatedAt": "2026-09-01T21:33:03Z"
@@ -5155,7 +5155,7 @@
       "name": "Nightstalker's Bane",
       "category": "trinkets",
       "description": "A pure sample of Axl's venom. The tiniest drop can coat weapons to deadly effect.",
-      "acquisition": "",
+      "acquisition": "Axl",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Nightstalker's_Bane#_Grounded_2_-0",
       "revision": 58765,
       "updatedAt": "2026-08-25T03:05:45Z"
@@ -5195,7 +5195,7 @@
       "name": "Northern Scorpion Chunk",
       "category": "Natural Resources",
       "description": "A chunk of northern scorpion with sturdy chitinous layers. Ideal for armor crafting.",
-      "acquisition": "",
+      "acquisition": "Northern Scorpion * Northern Scorpion Jr. * Northern Scorpling * O.G.R.R. Northern Scorpion * O.R.C. Northern Scorpion * O.R.C. Northern Scorpion Jr. * O.R.C. Northern Scorpling *Trick-Or-Treatery",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Northern_Scorpion_Chunk#_Grounded_2_-0",
       "revision": 59340,
       "updatedAt": "2026-09-03T21:30:04Z"
@@ -5215,7 +5215,7 @@
       "name": "Northern Scorpion Pincer",
       "category": "Natural Resources",
       "description": "A pristine pincer from a northern scorpion. The serrated edges would make a sharp weapon.",
-      "acquisition": "",
+      "acquisition": "Northern Scorpion * O.G.R.R. Northern Scorpion * O.R.C. Northern Scorpion",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Northern_Scorpion_Pincer#_Grounded_2_-0",
       "revision": 54123,
       "updatedAt": "2026-02-19T22:28:54Z"
@@ -5225,7 +5225,7 @@
       "name": "Northern Scorpion Stinger",
       "category": "Natural Resources",
       "description": "The dreadful stinger of a northern scorpion. Might make mighty armaments.",
-      "acquisition": "",
+      "acquisition": "Northern Scorpion *O.G.R.R. Northern Scorpion * O.R.C. Northern Scorpion",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Northern_Scorpion_Stinger#_Grounded_2_-0",
       "revision": 55413,
       "updatedAt": "2026-04-02T13:53:11Z"
@@ -5285,7 +5285,7 @@
       "name": "O.R.C. Receiver",
       "category": "Natural Resources",
       "description": "A miniaturized electronic device. Can be scavenged for parts.",
-      "acquisition": "",
+      "acquisition": "All O.R.C. Creatures",
       "sourceUrl": "https://grounded.wiki.gg/wiki/O.R.C._Receiver#_Grounded_2_-0",
       "revision": 58347,
       "updatedAt": "2026-08-19T21:25:03Z"
@@ -5385,7 +5385,7 @@
       "name": "Orb Weaver Chunk",
       "category": "Natural Resources",
       "description": "A tough chunk of orb weaver.",
-      "acquisition": "",
+      "acquisition": "Orb Weaver *Orb Weaver Jr. *Spiderling *O.R.C. Weaver *O.R.C. Weaver Jr. *Trick-Or-Treatery",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Orb_Weaver_Chunk#_Grounded_2_-0",
       "revision": 59264,
       "updatedAt": "2026-09-01T21:32:31Z"
@@ -5395,7 +5395,7 @@
       "name": "Orb Weaver Egg",
       "category": "Natural Resources",
       "description": "This egg will hatch an Orb Weaver Buggy. Carrying one around will anger any orb weavers nearby.",
-      "acquisition": "Location/source: Fire Pit",
+      "acquisition": "Fire Pit",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Orb_Weaver_Egg#_Grounded_2_-0",
       "revision": 57388,
       "updatedAt": "2026-08-14T01:39:18Z"
@@ -5405,7 +5405,7 @@
       "name": "Orb Weaver Fang",
       "category": "Natural Resources",
       "description": "The sharp fang of an orb weaver. Can pierce thick skin.",
-      "acquisition": "",
+      "acquisition": "Orb Weaver *O.R.C. Weaver",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Orb_Weaver_Fang#_Grounded_2_-0",
       "revision": 56281,
       "updatedAt": "2026-05-14T22:05:10Z"
@@ -5425,7 +5425,7 @@
       "name": "Orchid Mantis Chunk",
       "category": "Natural Resources",
       "description": "Lumpy, beautiful bits from a fallen mantis.",
-      "acquisition": "",
+      "acquisition": "Orchid Mantis",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Orchid_Mantis_Chunk#_Grounded_2_-0",
       "revision": 54480,
       "updatedAt": "2026-02-27T05:54:43Z"
@@ -5435,7 +5435,7 @@
       "name": "Orchid Mantis Claw",
       "category": "Natural Resources",
       "description": "A massive, majestic claw from the fallen mantis.",
-      "acquisition": "",
+      "acquisition": "Orchid Mantis",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Orchid_Mantis_Claw#_Grounded_2_-0",
       "revision": 54478,
       "updatedAt": "2026-02-27T05:54:01Z"
@@ -5445,7 +5445,7 @@
       "name": "Orchid Mantis Head",
       "category": "Natural Resources",
       "description": "The curious but lovely noggin of a fallen mantis.",
-      "acquisition": "",
+      "acquisition": "Orchid Mantis",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Orchid_Mantis_Head#_Grounded_2_-0",
       "revision": 54476,
       "updatedAt": "2026-02-27T05:53:21Z"
@@ -5515,7 +5515,7 @@
       "name": "Pebblet",
       "category": "Natural Resources",
       "description": "A nugget of hard-packed pebble dust.",
-      "acquisition": "Location/source: *Anthills *Ceremony Area * Croquet Court *Entrance Area *Fire Pit *Greenhouse *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Statue Area *Veggie Garden",
+      "acquisition": "Pebble. Anthills *Ceremony Area * Croquet Court *Entrance Area *Fire Pit *Greenhouse *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Statue Area *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Pebblet#_Grounded_2_-0",
       "revision": 56214,
       "updatedAt": "2026-05-12T23:41:48Z"
@@ -5605,7 +5605,7 @@
       "name": "Phantom Quartz Shard",
       "category": "Natural Resources",
       "description": "A quartz crystal that radiates a ghostly glow. You can see traces of a crystal growth within.",
-      "acquisition": "Location/source: Gnarly Grotto",
+      "acquisition": "Phantom Quartz. Gnarly Grotto",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Phantom_Quartz_Shard#_Grounded_2_-0",
       "revision": 58852,
       "updatedAt": "2026-08-26T01:15:47Z"
@@ -5625,7 +5625,7 @@
       "name": "Pincer Pincher",
       "category": "trinkets",
       "description": "This peerless earwig pincer helps you steal loot from unsuspecting foes.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Pincher Earwig *O.R.C. Pincher Earwig *Pincher Earwig *O.G.R.R. Whipper Earwig *O.R.C. Whipper Earwig *Whipper Earwig",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Pincer_Pincher#_Grounded_2_-0",
       "revision": 58766,
       "updatedAt": "2026-08-25T03:07:06Z"
@@ -5635,7 +5635,7 @@
       "name": "Pinch Whacker",
       "category": "Club",
       "description": "A grabby arm from a stripped down robot repurposed as a weapon. Still crackles with energy.",
-      "acquisition": "Location/source: Pinch Whacker Cave",
+      "acquisition": "Pinch Whacker Cave",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Pinch_Whacker#_Grounded_2_-0",
       "revision": 58551,
       "updatedAt": "2026-08-22T23:22:04Z"
@@ -5735,7 +5735,7 @@
       "name": "Pine Needle",
       "category": "Natural Resources",
       "description": "Fresh needle from a pine tree. Smells like the inside of a car.",
-      "acquisition": "Location/source: * Fire Pit * Ice Cream Cart Surroundings * Picnic Table Area * Pine Hill",
+      "acquisition": "Needle Bundle. Fire Pit * Ice Cream Cart Surroundings * Picnic Table Area * Pine Hill",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Pine_Needle#_Grounded_2_-0",
       "revision": 56367,
       "updatedAt": "2026-05-18T08:57:37Z"
@@ -5945,7 +5945,7 @@
       "name": "Pinecone Piece",
       "category": "Natural Resources",
       "description": "Structurally sound piece of a pinecone.",
-      "acquisition": "Location/source: * Croquet Court * Fire Pit * Ice Cream Cart Surroundings * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Veggie Garden",
+      "acquisition": "Pinecone. Croquet Court * Fire Pit * Ice Cream Cart Surroundings * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Pinecone_Piece#_Grounded_2_-0",
       "revision": 57326,
       "updatedAt": "2026-08-13T04:36:21Z"
@@ -6065,7 +6065,7 @@
       "name": "Plant Fiber",
       "category": "Natural Resources",
       "description": "A flexible strip of fiber useful for weaving and binding.",
-      "acquisition": "Location/source: *Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Statue Area *Veggie Garden",
+      "acquisition": "Bur Weed Stump * Dandelion Stump * Flowering Grass * Frosted Grass * Grass * Husky Weed Stump. Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Statue Area *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Plant_Fiber#_Grounded_2_-0",
       "revision": 54096,
       "updatedAt": "2026-02-19T18:12:39Z"
@@ -6145,7 +6145,7 @@
       "name": "Pond Jockey Roast",
       "category": "Natural Resources",
       "description": "A juicy and delicious pond jockey roast, dripping with flavor. Restores a large amount of hunger.",
-      "acquisition": "",
+      "acquisition": "CHOP.R",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Pond_Jockey_Roast#_Grounded_2_-0",
       "revision": 59681,
       "updatedAt": "2026-09-08T21:39:34Z"
@@ -6155,7 +6155,7 @@
       "name": "Pond Moss",
       "category": "Natural Resources",
       "description": "a strange moss found growing in the murky depths of the pond.",
-      "acquisition": "Location/source: * Abyssal Galleries * Gnarly Grotto *Monitoring Station * Rocky Chambers * Skunk Pond * Touchdown Zone",
+      "acquisition": "Pond Moss (Node). Abyssal Galleries * Gnarly Grotto *Monitoring Station * Rocky Chambers * Skunk Pond * Touchdown Zone",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Pond_Moss#_Grounded_2_-0",
       "revision": 59175,
       "updatedAt": "2026-08-31T14:45:50Z"
@@ -6185,7 +6185,7 @@
       "name": "Potato Beetle Head",
       "category": "Natural Resources",
       "description": "A fully intact potato beetle head, beaming with golden splendor.",
-      "acquisition": "",
+      "acquisition": "O.R.C. Potato Beetle *Potato Beetle",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Potato_Beetle_Head#_Grounded_2_-0",
       "revision": 54144,
       "updatedAt": "2026-02-19T22:39:31Z"
@@ -6215,7 +6215,7 @@
       "name": "Potato Beetle Shell",
       "category": "Natural Resources",
       "description": "The yellow and black striped shell of a potato beetle. Incredibly durable.",
-      "acquisition": "",
+      "acquisition": "O.R.C. Potato Beetle *Potato Beetle",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Potato_Beetle_Shell#_Grounded_2_-0",
       "revision": 56280,
       "updatedAt": "2026-05-14T22:04:46Z"
@@ -6235,7 +6235,7 @@
       "name": "Potato Bits",
       "category": "Natural Resources",
       "description": "A glorious nugget of Yukon Gold. Too gross to eat raw but could make a delicious meal.",
-      "acquisition": "Location/source: *Bale Scale Cave *Candy Processing Facility *Veggie Garden",
+      "acquisition": "Potato Eye (Node). Bale Scale Cave *Candy Processing Facility *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Potato_Bits#_Grounded_2_-0",
       "revision": 59148,
       "updatedAt": "2026-08-31T14:23:29Z"
@@ -6245,7 +6245,7 @@
       "name": "Potato Eye",
       "category": "Natural Resources",
       "description": "The budding sprout taken from the surface of a potato.",
-      "acquisition": "Location/source: *Bale Scale Cave * Candy Processing Facility *Veggie Garden",
+      "acquisition": "Potato Eye (Node). Bale Scale Cave * Candy Processing Facility *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Potato_Eye#_Grounded_2_-0",
       "revision": 54088,
       "updatedAt": "2026-02-19T18:02:45Z"
@@ -6255,7 +6255,7 @@
       "name": "Praying Mantis Chunk",
       "category": "Natural Resources",
       "description": "Lush green bits of a fallen praying mantis nymph.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Praying Mantis Nymph * O.R.C. Praying Mantis Nymph * Praying Mantis Nymph",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Praying_Mantis_Chunk#_Grounded_2_-0",
       "revision": 56077,
       "updatedAt": "2026-05-02T08:24:09Z"
@@ -6265,7 +6265,7 @@
       "name": "Praying Mantis Claw",
       "category": "Natural Resources",
       "description": "A thorny, raptorial claw from a praying mantis nymph.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Praying Mantis Nymph * O.R.C. Praying Mantis Nymph * Praying Mantis Nymph",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Praying_Mantis_Claw#_Grounded_2_-0",
       "revision": 56078,
       "updatedAt": "2026-05-02T08:24:20Z"
@@ -6285,7 +6285,7 @@
       "name": "Praying Mantis Head",
       "category": "Natural Resources",
       "description": "The majestic but creepy head of a praying mantis nymph. It stares at you, even in death.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Praying Mantis Nymph * O.R.C. Praying Mantis Nymph * Praying Mantis Nymph",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Praying_Mantis_Head#_Grounded_2_-0",
       "revision": 56079,
       "updatedAt": "2026-05-02T08:24:30Z"
@@ -6335,7 +6335,7 @@
       "name": "Pretzel Chunk",
       "category": "Natural Resources",
       "description": "A chewy snack with a salty crunchy exterior.",
-      "acquisition": "Location/source: *Pumpkin Patch *Veggie Garden",
+      "acquisition": "Pretzel. Pumpkin Patch *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Pretzel_Chunk#_Grounded_2_-0",
       "revision": 55919,
       "updatedAt": "2026-04-17T14:57:09Z"
@@ -6355,7 +6355,7 @@
       "name": "Pucker Charm",
       "category": "trinkets",
       "description": "A condensed nugget of elemental force. Simply holding it fills you with power.",
-      "acquisition": "",
+      "acquisition": "Easter Egg *Sour Candy",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Pucker_Charm#_Grounded_2_-0",
       "revision": 58775,
       "updatedAt": "2026-08-25T03:23:20Z"
@@ -6365,7 +6365,7 @@
       "name": "Pumpin' Seed",
       "category": "Natural Resources",
       "description": "A pumpkin seed genetically enhanced with gloom sap. Enhances the power of smoothies.",
-      "acquisition": "Location/source: *O.G.R.R. Labs * Scarecrow",
+      "acquisition": "O.G.R.R. Labs * Scarecrow",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Pumpin'_Seed#_Grounded_2_-0",
       "revision": 57831,
       "updatedAt": "2026-08-15T02:30:49Z"
@@ -6385,7 +6385,7 @@
       "name": "Pumpkin Bits",
       "category": "Natural Resources",
       "description": "Pumpkin chopped into a manageable size. Too stringy to eat raw but can be processed into pumpkin puree for cooking.",
-      "acquisition": "Location/source: *Pumpkin Patch * Scarecrow",
+      "acquisition": "Pumpkin Weak Spot. Pumpkin Patch * Scarecrow",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Pumpkin_Bits#_Grounded_2_-0",
       "revision": 59158,
       "updatedAt": "2026-08-31T14:31:07Z"
@@ -6595,7 +6595,7 @@
       "name": "Pumpkin Seed",
       "category": "Natural Resources",
       "description": "A slimy seed dug out from the entrails of a rotten pumpkin.",
-      "acquisition": "Location/source: Pumpkin Patch",
+      "acquisition": "Buried Seed *Pumpkin Seed Cluster. Pumpkin Patch",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Pumpkin_Seed#_Grounded_2_-0",
       "revision": 57832,
       "updatedAt": "2026-08-15T02:34:38Z"
@@ -6665,7 +6665,7 @@
       "name": "Pupa Hide",
       "category": "Natural Resources",
       "description": "A sleek and soggy hide from a pupa. Feels extremely durable despite its moistness.",
-      "acquisition": "Location/source: Gnarly Bark",
+      "acquisition": "Pupa. Gnarly Bark",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Pupa_Hide#_Grounded_2_-0",
       "revision": 58251,
       "updatedAt": "2026-08-18T08:51:09Z"
@@ -6705,7 +6705,7 @@
       "name": "Purple Jelly Chunk",
       "category": "Natural Resources",
       "description": "A gelatinous fleshy fungus that looks like brains when clustered together.",
-      "acquisition": "Location/source: * Skunk Pond * Gnarly Bark * Gnarly Grotto * Bridge Area",
+      "acquisition": "Purple Jelly Fungus. Skunk Pond * Gnarly Bark * Gnarly Grotto * Bridge Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Purple_Jelly_Chunk#_Grounded_2_-0",
       "revision": 58909,
       "updatedAt": "2026-08-26T17:26:16Z"
@@ -6735,7 +6735,7 @@
       "name": "Rainbow Chocolate Chunk",
       "category": "Natural Resources",
       "description": "A chunk of holiday chocolate used to craft wonderfully thematic items.",
-      "acquisition": "Location/source: *Anthills *Candy Processing Facility * Ceremony Area * Croquet Court * Entrance Area * Fire Pit * Greenhouse Surroundings * Ice Cream Cart Surroundings * Ice Cream Cart *Minor Caves * O.R.C. Caves * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Toxic Anthill * Veggie Garden",
+      "acquisition": "Chocolate Leprechaun's Loot. Anthills *Candy Processing Facility * Ceremony Area * Croquet Court * Entrance Area * Fire Pit * Greenhouse Surroundings * Ice Cream Cart Surroundings * Ice Cream Cart *Minor Caves * O.R.C. Caves * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Toxic Anthill * Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Rainbow_Chocolate_Chunk#_Grounded_2_-0",
       "revision": 55781,
       "updatedAt": "2026-04-07T02:58:59Z"
@@ -6745,7 +6745,7 @@
       "name": "Ranger Token",
       "category": "trinkets",
       "description": "The power to slice and dice. If only your training focused a little more on safety.",
-      "acquisition": "Location/source: Skunk Pond",
+      "acquisition": "Skunk Pond",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Ranger_Token#_Grounded_2_-0",
       "revision": 58788,
       "updatedAt": "2026-08-25T03:29:58Z"
@@ -6755,7 +6755,7 @@
       "name": "Raw Aphid Meat",
       "category": "Natural Resources",
       "description": "A whole raw aphid. A bad idea to eat uncooked, but the potential for a plump roast is undeniable.",
-      "acquisition": "",
+      "acquisition": "Aphid",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Raw_Aphid_Meat#_Grounded_2_-0",
       "revision": 56479,
       "updatedAt": "2026-05-21T23:41:58Z"
@@ -6765,7 +6765,7 @@
       "name": "Raw Caterpillar Meat",
       "category": "Natural Resources",
       "description": "A round gooey cut from the section of a Caterpillar. Requires preparation to eat safely.",
-      "acquisition": "",
+      "acquisition": "Caterpillar",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Raw_Caterpillar_Meat#_Grounded_2_-0",
       "revision": 54257,
       "updatedAt": "2026-02-21T06:55:54Z"
@@ -6775,7 +6775,7 @@
       "name": "Raw Gnat Meat",
       "category": "Natural Resources",
       "description": "Greasy meat from a gnat. Eating this raw isn't a good idea, but this fatty cut suggests it will crisp up nice over a flame.",
-      "acquisition": "",
+      "acquisition": "Gnat",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Raw_Gnat_Meat#_Grounded_2_-0",
       "revision": 56492,
       "updatedAt": "2026-05-22T01:12:05Z"
@@ -6785,7 +6785,7 @@
       "name": "Raw Grub Meat",
       "category": "Natural Resources",
       "description": "Raw goopy meat from a grub worm. Don't eat it without some kind of preparation.",
-      "acquisition": "",
+      "acquisition": "Grub",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Raw_Grub_Meat#_Grounded_2_-0",
       "revision": 56491,
       "updatedAt": "2026-05-22T01:11:51Z"
@@ -6795,7 +6795,7 @@
       "name": "Raw Pond Jockey Meat",
       "category": "Natural Resources",
       "description": "A raw slab of firm pond jockey meat. This plump cut should sizzle nicely when cooked.",
-      "acquisition": "",
+      "acquisition": "Ancient Pond Jockey Swarm *C.K.U. * Pond Jockey Swarm",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Raw_Pond_Jockey_Meat#_Grounded_2_-0",
       "revision": 59032,
       "updatedAt": "2026-08-30T03:19:58Z"
@@ -6815,7 +6815,7 @@
       "name": "Raw Snail Meat",
       "category": "Natural Resources",
       "description": "Raw rubbery meat from a garden snail. You should probably cook it.",
-      "acquisition": "",
+      "acquisition": "Baby Garden Snail * Garden Snail",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Raw_Snail_Meat#_Grounded_2_-0",
       "revision": 59332,
       "updatedAt": "2026-09-03T21:19:30Z"
@@ -6835,7 +6835,7 @@
       "name": "Raw Weevil Meat",
       "category": "Natural Resources",
       "description": "Raw meat from a mushroom hunting weevil. The deep color and wafts of fresh fungi promise a snack packing an umami punch, but don't eat it raw.",
-      "acquisition": "",
+      "acquisition": "Weevil",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Raw_Weevil_Meat#_Grounded_2_-0",
       "revision": 54254,
       "updatedAt": "2026-02-21T06:53:17Z"
@@ -6845,7 +6845,7 @@
       "name": "Raw Woolly Aphid Meat",
       "category": "Natural Resources",
       "description": "A plucked woolly aphid. A bad idea to eat raw but can be seared into a delicious roast.",
-      "acquisition": "",
+      "acquisition": "Woolly Aphid",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Raw_Woolly_Aphid_Meat#_Grounded_2_-0",
       "revision": 55467,
       "updatedAt": "2026-04-03T01:24:16Z"
@@ -6875,7 +6875,7 @@
       "name": "Red Ant Egg",
       "category": "Natural Resources",
       "description": "A ripe red ant egg that can hatch if left to sit. Keep insect eggs from hatching by destroying them at the source or trashing them once picked up.",
-      "acquisition": "Location/source: Red Anthills",
+      "acquisition": "Red Anthills",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Red_Ant_Egg#_Grounded_2_-0",
       "revision": 53456,
       "updatedAt": "2026-02-12T17:50:48Z"
@@ -6885,7 +6885,7 @@
       "name": "Red Ant Head",
       "category": "Natural Resources",
       "description": "The entire head of a red ant. Surprisingly intact.",
-      "acquisition": "",
+      "acquisition": "O.R.C. Red Soldier Ant * Red Worker Ant * Red Soldier Ant",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Red_Ant_Head#_Grounded_2_-0",
       "revision": 53453,
       "updatedAt": "2026-02-12T17:42:47Z"
@@ -6915,7 +6915,7 @@
       "name": "Red Ant Mandibles",
       "category": "Natural Resources",
       "description": "The powerful pincers of a red soldier ant.",
-      "acquisition": "",
+      "acquisition": "O.R.C. Red Soldier Ant *Red Soldier Ant",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Red_Ant_Mandibles#_Grounded_2_-0",
       "revision": 58357,
       "updatedAt": "2026-08-20T03:14:05Z"
@@ -6925,7 +6925,7 @@
       "name": "Red Ant Part",
       "category": "Natural Resources",
       "description": "Sturdy chunks of red ant that seem useful in a variety of crafts.",
-      "acquisition": "",
+      "acquisition": "O.R.C. Red Soldier Ant * Red Soldier Ant * Red Worker Ant",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Red_Ant_Part#_Grounded_2_-0",
       "revision": 58362,
       "updatedAt": "2026-08-20T03:29:14Z"
@@ -6965,7 +6965,7 @@
       "name": "Red Soldier Ant Egg",
       "category": "Natural Resources",
       "description": "This egg will hatch a Red Soldier Ant Buggy. Carrying one around will anger any red ants nearby.",
-      "acquisition": "Location/source: *Hatchery Anthill *Soider Den Anthill *Toxic Anthill",
+      "acquisition": "Hatchery Anthill *Soider Den Anthill *Toxic Anthill",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Red_Soldier_Ant_Egg#_Grounded_2_-0",
       "revision": 58815,
       "updatedAt": "2026-08-25T06:39:30Z"
@@ -7045,7 +7045,7 @@
       "name": "Rime Rend",
       "category": "Staff",
       "description": "Topped with the most suspicious of mints, this staff will give your foes a cold snap they may never recover from.",
-      "acquisition": "Location/source: Rime Rend Stash",
+      "acquisition": "Rime Rend Stash",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Rime_Rend#_Grounded_2_-0",
       "revision": 59364,
       "updatedAt": "2026-09-06T05:39:35Z"
@@ -7065,7 +7065,7 @@
       "name": "Roach Chunk",
       "category": "Natural Resources",
       "description": "A chunk of cockroach. It may be gross, but its toughness earns your respect.",
-      "acquisition": "",
+      "acquisition": "Cockroach * Cockroach Nymph * Cockroach Queen * O.R.C. Cockroach * O.R.C. Cockroach Nymph * O.R.C. Cockroach Queen *Trick-Or-Treatery",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Roach_Chunk#_Grounded_2_-0",
       "revision": 59139,
       "updatedAt": "2026-08-31T14:18:42Z"
@@ -7095,7 +7095,7 @@
       "name": "Roach Head",
       "category": "Natural Resources",
       "description": "The decapitated head of a cockroach. Even like this, it's likely to survive for weeks.",
-      "acquisition": "",
+      "acquisition": "Cockroach * Cockroach Queen * O.R.C. Cockroach * O.R.C. Cockroach Queen",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Roach_Head#_Grounded_2_-0",
       "revision": 59138,
       "updatedAt": "2026-08-31T14:18:26Z"
@@ -7115,7 +7115,7 @@
       "name": "Roach Milk",
       "category": "Natural Resources",
       "description": "Everything about these protein-rich crystals scream you should not eat this. But you could...",
-      "acquisition": "",
+      "acquisition": "Cockroach Queen *O.R.C. Cockroach Queen",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Roach_Milk#_Grounded_2_-0",
       "revision": 59160,
       "updatedAt": "2026-08-31T14:32:18Z"
@@ -7125,7 +7125,7 @@
       "name": "Roach Rage",
       "category": "trinkets",
       "description": "A shrunken roach head, still yearning for battle!",
-      "acquisition": "",
+      "acquisition": "O.R.C. Cockroach Queen",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Roach_Rage#_Grounded_2_-0",
       "revision": 59625,
       "updatedAt": "2026-09-08T01:33:37Z"
@@ -7145,7 +7145,7 @@
       "name": "Roby's Diode",
       "category": "Natural Resources",
       "description": "A fully functional diode plucked from a defunct Roby's robot.",
-      "acquisition": "",
+      "acquisition": "CHOP.R *C.K.U. *SAUC.R",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Roby's_Diode#_Grounded_2_-0",
       "revision": 59087,
       "updatedAt": "2026-08-30T06:02:19Z"
@@ -7165,7 +7165,7 @@
       "name": "Roby's Scrap Parts",
       "category": "Natural Resources",
       "description": "A collection of spare parts stripped from the wreck of a Roby's robot.",
-      "acquisition": "",
+      "acquisition": "CHOP.R *C.K.U. *SAUC.R",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Roby's_Scrap_Parts#_Grounded_2_-0",
       "revision": 59088,
       "updatedAt": "2026-08-30T06:02:29Z"
@@ -7215,7 +7215,7 @@
       "name": "Rotten Egg",
       "category": "Natural Resources",
       "description": "It is gelatinous to the touch, reels of mold and decay, and yet something tells you that it can be eaten.",
-      "acquisition": "",
+      "acquisition": "Black Ant Egg * Black Soldier Ant Egg * Red Ant Egg * Red Soldier Ant Egg * Ladybug Egg * Orb Weaver Egg *Trick-Or-Treatery",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Rotten_Egg#_Grounded_2_-0",
       "revision": 55768,
       "updatedAt": "2026-04-07T02:09:47Z"
@@ -7225,7 +7225,7 @@
       "name": "Rotten Food",
       "category": "Natural Resources",
       "description": "A once delicious food rotten beyond recognition. No longer edible, but probably has some other use.",
-      "acquisition": "Location/source: * Ceremony Area * Croquet Court * Entrance Area * Fire Pit * Greenhouse Surroundings * Ice Cream Cart Surroundings * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Toxic Anthill * Veggie Garden",
+      "acquisition": "Apple * Billy Hog * Chocolate Leprechaun's Loot * Chocolate Smoochies * Cockroach * Cockroach Queen * Cookie Sandwich * Corn Hog * Donut * O.R.C. Cockroach * O.R.C. Cockroach Queen * Rotten Apple * Rotten Billy Hog * Rotten Donut * Rotten Potato *Trick-Or-Treatery. Ceremony Area * Croquet Court * Entrance Area * Fire Pit * Greenhouse Surroundings * Ice Cream Cart Surroundings * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Toxic Anthill * Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Rotten_Food#_Grounded_2_-0",
       "revision": 55770,
       "updatedAt": "2026-04-07T02:15:24Z"
@@ -7235,7 +7235,7 @@
       "name": "Rust",
       "category": "Natural Resources",
       "description": "A fleck of oxidized metal found mostly on metal that's exposed to the elements.",
-      "acquisition": "Location/source: * Croquet Court * Entrance Area * Fire Pit * Greenhouse Surroundings * Ice Cream Cart Surroundings *Minor Caves *O.R.C. Caves * Pumpkin Patch * Snackbar Front Area * Statue Area * Veggie Garden",
+      "acquisition": "Rust Node. Croquet Court * Entrance Area * Fire Pit * Greenhouse Surroundings * Ice Cream Cart Surroundings *Minor Caves *O.R.C. Caves * Pumpkin Patch * Snackbar Front Area * Statue Area * Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Rust#_Grounded_2_-0",
       "revision": 58479,
       "updatedAt": "2026-08-22T06:00:06Z"
@@ -7255,7 +7255,7 @@
       "name": "Rust Beetle Parts",
       "category": "Natural Resources",
       "description": "A collection of durable rust beetle parts.",
-      "acquisition": "",
+      "acquisition": "Rust Beetle *O.R.C. Rust Beetle *O.G.R.R. Rust Beetle",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Rust_Beetle_Parts#_Grounded_2_-0",
       "revision": 55371,
       "updatedAt": "2026-04-02T13:34:38Z"
@@ -7335,7 +7335,7 @@
       "name": "Sap",
       "category": "Natural Resources",
       "description": "A combustible, sticky goo that oozes from roots and fallen branches.",
-      "acquisition": "Location/source: *Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Veggie Garden",
+      "acquisition": "Sap Clump. Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Sap#_Grounded_2_-0",
       "revision": 56277,
       "updatedAt": "2026-05-14T22:03:21Z"
@@ -7655,7 +7655,7 @@
       "name": "Scorpion Venom",
       "category": "Natural Resources",
       "description": "Scorpion venom excels at crippling creatures, making them easier to subdue.",
-      "acquisition": "",
+      "acquisition": "Northern Scorpion * Northern Scorpion Jr. * O.G.R.R. Northern Scorpion * O.G.R.R. Striped Bark Scorpion * O.R.C. Northern Scorpion * O.R.C. Northern Scorpion Jr. * O.R.C. Striped Bark Scorpion * O.R.C. Striped Bark Scorpion Jr. * Striped Bark Scorpion * Striped Bark Scorpion Jr.",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Scorpion_Venom#_Grounded_2_-0",
       "revision": 58084,
       "updatedAt": "2026-08-17T08:09:45Z"
@@ -7665,7 +7665,7 @@
       "name": "Searing Stone",
       "category": "Natural Resources",
       "description": "A gastrolith suffiused with spicy shards, plucked from the gullet of a lizard. Beams with elemental power.",
-      "acquisition": "",
+      "acquisition": "King Dozer",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Searing_Stone#_Grounded_2_-0",
       "revision": 55332,
       "updatedAt": "2026-04-02T05:27:34Z"
@@ -7745,7 +7745,7 @@
       "name": "Shivering Scale",
       "category": "trinkets",
       "description": "A frigid scale that numbs and tingles when held.",
-      "acquisition": "",
+      "acquisition": "Blue Butterfly *O.G.R.R. Blue Butterfly *O.R.C. Blue Butterfly",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Shivering_Scale#_Grounded_2_-0",
       "revision": 58771,
       "updatedAt": "2026-08-25T03:09:20Z"
@@ -7865,7 +7865,7 @@
       "name": "Slime Mold Stalk",
       "category": "Natural Resources",
       "description": "The glowing mold found underground. Can probably be used as a light source.",
-      "acquisition": "Location/source: * Anthills * Minor Caves * O.R.C. Caves",
+      "acquisition": "Anthills * Minor Caves * O.R.C. Caves",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Slime_Mold_Stalk#_Grounded_2_-0",
       "revision": 54101,
       "updatedAt": "2026-02-19T18:23:29Z"
@@ -7895,7 +7895,7 @@
       "name": "Smoochies Chunk",
       "category": "Natural Resources",
       "description": "A chunk of holiday chocolate used to craft wonderfully thematic items.",
-      "acquisition": "Location/source: *Anthills *Candy Processing Facility * Ceremony Area * Croquet Court * Entrance Area * Fire Pit * Greenhouse Surroundings * Ice Cream Cart Surroundings * Ice Cream Cart *Minor Caves * O.R.C. Caves * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Toxic Anthill * Veggie Garden",
+      "acquisition": "Chocolate Smoochies. Anthills *Candy Processing Facility * Ceremony Area * Croquet Court * Entrance Area * Fire Pit * Greenhouse Surroundings * Ice Cream Cart Surroundings * Ice Cream Cart *Minor Caves * O.R.C. Caves * Picnic Table Area * Pine Hill * Pumpkin Patch * Snackbar Front Area * Toxic Anthill * Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Smoochies_Chunk#_Grounded_2_-0",
       "revision": 55782,
       "updatedAt": "2026-04-07T02:59:34Z"
@@ -7965,7 +7965,7 @@
       "name": "Snake Scale",
       "category": "Natural Resources",
       "description": "A scale plucked from a garter snake. Harness the power of life and death with this colorful scale.",
-      "acquisition": "",
+      "acquisition": "Garter Snake",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Snake_Scale#_Grounded_2_-0",
       "revision": 56261,
       "updatedAt": "2026-05-14T05:35:05Z"
@@ -8005,7 +8005,7 @@
       "name": "Sour Lump",
       "category": "Natural Resources",
       "description": "A mouth-puckering lump from a sour candy.",
-      "acquisition": "Location/source: *Anthills *Candy Processing Facility *Ceremony Area *Entrance Area *Fire Pit *Greenhouse Surroundings *Ice Cream Cart Surroundings *Minor Caves *Picnic Table Area *Pumpkin Patch * Scarecrow *Snackbar Front Area *Veggie Garden *Wither Sting Cave",
+      "acquisition": "Sour Candy. Anthills *Candy Processing Facility *Ceremony Area *Entrance Area *Fire Pit *Greenhouse Surroundings *Ice Cream Cart Surroundings *Minor Caves *Picnic Table Area *Pumpkin Patch * Scarecrow *Snackbar Front Area *Veggie Garden *Wither Sting Cave",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Sour_Lump#_Grounded_2_-0",
       "revision": 59179,
       "updatedAt": "2026-08-31T14:54:11Z"
@@ -8015,7 +8015,7 @@
       "name": "Spectacular Spicy Shard",
       "category": "trinkets",
       "description": "A condensed nugget of elemental force. Simply holding it fills you with power.",
-      "acquisition": "",
+      "acquisition": "Easter Egg *Spicy Candy *Trick-Or-Treatery",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Spectacular_Spicy_Shard#_Grounded_2_-0",
       "revision": 58777,
       "updatedAt": "2026-08-25T03:23:43Z"
@@ -8025,7 +8025,7 @@
       "name": "Speed Droplet",
       "category": "trinkets",
       "description": "A mystical droplet that gives you the energy to run faster and longer.",
-      "acquisition": "",
+      "acquisition": "Aphid",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Speed_Droplet#_Grounded_2_-0",
       "revision": 58767,
       "updatedAt": "2026-08-25T03:07:48Z"
@@ -8055,7 +8055,7 @@
       "name": "Spicy Glob",
       "category": "Upgrade Materials",
       "description": "A collection of spicy shards, baked and shaped into a cubular glob. Perfect for imbuing equipment with special properties.",
-      "acquisition": "Location/source: Pine Hill",
+      "acquisition": "Pine Hill",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Spicy_Glob#_Grounded_2_-0",
       "revision": 56998,
       "updatedAt": "2026-08-10T03:05:59Z"
@@ -8065,7 +8065,7 @@
       "name": "Spicy Shard",
       "category": "Natural Resources",
       "description": "A fiery splinter from a spicy candy.",
-      "acquisition": "Location/source: *Anthills *Candy Processing Facility *Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse Surroundings *Ice Cream Cart Surroundings *Minor Caves *O.R.C. Caves *Picnic Table Area *Pumpkin Patch * Scarecrow *Snackbar Front Area",
+      "acquisition": "Buried Treasure * Holiday Tree *SAUC.R * Spicy Candy * Trick-Or-Treatery. Anthills *Candy Processing Facility *Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse Surroundings *Ice Cream Cart Surroundings *Minor Caves *O.R.C. Caves *Picnic Table Area *Pumpkin Patch * Scarecrow *Snackbar Front Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Spicy_Shard#_Grounded_2_-0",
       "revision": 59149,
       "updatedAt": "2026-08-31T14:24:15Z"
@@ -8135,7 +8135,7 @@
       "name": "Spider Venom",
       "category": "Natural Resources",
       "description": "Venom taken straight from a spider's gland... thing. Extremely toxic.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Wolf Spider *O.R.C. Wolf Spider *Wolf Spider",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Spider_Venom#_Grounded_2_-0",
       "revision": 59156,
       "updatedAt": "2026-08-31T14:30:18Z"
@@ -8165,7 +8165,7 @@
       "name": "Spiky Bur",
       "category": "Natural Resources",
       "description": "The iconic spike ball that lives atop many prickly weeds.",
-      "acquisition": "Location/source: *Ceremony Area *Entrance Area *Fire Pit *Greenhouse Surroundings *Statue Area *Veggie Garden",
+      "acquisition": "Bur Weed. Ceremony Area *Entrance Area *Fire Pit *Greenhouse Surroundings *Statue Area *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Spiky_Bur#_Grounded_2_-0",
       "revision": 56349,
       "updatedAt": "2026-05-16T07:54:10Z"
@@ -8175,7 +8175,7 @@
       "name": "Spine Nub",
       "category": "Natural Resources",
       "description": "A spiny nub harvested from the back of a caterpillar. These spikes could put an eye out.",
-      "acquisition": "",
+      "acquisition": "Caterpillar",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Spine_Nub#_Grounded_2_-0",
       "revision": 54134,
       "updatedAt": "2026-02-19T22:34:44Z"
@@ -8245,7 +8245,7 @@
       "name": "Spoiled Meat",
       "category": "Natural Resources",
       "description": "Meat that has rotted. Probably shouldn't eat it, but maybe it has some other use.",
-      "acquisition": "Location/source: *Ceremony Area * Croquet Court *Entrance Area *Fire Pit *Pumpkin Patch *Snackbar Front Area *Veggie Garden",
+      "acquisition": "Billy Hog * Rotten Billy Hog * Spoiled Raw Meat *Trick-Or-Treatery. Ceremony Area * Croquet Court *Entrance Area *Fire Pit *Pumpkin Patch *Snackbar Front Area *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Spoiled_Meat#_Grounded_2_-0",
       "revision": 54105,
       "updatedAt": "2026-02-19T18:30:54Z"
@@ -8255,7 +8255,7 @@
       "name": "Sprig",
       "category": "Natural Resources",
       "description": "A light, supple sprout for crafting and construction.",
-      "acquisition": "Location/source: *Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Statue Area *Veggie Garden",
+      "acquisition": "Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area *Statue Area *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Sprig#_Grounded_2_-0",
       "revision": 55417,
       "updatedAt": "2026-04-02T13:55:56Z"
@@ -8325,7 +8325,7 @@
       "name": "Stabby Stinger",
       "category": "trinkets",
       "description": "A pristine scorpion stinger, perpetually oozing venom.",
-      "acquisition": "",
+      "acquisition": "Northern Scorpion *O.G.R.R. Northern Scorpion *O.G.R.R. Striped Bark Scorpion *O.R.C. Northern Scorpion *O.R.C. Striped Bark Scorpion *Striped Bark Scorpion",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Stabby_Stinger#_Grounded_2_-0",
       "revision": 58772,
       "updatedAt": "2026-08-25T03:12:19Z"
@@ -8545,7 +8545,7 @@
       "name": "Sticky Fingers",
       "category": "trinkets",
       "description": "A sticky pair of gloves that lets you steal pieces of insects as you attack them.",
-      "acquisition": "Location/source: Rocky Chamber",
+      "acquisition": "Rocky Chamber",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Sticky_Fingers#_Grounded_2_-0",
       "revision": 58784,
       "updatedAt": "2026-08-25T03:28:55Z"
@@ -8565,7 +8565,7 @@
       "name": "Stinkbug Gas Sack",
       "category": "Natural Resources",
       "description": "The mysterious body part that creates all of the dangerous and foul smelling gas of the stinkbug.",
-      "acquisition": "",
+      "acquisition": "O.R.C. Stinkbug *Stinkbug",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Stinkbug_Gas_Sack#_Grounded_2_-0",
       "revision": 55769,
       "updatedAt": "2026-04-07T02:14:31Z"
@@ -8585,7 +8585,7 @@
       "name": "Stinkbug Part",
       "category": "Natural Resources",
       "description": "An unidentifiable piece of a stinkbug. Can be used in various crafting recipes.",
-      "acquisition": "",
+      "acquisition": "O.R.C. Stinkbug *Stinkbug",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Stinkbug_Part#_Grounded_2_-0",
       "revision": 57330,
       "updatedAt": "2026-08-13T04:43:35Z"
@@ -8645,7 +8645,7 @@
       "name": "Striped Scorpion Chunk",
       "category": "Natural Resources",
       "description": "A chunk of striped bark scorpion with sturdy chitinous layers. Ideal for armor crafting.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Striped Bark Scorpion *O.R.C. Striped Bark Scorpion *O.R.C. Striped Bark Scorpion Jr. *O.R.C. Striped Bark Scorpling *Striped Bark Scorpion *Striped Bark Scorpion Jr. *Striped Bark Scorpling",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Striped_Scorpion_Chunk#_Grounded_2_-0",
       "revision": 58088,
       "updatedAt": "2026-08-17T08:13:40Z"
@@ -8655,7 +8655,7 @@
       "name": "Striped Scorpion Pincer",
       "category": "Natural Resources",
       "description": "A pincer from a striped bark scorpion. The serrated edges are perfect for slicing and dicing.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Striped Bark Scorpion *O.R.C. Striped Bark Scorpion *Striped Bark Scorpion",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Striped_Scorpion_Pincer#_Grounded_2_-0",
       "revision": 58082,
       "updatedAt": "2026-08-17T08:07:58Z"
@@ -8665,7 +8665,7 @@
       "name": "Striped Scorpion Stinger",
       "category": "Natural Resources",
       "description": "The stinger of a striped bark scorpion. When the recipe calls for stabbing, look no further.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Striped Bark Scorpion *O.R.C. Striped Bark Scorpion *Striped Bark Scorpion",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Striped_Scorpion_Stinger#_Grounded_2_-0",
       "revision": 58081,
       "updatedAt": "2026-08-17T08:05:03Z"
@@ -9175,7 +9175,7 @@
       "name": "Sturdy Marble Shard",
       "category": "Natural Resources",
       "description": "A cool looking nugget that seems useful for one thing: upgrading armor. Better than the normal ones.",
-      "acquisition": "Location/source: *Anthills *Ceremony Area *Ice Cream Cart Surroundings *Minor Caves *O.R.C. Caves *Picnic Table Area *Statue Area",
+      "acquisition": "Sturdy Marble. Anthills *Ceremony Area *Ice Cream Cart Surroundings *Minor Caves *O.R.C. Caves *Picnic Table Area *Statue Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Sturdy_Marble_Shard#_Grounded_2_-0",
       "revision": 56471,
       "updatedAt": "2026-05-21T07:40:23Z"
@@ -9195,7 +9195,7 @@
       "name": "Sturdy Quartzite Shard",
       "category": "Natural Resources",
       "description": "A cool looking nugget that seems useful for one thing: upgrading weapons. Better than the normal ones.",
-      "acquisition": "Location/source: * Anthills *Ceremony Area * Fire Pit * Ice Cream Cart Surroundings *Minor Caves *O.R.C. Caves",
+      "acquisition": "Sturdy Quartzite. Anthills *Ceremony Area * Fire Pit * Ice Cream Cart Surroundings *Minor Caves *O.R.C. Caves",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Sturdy_Quartzite_Shard#_Grounded_2_-0",
       "revision": 57320,
       "updatedAt": "2026-08-13T04:33:13Z"
@@ -9235,7 +9235,7 @@
       "name": "Sunken Bone",
       "category": "Natural Resources",
       "description": "A splinter of bone harvested from the remains of a creature that died in the pond. Weathered and strengthened by currents and chemicals, it's an exceptional material for strong gear.",
-      "acquisition": "Location/source: * Bridge Area *Monitoring Station *Skunk Pond",
+      "acquisition": "Sunken Bone (Node). Bridge Area *Monitoring Station *Skunk Pond",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Sunken_Bone#_Grounded_2_-0",
       "revision": 57878,
       "updatedAt": "2026-08-15T23:00:16Z"
@@ -9255,7 +9255,7 @@
       "name": "Super Sour Seed",
       "category": "Quest Item",
       "description": "A genetically engineered Super Sour Seed which can grow into a key lime tree using Ominent's GROW.R laser array.",
-      "acquisition": "Location/source: Greenhouse",
+      "acquisition": "Buried Seed. Greenhouse",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Super_Sour_Seed#_Grounded_2_-0",
       "revision": 54380,
       "updatedAt": "2026-02-23T18:20:29Z"
@@ -9265,7 +9265,7 @@
       "name": "Super Stink Sack",
       "category": "Natural Resources",
       "description": "An incredibly potent sack of stink harvested from a formidable foe.",
-      "acquisition": "",
+      "acquisition": "Green Shield Bug *O.G.R.R. Green Shield Bug *O.R.C. Green Shield Bug",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Super_Stink_Sack#_Grounded_2_-0",
       "revision": 58831,
       "updatedAt": "2026-08-25T06:58:12Z"
@@ -9275,7 +9275,7 @@
       "name": "Supreme Marble Shard",
       "category": "Natural Resources",
       "description": "A rad looking nugget the seems useful for one thing: upgrading armor. More boss than the cool ones.",
-      "acquisition": "Location/source: Gnarly Bark",
+      "acquisition": "Supreme Marble. Gnarly Bark",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Supreme_Marble_Shard#_Grounded_2_-0",
       "revision": 58899,
       "updatedAt": "2026-08-26T13:00:15Z"
@@ -9285,7 +9285,7 @@
       "name": "Supreme Quartzite Shard",
       "category": "Natural Resources",
       "description": "A rad looking nugget useful for one thing: upgrading weapons. More tubular than the cool ones.",
-      "acquisition": "Location/source: Gnarly Bark",
+      "acquisition": "Supreme Quartzite. Gnarly Bark",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Supreme_Quartzite_Shard#_Grounded_2_-0",
       "revision": 58900,
       "updatedAt": "2026-08-26T13:01:16Z"
@@ -9305,7 +9305,7 @@
       "name": "Suspicious Mint",
       "category": "trinkets",
       "description": "A condensed nugget of elemental force. Simply holding it fills you with power.",
-      "acquisition": "",
+      "acquisition": "Easter Egg *Fresh Mint *Trick-Or-Treatery",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Suspicious_Mint#_Grounded_2_-0",
       "revision": 58780,
       "updatedAt": "2026-08-25T03:26:12Z"
@@ -9385,7 +9385,7 @@
       "name": "Tarantula Chunk",
       "category": "Natural Resources",
       "description": "An unidentifiable but fuzzy chunk of Axl, the tarantula. The fuzz bristles with barbs.",
-      "acquisition": "Location/source: Empty Terrarium",
+      "acquisition": "Axl. Empty Terrarium",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Tarantula_Chunk#_Grounded_2_-0",
       "revision": 55384,
       "updatedAt": "2026-04-02T13:40:15Z"
@@ -9395,7 +9395,7 @@
       "name": "Tarantula Fang",
       "category": "Natural Resources",
       "description": "An immense fang from Axl, the tarantula. Provides the very best in stabbing power.",
-      "acquisition": "",
+      "acquisition": "Axl",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Tarantula_Fang#_Grounded_2_-0",
       "revision": 57164,
       "updatedAt": "2026-08-11T05:22:36Z"
@@ -9405,7 +9405,7 @@
       "name": "Tarantula Talon",
       "category": "Natural Resources",
       "description": "A freakishly large talon from Axl the tarantula's legs.",
-      "acquisition": "",
+      "acquisition": "Axl",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Tarantula_Talon#_Grounded_2_-0",
       "revision": 55385,
       "updatedAt": "2026-04-02T13:40:48Z"
@@ -9425,7 +9425,7 @@
       "name": "Tarantula Venom",
       "category": "Natural Resources",
       "description": "The deadly venom harvested from Axl the tarantula's fangs.",
-      "acquisition": "",
+      "acquisition": "Axl",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Tarantula_Venom#_Grounded_2_-0",
       "revision": 54075,
       "updatedAt": "2026-02-19T17:56:38Z"
@@ -9635,7 +9635,7 @@
       "name": "The Crown Jewel",
       "category": "trinkets",
       "description": "Of all the treasures that glittered in the mountain, this magnificent stone shone the brightest.",
-      "acquisition": "Location/source: Skunk Pond",
+      "acquisition": "Skunk Pond",
       "sourceUrl": "https://grounded.wiki.gg/wiki/The_Crown_Jewel#_Grounded_2_-0",
       "revision": 58647,
       "updatedAt": "2026-08-24T03:56:25Z"
@@ -9645,7 +9645,7 @@
       "name": "Thistle Needle",
       "category": "Natural Resources",
       "description": "A pointy thorn harvested from the stem of a thistle plant.",
-      "acquisition": "Location/source: *Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area",
+      "acquisition": "Thistle Plant. Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Snackbar Front Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Thistle_Needle#_Grounded_2_-0",
       "revision": 59341,
       "updatedAt": "2026-09-03T21:30:48Z"
@@ -9685,7 +9685,7 @@
       "name": "Tickled Toenail",
       "category": "trinkets",
       "description": "Treasure swiped from a toe biter leviathan. Looks infected and incredibly sharp.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Toe Biter Leviathan *O.R.C. Toe Biter Leviathan *Papa Toe Biter *Toe Biter Leviathan",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Tickled_Toenail#_Grounded_2_-0",
       "revision": 58768,
       "updatedAt": "2026-08-25T03:08:06Z"
@@ -9705,7 +9705,7 @@
       "name": "Tiger Mosquito Beak",
       "category": "Natural Resources",
       "description": "The deadliest of beaks. Can be crafted into the sharpest of rapiers.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Tiger Mosquito *O.R.C. Tiger Mosquito *Tiger Mosquito",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Tiger_Mosquito_Beak#_Grounded_2_-0",
       "revision": 58476,
       "updatedAt": "2026-08-22T05:48:58Z"
@@ -9745,7 +9745,7 @@
       "name": "Toadstool Chunk",
       "category": "Natural Resources",
       "description": "A big piece from a large toadstool. Too strange to eat but just right for grinding.",
-      "acquisition": "Location/source: * Ceremony Area * Croquet Court * Entrance Area * Greenhouse * Greenhouse Surroundings * Ice Cream Cart Surroundings * Pine Hill * Pumpkin Patch * Snackbar Front Area",
+      "acquisition": "Toadstool. Ceremony Area * Croquet Court * Entrance Area * Greenhouse * Greenhouse Surroundings * Ice Cream Cart Surroundings * Pine Hill * Pumpkin Patch * Snackbar Front Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Toadstool_Chunk#_Grounded_2_-0",
       "revision": 59337,
       "updatedAt": "2026-09-03T21:25:51Z"
@@ -9765,7 +9765,7 @@
       "name": "Toe Biter Claw",
       "category": "Natural Resources",
       "description": "A scything claw of a toe biter, used to snatch prey.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Toe Biter *O.G.R.R. Toe Biter Leviathan *O.R.C. Toe Biter *O.R.C. Toe Biter Leviathan *Papa Toe Biter *Toe Biter *Toe Biter Leviathan",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Toe_Biter_Claw#_Grounded_2_-0",
       "revision": 59632,
       "updatedAt": "2026-09-08T04:12:02Z"
@@ -9785,7 +9785,7 @@
       "name": "Toe Biter Egg",
       "category": "Natural Resources",
       "description": "This egg will hatch a Toe Biter Buggy. Carrying one around will anger any toe biters nearby.",
-      "acquisition": "",
+      "acquisition": "Papa Toe Biter",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Toe_Biter_Egg#_Grounded_2_-0",
       "revision": 58832,
       "updatedAt": "2026-08-25T07:02:58Z"
@@ -9795,7 +9795,7 @@
       "name": "Toe Biter Head",
       "category": "Natural Resources",
       "description": "A fully intact head of a toe biter, featuring a razor sharp proboscis.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Toe Biter Leviathan *O.R.C. Toe Biter Leviathan *Papa Toe Biter *Toe Biter Leviathan",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Toe_Biter_Head#_Grounded_2_-0",
       "revision": 58021,
       "updatedAt": "2026-08-16T21:58:39Z"
@@ -9845,7 +9845,7 @@
       "name": "Toe Biter Shell",
       "category": "Natural Resources",
       "description": "A thick shell plate harvested from a toe biter. Ideal for armor crafting.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Toe Biter *O.G.R.R. Toe Biter Leviathan *O.R.C. Toe Biter *O.R.C. Toe Biter Leviathan *O.R.C. Toe Biter Nymph *Papa Toe Biter *Toe Biter *Toe Biter Leviathan *Toe Biter Nymph",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Toe_Biter_Shell#_Grounded_2_-0",
       "revision": 59174,
       "updatedAt": "2026-08-31T14:45:22Z"
@@ -9865,7 +9865,7 @@
       "name": "Toe Biter Venom",
       "category": "Natural Resources",
       "description": "Toe biters can inflict unimaginable suffering, as their Venom liquefies bug innards into a protein smoothie.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Toe Biter Leviathan *O.R.C. Toe Biter Leviathan *Papa Toe Biter *Toe Biter Leviathan",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Toe_Biter_Venom#_Grounded_2_-0",
       "revision": 58223,
       "updatedAt": "2026-08-18T07:36:16Z"
@@ -9885,7 +9885,7 @@
       "name": "Toenail",
       "category": "Natural Resources",
       "description": "A somewhat grotesque, yet admittedly strong and sharp shard of a toenail clipping.",
-      "acquisition": "Location/source: * Bridge Area * Ice Cream Cart Surroundings * Minor Caves * Pergola Area * Skunk Pond",
+      "acquisition": "Toenail (Node). Bridge Area * Ice Cream Cart Surroundings * Minor Caves * Pergola Area * Skunk Pond",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Toenail#_Grounded_2_-0",
       "revision": 58441,
       "updatedAt": "2026-08-21T23:41:00Z"
@@ -9915,7 +9915,7 @@
       "name": "Toxicology Token",
       "category": "trinkets",
       "description": "You can breathe easy knowing your cutting edge research will save Ominent lives. Probably.",
-      "acquisition": "Location/source: Skunk Pond",
+      "acquisition": "Skunk Pond",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Toxicology_Token#_Grounded_2_-0",
       "revision": 58884,
       "updatedAt": "2026-08-26T04:02:33Z"
@@ -10055,7 +10055,7 @@
       "name": "Unstable Goo",
       "category": "Natural Resources",
       "description": "A nasty glowing substance. It might... explode? Someone rigged weevils to blow using this stuff.",
-      "acquisition": "",
+      "acquisition": "O.R.C. Weevil *Trick-Or-Treatery",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Unstable_Goo#_Grounded_2_-0",
       "revision": 58911,
       "updatedAt": "2026-08-26T17:33:16Z"
@@ -10065,7 +10065,7 @@
       "name": "Valentine's Fortune",
       "category": "trinkets",
       "description": "A small piece of paper that inexplicably reveals your secret crush, received from a valentine's day chocolate. Grants a mysterious but chivalrous bonus.",
-      "acquisition": "",
+      "acquisition": "Chocolate Smoochies",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Valentine's_Fortune#_Grounded_2_-0",
       "revision": 58783,
       "updatedAt": "2026-08-25T03:28:20Z"
@@ -10205,7 +10205,7 @@
       "name": "Wasp Leg",
       "category": "Natural Resources",
       "description": "Flexible leg of a wasp.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Wasp *O.G.R.R. Wasp Drone *O.R.C. Wasp *O.R.C. Wasp Drone *Wasp *Wasp Drone",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Wasp_Leg#_Grounded_2_-0",
       "revision": 55388,
       "updatedAt": "2026-04-02T13:42:07Z"
@@ -10225,7 +10225,7 @@
       "name": "Wasp Paper",
       "category": "Natural Resources",
       "description": "The thin and delicate mesh that makes up a wasp hive.",
-      "acquisition": "Location/source: *Greenhouse *Greenhouse Surroundings *Pumpkin Patch *Veggie Garden",
+      "acquisition": "Small Wasp Hive. Greenhouse *Greenhouse Surroundings *Pumpkin Patch *Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Wasp_Paper#_Grounded_2_-0",
       "revision": 59155,
       "updatedAt": "2026-08-31T14:29:42Z"
@@ -10255,7 +10255,7 @@
       "name": "Wasp Queen Chunk",
       "category": "Natural Resources",
       "description": "The chunk of the once ruler of the Brawny Boy bin.",
-      "acquisition": "",
+      "acquisition": "Wasp Queen",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Wasp_Queen_Chunk#_Grounded_2_-0",
       "revision": 54510,
       "updatedAt": "2026-02-28T02:15:01Z"
@@ -10265,7 +10265,7 @@
       "name": "Wasp Queen Head",
       "category": "Natural Resources",
       "description": "The head of the once ruler of the Brawny Boy bin.",
-      "acquisition": "",
+      "acquisition": "Wasp Queen",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Wasp_Queen_Head#_Grounded_2_-0",
       "revision": 54511,
       "updatedAt": "2026-02-28T02:22:59Z"
@@ -10275,7 +10275,7 @@
       "name": "Wasp Queen Trinket",
       "category": "trinkets",
       "description": "A rare and powerful memento of the elegant Wasp Queen.",
-      "acquisition": "",
+      "acquisition": "Wasp Queen",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Wasp_Queen_Trinket#_Grounded_2_-0",
       "revision": 54507,
       "updatedAt": "2026-02-28T00:39:38Z"
@@ -10285,7 +10285,7 @@
       "name": "Wasp Queen Wing",
       "category": "Natural Resources",
       "description": "The wing of the once ruler of the Brawny Boy bin.",
-      "acquisition": "",
+      "acquisition": "Wasp Queen",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Wasp_Queen_Wing#_Grounded_2_-0",
       "revision": 54512,
       "updatedAt": "2026-02-28T02:24:08Z"
@@ -10295,7 +10295,7 @@
       "name": "Wasp Shell",
       "category": "Natural Resources",
       "description": "The hard exterior plating of a wasp.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Wasp *O.G.R.R. Wasp Drone *O.R.C. Wasp *O.R.C. Wasp Drone *Wasp *Wasp Drone",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Wasp_Shell#_Grounded_2_-0",
       "revision": 59154,
       "updatedAt": "2026-08-31T14:28:53Z"
@@ -10315,7 +10315,7 @@
       "name": "Water Boatman Fin",
       "category": "Natural Resources",
       "description": "A fin harvested from the wing cover of a water boatman. Broad, flat, possibly edible.",
-      "acquisition": "",
+      "acquisition": "Water Boatman",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Water_Boatman_Fin#_Grounded_2_-0",
       "revision": 58247,
       "updatedAt": "2026-08-18T08:15:37Z"
@@ -10385,7 +10385,7 @@
       "name": "Wax",
       "category": "Natural Resources",
       "description": "A nodule of wax from a lilypad or candle. Can be used as a strong waterproof bonding material.",
-      "acquisition": "Location/source: *Bridge Area *Gnarly Bark *Skunk Pond",
+      "acquisition": "Wax Bundle. Bridge Area *Gnarly Bark *Skunk Pond",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Wax#_Grounded_2_-0",
       "revision": 58212,
       "updatedAt": "2026-08-18T07:18:44Z"
@@ -10445,7 +10445,7 @@
       "name": "Web Fiber",
       "category": "Natural Resources",
       "description": "Strong strands of sticky, springy spider silk.",
-      "acquisition": "",
+      "acquisition": "O.R.C. Spiderling * O.R.C. Weaver * O.R.C. Weaver Jr. * Orb Weaver * Orb Weaver Jr * Spiderling * Spider Web *Trick-Or-Treatery * Web Sac",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Web_Fiber#_Grounded_2_-0",
       "revision": 54397,
       "updatedAt": "2026-02-24T16:48:48Z"
@@ -10455,7 +10455,7 @@
       "name": "Weed Stem",
       "category": "Natural Resources",
       "description": "A large, sturdy building resource from felled dandelions and other stubborn growths like husky weeds .",
-      "acquisition": "Location/source: *Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Veggie Garden *Snackbar Front Area *Statue Area",
+      "acquisition": "Bur Weed * Dandelion * Husky Weed. Ceremony Area *Croquet Court *Entrance Area *Fire Pit *Greenhouse *Greenhouse Surroundings *Ice Cream Cart Surroundings *Picnic Table Area *Pine Hill *Pumpkin Patch *Veggie Garden *Snackbar Front Area *Statue Area",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Weed_Stem#_Grounded_2_-0",
       "revision": 56305,
       "updatedAt": "2026-05-16T01:04:46Z"
@@ -10485,7 +10485,7 @@
       "name": "Weevil Nose",
       "category": "Natural Resources",
       "description": "A fully intact weevil snooter-mouth.",
-      "acquisition": "",
+      "acquisition": "O.R.C. Weevil * Weevil",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Weevil_Nose#_Grounded_2_-0",
       "revision": 54229,
       "updatedAt": "2026-02-21T02:39:45Z"
@@ -10665,7 +10665,7 @@
       "name": "Wither Sting",
       "category": "Staff",
       "description": "A modified version of the deadly Acid Ruin. The Stranger made it extra tangy!",
-      "acquisition": "Location/source: Wither Sting Stash",
+      "acquisition": "Wither Sting Stash",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Wither_Sting#_Grounded_2_-0",
       "revision": 58727,
       "updatedAt": "2026-08-24T05:23:09Z"
@@ -10715,7 +10715,7 @@
       "name": "Wolf Spider Chunk",
       "category": "Natural Resources",
       "description": "A durable chunk of wolf spider.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Wolf Spider *O.R.C. Wolf Spider *Wolf Spider",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Wolf_Spider_Chunk#_Grounded_2_-0",
       "revision": 56546,
       "updatedAt": "2026-05-27T21:42:51Z"
@@ -10725,7 +10725,7 @@
       "name": "Wolf Spider Fang",
       "category": "Natural Resources",
       "description": "The razor sharp fang of a wolf spider. It sends a chill down your tiny spine.",
-      "acquisition": "",
+      "acquisition": "O.G.R.R. Wolf Spider *O.R.C. Wolf Spider *Wolf Spider",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Wolf_Spider_Fang#_Grounded_2_-0",
       "revision": 56075,
       "updatedAt": "2026-05-02T08:22:37Z"
@@ -10765,7 +10765,7 @@
       "name": "Wooden Splinter",
       "category": "Natural Resources",
       "description": "A very sharp splinter harvested from a chunk of wood.",
-      "acquisition": "Location/source: * Fire Pit * Greenhouse * Pumpkin Patch * Veggie Garden",
+      "acquisition": "Corn Hog *Splinter. Fire Pit * Greenhouse * Pumpkin Patch * Veggie Garden",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Wooden_Splinter#_Grounded_2_-0",
       "revision": 56995,
       "updatedAt": "2026-08-10T03:04:20Z"
@@ -10775,7 +10775,7 @@
       "name": "Woolly Aphid Fuzz",
       "category": "Natural Resources",
       "description": "The cottony soft fuzz of a woolly aphid.",
-      "acquisition": "",
+      "acquisition": "Woolly Aphid",
       "sourceUrl": "https://grounded.wiki.gg/wiki/Woolly_Aphid_Fuzz#_Grounded_2_-0",
       "revision": 55469,
       "updatedAt": "2026-04-03T01:27:59Z"

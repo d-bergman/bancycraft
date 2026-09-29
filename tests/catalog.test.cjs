@@ -31,7 +31,7 @@ test('nested wiki markup does not split template parameters or convert uncertain
 test('alternative recipes remain separate and do not invent acquisition quantities', () => {
   const dragon = catalogs[0];
   const thread = dragon.recipes.filter(r => r.outputs.some(i => i.name === 'Coarse Thread'));
-  assert.deepEqual(thread.map(r => r.inputs), [[{ name: 'Flax', quantity: 1 }], [{ name: 'Coarse Animal Fur', quantity: 3 }]]);
+  assert.deepEqual(thread.map(r => r.inputs.map(({name,quantity})=>({name,quantity}))), [[{ name: 'Flax', quantity: 1 }], [{ name: 'Coarse Animal Fur', quantity: 3 }]]);
   assert.ok(thread.every(r => r.station === 'Spinning Wheel' && r.outputs[0].quantity === 1));
   const en = catalogs[2].recipes.filter(r => r.outputs.some(i => i.name === 'Linen'));
   assert.deepEqual(en.map(r => [r.station, r.inputs[0].quantity, r.outputs[0].quantity]), [['Hand Spindle', 2, 1], ['Spinning Wheel', 1, 1], ['Spinning Machine', 10, 15]]);

@@ -632,516 +632,6 @@
       }
     ]
   },
-  "ArmorDress1": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorDress10": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorDress2": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorDress3": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorDress4": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorDress5": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorDress6": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorDress7": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorDress8": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorDress9": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
   "ArmorFenringChest": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
     "verifiedAt": "2026-09-28T03:43:21.055Z",
@@ -1489,29 +979,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 6,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Robes of the Caller",
-            "quantity": 1,
-            "itemId": "MoldArmorMageChest"
-          },
-          {
-            "name": "Moose Hide",
-            "quantity": 6,
-            "itemId": "MooseHide"
-          },
-          {
-            "name": "Nornathread",
-            "quantity": 5,
-            "itemId": "NornThread"
-          },
-          {
-            "name": "Bloodgold Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Armor"
+            "name": "Cast: Robes of the Caller",
+            "itemId": "ArmorGoldMageChestUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -1575,7 +1045,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Galdr Table",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/robes-of-the-caller"
   },
   "ArmorDeepNorthMagelegs": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -1585,29 +1057,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 6,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Trousers of the Caller",
-            "quantity": 1,
-            "itemId": "MoldArmorMageLegs"
-          },
-          {
-            "name": "Moose Hide",
-            "quantity": 6,
-            "itemId": "MooseHide"
-          },
-          {
-            "name": "Nornathread",
-            "quantity": 5,
-            "itemId": "NornThread"
-          },
-          {
-            "name": "Bloodgold Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Armor"
+            "name": "Cast: Trousers of the Caller",
+            "itemId": "ArmorGoldMageLegsUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -1671,7 +1123,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Galdr Table",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/trousers-of-the-caller"
   },
   "ArmorDeepNorthMediumChest": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -1681,29 +1135,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 12,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Chestpiece of the Vanguard",
-            "quantity": 1,
-            "itemId": "MoldArmormediumChest"
-          },
-          {
-            "name": "Elaking Hair Bundle",
-            "quantity": 8,
-            "itemId": "ElakingHairBundle"
-          },
-          {
-            "name": "Leather Straps",
-            "quantity": 4,
-            "itemId": "Leatherstraps"
-          },
-          {
-            "name": "Bloodgold Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Armor"
+            "name": "Cast: Chestpiece of the Vanguard",
+            "itemId": "ArmorGoldMediumChestUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -1767,7 +1201,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/chestpiece-of-the-vanguard"
   },
   "ArmorDeepNorthMediumlegs": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -1777,29 +1213,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 12,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Trousers of the Vanguard",
-            "quantity": 1,
-            "itemId": "MoldArmorMediumLegs"
-          },
-          {
-            "name": "Elaking Hair Bundle",
-            "quantity": 8,
-            "itemId": "ElakingHairBundle"
-          },
-          {
-            "name": "Seal Pelt",
-            "quantity": 4,
-            "itemId": "SealHide"
-          },
-          {
-            "name": "Bloodgold Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Armor"
+            "name": "Cast: Trousers of the Vanguard",
+            "itemId": "ArmorGoldMediumLegsUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -1863,109 +1279,9 @@
           }
         ]
       }
-    ]
-  },
-  "ArmorHarvester1": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorHarvester2": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/trousers-of-the-vanguard"
   },
   "ArmorIronChest": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -3362,516 +2678,6 @@
       }
     ]
   },
-  "ArmorTunic1": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorTunic10": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorTunic2": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorTunic3": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorTunic4": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorTunic5": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorTunic6": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorTunic7": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorTunic8": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "ArmorTunic9": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
   "ArmorWolfChest": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
     "verifiedAt": "2026-09-28T03:43:21.055Z",
@@ -4184,24 +2990,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 20,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Nord Atgeir",
-            "quantity": 1,
-            "itemId": "MoldAtgeir"
-          },
-          {
-            "name": "Timberwood",
-            "quantity": 10,
-            "itemId": "Frostwood"
-          },
-          {
-            "name": "Bronze Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader1Weapon"
+            "name": "Cast: Nord Atgeir",
+            "itemId": "AtgeirGoldUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -4250,7 +3041,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/nord-atgeir"
   },
   "AtgeirGold_BloodLightning": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -4571,97 +3364,6 @@
             "name": "Leather Scraps",
             "quantity": 3,
             "itemId": "LeatherScraps"
-          }
-        ]
-      }
-    ]
-  },
-  "AtgeirWood": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 5,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 3,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          },
-          {
-            "name": "Bronze Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader1Weapon"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 1,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 10,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 2,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 20,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 4,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 3,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 30,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 6,
-            "itemId": "RoundLog"
           }
         ]
       }
@@ -5278,24 +3980,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 20,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Nord Axe",
-            "quantity": 1,
-            "itemId": "MoldAxe"
-          },
-          {
-            "name": "Timberwood",
-            "quantity": 10,
-            "itemId": "Frostwood"
-          },
-          {
-            "name": "Black Metal Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader4Weapon"
+            "name": "Cast: Nord Axe",
+            "itemId": "AxeGoldUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -5344,7 +4031,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/nord-axe"
   },
   "AxeGold_BloodLightning": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -5726,97 +4415,6 @@
       }
     ]
   },
-  "AxeWood": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 5,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 3,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          },
-          {
-            "name": "Bronze Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader1Weapon"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 1,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 10,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 2,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 20,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 4,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 3,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 30,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 6,
-            "itemId": "RoundLog"
-          }
-        ]
-      }
-    ]
-  },
   "Battleaxe": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
     "verifiedAt": "2026-09-28T03:43:21.055Z",
@@ -6129,24 +4727,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 20,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Nord Greataxe",
-            "quantity": 1,
-            "itemId": "MoldAxe2H"
-          },
-          {
-            "name": "Timberwood",
-            "quantity": 10,
-            "itemId": "Frostwood"
-          },
-          {
-            "name": "Bloodgold Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Weapon"
+            "name": "Cast: Nord Greataxe",
+            "itemId": "BattleaxeGoldUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -6195,7 +4778,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/nord-greataxe"
   },
   "BattleaxeGold_BloodLightning": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -6344,97 +4929,6 @@
             "name": "Frostfire Essence",
             "quantity": 3,
             "itemId": "OrbFrostFire"
-          }
-        ]
-      }
-    ]
-  },
-  "BattleaxeWood": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 5,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 3,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          },
-          {
-            "name": "Bronze Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader1Weapon"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 1,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 10,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 2,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 20,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 4,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 3,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 30,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 6,
-            "itemId": "RoundLog"
           }
         ]
       }
@@ -7075,24 +5569,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 20,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Nord Bow",
-            "quantity": 1,
-            "itemId": "MoldBow"
-          },
-          {
-            "name": "Timberwood",
-            "quantity": 10,
-            "itemId": "Frostwood"
-          },
-          {
-            "name": "Bloodgold Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Weapon"
+            "name": "Cast: Nord Bow",
+            "itemId": "BowGoldUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -7141,7 +5620,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/nord-bow"
   },
   "BowGold_BloodLightning": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -8443,24 +6924,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 20,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Nord Crossbow",
-            "quantity": 1,
-            "itemId": "MoldCrossbow"
-          },
-          {
-            "name": "Timberwood",
-            "quantity": 10,
-            "itemId": "Frostwood"
-          },
-          {
-            "name": "Bloodgold Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Weapon"
+            "name": "Cast: Nord Crossbow",
+            "itemId": "CrossbowGoldUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -8509,7 +6975,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/nord-crossbow"
   },
   "CrossbowGold_BloodLightning": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -9058,47 +7526,6 @@
       }
     ]
   },
-  "Feaster": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Weapon"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
   "FistBjornClaw": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
     "verifiedAt": "2026-09-28T03:43:21.055Z",
@@ -9537,24 +7964,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 20,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Nord Knucklechains",
-            "quantity": 1,
-            "itemId": "MoldFistweapon"
-          },
-          {
-            "name": "Timberwood",
-            "quantity": 10,
-            "itemId": "Frostwood"
-          },
-          {
-            "name": "Iron Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader2Armor"
+            "name": "Cast: Nord Knucklechains",
+            "itemId": "FistGoldUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -9603,7 +8015,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/nord-knucklechains"
   },
   "Hammer": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -10247,29 +8661,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Moose Sinew",
-            "quantity": 2,
-            "itemId": "MooseSinew"
-          },
-          {
-            "name": "Mould: Headdress of the Caller",
-            "quantity": 1,
-            "itemId": "MoldArmorMageHelmet"
-          },
-          {
-            "name": "Moose Trophy",
-            "quantity": 1,
-            "itemId": "TrophyMoose"
-          },
-          {
-            "name": "Nornathread",
-            "quantity": 3,
-            "itemId": "NornThread"
-          },
-          {
-            "name": "Bloodgold Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Armor"
+            "name": "Cast: Headdress of the Caller",
+            "itemId": "ArmorGoldMageHelmetUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -10333,7 +8727,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Galdr Table",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/headdress-of-the-caller"
   },
   "HelmetDNMediumHood": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -10343,29 +8739,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Seal Pelt",
-            "quantity": 5,
-            "itemId": "SealHide"
-          },
-          {
-            "name": "Mould: Hood of the Vanguard",
-            "quantity": 1,
-            "itemId": "MoldArmorMediumHelmet"
-          },
-          {
-            "name": "Moose Hide",
-            "quantity": 5,
-            "itemId": "MooseHide"
-          },
-          {
-            "name": "Moose Sinew",
-            "quantity": 1,
-            "itemId": "MooseSinew"
-          },
-          {
-            "name": "Bloodgold Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Armor"
+            "name": "Cast: Hood of the Vanguard",
+            "itemId": "ArmorGoldMediumHelmetUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -10429,517 +8805,9 @@
           }
         ]
       }
-    ]
-  },
-  "HelmetHat1": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "HelmetHat10": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "HelmetHat2": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "HelmetHat3": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "HelmetHat4": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "HelmetHat5": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "HelmetHat6": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "HelmetHat7": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "HelmetHat8": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
-  "HelmetHat9": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/hood-of-the-vanguard"
   },
   "HelmetIron": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -11676,57 +9544,6 @@
       }
     ]
   },
-  "HelmetStrawHat": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          },
-          {
-            "name": "Wooden Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Armor"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 6,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 12,
-            "itemId": "DeerHide"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Deer Hide",
-            "quantity": 18,
-            "itemId": "DeerHide"
-          }
-        ]
-      }
-    ]
-  },
   "HelmetTrollLeather": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
     "verifiedAt": "2026-09-28T03:43:21.055Z",
@@ -12131,24 +9948,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 20,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Nord Dagger",
-            "quantity": 1,
-            "itemId": "MoldKnife"
-          },
-          {
-            "name": "Timberwood",
-            "quantity": 10,
-            "itemId": "Frostwood"
-          },
-          {
-            "name": "Bloodgold Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Weapon"
+            "name": "Cast: Nord Dagger",
+            "itemId": "KnifeGoldUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -12197,7 +9999,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/nord-dagger"
   },
   "KnifeGold_BloodLightning": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -12533,97 +10337,6 @@
             "name": "Black Metal",
             "quantity": 12,
             "itemId": "BlackMetal"
-          }
-        ]
-      }
-    ]
-  },
-  "KnifeWood": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 5,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 3,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          },
-          {
-            "name": "Wooden Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader0Weapon"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 1,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 10,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 2,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 20,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 4,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 3,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 30,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 6,
-            "itemId": "RoundLog"
           }
         ]
       }
@@ -13037,24 +10750,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 20,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Nord Mace",
-            "quantity": 1,
-            "itemId": "MoldMace"
-          },
-          {
-            "name": "Timberwood",
-            "quantity": 10,
-            "itemId": "Frostwood"
-          },
-          {
-            "name": "Bloodgold Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Weapon"
+            "name": "Cast: Nord Mace",
+            "itemId": "MaceGoldUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -13103,7 +10801,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/nord-mace"
   },
   "MaceGold_BloodLightning": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -13460,97 +11160,6 @@
             "name": "Silver",
             "quantity": 45,
             "itemId": "Silver"
-          }
-        ]
-      }
-    ]
-  },
-  "MaceWood": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 5,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 3,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          },
-          {
-            "name": "Bronze Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader1Weapon"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 1,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 10,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 2,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 20,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 4,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 3,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 30,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 6,
-            "itemId": "RoundLog"
           }
         ]
       }
@@ -14138,24 +11747,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 10,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Nord Buckler",
-            "quantity": 1,
-            "itemId": "MoldShieldBuckler"
-          },
-          {
-            "name": "Timberwood",
-            "quantity": 10,
-            "itemId": "Frostwood"
-          },
-          {
-            "name": "Bloodgold Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Armor"
+            "name": "Cast: Nord Buckler",
+            "itemId": "ShieldBucklerGoldUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -14189,7 +11783,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/nord-buckler"
   },
   "ShieldCarapace": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -14707,24 +12303,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 15,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Nord Shield",
-            "quantity": 1,
-            "itemId": "MoldShieldRound"
-          },
-          {
-            "name": "Timberwood",
-            "quantity": 10,
-            "itemId": "Frostwood"
-          },
-          {
-            "name": "Bloodgold Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Armor"
+            "name": "Cast: Nord Shield",
+            "itemId": "ShieldRoundGoldUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -14758,7 +12339,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/nord-shield"
   },
   "ShieldSerpentscale": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -14895,24 +12478,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 20,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Nord Greatshield",
-            "quantity": 1,
-            "itemId": "MoldShieldTower"
-          },
-          {
-            "name": "Timberwood",
-            "quantity": 20,
-            "itemId": "Frostwood"
-          },
-          {
-            "name": "Bloodgold Protection Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Armor"
+            "name": "Cast: Nord Greatshield",
+            "itemId": "ShieldTowerGoldUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -14946,7 +12514,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/nord-greatshield"
   },
   "ShieldWood": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -15174,24 +12744,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 20,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Nord Sledge",
-            "quantity": 1,
-            "itemId": "MoldMace2H"
-          },
-          {
-            "name": "Timberwood",
-            "quantity": 10,
-            "itemId": "Frostwood"
-          },
-          {
-            "name": "Bloodgold Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Weapon"
+            "name": "Cast: Nord Sledge",
+            "itemId": "SledgeGoldUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -15240,7 +12795,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/nord-sledge"
   },
   "SledgeGold_BloodLightning": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -15591,97 +13148,6 @@
             "name": "Bone Fragments",
             "quantity": 30,
             "itemId": "BoneFragments"
-          }
-        ]
-      }
-    ]
-  },
-  "SledgeWood": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 5,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 3,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          },
-          {
-            "name": "Bronze Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader1Weapon"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 1,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 10,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 2,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 20,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 4,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 3,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 30,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 6,
-            "itemId": "RoundLog"
           }
         ]
       }
@@ -16120,24 +13586,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 20,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Nord Spear",
-            "quantity": 1,
-            "itemId": "MoldSpear"
-          },
-          {
-            "name": "Timberwood",
-            "quantity": 10,
-            "itemId": "Frostwood"
-          },
-          {
-            "name": "Bloodgold Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Weapon"
+            "name": "Cast: Nord Spear",
+            "itemId": "SpearGoldUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -16186,7 +13637,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/nord-spear"
   },
   "SpearGold_BloodLightning": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -16790,97 +14243,6 @@
       }
     ]
   },
-  "SpearWood": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 5,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 3,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          },
-          {
-            "name": "Bronze Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader1Weapon"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 1,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 10,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 2,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 20,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 4,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 3,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 30,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 6,
-            "itemId": "RoundLog"
-          }
-        ]
-      }
-    ]
-  },
   "StaffClusterbomb": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
     "verifiedAt": "2026-09-28T03:43:21.055Z",
@@ -17071,24 +14433,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Ice",
-            "quantity": 10,
-            "itemId": "Ice"
-          },
-          {
-            "name": "Nornathread",
-            "quantity": 5,
-            "itemId": "NornThread"
-          },
-          {
-            "name": "Hexen Trophy",
-            "quantity": 1,
-            "itemId": "TrophyJotunWitch"
-          },
-          {
-            "name": "Bloodgold Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Weapon"
+            "name": "Cast: Northern Vengeance",
+            "itemId": "StaffFrostOrbsUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -17137,7 +14484,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Galdr Table",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/northern-vengeance"
   },
   "StaffGreenRoots": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -17460,24 +14809,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 10,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Nornathread",
-            "quantity": 4,
-            "itemId": "NornThread"
-          },
-          {
-            "name": "Frostfire Essence",
-            "quantity": 1,
-            "itemId": "OrbFrostFire"
-          },
-          {
-            "name": "Bloodgold Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Weapon"
+            "name": "Cast: Echo Spike",
+            "itemId": "StaffOrbofAhriUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -17541,7 +14875,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Galdr Table",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/echo-spike"
   },
   "StaffShield": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -17733,24 +15069,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Frozen Branch",
-            "quantity": 8,
-            "itemId": "BarkaBranch"
-          },
-          {
-            "name": "Nornathread",
-            "quantity": 5,
-            "itemId": "NornThread"
-          },
-          {
-            "name": "Moose Trophy",
-            "quantity": 1,
-            "itemId": "TrophyMoose"
-          },
-          {
-            "name": "Bloodgold Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Weapon"
+            "name": "Cast: Spirit Caller",
+            "itemId": "StaffSpiritCallerUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -17799,7 +15120,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Galdr Table",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/spirit-caller"
   },
   "StaffThunderBlood": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -17809,24 +15132,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 10,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Nornathread",
-            "quantity": 5,
-            "itemId": "NornThread"
-          },
-          {
-            "name": "Thunderblood Essence",
-            "quantity": 1,
-            "itemId": "OrbThunderBlood"
-          },
-          {
-            "name": "Bloodgold Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Weapon"
+            "name": "Cast: Lightning Strike",
+            "itemId": "StaffThunderbloodUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -17890,7 +15198,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Galdr Table",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/lightning-strike"
   },
   "SwordBlackmetal": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -18067,24 +15377,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 20,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Nord Sword",
-            "quantity": 1,
-            "itemId": "MoldSword"
-          },
-          {
-            "name": "Timberwood",
-            "quantity": 10,
-            "itemId": "Frostwood"
-          },
-          {
-            "name": "Bloodgold Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Weapon"
+            "name": "Cast: Nord Sword",
+            "itemId": "SwordGoldUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -18133,7 +15428,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/nord-sword"
   },
   "SwordGold_BloodLightning": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -19398,24 +16695,9 @@
         "level": 1,
         "inputs": [
           {
-            "name": "Bloodgold",
-            "quantity": 20,
-            "itemId": "Gold"
-          },
-          {
-            "name": "Mould: Nord Greatsword",
-            "quantity": 1,
-            "itemId": "MoldSword2H"
-          },
-          {
-            "name": "Frozen Branch",
-            "quantity": 2,
-            "itemId": "BarkaBranch"
-          },
-          {
-            "name": "Bloodgold Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader7Weapon"
+            "name": "Cast: Nord Greatsword",
+            "itemId": "THSwordGoldUncooked",
+            "quantity": 1
           }
         ]
       },
@@ -19464,7 +16746,9 @@
           }
         ]
       }
-    ]
+    ],
+    "station": "Black Forge",
+    "initialSourceUrl": "https://corpus.gg/games/valheim/items/nord-greatsword"
   },
   "THSwordGold_BloodLightning": {
     "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
@@ -19613,97 +16897,6 @@
             "name": "Frostfire Essence",
             "quantity": 3,
             "itemId": "OrbFrostFire"
-          }
-        ]
-      }
-    ]
-  },
-  "THSwordWood": {
-    "sourceUrl": "https://valheim-modding.github.io/Jotunn/data/objects/recipe-list.html",
-    "verifiedAt": "2026-09-28T03:43:21.055Z",
-    "levels": [
-      {
-        "level": 1,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 5,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 3,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          },
-          {
-            "name": "Bronze Battle Idol",
-            "quantity": 1,
-            "itemId": "Upgrader1Weapon"
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 1,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 10,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 2,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 3,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 2,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 20,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 4,
-            "itemId": "RoundLog"
-          }
-        ]
-      },
-      {
-        "level": 4,
-        "inputs": [
-          {
-            "name": "Wood",
-            "quantity": 3,
-            "itemId": "Wood"
-          },
-          {
-            "name": "Finewood",
-            "quantity": 30,
-            "itemId": "FineWood"
-          },
-          {
-            "name": "Corewood",
-            "quantity": 6,
-            "itemId": "RoundLog"
           }
         ]
       }

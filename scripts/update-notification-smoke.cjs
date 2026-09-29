@@ -31,6 +31,7 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
     assert.equal(await app.evaluate(()=>global.notificationDownloads),0,'Automatic checks do not download');
     assert.equal(await app.evaluate(()=>global.notificationInstalls),0);
     await page.screenshot({path:path.join(root,'test-results/update-notification-desktop.png')});
+    await page.getByRole('button',{name:'Settings & updates',exact:true}).click();await page.getByRole('button',{name:'Download update 9.9.9',exact:true}).waitFor();assert.equal(await popup.count(),0,'Settings hides redundant corner notice');assert.equal(await app.evaluate(()=>global.notificationChecks),2,'Settings entry checks automatically');await page.getByRole('button',{name:'Home',exact:true}).click();await popup.waitFor();
     await app.evaluate(({BrowserWindow})=>BrowserWindow.getAllWindows()[0].setSize(1050,740));
     const bounds=await popup.boundingBox();const dimensions=await page.evaluate(()=>({width:innerWidth,height:innerHeight}));
     assert(bounds.x>=0&&bounds.y>=0&&bounds.x+bounds.width<=dimensions.width&&bounds.y+bounds.height<=dimensions.height);
@@ -40,7 +41,7 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
     assert.equal(await popup.getByRole('progressbar').getAttribute('value'),'37');
     assert.equal(await popup.getByRole('button',{name:'Downloading · 37%',exact:true}).isDisabled(),true);
     await page.evaluate(()=>window.bancy.checkUpdate());
-    assert.equal(await app.evaluate(()=>global.notificationChecks),1,'Checks cannot interrupt a download');
+    assert.equal(await app.evaluate(()=>global.notificationChecks),2,'Checks cannot interrupt a download');
     await app.evaluate(()=>{process.mainModule.require('electron-updater').autoUpdater.emit('update-downloaded');global.finishNotificationDownload();});
     await popup.getByText('Update ready to install',{exact:true}).waitFor();
     assert.equal(await app.evaluate(()=>global.notificationInstalls),0,'Verification does not restart automatically');
@@ -56,7 +57,7 @@ const env = { ...process.env, BANCYCRAFT_TEST_DATA: profile }; delete env.ELECTR
     await popup.getByText('BancyCraft 9.9.10',{exact:true}).waitFor();
     await popup.getByRole('button',{name:'Dismiss update notification',exact:true}).click();
     await page.getByRole('button',{name:'Settings & updates',exact:true}).click();
-    await page.getByRole('button',{name:'Download update 9.9.10',exact:true}).waitFor();
+    await page.getByRole('button',{name:'Download update 9.9.10',exact:true}).waitFor();assert.equal(await popup.count(),0,'Settings suppresses a redundant corner notification');assert.equal(await app.evaluate(()=>global.notificationChecks),2,'Settings entry checks automatically');
     assert.deepEqual(await page.evaluate(()=>window.bancy.load()),workspace);
     assert.deepEqual(errors,[]);
     console.log(JSON.stringify({result:'PASS',checks:['native update detection and notification','no automatic download or restart','corner popup at desktop and minimum size','download progress','ready notification','explicit install IPC with workspace backup','dismissal per version','Settings fallback'],installationPerformed:false},null,2));

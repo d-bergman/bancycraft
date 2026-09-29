@@ -1,7 +1,7 @@
 export const normalize = value => value.trim().toLocaleLowerCase('en');
 export const itemKey = item => `i:${item.id}`;
 export function canonicalItems(catalog){
- const ids=new Map(catalog.items.map(i=>[i.id,i]));return catalog.items.filter(i=>{if(catalog.game!=='valheim'||! /^(?:FW|SP)_/.test(i.id))return true;const original=ids.get(i.id.replace(/^(?:FW|SP)_/,''));return !original||original.name!==i.name;});
+ const ids=new Map(catalog.items.map(i=>[i.id,i]));return catalog.items.filter(i=>{if(i.availability==='removed')return false;if(catalog.game!=='valheim'||! /^(?:FW|SP)_/.test(i.id))return true;const original=ids.get(i.id.replace(/^(?:FW|SP)_/,''));return !original||original.name!==i.name;});
 }
 export function indexCatalog(catalog) {
   const byId = new Map(catalog.items.map(item => [item.id, item]));
@@ -54,7 +54,7 @@ export function buildShoppingList(list, catalog, supplies = []) {
   list=canonicalList(list,catalog);
   if(list.game==='valheim'&&list.targets.some(t=>t.toLevel!==undefined)){
    const extra=[];const selected={...list.recipes};for(const target of list.targets){if(target.toLevel===undefined||list.recipes['i:'+target.itemId]==='gather')continue;const data=catalog.upgrades?.[target.itemId];if(!data||target.fromLevel<0||target.toLevel<=target.fromLevel||!data.levels.some(l=>l.level===target.toLevel))throw Error('Verified upgrade costs are unavailable for '+target.name+'.');const inputs=new Map();for(let level=target.fromLevel+1;level<=target.toLevel;level++){const recipe=data.levels.find(l=>l.level===level);if(!recipe)throw Error('Missing upgrade level '+level);for(const input of recipe.inputs){const key=input.itemId||input.name;const old=inputs.get(key);inputs.set(key,{...input,quantity:(old?.quantity||0)+input.quantity});}}
-    const id='upgrade:'+target.itemId+':'+target.fromLevel+':'+target.toLevel;extra.push({id,station:catalog.recipes.find(r=>r.outputs.some(o=>o.itemId===target.itemId))?.station||'Upgrade station (check source)',notes:target.fromLevel?'Upgrade your owned level '+target.fromLevel+' item to level '+target.toLevel:'Craft new through level '+target.toLevel,sourceUrl:data.sourceUrl,inputs:[...inputs.values()],outputs:[{itemId:target.itemId,name:target.name,quantity:1}]});selected['i:'+target.itemId]=id;
+    const id='upgrade:'+target.itemId+':'+target.fromLevel+':'+target.toLevel;extra.push({id,station:data.station||catalog.recipes.find(r=>r.outputs.some(o=>o.itemId===target.itemId))?.station||'Upgrade station (check source)',notes:target.fromLevel?'Upgrade your owned level '+target.fromLevel+' item to level '+target.toLevel:'Craft new through level '+target.toLevel,sourceUrl:data.sourceUrl,inputs:[...inputs.values()],outputs:[{itemId:target.itemId,name:target.name,quantity:1}]});selected['i:'+target.itemId]=id;
    }catalog={...catalog,recipes:[...catalog.recipes,...extra]};list={...list,recipes:selected};
   }
   const index = indexCatalog(catalog), nodes = new Map(), visiting = new Set(), warnings = new Set();

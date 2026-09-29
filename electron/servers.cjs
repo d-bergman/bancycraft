@@ -1,0 +1,16 @@
+function createServers(account,community,controller,options={}){
+ const network=options.fetch||((...args)=>fetch(...args));
+ function user(){const state=account.status();if(state.state!=='connected'||!state.user)throw Error('Connect your website account first.');return state.user;}
+ function status(){const key=controller.status();return {...key,unlocked:!!key.unlocked&&key.uid===account.status().user?.uid};}
+ function requireKey(){const u=user(),s=status();if(!s.unlocked)throw Error('A controller key issued for your website account is required.');return u;}
+ async function request(route,init={}){user();const r=await network('https://servers-api.bancy.gg'+route,{...init,redirect:'error',signal:AbortSignal.timeout(init.method==='POST'?90000:20000),headers:{Authorization:'Bearer '+await account.token(),'Content-Type':'application/json',...init.headers}});let result;try{result=await r.json();}catch{throw Error('The server controller returned an invalid response.');}if(!r.ok)throw Error(result.message||result.error||'Unable to reach the server controller.');return result;}
+ async function readRegistry(){const url=new URL(account.config.databaseURL+'/worldServers.json');url.searchParams.set('auth',await account.token());const r=await network(url,{redirect:'error',signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error('Unable to load the website server registry.');const values=await r.json();return Object.entries(values||{}).filter(([id,v])=>id!=='__registryMeta'&&v&&v.enabled!==false).map(([id,v])=>({id,title:String(v.title||v.game||id).slice(0,160),game:String(v.game||''),description:String(v.description||'').slice(0,2000),region:String(v.region||''),host:String(v.host||''),notes:String(v.notes||'').slice(0,2000),rules:Array.isArray(v.rules)?v.rules.map(String).slice(0,30):[],status:String(v.status||'Unknown'),controllerServerId:String(v.controllerServerId||''),image:String(v.image||''),address:String(v.steamAddress||v.address||v.steamP2P||'').slice(0,500),password:String(v.password||'').slice(0,300),joinUrl:String(v.joinUrl||'').slice(0,1000),order:Number(v.order)||0})).sort((a,b)=>a.order-b.order||a.title.localeCompare(b.title));}
+ return {
+  status,
+  async unlock(token){const u=user(),key=controller.unlock(token);if(key.uid!==u.uid){controller.lock();throw Error('This controller key belongs to another website account.');}try{await request('/api/app-access',{headers:{'X-BancyCraft-Key':controller.token()}});}catch(e){controller.lock();throw e;}return status();},
+  lock:()=>controller.lock(),
+  async snapshot(){user();if(!community.status().unlocked&&!status().unlocked)throw Error('A community or controller key is required.');const registry=await readRegistry();let control=null,controlError='';if(status().unlocked)try{await request('/api/app-access',{headers:{'X-BancyCraft-Key':controller.token()}});control=await request('/api/servers');}catch(e){controlError=e.message;}return {registry,control,controlError};},
+  async action(id,action){requireKey();if(typeof id!=='string'||! /^[a-z0-9_-]{1,80}$/.test(id)||!['start','stop','restart'].includes(action))throw Error('Invalid server action.');return request('/api/servers/'+encodeURIComponent(id)+'/'+action,{method:'POST',headers:{'X-BancyCraft-Key':controller.token()},body:'{}'});}
+ };
+}
+module.exports={createServers};
