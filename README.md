@@ -57,7 +57,9 @@ npm.cmd ci
 npm.cmd start
 ```
 
-`npm.cmd start` builds and launches the native app. `npm.cmd run dev` opens a browser-preview server at http://127.0.0.1:5173; it uses separate browser storage and does not provide desktop folder/backup actions. Changes to native app source require restarting `npm.cmd start`. Installed copies receive new versions through Settings & updates.
+`npm.cmd run dev:app` opens a local Electron preview backed by Vite. Renderer and CSS edits appear in the running app immediately; changes to Electron main/preload code require restarting the command. It uses a separate `BancyCraft-Preview` workspace under LocalAppData, so your installed app's lists and keys are unaffected. Close the preview window or press Ctrl+C to stop the local Vite server. No installer or GitHub release is created.
+
+`npm.cmd start` builds and launches the native app from compiled files. `npm.cmd run dev` opens a browser-only preview at http://127.0.0.1:5173; it uses separate browser storage and cannot use native folder/backup actions. Installed copies receive new versions through Settings & updates.
 
 ```powershell
 npm.cmd test

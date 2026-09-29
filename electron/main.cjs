@@ -22,7 +22,9 @@ let store;
 let updater;
 let access,community,account,collaboration,controllerAccess,servers;
 let update = { state: 'manual', message: 'Updates are installed using a newer BancyCraft installer. Your workspace stays in place.' };
-const rendererUrl = pathToFileURL(path.join(__dirname, '../app-dist/index.html')).href;
+// Only the explicit loopback preview may replace the bundled renderer in development.
+const livePreview = !app.isPackaged && process.env.BANCYCRAFT_DEV_URL === 'http://127.0.0.1:5173/';
+const rendererUrl = livePreview ? process.env.BANCYCRAFT_DEV_URL : pathToFileURL(path.join(__dirname, '../app-dist/index.html')).href;
 function trusted(event) {
   if (!window || event.sender !== window.webContents || event.senderFrame !== window.webContents.mainFrame || event.senderFrame.url !== rendererUrl) throw new Error('Untrusted request.');
 }
@@ -46,7 +48,7 @@ async function checkUpdates() {
 }
 async function createWindow() {
   window = new BrowserWindow({ width: 1480, height: 980, minWidth: 1050, minHeight: 740, backgroundColor: '#061016', title: 'BancyCraft', autoHideMenuBar: true,
-    icon: path.join(__dirname, '../app-dist/assets/app-icon.png'),
+    icon: path.join(__dirname, '../build/icon.ico'),
     webPreferences: { preload: path.join(__dirname, 'preload.cjs'), nodeIntegration: false, contextIsolation: true, sandbox: true, webSecurity: true } });
   Menu.setApplicationMenu(null);
   window.webContents.setWindowOpenHandler(() => ({ action: 'deny' }));
