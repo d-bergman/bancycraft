@@ -80,7 +80,7 @@ else {
     async function exportJson(value,name){const r=await dialog.showSaveDialog(window,{defaultPath:name,filters:[{name:'BancyCraft JSON',extensions:['json']}]});if(r.canceled||!r.filePath)return false;fs.writeFileSync(r.filePath,JSON.stringify(value,null,2));return true;}
     async function importJson(){const r=await dialog.showOpenDialog(window,{properties:['openFile'],filters:[{name:'BancyCraft JSON',extensions:['json']}]});if(r.canceled)return null;const file=r.filePaths[0];if(fs.statSync(file).size>12000000)throw Error('This file is too large.');return JSON.parse(fs.readFileSync(file,'utf8'));}
     handle('list:export',v=>exportJson({kind:'BancyCraft-list',list:cleanList(v)},'BancyCraft-list.json'));
-    handle('build:export',v=>exportJson({kind:'BancyCraft-build',build:cleanBuild(v)},'BancyCraft-build.json'));
+    handle('build:export',v=>{const build=cleanBuild(v),title=build.name.normalize('NFKD').replace(/[<>:"/\\|?*\x00-\x1f]/g,'').replace(/[. ]+$/,'').trim().slice(0,90)||'Build';return exportJson({kind:'BancyCraft-build',build},`BancyCraft-${title}.json`);});
     handle('list:import',async()=>{const v=await importJson();return v?{...cleanList(v.list),id:require('node:crypto').randomUUID(),quick:false}:null;});
     handle('build:import',async()=>{const v=await importJson();return v?{...cleanBuild(v.build),id:require('node:crypto').randomUUID(),owner:undefined,publishedAt:undefined}:null;});
     handle('workspace:import',async()=>{const v=await importJson();if(!v)return null;const w=validate(v.workspace||v),t=v.tools?validateTools(v.tools):null;
@@ -107,6 +107,16 @@ else {
     handle('workspace:write', data => {const saved=store.write(data);if(saved.game!=='dragonwilds')community.close();return saved;});
     handle('source:open', url => shell.openExternal(sourceUrl(url)));
     handle('website:open', () => shell.openExternal('https://bancy.gg/'));
+    handle('donation:open', async () => {
+      const value = require('./donation-link.json').url;
+      if (!value) return false;
+      const url = new URL(value);
+      const paypalMe = url.hostname === 'paypal.me' && /^\/[A-Za-z0-9]{1,20}\/?$/.test(url.pathname);
+      const paypalDonate = ['paypal.com', 'www.paypal.com'].includes(url.hostname) && (url.pathname === '/donate' || url.pathname.startsWith('/donate/'));
+      if (url.protocol !== 'https:' || url.username || url.password || url.port || url.hash || (!paypalMe && !paypalDonate)) throw new Error('The PayPal donation link is invalid.');
+      await shell.openExternal(url.href);
+      return true;
+    });
     handle('data:open', () => shell.openPath(app.getPath('userData')));
     handle('workspace:export', async () => {
       const data = {kind:"BancyCraft-backup",workspace:store.read(),tools:toolsStore.read()};

@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.2.0 — 2026-09-29
+
+The loadout builder now supports a full character layout, named variants and spare equipment, while keeping planning and feedback inside BancyCraft.
+
+### New Content
+- Five selectable character illustrations: Warrior, Mage, Ranged, Exploration and Gathering.
+- Named variants within one build. Start a variant empty or copy the current loadout, then switch between them in the build toolbar.
+- Add up to 24 extra item slots per variant for alternate weapons, consumables or other gear. Create a shopping list from one variant or all variants, counting shared gear once.
+- A Donate link in Settings opens the owner's PayPal.me page in the default browser.
+
+### App Changes
+- Rework the builder around a centered character illustration, compact equipment rows, consumables and extra items. The toolbar now groups Save/Edit, Duplicate, Add variant, Export, Share, Delete, variant and image selection, shopping list and tags.
+- Keep the variant selector hidden until a second variant exists. Show the image selector only while editing; move the description below the builder and hide empty play notes in view mode.
+- Include the build name in exported files and keep extra-slot quantities available for shopping lists.
+
+### Bug Fixes
+- Restore missing Dragonwilds capes and armor choices, including Obsidian Cape, Fire Cape and Rune armor, in their correct build slots.
+- Prevent character images and equipment rows from growing with a maximized window or clipping the artwork.
+- Make Add slots create visible, editable spare slots and persist them with the chosen variant.
+
+This release deliberately uses 0.2.0, which is lower than the previously published 0.10.0. Existing 0.10.0 users must run BancyCraft-Installer.exe once; the in-app updater will not offer a downgrade. Local workspace data is stored outside the installation directory.
+
 ## 0.10.0 — 2026-09-29
 
 Dune: Awakening joins the offline crafting workspace, with player-safe controller actions and another catalog coverage pass.

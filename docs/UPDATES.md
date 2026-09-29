@@ -21,6 +21,8 @@ The Windows executable currently has no purchased Authenticode certificate. Inst
 
 The release tool obtains GitHub credentials from the configured git credential manager in process memory. It does not log, persist or package the token. Published installers are immutable; do not overwrite a version. Back up user data before attempting a manual rollback to schema 1.
 
+The 2026-09-29 release intentionally reuses version 0.2.0 after 0.10.0. Users on 0.10.0 must run the installer manually once because `allowDowngrade` is false. A later release must use a version greater than 0.10.0 for automatic updates to reach both groups again.
+
 ## Bootstrap
 
 Version 0.2.0 and earlier have no connected feed and cannot discover this update themselves. Install the current release once over the existing installation. From 0.3.0 onward, use Settings. The updater launches the NSIS installer silently and restarts the app after the user clicks Restart & install.

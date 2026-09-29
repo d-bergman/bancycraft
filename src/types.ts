@@ -11,7 +11,10 @@ export type Member = { uid:string; displayName:string };
 export type Account = { state:string; message:string; user?:Member & {email:string} };
 export type SharedList = ShoppingList & { ownerUid:string; members:Member[]; activity:Record<string,{byUid:string;at:number;amount:number}> };
 export type SharedState = {account:Account;lists:{id:string;name:string;game:Game;ownerUid:string;members:number}[];active:SharedList|null;online:boolean;message:string};
-export type Build = {id:string;name:string;game:Game;tags:string[];description:string;skills:string;items:{slot:string;itemId:string;name:string;quantity:number}[];updatedAt:string;owner?:Member;creator?:Member;publishedAt?:string;sourceId?:string;sourceUpdatedAt?:string};
+export type BuildItem={slot:string;itemId:string;name:string;quantity:number};
+export type BuildVariant={id:string;name:string;items:BuildItem[];skills:string;extraSlotCount:number};
+export type BuildImage='warrior'|'mage'|'range'|'exploration'|'gathering';
+export type Build = {id:string;name:string;game:Game;tags:string[];description:string;skills:string;items:BuildItem[];variants?:BuildVariant[];activeVariantId?:string;imageType?:BuildImage;updatedAt:string;owner?:Member;creator?:Member;publishedAt?:string;sourceId?:string;sourceUpdatedAt?:string};
 export type ToolsWorkspace={schemaVersion:1;builds:Build[];favorites:Partial<Record<Game,string[]>>;recent:Partial<Record<Game,string[]>>};
 export type ServerSnapshot={registry:{id:string;title:string;game:string;description:string;region:string;host:string;notes:string;rules:string[];status:string;controllerServerId:string;image:string;address:string;password:string;joinUrl:string}[];control:null|{servers:{id:string;label:string;status:string;playerQueryStatus?:string;playersOnline?:number;playersMax?:number;playerNames?:string[]}[]};controlError:string};
 export type KeyVault={available:boolean;keys:{id:string;label:string;subject?:string;expiresAt?:number}[]};
@@ -30,7 +33,7 @@ export interface Bridge {
   onShared(callback:(data:SharedState)=>void):()=>void;
   info(): Promise<Info>; load(): Promise<Workspace>; save(data: Workspace): Promise<Workspace>;
   unlockCommunity(key:string):Promise<Access>; lockCommunity():Promise<Access>; openBank(order?:{amount:number;note:string}):Promise<void>;
-  openWebsite(): Promise<void>; openSource(url: string): Promise<void>; openData(): Promise<unknown>; exportWorkspace(): Promise<boolean>;
+  openWebsite(): Promise<void>; openDonation(): Promise<boolean>; openSource(url: string): Promise<void>; openData(): Promise<unknown>; exportWorkspace(): Promise<boolean>;
   checkUpdate(): Promise<Update>; downloadUpdate(): Promise<Update>; installUpdate(): Promise<void>; onUpdate(callback: (update: Update) => void): () => void;
 }
 declare global { const __APP_VERSION__: string; interface Window { bancy?: Bridge } }

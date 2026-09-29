@@ -16,6 +16,7 @@ export const api: Bridge = window.bancy ?? {
   load: async () => { const old = JSON.parse(localStorage.getItem('bancycraft-preview') || 'null'); return old ? { ...old, schemaVersion: 2, lists: old.lists ?? [] } : initial(); },
   save: async data => { localStorage.setItem('bancycraft-preview', JSON.stringify(data)); return data; },
   openWebsite: async () => { window.open('https://bancy.gg/', '_blank', 'noopener,noreferrer'); },
+  openDonation: async () => false,
   openSource: async url => { window.open(url, '_blank', 'noopener,noreferrer'); },
   openData: async () => {}, exportWorkspace: async () => false,
   checkUpdate: async () => ({ state: 'idle', message: 'Open the installed app to check GitHub Releases and download updates.' }),

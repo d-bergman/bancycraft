@@ -20,6 +20,7 @@ contextBridge.exposeInMainWorld('bancy', Object.freeze({
   save: data => ipcRenderer.invoke('workspace:write', data),
   openSource: url => ipcRenderer.invoke('source:open', url),
   openWebsite: () => ipcRenderer.invoke('website:open'),
+  openDonation: () => ipcRenderer.invoke('donation:open'),
   openData: () => ipcRenderer.invoke('data:open'),
   exportWorkspace: () => ipcRenderer.invoke('workspace:export'),
   checkUpdate: () => ipcRenderer.invoke('update:check'),
