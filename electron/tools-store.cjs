@@ -9,10 +9,11 @@ function cleanBuild(v){
  const items=cleanItems(v.items);
  const incoming=v.variants??[{id:'main',name:'Original',items,skills:v.skills||'',extraSlotCount:0}];
  if(!Array.isArray(incoming)||incoming.length<1||incoming.length>20)throw Error('Invalid build variants.');
- const variants=incoming.map(variant=>{const variantItems=variant?.items??[];if(!variant||!Array.isArray(variantItems)||variantItems.length>80||!Number.isSafeInteger(variant.extraSlotCount)||variant.extraSlotCount<0||variant.extraSlotCount>24)throw Error('Invalid build variant.');return {id:text(variant.id,80),name:text(variant.name,80),items:cleanItems(variantItems),skills:text(variant.skills||'',6000),extraSlotCount:variant.extraSlotCount};});
+ const allowedImages=['warrior','mage','range','exploration','gathering'];
+ const variants=incoming.map(variant=>{const variantItems=variant?.items??[];if(!variant||!Array.isArray(variantItems)||variantItems.length>80||!Number.isSafeInteger(variant.extraSlotCount)||variant.extraSlotCount<0||variant.extraSlotCount>24)throw Error('Invalid build variant.');const imageType=variant.imageType||v.imageType||'exploration';if(!allowedImages.includes(imageType))throw Error('Invalid variant image.');return {id:text(variant.id,80),name:text(variant.name,80),items:cleanItems(variantItems),skills:text(variant.skills||'',6000),extraSlotCount:variant.extraSlotCount,imageType};});
  if(new Set(variants.map(variant=>variant.id)).size!==variants.length||variants.some(variant=>!variant.id||!variant.name)||variants.reduce((n,variant)=>n+variant.items.length,0)>240)throw Error('Invalid build variants.');
  const activeVariantId=v.activeVariantId||variants[0].id,active=variants.find(variant=>variant.id===activeVariantId);if(!active)throw Error('Invalid active build variant.');
- const imageType=v.imageType||'exploration';if(!['warrior','mage','range','exploration','gathering'].includes(imageType))throw Error('Invalid build image.');
+ const imageType=active.imageType;if(!allowedImages.includes(imageType))throw Error('Invalid build image.');
  const member=m=>m?{uid:text(m.uid,128),displayName:text(m.displayName,32)}:undefined;
  return {id,name,game:v.game,tags:v.tags.map(t=>text(t,40)),description:text(v.description||'',6000),skills:active.skills,items:active.items,variants,activeVariantId,imageType,updatedAt:text(v.updatedAt,40),...(v.owner?{owner:member(v.owner)}:{}),...(v.creator?{creator:member(v.creator)}:{}),...(v.publishedAt?{publishedAt:text(v.publishedAt,40)}:{}),...(v.sourceId?{sourceId:text(v.sourceId,80),sourceUpdatedAt:text(v.sourceUpdatedAt,40)}:{})};
 }

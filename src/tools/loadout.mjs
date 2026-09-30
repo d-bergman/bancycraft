@@ -1,10 +1,13 @@
-export const layout=['Main weapon','Off-hand','Head','Chest','Gloves','Boots / Legs','Ring 1','Ring 2','Belt','Accessory','Food 1','Food 2','Food 3','Potion 1','Potion 2','Cape'];
-export function supported(game,slot){if(game==='duneawakening')return !['Off-hand','Ring 1','Ring 2','Belt','Cape'].includes(slot);if(game==='valheim')return !['Gloves','Ring 1','Ring 2','Belt'].includes(slot);if(game==='dragonwilds')return !['Gloves','Ring 1','Ring 2','Belt'].includes(slot);if(game==='grounded2')return !['Gloves','Ring 1','Ring 2','Belt','Cape'].includes(slot);if(game==='vrising')return !/^Ring|^Food|^Belt/.test(slot);return slot!=='Belt'&&slot!=='Cape';}
+export const layout=['Main weapon','Off-hand','Head','Chest','Gloves','Boots / Legs','Legs','Boots','Ring 1','Ring 2','Belt','Accessory','Food 1','Food 2','Food 3','Potion 1','Potion 2','Cape'];
+export function supported(game,slot){
+ if(slot==='Legs'||slot==='Boots')return game==='enshrouded'||game==='duneawakening';
+ if(slot==='Boots / Legs')return game!=='enshrouded'&&game!=='duneawakening';
+ if(game==='duneawakening')return !['Off-hand','Ring 1','Ring 2','Belt','Cape'].includes(slot);if(game==='valheim')return !['Gloves','Ring 1','Ring 2','Belt'].includes(slot);if(game==='dragonwilds')return !['Gloves','Ring 1','Ring 2','Belt'].includes(slot);if(game==='grounded2')return !['Gloves','Ring 1','Ring 2','Belt','Cape'].includes(slot);if(game==='vrising')return !/^Ring|^Food|^Belt/.test(slot);return slot!=='Belt'&&slot!=='Cape';}
 export function fits(item,slot){const c=item.category.toLowerCase(),n=item.name.toLowerCase();
  // Dragonwilds labels wearable capes as Basic Item. Recognize named equipment before filtering materials.
  if(/material|resource|component|pattern|schematic|quest|arrow|ammo/.test(c))return false;
  const head=/helmet|head armor|head cosmetic/.test(c)||/\bhelm|\bhood|\bhat|\bheadgear|\bhelmet|\bcoif|\bcowl|\bcrown/.test(n);
- const chest=/chest|upper body|body armor|body armour|torso/.test(c)||/\bchest|\btunic|\brobe|\bbody|\bcuirass|\bvest|\bplatebody|\bchestplate|\bbreastplate|\bcoat|\braiment|\bgown/.test(n);
+ const chest=!/lower body|leg armor/.test(c)&&(/chest|upper body|body armor|body armour|torso/.test(c)||/\bchest|\btunic|\brobe|\bbody|\bcuirass|\bvest|\bplatebody|\bchestplate|\bbreastplate|\bcoat|\braiment|\bgown/.test(n));
  const gloves=/arm armor|arm cosmetic|glove/.test(c)||/gloves|gauntlets|handwraps|vambraces/.test(n);
  const boots=/foot armor|foot cosmetic|boot/.test(c)||/boots|shoes|greaves|sabatons/.test(n);
  const legs=/legs|lower body|leg armor/.test(c)||/leggings|trousers|legguards|\blegs\b|platelegs|tassets|chaps|tights/.test(n);
@@ -14,7 +17,31 @@ export function fits(item,slot){const c=item.category.toLowerCase(),n=item.name.
  return ![head,chest,gloves,boots,legs,cape,belt,ring,shield,weapon,potion,food].some(Boolean)&&/utility|trinket|jewel|accessor|equipment|glider|grappling/.test(c);
 }
 export function fitsGame(item,slot,game){return supported(game,slot)&&(fits(item,slot)||(slot==='Accessory'&&!supported(game,'Belt')&&fits(item,'Belt')));}
-export function normalizeSlots(items){return items.map(i=>({...i,slot:['Boots','Legs','Lower body'].includes(i.slot)?'Boots / Legs':i.slot==='Body'||i.slot==='Upper body'?'Chest':i.slot==='Utility belt'?'Accessory':i.slot}));}
+export function buildShoppingEligible(item,catalog){
+ if(/^food\b|^potion\b/i.test(item.slot))return false;
+ const found=catalog.items.find(row=>row.id===item.itemId),category=(found?.category||'').toLowerCase(),name=(found?.name||item.name).toLowerCase();
+ if(/consum|food|drink|potion|smoothie|elixir|mead/.test(category))return false;
+ if(/\b(potion|food|meal|soup|stew|mead|elixir|tonic|smoothie|juice|tea|coffee|bandage)\b/.test(name))return false;
+ if(/^extra \d+$/i.test(item.slot))return !!found&&['Main weapon','Off-hand','Head','Chest','Gloves','Boots / Legs','Legs','Boots','Ring 1','Belt','Accessory','Cape'].some(slot=>fits(found,slot));
+ return /^(main weapon|off-hand|head|chest|gloves|boots \/ legs|legs|boots|ring [12]|belt|accessory|cape)$/i.test(item.slot);
+}
+export function normalizeSlots(items,game,catalog){return items.map(i=>{
+  let slot=i.slot;
+  if(game==='enshrouded'||game==='duneawakening'){
+   if(slot==='Boots / Legs'||slot==='Lower body'){
+    const item=catalog?.items.find(row=>row.id===i.itemId),category=(item?.category||'').toLowerCase(),name=i.name.toLowerCase();
+    slot=/foot|boot/.test(category)||/boot|shoe|sabatons|greaves/.test(name)?'Boots':'Legs';
+   }
+  }else if(['Boots','Legs','Lower body'].includes(slot))slot='Boots / Legs';
+  if(slot==='Body'||slot==='Upper body')slot='Chest';
+  if(slot==='Utility belt')slot='Accessory';
+  return {...i,slot};
+ });}
+export function migrateBuild(build,catalog){
+ const variants=(build.variants||[{id:'main',name:'Original',items:build.items||[],skills:build.skills||'',extraSlotCount:0}]).map(v=>({...v,items:normalizeSlots(v.items||[],build.game,catalog),imageType:v.imageType||build.imageType||'exploration'}));
+ const active=variants.find(v=>v.id===build.activeVariantId)||variants[0];
+ return {...build,variants,activeVariantId:active.id,items:active.items,skills:active.skills,imageType:active.imageType};
+}
 // Keep different equipment variants, but hide exact display duplicates in pickers.
 export function uniqueEquipment(items,catalog){const crafted=new Set(catalog.recipes.flatMap(r=>r.outputs.map(o=>o.itemId)));const result=new Map();for(const i of items){const key=i.name.trim().toLowerCase()+'|'+i.category.toLowerCase();const old=result.get(key);if(!old||(!crafted.has(old.id)&&crafted.has(i.id)))result.set(key,i);}return [...result.values()];}
 export function twoHanded(item){return !!item&&/two.?hand|staff|bow|crossbow|greatsword|battleaxe|atgeir|sledge|reaper/.test((item.category+' '+item.name).toLowerCase());}

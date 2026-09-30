@@ -24,6 +24,8 @@ async function launch() {
     const details = await run.page.evaluate(async () => ({ app: await window.bancy.info(), data: await window.bancy.load(), nodeVisible: typeof window.require !== 'undefined' }));
     assert.equal(details.app.version, require('../package.json').version);
     assert.equal(details.nodeVisible, false);
+    assert.equal(await run.page.evaluate(() => window.bancy.copyText('bancycraft-copy-check')), true);
+    assert.equal(await run.application.evaluate(({ clipboard }) => clipboard.readText()), 'bancycraft-copy-check');
     assert.equal(details.data.plans.length, 0);
     const security = await run.application.evaluate(({ BrowserWindow }) => { const preferences = BrowserWindow.getAllWindows()[0].webContents.getLastWebPreferences(); return { sandbox: preferences.sandbox, contextIsolation: preferences.contextIsolation, nodeIntegration: preferences.nodeIntegration }; });
     assert.deepEqual(security, { sandbox: true, contextIsolation: true, nodeIntegration: false });

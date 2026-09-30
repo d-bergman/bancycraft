@@ -16,7 +16,7 @@ From 0.5.0 onward, the installed app checks immediately after startup and every 
 
 The stable application ID is gg.bancy.bancycraft. Lists, progress, plans and supplies remain under %APPDATA%/BancyCraft, outside the installation folder. Updates require a trusted BancyCraft release signature; private publishing credentials are never included in the app. See [UPDATES.md](docs/UPDATES.md).
 
-## Working in 0.8.0
+## Working in 1.1.0
 
 Shopping Lists brings private lists and shared copies into one page, with shared lists below a divider. All six home tiles have original artwork; all six games are available. A separate paginated Changelog includes every release. Shopping-list row buttons open read-only crafting trees with selected recipes, stations and exact aggregated quantities.
 

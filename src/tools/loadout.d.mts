@@ -1,8 +1,11 @@
 import type {Item} from '../catalog/types';
+import type {Build,BuildItem} from '../types';
 export const layout:string[];
 export function fits(item:Item,slot:string):boolean;
 export function supported(game:string,slot:string):boolean;
 export function twoHanded(item:Item|undefined):boolean;
 export function fitsGame(item:Item,slot:string,game:string):boolean;
-export function normalizeSlots<T extends {slot:string}>(items:T[]):T[];
+export function buildShoppingEligible(item:BuildItem,catalog:import('../catalog/types').Catalog):boolean;
+export function normalizeSlots<T extends {slot:string;itemId?:string;name?:string}>(items:T[],game?:string,catalog?:import('../catalog/types').Catalog):T[];
+export function migrateBuild(build:Build,catalog:import('../catalog/types').Catalog):Build;
 export function uniqueEquipment(items:Item[],catalog:import('../catalog/types').Catalog):Item[];

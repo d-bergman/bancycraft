@@ -6,13 +6,13 @@ export type ShoppingList = { id: string; name: string; game: Game; quick: boolea
 export type Workspace = { completionLog?:{id:string;game:Game;at:string}[]; schemaVersion: 2; game: Game; plans: Plan[]; supplies: Supply[]; lists: ShoppingList[] };
 export type Update = { state: string; message: string; version?: string; percent?: number };
 export type Access = { unlocked:boolean; subject?:string; expiresAt?:number };
-export type Info = { version: string; dataPath: string; packaged: boolean; update: Update; access:Access;controllerAccess?:Access };
+export type Info = { version: string; dataPath: string; packaged: boolean; devMode?:boolean; update: Update; access:Access;controllerAccess?:Access };
 export type Member = { uid:string; displayName:string };
 export type Account = { state:string; message:string; user?:Member & {email:string} };
 export type SharedList = ShoppingList & { ownerUid:string; members:Member[]; activity:Record<string,{byUid:string;at:number;amount:number}> };
 export type SharedState = {account:Account;lists:{id:string;name:string;game:Game;ownerUid:string;members:number}[];active:SharedList|null;online:boolean;message:string};
 export type BuildItem={slot:string;itemId:string;name:string;quantity:number};
-export type BuildVariant={id:string;name:string;items:BuildItem[];skills:string;extraSlotCount:number};
+export type BuildVariant={id:string;name:string;items:BuildItem[];skills:string;extraSlotCount:number;imageType?:BuildImage};
 export type BuildImage='warrior'|'mage'|'range'|'exploration'|'gathering';
 export type Build = {id:string;name:string;game:Game;tags:string[];description:string;skills:string;items:BuildItem[];variants?:BuildVariant[];activeVariantId?:string;imageType?:BuildImage;updatedAt:string;owner?:Member;creator?:Member;publishedAt?:string;sourceId?:string;sourceUpdatedAt?:string};
 export type ToolsWorkspace={schemaVersion:1;builds:Build[];favorites:Partial<Record<Game,string[]>>;recent:Partial<Record<Game,string[]>>};
@@ -21,7 +21,7 @@ export type KeyVault={available:boolean;keys:{id:string;label:string;subject?:st
 export type FeedbackReport={game:Game;type:string;subject:string;details:string;email:string;version:string};
 export interface Bridge {
   adminKeys():Promise<KeyVault>;copyAdminKey(id:string):Promise<boolean>;sendFeedback(report:FeedbackReport):Promise<{sent:boolean}>;
-  unlockController(key:string):Promise<Access>;lockController():Promise<Access>;serversSnapshot():Promise<ServerSnapshot>;serverAction(id:string,action:string):Promise<unknown>;
+  unlockController(key:string):Promise<Access>;lockController():Promise<Access>;serversSnapshot():Promise<ServerSnapshot>;serverAction(id:string,action:string):Promise<unknown>;copyText(value:string):Promise<boolean>;
   toolsLoad():Promise<ToolsWorkspace>;toolsSave(value:ToolsWorkspace):Promise<ToolsWorkspace>;
   buildsBrowse(game:Game):Promise<Build[]>;buildsGet(id:string):Promise<Build|null>;buildsPublish(build:Build):Promise<Build>;buildsRemove(id:string):Promise<void>;profileAvatar(uid:string):Promise<{uid:string;displayName:string;image:string}|null>;
   importWorkspace():Promise<Workspace|null>;exportList(list:ShoppingList):Promise<boolean>;importList():Promise<ShoppingList|null>;exportBuild(build:Build):Promise<boolean>;importBuild():Promise<Build|null>;gamingMode(enable:boolean):Promise<void>;

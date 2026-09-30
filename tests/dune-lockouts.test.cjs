@@ -6,6 +6,7 @@ test('manual player lockouts cover switching, stop, restart, multiple worlds and
  for(const action of ['stop','restart'])assert.match(actionLock(snap(server('one','running',2)),'one',action),/online/);
  assert.match(actionLock(snap(server('one','running',0,'query_failed'),server('two','stopped')),'two','start'),/could not be verified/);
  assert.match(actionLock(snap(server('one'),server('two','running',1),server('three','stopped')),'three','start'),/two/);
+ assert.match(actionLock(snap(server('one'),server('two','running',1)),'one','restart'),/two/);
  assert.equal(actionLock(snap(server('one'),server('two','stopped')),'two','start'),'');
  assert.equal(actionLock(snap(server('one')),'one','restart'),'');
  assert.match(actionLock(snap(server('one')),'one','start'),/already running/);

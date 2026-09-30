@@ -4,7 +4,7 @@ test('completion metrics survive saves and reject duplicate IDs or invalid games
 });
 test('loadout rules combine legs and boots, isolate gloves and capes, and deduplicate equipment',async()=>{
  const {layout,fitsGame,supported,normalizeSlots,uniqueEquipment}=await import('../src/tools/loadout.mjs');
- assert(!layout.includes('Legs'));assert(layout.includes('Boots / Legs'));assert(!supported('valheim','Belt'));assert(supported('valheim','Boots / Legs'));
+ assert(layout.includes('Legs'));assert(layout.includes('Boots'));assert(layout.includes('Boots / Legs'));assert(!supported('valheim','Belt'));assert(supported('valheim','Boots / Legs'));assert(supported('enshrouded','Legs'));assert(supported('enshrouded','Boots'));assert(supported('duneawakening','Legs'));assert(supported('duneawakening','Boots'));
  assert(fitsGame({name:'Iron Greaves',category:'Legs'},'Boots / Legs','valheim'));assert(fitsGame({name:'Mage Gloves',category:'Arm armor'},'Gloves','enshrouded'));assert(!fitsGame({name:'Ashen Cape',category:'Shoulder'},'Head','valheim'));assert(fitsGame({name:'Megingjord',category:'Utility Belt'},'Accessory','valheim'));
  assert.equal(normalizeSlots([{slot:'Legs'}])[0].slot,'Boots / Legs');
  const items=[{id:'one',name:'Sword',category:'Sword'},{id:'two',name:'Sword',category:'Sword'},{id:'three',name:'Sword',category:'Two-handed Sword'}];assert.deepEqual(uniqueEquipment(items,{recipes:[{outputs:[{itemId:'two'}]}]}).map(i=>i.id),['two','three']);

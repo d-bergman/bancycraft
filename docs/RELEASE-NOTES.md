@@ -1,18 +1,20 @@
-# BancyCraft 1.0.0 — version correction
+# BancyCraft 1.1.0 — crafting trees and loadouts
 
-BancyCraft 1.0.0 contains the complete build-planner changes from the 0.2.0 release, now under a version number that existing 0.10.0 and 0.2.0 users can receive in-app. The app remains in active development.
+This update makes crafting requirements easier to explore, improves build variants, and brings the app's server controls closer to the website. BancyCraft remains in active development.
 
 ### New Content
-- Five selectable character illustrations: Warrior, Mage, Ranged, Exploration and Gathering.
-- Named build variants, each with its own gear, play notes and up to 24 extra item slots for alternate weapons or other equipment.
-- An optional Donate link in Settings to paypal.me/thebanri.
+- Crafting trees open centered in all six games, with click-and-drag panning, mouse-wheel zoom, zoom buttons and Fit width.
+- Build tags for common play styles, plus separate leg and boot slots in Enshrouded and Dune: Awakening.
 
 ### App Changes
-- A compact single-row build toolbar, hidden variant selector until needed, responsive artwork and description beneath the builder.
-- Shopping lists can include one variant or all variants without counting shared gear twice. Exports include the build name.
+- Crafting trees show every ingredient beneath the recipe that consumes it. Shared ingredients still combine into one shopping-list total.
+- Each build variant can use its own character picture. Choose any combination of variants for an equipment shopping list, or include them all; shared gear counts once. Food, potions, other consumables and non-gear extra items are excluded.
+- The server controller offers Switch when another world is running and displays command progress. The registry aligns addresses and passwords and supports copying addresses.
+- The Dragonwilds Server Bank is marked as coming in a future build.
 
 ### Bug Fixes
-- Restore missing Dragonwilds capes and Rune armor choices in build pickers.
-- Fix Add slots persistence and keep character art within the builder on large monitors.
+- Restore missing Rune Platebody crafting-tree branches and audit Dragonwilds recipe inputs and stations against current wiki revisions.
+- Keep lower-body armor out of Enshrouded's Chest picker and preserve leg and boot equipment when older builds migrate.
+- Block every disruptive controller action, including restart, while players are online or their count cannot be verified.
 
-Existing users can open Settings & updates to download and install 1.0.0. New users can run BancyCraft-Installer.exe. The NSIS update replaces the old program files and retains the workspace in AppData.
+Existing users can update through Settings & updates. New users can install BancyCraft-Installer.exe. The update preserves the local workspace under AppData.

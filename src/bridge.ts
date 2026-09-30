@@ -4,6 +4,7 @@ const initial = (): Workspace => ({ schemaVersion: 2, game: 'dragonwilds', plans
 export const api: Bridge = window.bancy ?? {
   adminKeys:async()=>({available:false,keys:[]}),copyAdminKey:async()=>false,sendFeedback:async()=>{throw Error('Send feedback from the installed Windows app.');},
   unlockController:async()=>{throw Error('Controller access requires the installed Windows app.');},lockController:async()=>({unlocked:false}),serversSnapshot:async()=>{throw Error('Connect your account in the installed app to load servers.');},serverAction:async()=>{throw Error('Controller actions require the installed app and an authorized key.');},
+  copyText:async value=>{await navigator.clipboard.writeText(value);return true;},
   toolsLoad:async()=>JSON.parse(localStorage.getItem('bancycraft-tools')||'{"schemaVersion":1,"builds":[],"favorites":{},"recent":{}}'),toolsSave:async v=>{localStorage.setItem('bancycraft-tools',JSON.stringify(v));return v;},
   buildsBrowse:async()=>[],buildsGet:async()=>null,buildsPublish:async()=>{throw Error('Install the app and connect your website account to share builds.');},buildsRemove:async()=>{},profileAvatar:async()=>null,
   importWorkspace:async()=>null,exportList:async()=>false,importList:async()=>null,exportBuild:async()=>false,importBuild:async()=>null,gamingMode:async()=>{},
@@ -11,7 +12,7 @@ export const api: Bridge = window.bancy ?? {
   sharedStatus:async()=>({account:{state:'signed-out',message:'Install the Windows app to connect your account.'},lists:[],active:null,online:false,message:''}),
   sharedWatch:async()=>{},sharedCreate:async()=>{throw Error('Install the app to share lists.');},sharedChange:async()=>{throw Error('Install the app to share lists.');},
   sharedSearch:async()=>[],sharedAdd:async()=>{},sharedRemoveMember:async()=>{},sharedRemove:async()=>{},sharedRestore:async()=>{throw Error('Install the app to restore shared lists.');},onShared:()=>()=>{},
-  info: async () => ({ version: __APP_VERSION__, dataPath: 'Browser preview storage', packaged: false, access:{unlocked:false}, update: { state: 'manual', message: 'Install a newer BancyCraft installer to update. Your local workspace is preserved.' } }),
+  info: async () => ({ version: __APP_VERSION__, dataPath: 'Browser preview storage', packaged: false, devMode:true, access:{unlocked:false}, update: { state: 'manual', message: 'Install a newer BancyCraft installer to update. Your local workspace is preserved.' } }),
   unlockCommunity: async()=>{throw new Error('Access keys require the native Windows app.');},lockCommunity:async()=>({unlocked:false}),openBank:async()=>{throw new Error('A valid key in the native app is required.');},
   load: async () => { const old = JSON.parse(localStorage.getItem('bancycraft-preview') || 'null'); return old ? { ...old, schemaVersion: 2, lists: old.lists ?? [] } : initial(); },
   save: async data => { localStorage.setItem('bancycraft-preview', JSON.stringify(data)); return data; },

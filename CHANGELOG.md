@@ -1,5 +1,32 @@
 # Changelog
 
+## 1.1.0 — 2026-09-30
+
+This update makes crafting dependencies easier to verify and improves server controls and loadout variants. It remains local for review before packaging and publication.
+
+### New Content
+- Zoom controls for crafting trees, from 25% to 200%, plus Fit width.
+- Click-and-drag panning and centered opening views for crafting trees in every game.
+- Mouse-wheel zoom for crafting trees, keeping the point under the cursor in view.
+- Preset build tags for play styles and activities across the six games.
+- Separate leg and boot equipment slots in Enshrouded and Dune: Awakening.
+
+### App Changes
+- Show every ingredient directly under the recipe that consumes it, including materials shared across branches; shopping lists still combine those totals.
+- Give each build variant its own character picture and themed variant/image menus.
+- Choose any combination of build variants for a shopping list, or include them all, while counting shared gear once.
+- Keep build shopping lists focused on equipment, excluding food, potions, other consumables, and non-gear extra items.
+- Label the live local preview as Dev mode in the app toolbar.
+- Show Switch on a stopped server when another world is running, with a clear confirmation and an estimated warmup display for controller commands.
+- Mark the Dragonwilds Server Bank as coming in a future build.
+- Align server addresses and revealed passwords; copy addresses through the desktop clipboard.
+
+### Bug Fixes
+- Lock every controller action, including restart, while anyone is online or the running server's player count cannot be verified.
+- Keep existing lower-body equipment when migrating Enshrouded and Dune builds to separate leg and boot slots.
+- Remove Enshrouded lower-body armor from the Chest picker.
+- Restore the two Rune Platebody ingredients that were visually misplaced in the crafting tree. Verify Dragonwilds recipe inputs and stations against the current wiki revisions.
+
 ## 1.0.0 — 2026-09-29
 
 This release corrects the version sequence so existing 0.10.0 and 0.2.0 installations can receive the current app through Settings & updates. BancyCraft remains in active development.
