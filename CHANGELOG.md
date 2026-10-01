@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.2.2 — 2026-10-01
+
+This hotfix improves Blackbox startup feedback after a Dune server start stalled with only its dependencies running.
+
+### App Changes
+- Keep the server loading bar below 100% until Blackbox confirms the requested running or stopped state, then close the modal automatically.
+- Keep Guides on the roadmap for version 2.5.0.
+
+### Bug Fixes
+- Retry transient Dune LAN reflection failures during startup and retain the last controller job result so a failed start does not silently look like an endless startup.
+- Make the NAS Dune status report work without `rg` installed.
+
 ## 1.2.1 — 2026-10-01
 
 This hotfix tightens Blackbox shutdown feedback and polishes the Dune and Gearsets presentation.
