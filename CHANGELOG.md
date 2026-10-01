@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.2.1 — 2026-10-01
+
+This hotfix tightens Blackbox shutdown feedback and polishes the Dune and Gearsets presentation.
+
+### App Changes
+- Make the BancyCraft icon larger and clearer at taskbar sizes while retaining the prior 1.2.0 assets.
+- Align Gearsets action buttons along the bottom of each card.
+- Show a 30-second estimated Stop progress bar that waits for Blackbox to confirm shutdown.
+- Show verified online-player counts without an unknown-capacity question mark, and rename the Dune server to Bancyrakis.
+
+### Bug Fixes
+- Restore the Dune server password in the signed-in server registry.
+- Stop the full Dune stack, including its support containers, when Stop is requested.
+
 ## 1.2.0 — 2026-10-01
 
 This release adds the Blackbox Dune world to BancyCraft and streamlines Gearsets, with a refreshed app icon.

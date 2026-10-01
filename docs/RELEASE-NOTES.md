@@ -1,7 +1,7 @@
-# BancyCraft 1.2.0 — Dune and Gearsets
+# BancyCraft 1.2.1 — Dune shutdown and display polish
 
-BancyCraft now lists the Blackbox Dune: Awakening world, Bancyrakis, and includes it in the authorized server controller. Dune commands show a five-minute estimated startup bar; other worlds retain their three-minute estimate.
+Bancyrakis now appears with its server password for signed-in members. The controller shows online players without an unknown-capacity question mark and provides a 30-second estimated Stop bar that waits for Blackbox to confirm shutdown. Dune Stop now shuts down its full stack, including support containers.
 
-Gearsets now offer compact Add to list, Add to quick list, and View source actions. The app also has a refreshed icon, with the previous icon retained in the source files.
+Gearset card actions align along the bottom edge, and the BancyCraft icon is clearer at taskbar sizes. The prior icon remains in the source files.
 
 Existing users can update through Settings & updates. New users can install BancyCraft-Installer.exe. This update preserves the local workspace under AppData.
