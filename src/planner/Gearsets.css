@@ -1,0 +1,10 @@
+.gearset-card > .gearset-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: 18px 0 0;
+}
+
+.gearset-actions .round-action {
+  flex: 0 0 auto;
+}
