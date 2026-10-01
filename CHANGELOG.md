@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.2.0 — 2026-10-01
+
+This release adds the Blackbox Dune world to BancyCraft and streamlines Gearsets, with a refreshed app icon.
+
+### New Content
+- Show Banlonant Blackbox | Bancyrakis in the server registry and Dune: Awakening in the Blackbox controller.
+- Add quick-list and source-link actions to Gearsets alongside Add to list.
+
+### App Changes
+- Use a five-minute estimated startup bar for Dune controller commands; other worlds retain three minutes.
+- Refresh the BancyCraft app icon while preserving the previous icon assets for reference.
+
 ## 1.1.0 — 2026-09-30
 
 This update makes crafting dependencies easier to verify and improves server controls and loadout variants. It remains local for review before packaging and publication.
