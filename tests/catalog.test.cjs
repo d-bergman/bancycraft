@@ -45,6 +45,7 @@ test('alternative recipes remain separate and do not invent acquisition quantiti
 });
 test('source links reject local schemes, lookalike hosts and credentials', () => {
   assert.equal(sourceUrl('https://dune.gaming.tools/items/uniquescattergun_fire_05'),'https://dune.gaming.tools/items/uniquescattergun_fire_05');
+  assert.equal(sourceUrl('https://www.funcom.com/'),'https://www.funcom.com/');
   assert.throws(()=>sourceUrl('https://dune.gaming.tools/account'));
   for (const url of ['file:///C:/Windows', 'javascript:alert(1)', 'https://enshrouded.wiki.gg.evil.com/wiki/Flax', 'https://user@enshrouded.wiki.gg/wiki/Flax', 'https://github.com/other/project', 'https://enshrouded.wiki.gg:8443/wiki/Flax']) assert.throws(() => sourceUrl(url));
 });

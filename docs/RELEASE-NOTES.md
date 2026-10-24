@@ -1,7 +1,7 @@
-# BancyCraft 1.2.2 — Dune startup feedback
+# BancyCraft 1.3.0 — Dune Collections and offline map
 
-The server loading modal now waits for Blackbox to confirm the requested state. It reaches 100% and closes automatically when the server is online or stopped; if startup takes longer than the estimate, it remains visible instead of claiming completion.
+Track Dune: Awakening uniques in a personal collection, mark finds, and plan up to five local loadouts. The loadout view suggests the next unique tier for equipped weapons, gear, and utility items, with category filters and multi-select adding.
 
-The Dune startup path now retries transient LAN reflection failures and retains its last job result for diagnosis. Blackbox is running again. Guides are planned for 2.5.0 and are not included in this release.
+The new offline Dune map covers Hagga Basin, Deep Desert, and Overland. Search locations, pan and zoom, or open a collection item's mapped source directly. Sources without a verified coordinate stay clearly labeled as written references. Map data and artwork are credited to the Dune: Awakening Community Wiki in the app; game artwork is © Funcom Oslo AS. This is a community snapshot, so locations can change.
 
-Existing users can update through Settings & updates. New users can install BancyCraft-Installer.exe. This update preserves the local workspace under AppData.
+Existing users can update through Settings & updates. New users can install BancyCraft-Installer.exe. Local workspaces remain under AppData.

@@ -54,7 +54,7 @@ async function idle(page) { await page.waitForFunction(() => !document.querySele
     await run.page.locator('.picker-row').filter({hasText:'Workshop test'}).click();await idle(run.page);
     await run.page.getByRole('dialog',{name:'Pick a list'}).waitFor({state:'hidden'});assert.equal((await stored(run.page)).lists[0].targets.length,3);
     await run.page.getByRole('button',{name:'Gearsets',exact:true}).click();await run.page.getByLabel('Search gearsets',{exact:true}).fill('Iron');
-    await run.page.getByRole('button',{name:'Add gearset to list',exact:true}).click();await run.page.locator('.picker-row').filter({hasText:'Workshop test'}).click();
+    await run.page.getByRole('button',{name:'Add Iron armor to list',exact:true}).click();await run.page.locator('.picker-row').filter({hasText:'Workshop test'}).click();
     await run.page.getByRole('dialog',{name:'Pick a list'}).waitFor({state:'hidden'});assert.equal((await stored(run.page)).lists[0].targets.length,6);
     await run.app.close();run=await launch();assert.equal((await stored(run.page)).lists[0].targets.length,6);
     await run.page.getByRole('button',{name:'Shopping Lists',exact:true}).click();await run.page.getByRole('button',{name:/^Workshop test/}).click();

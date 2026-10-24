@@ -21,7 +21,6 @@ const pageSize=24;
 function sourceOverride(item:Item){return (locationOverrides as Record<string,{location:string;sourceUrl:string}>)[item.id];}
 function locationInfo(item:Item){return resolveLocation(item,locationFallbacks,locationOverrides);}
 function where(item:Item){const info=locationInfo(item);return `${info.location} · ${info.region}`;}
-function mapUrl(item:Item){return `https://dune.gaming.tools/items/${encodeURIComponent(item.id.toLowerCase())}`;}
 
 function LocationHint({item}:{item:Item}){
   const tooltipId=useId(),info=locationInfo(item);
@@ -53,7 +52,7 @@ function LoadoutRow({item,targetId,foundIds,busy,onChange,onRemove,onTarget,onEq
   </article>;
 }
 
-export function Collections(){
+export function Collections({onOpenMap}:{onOpenMap:(itemId:string)=>void}){
   const tools=useTools(),state=tools.data.duneCollections||empty();
   const [view,setView]=useState<'collection'|'loadouts'>('collection'),[query,setQuery]=useState(''),[group,setGroup]=useState('All'),[hideFound,setHideFound]=useState(false),[favoritesOnly,setFavoritesOnly]=useState(false),[page,setPage]=useState(1),[active,setActive]=useState(''),[slotFilter,setSlotFilter]=useState<LoadoutFilter>('All'),[picker,setPicker]=useState<{loadoutId:string;slotId?:string}|null>(null),[pickerQuery,setPickerQuery]=useState(''),[pickerMode,setPickerMode]=useState<'single'|'multi'>('single'),[picked,setPicked]=useState<string[]>([]),[feedback,setFeedback]=useState('');
   const filtered=useMemo(()=>uniques.filter(item=>(group==='All'||item.group===group)&&(!hideFound||!state.found.includes(item.id))&&(!favoritesOnly||state.favorites.includes(item.id))&&`${item.name} ${item.family} ${where(item)} ${item.acquisition}`.toLowerCase().includes(query.toLowerCase())),[group,hideFound,favoritesOnly,query,state.found,state.favorites]);
@@ -71,7 +70,7 @@ export function Collections(){
   function addPicked(){if(!picker||!picked.length)return;const chosen=picked.slice(0,pickerCapacity);updateLoadout(picker.loadoutId,loadout=>({...loadout,slots:[...loadout.slots,...chosen.map(itemId=>({id:crypto.randomUUID(),itemId}))]}));setPicker(null);setPicked([]);setPickerQuery('');}
   const pickerItems=all.filter(item=>item.group!=='Other'&&!/\bSchematic$/i.test(item.name)&&`${item.name} ${item.family}`.toLowerCase().includes(pickerQuery.toLowerCase())).slice(0,80);
   const openSource=(item:Item)=>{const url=sourceOverride(item)?.sourceUrl||item.sourceUrl;if(url)void api.openSource(url).catch(()=>setFeedback('Could not open the source page.'));};
-  const openMap=(item:Item)=>{void api.openSource(mapUrl(item)).catch(()=>setFeedback('Could not open the interactive map.'));};
+  const openMap=(item:Item)=>onOpenMap(item.id);
   return <div className="collections-page">
     <header className="collections-heading"><div><p className="eyebrow">Dune: Awakening · Local only</p><h1>Collections</h1><p>Track rare gear and plan the next upgrade for each loadout. Your progress stays on this computer.</p></div><div className="collections-count"><strong>{state.found.filter(id=>uniques.some(item=>item.id===id)).length} / {uniques.length}</strong><span>unique items found</span></div></header>
     <div className="collections-tabs" role="tablist"><button role="tab" aria-selected={view==='collection'} className={view==='collection'?'selected':''} onClick={()=>setView('collection')}>Unique collection</button><button role="tab" aria-selected={view==='loadouts'} className={view==='loadouts'?'selected':''} onClick={()=>setView('loadouts')}>My loadouts <span>{state.loadouts.length}/5</span></button></div>

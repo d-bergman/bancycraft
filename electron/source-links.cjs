@@ -12,6 +12,7 @@ function sourceUrl(value) {
     'enshrouded.wiki.gg': ['/', '/wiki/'],
     'valheim-modding.github.io': ['/Jotunn/data/objects/'],
     'creativecommons.org': ['/licenses/'],
+    'www.funcom.com': ['/'],
     'github.com': ['/Valheim-Modding/Jotunn/blob/master/LICENSE']
   };
   if (url.protocol !== 'https:' || url.username || url.password || url.port || !paths[url.hostname]?.some(p => p === '/' ? (url.hostname === 'awakening.wiki' || url.pathname === '/') : url.pathname.startsWith(p))) throw new Error('Source URL is not allowed.');

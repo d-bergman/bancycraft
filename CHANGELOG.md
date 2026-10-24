@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.3.0 — 2026-10-24
+
+This update adds a personal Dune unique collection tracker and an offline map to help find the next upgrade.
+
+### New Content
+- Browse, search, favorite, and mark Dune: Awakening unique items as found, with source and region details.
+- Create up to five local collection loadouts that track equipped gear and suggest the next unique tier.
+- Explore an offline Dune atlas with Hagga Basin, Deep Desert, and Overland maps, searchable locations, pan and zoom controls, and links from collection items to matching map pins.
+
+### App Changes
+- Filter collection loadouts by All, Weapons, Gear, or Utility and add multiple items in one selection.
+- Show a written source when a unique has no verified map coordinate, instead of placing an uncertain pin.
+- Keep collection progress and loadouts on this PC without requiring a website account.
+
+### Bug Fixes
+- Align collection loadout actions and fill in missing region details for known unique sources.
+
 ## 1.2.2 — 2026-10-01
 
 This hotfix improves Blackbox startup feedback after a Dune server start stalled with only its dependencies running.
