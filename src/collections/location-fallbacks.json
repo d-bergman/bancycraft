@@ -1,0 +1,1548 @@
+{
+  "SMG_Unique_LargeMag_06": [
+    {
+      "site": "Testing Station No. 195",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "HoltzmanShieldActiveDrain_Unique_01": [
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "OrnithopterLightLocomotion_Unique_Speed_6": [
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Shotgun_Unique_LargeMag_06": [
+    {
+      "site": "Testing Station No. 89",
+      "map": "Overland"
+    }
+  ],
+  "HeavyPistol_Unique_Bleed_03": [
+    {
+      "site": "Testing Station No. 29",
+      "map": "Hagga Basin"
+    }
+  ],
+  "LMG_Unique_RapidFire_06": [
+    {
+      "site": "Testing Station No. 152",
+      "map": "Overland"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "BuggyInventory_Unique_Capacity_03": [
+    {
+      "site": "Testing Station No. 10",
+      "map": "Hagga Basin"
+    }
+  ],
+  "BuggyInventory_Unique_Capacity_06": [
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "ChoamLg2": [
+    {
+      "site": "Testing Station No. 152",
+      "map": "Overland"
+    },
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Testing Station No. 195",
+      "map": "Overland"
+    },
+    {
+      "site": "Testing Station No. 136",
+      "map": "Overland"
+    },
+    {
+      "site": "Testing Station No. 89",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "BuggyEngine_Unique_Accelerate_06": [
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Heavy_Unique_Reinforced_Boots_06": [
+    {
+      "site": "Testing Station No. 136",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Heavy_Unique_Reinforced_Top_06": [
+    {
+      "site": "Testing Station No. 136",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Heavy_Unique_Reinforced_Gloves_06": [
+    {
+      "site": "Testing Station No. 136",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Heavy_Unique_Reinforced_Helmet_06": [
+    {
+      "site": "Testing Station No. 136",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Heavy_Unique_Reinforced_Bottom_06": [
+    {
+      "site": "Testing Station No. 136",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "DewReaper_Unique_01": [
+    {
+      "site": "The Tip",
+      "map": "Hagga Basin"
+    }
+  ],
+  "DewReaper_Unique_04": [
+    {
+      "site": "Shaitan's Grotto",
+      "map": "Hagga Basin"
+    }
+  ],
+  "MiningTool_2h_Unique_01": [
+    {
+      "site": "Unspecified site",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 29",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 76",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Kel's Fallback",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Beneath the Jumble",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Fallen Shipwreck",
+      "map": "Hagga Basin"
+    }
+  ],
+  "UniqueDirk_04": [
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Neut_SmugglerDeserterUnique05_Boots": [
+    {
+      "site": "Wreck of the Ourea",
+      "map": "Hagga Basin"
+    }
+  ],
+  "Combat_Neut_SmugglerDeserterUnique05_Top": [
+    {
+      "site": "Wreck of the Ourea",
+      "map": "Hagga Basin"
+    }
+  ],
+  "Combat_Neut_SmugglerDeserterUnique05_Gloves": [
+    {
+      "site": "Wreck of the Ourea",
+      "map": "Hagga Basin"
+    }
+  ],
+  "Combat_Neut_SmugglerDeserterUnique05_Helmet": [
+    {
+      "site": "Wreck of the Ourea",
+      "map": "Hagga Basin"
+    }
+  ],
+  "Combat_Neut_SmugglerDeserterUnique05_Bottom": [
+    {
+      "site": "Wreck of the Ourea",
+      "map": "Hagga Basin"
+    }
+  ],
+  "DewReaper_1h_Unique_Compact_06": [
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "StaticCompactor_Unique_Compact_03": [
+    {
+      "site": "Acky's Recess",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "The Gasp",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Callie's Breakthrough",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 29",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Crystal Cove",
+      "map": "Hagga Basin"
+    }
+  ],
+  "StaticCompactor_Unique_Compact_06": [
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Light_Unique_BiomeHeat_Top_06": [
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "LongRifle_Unique_Poison_06": [
+    {
+      "site": "Testing Station No. 195",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Neut_AtreidesDeserterUnique05_Boots": [
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Neut_AtreidesDeserterUnique05_Top": [
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Neut_AtreidesDeserterUnique05_Gloves": [
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Neut_AtreidesDeserterUnique05_Helmet": [
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Neut_AtreidesDeserterUnique05_Bottom": [
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Kindjal_Unique_Blood_06": [
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "UniqueAr_Burst_02": [
+    {
+      "site": "Wreck of the Pallas",
+      "map": "Hagga Basin"
+    }
+  ],
+  "BodyFluidExtractor_Unique_Water_03": [
+    {
+      "site": "Testing Station No. 117",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Fallen Shipwreck",
+      "map": "Hagga Basin"
+    }
+  ],
+  "BodyFluidExtractor_Unique_Water_06": [
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "LongRifle_Unique_LargeMag_05": [
+    {
+      "site": "Wreck of the Euporia",
+      "map": "Hagga Basin"
+    }
+  ],
+  "BuggyMining_Unique_YieldIncrease_03": [
+    {
+      "site": "Unspecified site",
+      "map": "Hagga Basin"
+    }
+  ],
+  "BuggyMining_Unique_YieldIncrease_06": [
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Flamethrower_Prototype_2": [
+    {
+      "site": "Testing Station No. 136",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Bloodsack_Unique_Durable_03": [
+    {
+      "site": "Stepstone Cavern",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Callie's Breakthrough",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 117",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Unspecified site",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Farhold Storage",
+      "map": "Hagga Basin"
+    }
+  ],
+  "Kindjal_Unique_Blood_03": [
+    {
+      "site": "Unspecified site",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 29",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 76",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Kel's Fallback",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Beneath the Jumble",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Fallen Shipwreck",
+      "map": "Hagga Basin"
+    }
+  ],
+  "HighCapacityLiterjon_03": [
+    {
+      "site": "Stepstone Cavern",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Callie's Breakthrough",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 117",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Unspecified site",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Farhold Storage",
+      "map": "Hagga Basin"
+    }
+  ],
+  "UniqueRapier_03": [
+    {
+      "site": "Testing Station No. 195",
+      "map": "Overland"
+    },
+    {
+      "site": "Testing Station No. 136",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Scanner_Unique_Body_03": [
+    {
+      "site": "Callie's Breakthrough",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Unspecified site",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 117",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Fallen Shipwreck",
+      "map": "Hagga Basin"
+    }
+  ],
+  "Combat_Light_Unique_Climbing_Gloves_06": [
+    {
+      "site": "Testing Station No. 89",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "OrnithopterMediumLocomotion_Unique_Strafe_6": [
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Light_Unique_ReduceSuspensor_Top_06": [
+    {
+      "site": "Testing Station No. 152",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Stillsuit_Unique_Armored_06_Boots": [
+    {
+      "site": "Testing Station No. 195",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Stillsuit_Unique_Armored_06_Gloves": [
+    {
+      "site": "Testing Station No. 195",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Stillsuit_Unique_Armored_06_Mask": [
+    {
+      "site": "Testing Station No. 195",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "BodyFluidExtractor_Unique_Poison_06": [
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Heavy_Unique_PowerEfficient_Gloves_02": [
+    {
+      "site": "Hidden Eyrie",
+      "map": "Hagga Basin"
+    }
+  ],
+  "Combat_Light_Unique_Stamina_Bottom_06": [
+    {
+      "site": "Testing Station No. 195",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "MiningTool_2h_Unique_04": [
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "SMG_Unique_LargeMag_02": [
+    {
+      "site": "Wreck of the Pallas",
+      "map": "Hagga Basin"
+    }
+  ],
+  "Scanner_Efficient_1": [
+    {
+      "site": "Testing Station No. 217",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Testing Station No. 186",
+      "map": "The Deep Desert"
+    }
+  ],
+  "SandbikeEngine_Unique_Speed_1": [
+    {
+      "site": "Vents of Eifrit",
+      "map": "Hagga Basin"
+    }
+  ],
+  "SandbikeEngine_Unique_Speed_2": [
+    {
+      "site": "Wreck of the Pallas",
+      "map": "Hagga Basin"
+    }
+  ],
+  "SandbikeEngine_Unique_Speed_3": [
+    {
+      "site": "Testing Station No. 10",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Fallen Shipwreck",
+      "map": "Hagga Basin"
+    }
+  ],
+  "SandbikeEngine_Unique_Speed_4": [
+    {
+      "site": "Testing Station No. 142",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 163",
+      "map": "Hagga Basin"
+    }
+  ],
+  "SandbikeEngine_Unique_Speed_6": [
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "SandbikeBoost_Unique_LessHeat_3": [
+    {
+      "site": "Testing Station No. 10",
+      "map": "Hagga Basin"
+    }
+  ],
+  "SandbikeBoost_Unique_LessHeat_4": [
+    {
+      "site": "Testing Station No. 60",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Deep Whisper",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Khala Cavern",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 71",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Fallen Shipwreck",
+      "map": "Hagga Basin"
+    }
+  ],
+  "SandbikeBoost_Unique_LessHeat_5": [
+    {
+      "site": "Testing Station No. 37",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Testing Station No. 185",
+      "map": "The Deep Desert"
+    }
+  ],
+  "SandbikeBoost_Unique_LessHeat_6": [
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "DewReaper_2h_Unique_YieldIncrease_06": [
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Stillsuit_Unique_HeatMitigation_06_Mask": [
+    {
+      "site": "Testing Station No. 195",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "UniqueScattergun5": [
+    {
+      "site": "Testing Station No. 136",
+      "map": "Overland"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Neut_SmugglerDeserterUnique06_Boots": [
+    {
+      "site": "Testing Station No. 89",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Neut_SmugglerDeserterUnique06_Top": [
+    {
+      "site": "Testing Station No. 89",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Neut_SmugglerDeserterUnique06_Gloves": [
+    {
+      "site": "Testing Station No. 89",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Neut_SmugglerDeserterUnique06_Helmet": [
+    {
+      "site": "Testing Station No. 89",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Neut_SmugglerDeserterUnique06_Bottom": [
+    {
+      "site": "Testing Station No. 89",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "LMG_Unique_Power_06": [
+    {
+      "site": "Testing Station No. 152",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Heavy_Unique_PowerIncrease_Top_06": [
+    {
+      "site": "Testing Station No. 152",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "UniqueSword": [
+    {
+      "site": "Hidden Eyrie",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 10",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Fallen Shipwreck",
+      "map": "Hagga Basin"
+    }
+  ],
+  "BuggyBoost_Unique_LessHeat_3": [
+    {
+      "site": "Testing Station No. 10",
+      "map": "Hagga Basin"
+    }
+  ],
+  "BuggyBoost_Unique_LessHeat_6": [
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Light_Unique_DewReap_Gloves_03": [
+    {
+      "site": "Testing Station No. 76",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Fallen Shipwreck",
+      "map": "Hagga Basin"
+    }
+  ],
+  "Shotgun_Unique_Explosive_06": [
+    {
+      "site": "Testing Station No. 89",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "HeavyPistol_Unique_Bleed_06": [
+    {
+      "site": "Testing Station No. 195",
+      "map": "Overland"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "LongRifle_Unique_LargeMag_06": [
+    {
+      "site": "Testing Station No. 152",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Kindjal_Unique_Stamina_06": [
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Testing Station No. 89",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "UniqueSword_05": [
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Testing Station No. 136",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Light_Unique_ReduceSuspensor_Top_03": [
+    {
+      "site": "Unspecified site",
+      "map": "Hagga Basin"
+    }
+  ],
+  "UniqueScattergun2": [
+    {
+      "site": "Wreck of the Kytheria",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Whispering Cavern",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Wreck of the Tisiphone",
+      "map": "Hagga Basin"
+    }
+  ],
+  "OrnithopterTransportLocomotion_Unique_Speed_6": [
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "UniqueAr4": [
+    {
+      "site": "Testing Station No. 152",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "UniqueSmg3": [
+    {
+      "site": "Testing Station No. 195",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Kindjal_Unique_Blood_02": [
+    {
+      "site": "Hidden Eyrie",
+      "map": "Hagga Basin"
+    }
+  ],
+  "Flamethrower_Prototype": [
+    {
+      "site": "Wreck of the Ourea",
+      "map": "Hagga Basin"
+    }
+  ],
+  "SMG_Unique_LargeMag_03": [
+    {
+      "site": "Unspecified site",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 29",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 76",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Kel's Fallback",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Beneath the Jumble",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Fallen Shipwreck",
+      "map": "Hagga Basin"
+    }
+  ],
+  "HeavyPistol_Unique_Headshot_06": [
+    {
+      "site": "Testing Station No. 195",
+      "map": "Overland"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Stillsuit_Unique_HighCapacity_06_Top": [
+    {
+      "site": "Testing Station No. 195",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Stillsuit_Unique_HeatMitigation_04_Mask": [
+    {
+      "site": "Fallen Shipwreck",
+      "map": "Hagga Basin"
+    }
+  ],
+  "UniqueSda_Doubleshot_04": [
+    {
+      "site": "Wreck of the Alecto",
+      "map": "Hagga Basin"
+    }
+  ],
+  "UniqueScattergun_Fire_06": [
+    {
+      "site": "Testing Station No. 136",
+      "map": "Overland"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "UniqueSda_Doubleshot_06": [
+    {
+      "site": "Testing Station No. 89",
+      "map": "Overland"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Heavy_Unique_PowerEfficient_Gloves_03": [
+    {
+      "site": "Stepstone Cavern",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Callie's Breakthrough",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 117",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Unspecified site",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Farhold Storage",
+      "map": "Hagga Basin"
+    }
+  ],
+  "UniqueSword_02": [
+    {
+      "site": "Unspecified site",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 29",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 76",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Kel's Fallback",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Beneath the Jumble",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Fallen Shipwreck",
+      "map": "Hagga Basin"
+    }
+  ],
+  "Combat_Light_Unique_BiomeHeat_Top_03": [
+    {
+      "site": "Stepstone Cavern",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Callie's Breakthrough",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 117",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Unspecified site",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Farhold Storage",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Fallen Shipwreck",
+      "map": "Hagga Basin"
+    }
+  ],
+  "UniqueScattergun_Fire_05": [
+    {
+      "site": "Wreck of the Ourea",
+      "map": "Hagga Basin"
+    }
+  ],
+  "UniqueRapier_Power_06": [
+    {
+      "site": "Testing Station No. 136",
+      "map": "Overland"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "OrnithopterMediumBoost_Unique_LessHeat_6": [
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "OrnithopterTransportBoost_Unique_LessHeat_06": [
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "OrnithopterLightBoost_Unique_LessHeat_6": [
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Light_Unique_WormThreat_Boots_03": [
+    {
+      "site": "Stepstone Cavern",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Callie's Breakthrough",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 117",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Unspecified site",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Farhold Storage",
+      "map": "Hagga Basin"
+    }
+  ],
+  "Combat_Light_Unique_WormThreat_Boots_06": [
+    {
+      "site": "Testing Station No. 89",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "RocketLauncher_Unique_Homing_06": [
+    {
+      "site": "Testing Station No. 152",
+      "map": "Overland"
+    },
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Testing Station No. 195",
+      "map": "Overland"
+    },
+    {
+      "site": "Testing Station No. 136",
+      "map": "Overland"
+    },
+    {
+      "site": "Testing Station No. 89",
+      "map": "Overland"
+    }
+  ],
+  "Bloodsack_Unique_Durable_06": [
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "GlidePartialStabilizationBelt_03": [
+    {
+      "site": "Stepstone Cavern",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Callie's Breakthrough",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Testing Station No. 117",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Unspecified site",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Farhold Storage",
+      "map": "Hagga Basin"
+    }
+  ],
+  "GlidePartialStabilizationBelt_06": [
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Hark_MedUnique02_Boots": [
+    {
+      "site": "Testing Station No. 152",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Hark_MedUnique02_Top": [
+    {
+      "site": "Testing Station No. 152",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Hark_MedUnique02_Gloves": [
+    {
+      "site": "Testing Station No. 152",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Hark_MedUnique02_Helmet": [
+    {
+      "site": "Testing Station No. 152",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Hark_MedUnique02_Bottom": [
+    {
+      "site": "Testing Station No. 152",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "UniqueFlameThrower_02": [
+    {
+      "site": "Testing Station No. 136",
+      "map": "Overland"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Stillsuit_Unique_Efficient_06_Boots": [
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Stillsuit_Unique_Efficient_06_Top": [
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Stillsuit_Unique_Efficient_06_Gloves": [
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Stillsuit_Unique_Efficient_06_Mask": [
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Forgotten Cave",
+      "map": "The Deep Desert"
+    }
+  ],
+  "UniqueSda3": [
+    {
+      "site": "Wreck of the Kytheria",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Whispering Cavern",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Wreck of the Tisiphone",
+      "map": "Hagga Basin"
+    }
+  ],
+  "UniqueSda6": [
+    {
+      "site": "Testing Station No. 89",
+      "map": "Overland"
+    },
+    {
+      "site": "Unrecovered Shipwreck",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvE Area)",
+      "map": "The Deep Desert"
+    },
+    {
+      "site": "Fallen Shipwreck (PvP Area)",
+      "map": "The Deep Desert"
+    }
+  ],
+  "UniqueSda2": [
+    {
+      "site": "Wreck of the Pallas",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Fallen Shipwreck",
+      "map": "Hagga Basin"
+    }
+  ],
+  "PowerPack_Unique_Regen_06": [
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "Combat_Light_Unique_DewReap_Gloves_06": [
+    {
+      "site": "Testing Station No. 24",
+      "map": "Overland"
+    },
+    {
+      "site": "Buried Testing Station",
+      "map": "The Deep Desert"
+    }
+  ],
+  "UniqueAr_Burst_03": [
+    {
+      "site": "Wreck of the Kytheria",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Whispering Cavern",
+      "map": "Hagga Basin"
+    },
+    {
+      "site": "Wreck of the Tisiphone",
+      "map": "Hagga Basin"
+    }
+  ]
+}

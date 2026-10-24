@@ -5,6 +5,7 @@ function sourceUrl(value) {
     'dragonwilds.runescape.wiki': ['/', '/w/'],
     'awakening.wiki': ['/'],
     'api.awakening.wiki': ['/items'],
+    'dune.gaming.tools': ['/items/'],
     'corpus.gg': ['/games/valheim/'],
     'wiki.v-ris.ing': ['/', '/w/'],
     'grounded.wiki.gg': ['/', '/wiki/'],

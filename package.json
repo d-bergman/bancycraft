@@ -20,6 +20,7 @@
     "catalog:icons": "node scripts/catalog/icons.cjs",
     "test:lists": "node scripts/lists-smoke.cjs",
     "catalog:dune": "node scripts/catalog/duneawakening.cjs",
+    "catalog:dune-collections": "node scripts/catalog/dune-collections.cjs",
     "catalog:grounded2": "node scripts/catalog/grounded2.cjs"
   },
   "dependencies": {
